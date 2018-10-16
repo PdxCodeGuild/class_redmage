@@ -5,7 +5,7 @@ answers = ('It is certain','It is decidedly so', 'Without a doubt', 'Yes, defini
 
 print("Welcome to the Magic 8 Ball")
 while True:
-    question = input("Type in your question:")
+    question = input("Type in your question or 'done' if finished:")
     if question == "done":
         break
     elif question:    
