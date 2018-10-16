@@ -5,7 +5,9 @@ Full Stack Python Day Class 2018-10-15
 
 Lab 01  
 Lab 02  
+Lab 03  
 Lab 04  
+Lab 08  
 
 ## Python Labs Optional:
 
