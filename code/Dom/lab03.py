@@ -21,4 +21,5 @@ elif plus_minus > 7:
     print(letter_grade + "+")
 elif plus_minus < 3:
     print(letter_grade + "-")
-    
+else:
+    print(letter_grade)
