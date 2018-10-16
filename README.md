@@ -12,7 +12,7 @@ Lab 04
 
 ## Odds and Ends
 
-Pitfalls of Floating Point Numbers and Work-Arounds
+Pitfalls of Floating Point Numbers and Work-Arounds  
 https://docs.python.org/3/tutorial/floatingpoint.html
 
 Command Line Cheat Sheet  
