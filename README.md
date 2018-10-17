@@ -8,6 +8,7 @@ Lab 02
 Lab 03  
 Lab 04  
 Lab 08  
+Lab 09  
 
 ## Python Labs Optional:
 
