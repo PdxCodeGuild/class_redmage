@@ -1,3 +1,5 @@
+# This is not finished
+
 padj1 = input("Give me an adjective for a person: ")
 padj2 = input("Give me an adjective for a person: ")
 sadj1 = input("Give me a speed: ")
