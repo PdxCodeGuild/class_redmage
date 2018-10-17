@@ -76,9 +76,26 @@
 
 # Version 4 (2.0) <-------------------------------------------------------------
 
-to_meters = {"ft": .3048, "mi": 1609.34, "me": 1, "km": 1000, "yrd": .9144, "in": .0254}
-user_distance = float(input("What is the distance? > "))
-distance_input = input("What are the input units? (ft, mi, me, km, yrd, in) > ")
-distance_output = input("What are the output units? (ft, mi, me, km, yrd, in) > ")
+# while True:
+#     to_meters = {"ft": .3048, "mi": 1609.34, "me": 1, "km": 1000, "yrd": .9144, "in": .0254}
+#     user_distance = float(input("What is the distance? > "))
+#     distance_input = input("What are the input units? (ft, mi, me, km, yrd, in) > ")
+#     distance_output = input("What are the output units? (ft, mi, me, km, yrd, in) > ")
+#     print(f"{user_distance} {distance_input} is {round((user_distance * to_meters[distance_input] / to_meters[distance_output]), 4)} {distance_output}.")
 
-print(f"{user_distance} {distance_input} is {round((user_distance * to_meters[distance_input] / to_meters[distance_output]), 4)} {distance_output}.")
+# Version 4 (3.0)
+
+while True:
+    to_meters = {"ft": .3048, "mi": 1609.34, "me": 1, "km": 1000, "yrd": .9144, "in": .0254}
+    
+    user_distance = float(input("What is the distance? > "))
+    
+    distance_input = ''
+    while distance_input not in to_meters.keys():
+        distance_input = input("What are the input units? (ft, mi, me, km, yrd, in) > ")
+
+    distance_output = ''
+    while distance_output not in to_meters.keys():
+        distance_output = input("What are the output units? (ft, mi, me, km, yrd, in) > ")
+    
+    print(f"{user_distance} {distance_input} is {round((user_distance * to_meters[distance_input] / to_meters[distance_output]), 4)} {distance_output}.")
