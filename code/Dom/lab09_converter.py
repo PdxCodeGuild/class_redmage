@@ -11,5 +11,9 @@ out_unit =input(f'What are the output units?>')
 while out_unit not in to_meters.keys():
     print(f'Invalid input')
     out_unit =input(f'What are the output units?>')
+<<<<<<< HEAD
 
 print(f"{in_num} {in_unit} is {in_num * to_meters[in_unit]/to_meters[out_unit]} {out_unit}")
+=======
+print(f"{in_num} {in_unit} is {in_num * to_meters[in_unit]/to_meters[out_unit]} {out_unit}")
+>>>>>>> 0641d39734464fbd2991553629a92e589c0a8263
