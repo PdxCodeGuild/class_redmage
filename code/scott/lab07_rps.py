@@ -5,41 +5,31 @@ import random
 
 # supplying weapons
 weapon_options = ["rock", "paper", "scissors"]
+weapon_dict = {"rock": "paper", "paper": "scissors", "scissors": "rock"}
 
-# computer choosing a weapon
-comp_weapon = random.choice(weapon_options)
-
-# getting user input
+#priming
 weapon_choice = ""
-while weapon_choice not in weapon_options:
-    weapon_choice = input("Choose your weapon! rock, paper, or scissors>")
+play_again = "y"
 
 # fight! - with confirmation loop and break
-play_again = "y"
 while play_again == "y":
-    if weapon_choice == comp_weapon:
-        print ("It's a tie!")
-
-    elif weapon_choice == "rock":
-        if comp_weapon == "paper":
-            print(f"You lose! The computer chose {comp_weapon}")
-        elif comp_weapon == "scissors":
-            print(f"You win! The computer chose {comp_weapon}.")
-
-    elif weapon_choice == "paper":
-        if comp_weapon == "scissors":
-            print(f"You lose! The computer chose {comp_weapon}")
-        elif comp_weapon == "rock":
-            print(f"You win! The computer chose {comp_weapon}.")
-    
-
-    elif weapon_choice == "scissors":
-        if comp_weapon == "rock":
-            print(f"You lose! The computer chose {comp_weapon}")
-        elif comp_weapon == "paper":
-            print(f"You win! The computer chose {comp_weapon}.")
-
-# checking if the user wants to play again
+    # computer choosing a weapon
+    comp_weapon = random.choice(weapon_options)
+    # user choosing a weapon
+    weapon_choice = input("Choose your weapon! rock, paper, or scissors>")
+    # making sure they chose a valid weapon
+    if weapon_choice not in weapon_options:
+        continue
+    # checking who won
+    if comp_weapon == weapon_choice:
+        result = "tied"
+    elif comp_weapon == weapon_dict[weapon_choice]:
+        result = "lost"  
+    elif comp_weapon != weapon_dict[weapon_choice]:
+        result = "won"
+    # printing result
+    print(f"You {result}! Computer chose {comp_weapon}!")
+    # checking if the user wants to play again
     play_again = input("Would you like to play again (y/n)?")
     if play_again == "n":
         break
