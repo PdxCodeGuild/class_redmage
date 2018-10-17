@@ -6,7 +6,7 @@ password_gen = ''
 print("Lets make a password!")
 count = int(input("How many characters long do you want it to be: "))
 l = int(input("How many uppercase letters?:"))
-p = int(input('How many punctuations?:'))
+p = int(input('How many symbols?:'))
 num = int(input('How many numbers?:'))
 for char in range(0, (l)):
         password_gen = password_gen + random.choice(string.ascii_uppercase)
