@@ -15,10 +15,10 @@ while True:
     cp_move = random.choice(list(rps_dict.keys()))
     if rps_dict[chosen_move][0] == cp_move:
         print(f'Computer choses: {cp_move}\n...you lose.')
-        cp_win = cp_win + 1
+        cp_win += 1
     elif rps_dict[chosen_move][1] == cp_move:
         print(f'Computer choses: {cp_move}\n...you win!')
-        user_win = user_win + 1
+        user_win += 1
     elif chosen_move == cp_move:
         print(f"Computer choses: {cp_move}\n...it's a tie!")
     exit_string = input('Do you want to play again? y/n :')
