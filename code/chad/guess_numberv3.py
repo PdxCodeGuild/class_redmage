@@ -10,7 +10,7 @@ while istrue:
         istrue = False
     else:
         times_tried += 1
-        print(f'You Have Tried {times_tried}')
+        print(f'You Have Tried {times_tried} Times')
         if user_guess > number_guess:
             print('You Are Too High')
         if user_guess < number_guess:

@@ -15,11 +15,11 @@ while istrue:
         print('you got here')
         previous_guess = user_guess     
         times_tried += 1
-        print(f'You Have Tried {times_tried}')
+        print(f'You Have Tried {times_tried} Times')
         if current_closer >= previous_closer:
             print('You Were Closer The Previous Time You Played')
         else:
-            print('You were Closer This Time THan Last time')
+            print('You were Closer This Time Than Last time')
         
         continue
   
