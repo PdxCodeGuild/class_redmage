@@ -1,24 +1,25 @@
-import random, time
+import random
+number_guess = random.randint(1,10)
+times_tried = 0
+previous_guess = 0
 
-lookup = {'rock': 'paper', 'paper': 'scissors', 'scissors': 'rock'}
 
-user_input = input('Choose Rock, Paper, Scissors')
-user_input = user_input.lower()
-print(f'You Chose {user_input}')
-print('\n' * 5)
-time.sleep(1)
-
-computer_values = ['rock', 'paper', 'scissors']
-computer_choice = random.choice(computer_values)
-print(f'Computer Chooses {computer_choice}')
-time.sleep(1)
-print('\n' * 5)
-
-for key in lookup.values():
-    if user_input == key:
-        if user_input == key and computer_choice == lookup[key]:
-            print('Computer Won')
-        elif user_input == computer_choice:
-            print('You Have A Tie')
+while True:
+    user_guess = int(input('Guess a number between 1 and 10, you will have 10 tries: > '))
+    current_closer = abs(user_guess-number_guess)
+    previous_closer = abs(previous_guess-number_guess)
+    if number_guess == user_guess:
+        print('You Won The Game!!')
+        break
+    else:
+        print('you got here')
+        previous_guess = user_guess     
+        times_tried += 1
+        print(f'You Have Tried {times_tried} Times')
+        if current_closer >= previous_closer:
+            print('You Were Closer The Previous Time You Played')
         else:
-            print('user won')
+            print('You were Closer This Time Than Last time')
+        
+        continue
+  
