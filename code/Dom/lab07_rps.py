@@ -9,7 +9,7 @@ print('Lets play Rock, Paper, Scissors!!!')
 user_win = 0
 cp_win = 0
 while True:
-    chosen_move = input('Make your move! rock, paper or scissors?:')
+    chosen_move = input('Make your move! rock, paper or scissors?:').lower()
     while chosen_move not in rps_dict.keys():
         chosen_move = input('Make your move! rock, paper or scissors?:')
     cp_move = random.choice(list(rps_dict.keys()))
