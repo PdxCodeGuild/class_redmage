@@ -8,8 +8,7 @@ while user_input <= 0:
     user_input = float(input("How much money do you want to convert to change? (format: #.##)>"))
 
 # convert from dollar form float to integer
-user_input *= 100
-user_input = int(user_input)
+user_input *= int(user_input * 100)
 
 # defining a function to make change by removing values in decreasing order
 def change(user_input):
