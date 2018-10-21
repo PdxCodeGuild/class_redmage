@@ -40,9 +40,10 @@ def ifwon(user_picked, computer_picked, wins):
 
 x = 0
 won = 0
-while x < 10:
-    user_picked = (user_choices(user_picked))
-    computer_picked = (computer_choices(computer_picked))
+user_picked = (user_choices(user_picked))
+computer_picked = (computer_choices(computer_picked))
+
+while x < 1000:
     print(user_picked)
     print(computer_picked)
     won = (ifwon(user_picked, computer_picked, wins))
