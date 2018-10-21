@@ -2,91 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../1 Python/notebooks/origin)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab05_emoticon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab05_emoticon_dict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab07_rps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab09_converter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab10_b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab12_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab12_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab12_v3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Dom/lab12_v4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/average_numbersv3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calcluator3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calulatorv2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emojiconv2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess_number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess_numberv3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess_numberv4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess_numberv5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password_generatorv3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pick6v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_fundamentals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_converterv1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_converterv4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_converterv4_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/lab05_random_emoticon_gen/random_emoiticon_gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/lab06_password_generator/password_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/lab07_rock_paper_scissors/rock_paper_scissors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/lab09_unit_converter/unit_converter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/lab10_average_numbers/average_numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/lab12_guess_the_number/guess_the_number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/practice 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cory/practice 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/Untitled.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab10_avenumbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab11_simplecalc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab12_guessthenumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab4_eightball.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab5_emojigen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab6_passwordgen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab7_rpsgame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab8_coinage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jeffrey/lab9_conversion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab05_randomemogen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab06_passgen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab07_rps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab08_makechange.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab09_unitconv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab10_avgnum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab11_simplecalc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab12_numbguess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../scott/lab13_rotcipher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../1 Python/labs/lab06-random_password.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1 Python/labs/lab06-random_password.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../1 Python/labs/lab10-average_numbers.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../1 Python/labs/lab10-average_numbers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradingv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/gradingv2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mad_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/mad_lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mad_libv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mad_libv2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mad_libv3.py" beforeDir="false" afterPath="$PROJECT_DIR$/mad_libv3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/magic_eightballv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/magic_eightballv2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/magic_eightballv3.py" beforeDir="false" afterPath="$PROJECT_DIR$/magic_eightballv3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_changev2.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_changev2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_changev3.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_changev3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rock_paper_scissor_dictv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/rock_paper_scissor_dictv1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turtle_own_creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle_own_creation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turtle_thing.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle_thing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cory/10-15-2018 turtle/turtle_proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cory/lab01_turtle/turtle_proj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cory/10-15-2018 turtle/turtle_proj2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cory/lab01_turtle/turtle_proj2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cory/10-16-2018 grading/grading.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cory/lab03_grading/grading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cory/10-16-2018 madlib/madlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cory/lab02_madlib/madlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cory/10-16-2018 magic_8ball/magic_8ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cory/lab04_magic_8ball/magic_8ball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cory/10-16-2018 make_change/make_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cory/lab08_make_change/make_change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jeffrey/lab1b_veggiepizza.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jeffrey/lab1b_veggiepizza.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jeffrey/lab2_madlib_concat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab1_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab01_advanced.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab1_turtle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab01_turtle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab2_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab02_advanced.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab2_madlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab02_madlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab3_grading.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab03_grading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab4_8ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab04_8ball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scott/lab4_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scott/lab04_advanced.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/pick6v1_old.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,31 +15,33 @@
     <session id="-726787184">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="14" />
+          <entry key="py" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="14" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6549" />
+          <entry key="dummy" value="11" />
+          <entry key="py" value="6586" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="6549" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="6586" />
         </counts>
       </usages-collector>
     </session>
@@ -153,22 +72,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_code.py">
+        <entry file="file://$PROJECT_DIR$/pick6v1_old.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-              <folding>
-                <marker date="1540102391000" expanded="true" signature="1301:1303" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pick6v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+            <state relative-caret-position="171">
+              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -176,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/magic_eightballv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -223,6 +130,7 @@
         <option value="$PROJECT_DIR$/rock_paper_scissor_dictv1.py" />
         <option value="$PROJECT_DIR$/pick6v1.py" />
         <option value="$PROJECT_DIR$/test_code.py" />
+        <option value="$PROJECT_DIR$/pick6v1_old.py" />
       </list>
     </option>
   </component>
@@ -256,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,7 +176,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +194,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_code">
+  <component name="RunManager" selected="Python.magic_eightballv2">
+    <configuration name="magic_eightballv2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/magic_eightballv2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="magic_eightballv3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,27 +229,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/magic_eightballv3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="make_changev3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_changev3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,7 +291,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_code.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pick6v1_old.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,19 +301,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.make_changev3" />
       <item itemvalue="Python.test_code" />
       <item itemvalue="Python.magic_eightballv3" />
       <item itemvalue="Python.rock_paper_scissor_dictv1" />
       <item itemvalue="Python.pick6v1" />
+      <item itemvalue="Python.magic_eightballv2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.magic_eightballv2" />
         <item itemvalue="Python.test_code" />
         <item itemvalue="Python.pick6v1" />
         <item itemvalue="Python.rock_paper_scissor_dictv1" />
         <item itemvalue="Python.magic_eightballv3" />
-        <item itemvalue="Python.make_changev3" />
       </list>
     </recent_temporary>
   </component>
@@ -424,13 +332,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1339" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16757813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15536277" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16561514" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39960238" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -481,6 +390,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pick6v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/make_changev2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -491,13 +407,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradingv2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magic_eightballv2.py">
+    <entry file="file://$PROJECT_DIR$/rock_paper_scissor_dictv1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -512,27 +425,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rock_paper_scissor_dictv1.py">
+    <entry file="file://$PROJECT_DIR$/gradingv2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magic_eightballv2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pick6v1.py">
+    <entry file="file://$PROJECT_DIR$/pick6v1_old.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-          <folding>
-            <marker date="1540102391000" expanded="true" signature="1301:1303" ph="..." />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>
