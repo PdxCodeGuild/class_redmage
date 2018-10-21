@@ -2,7 +2,7 @@ import turtle as tur
 
 # Veggie pizza in the sky over the great pyramids of Giza.
 
-tur.speed(0)
+tur.speed()
 
 tur.fillcolor('orange')
 tur.begin_fill()

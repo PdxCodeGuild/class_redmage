@@ -7,12 +7,25 @@ Lab 01
 Lab 02  
 Lab 03  
 Lab 04  
+Lab 05  
+Lab 06  
+Lab 07  
 Lab 08  
+Lab 09  
+Lab 10  
+Lab 11  
+Lab 12  
 
 ## Python Labs Optional:
 
 
 ## Odds and Ends
+
+Official Python Style Guide (PEP 8)  
+https://www.python.org/dev/peps/pep-0008/
+
+PEP-8 Tutorial and Guide  
+https://www.datacamp.com/community/tutorials/pep8-tutorial-python-code
 
 Pitfalls of Floating Point Numbers and Work-Arounds  
 https://docs.python.org/3/tutorial/floatingpoint.html

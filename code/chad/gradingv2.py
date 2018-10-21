@@ -1,9 +1,14 @@
 grade = int(input("Enter Your Grade Number? > "))
 
-if grade % 10 > 5:
+if grade == 100:
+    plusminus = '+'
+elif grade % 5 == 0:
+    plusminus = ''
+elif grade % 10 > 5:
     plusminus = '+'
 elif grade % 10 <= 5:
     plusminus = '-'
+
 
 
 if grade >= 90 < 100:
@@ -15,6 +20,6 @@ elif grade >= 70 < 80:
 elif grade >= 60 < 70:
     print(f'You Got An "D{plusminus}" Grade')
 elif grade < 60:
-    print(f'You Got An "F{plusminus}" Grade')
+    print(f'You Got An "F" Grade')
 else:
     print('You Typed An Invalid Argument')
