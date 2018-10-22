@@ -15,6 +15,7 @@ Lab 09
 Lab 10  
 Lab 11  
 Lab 12  
+Lab 14  
 Lab 15  
 Lab 19  
 Lab 20  
