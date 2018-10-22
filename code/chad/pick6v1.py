@@ -54,21 +54,21 @@ def ifwon(user_picked, computer_picked):
 
 
 
-for num1 in range(1000000):
-    for num2 in range(1000000):
-        computer_picked = get_choices()
-        user_picked = get_choices()
-        returned_win_won = ifwon(user_picked, computer_picked)
-        returned_win_won = list(returned_win_won)
-        counter += 1
-        wins += returned_win_won[0]
-        money_balance += returned_win_won[1]
-        f = open("/var/www/lottery_python/Lottery_Results.txt\n"
-                "You Now Have {money_balance} Dollars Total Money\n"
-                "You Have Played {counter} Many Times\n"
-                "Your Average is Win Rate is {money_balance / counter}", "w+")
-        f.write(f'You won {wins} Times')
-        f.close()
+for num2 in range(10000000):
+    computer_picked = get_choices()
+    user_picked = get_choices()
+    returned_win_won = ifwon(user_picked, computer_picked)
+    returned_win_won = list(returned_win_won)
+    counter += 1
+    wins += returned_win_won[0]
+    money_balance += returned_win_won[1]
+    f = open("/var/www/lottery_python/Lottery_Results.txt", "w+")
+    f.write(f"You won {wins} Times "
+            f"\nYou Now Have {money_balance} Dollars Total Money"
+            f"\nYou Have Played {counter} Many Times"
+            f"\nYour Average is Win Rate is {money_balance / counter}")
+
+    f.close()
 
 
 
