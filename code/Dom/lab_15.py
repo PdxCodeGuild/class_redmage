@@ -25,7 +25,7 @@ def number_phrase(x):
     elif hundreds_digit >0: 
         if tens_digit <1 and ones_digit >= 0:
             print(f'{number_dict[hundreds_digit][2]} {number_dict[ones_digit][0]}')
-        elif tens_digit == 1 and ones_digit >0:
+        if tens_digit == 1 and ones_digit >0:
             print(f'{number_dict[hundreds_digit][2]} {teens_dict[ones_digit]}')
         elif tens_digit >0:
             print(f'{number_dict[hundreds_digit][2]} {number_dict[tens_digit][1]}-{number_dict[ones_digit][0]}')
