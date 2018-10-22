@@ -15,9 +15,15 @@ Lab 09
 Lab 10  
 Lab 11  
 Lab 12  
+Lab 15  
+Lab 19  
+Lab 20  
 
 ## Python Labs Optional:
 
+Practice 01  
+Practice 02  
+Practice 03  
 
 ## Odds and Ends
 
