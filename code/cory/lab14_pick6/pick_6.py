@@ -16,6 +16,8 @@ winnings = 0
 # Total Tickets
 total_tickets = 0
 
+
+
 # Pick6 function
 def ticket_function():
     ticket_function = []
@@ -44,6 +46,15 @@ while end_flag == False:
                 loop_flag = False
                 break
 
+# Matching number for tickets <- added late, was curious
+    matching_nums_tracker0 = 0
+    matching_nums_tracker1 = 0
+    matching_nums_tracker2 = 0
+    matching_nums_tracker3 = 0
+    matching_nums_tracker4 = 0
+    matching_nums_tracker5 = 0
+    matching_nums_tracker6 = 0
+
 # Calculates however many tickets you chose, tallies other variables like matching numbers of tickets, total tickets, total spent, total gained, etc.
     for x in range(number_of_tickets):
 
@@ -68,8 +79,32 @@ while end_flag == False:
         elif matching_nums == 6:
             winnings += 25000000
 
+        if matching_nums == 0:
+            matching_nums_tracker0 += 1
+        elif matching_nums == 1:
+            matching_nums_tracker1 += 1
+        elif matching_nums == 2:
+            matching_nums_tracker2 += 1
+        elif matching_nums == 3:
+            matching_nums_tracker3 += 1
+        elif matching_nums == 4:
+            matching_nums_tracker4 += 1
+        elif matching_nums == 5:
+            matching_nums_tracker5 += 1
+        elif matching_nums == 6:
+            matching_nums_tracker6 += 1
+        
         starting_bal += ticket_cost
         total_tickets += 1
+
+# Added late, wanted to see matching nums results, being lazy
+    print(f"\nThe number of tickets that had 0 winning numbers was {matching_nums_tracker0}")
+    print(f"The number of tickets that had 1 winning numbers was {matching_nums_tracker1}")
+    print(f"The number of tickets that had 2 winning numbers was {matching_nums_tracker2}")
+    print(f"The number of tickets that had 3 winning numbers was {matching_nums_tracker3}")
+    print(f"The number of tickets that had 4 winning numbers was {matching_nums_tracker4}")
+    print(f"The number of tickets that had 5 winning numbers was {matching_nums_tracker5}")
+    print(f"The number of tickets that had 6 winning numbers was {matching_nums_tracker6}")
 
 # Show winning ticket. Caculate number of tickets bought, how many winning tickets you have, and show how much you have won (tickets bought - winnings).
     print(f"\n{winning_ticket} was the winning ticket.\n")
