@@ -60,7 +60,7 @@ def ifwon(user_picked, computer_picked):
 
 
 # Loop To Random Pick User Ticket and Random Pick COmputer Ticket
-for num2 in range(10000000):
+for num2 in range(1000000000):
     computer_picked = get_choices()
     user_picked = get_choices()
     returned_win_won = ifwon(user_picked, computer_picked)
