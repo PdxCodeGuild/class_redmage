@@ -1,6 +1,10 @@
 # Version 3
 import random
-rps_dict = {"Rock": {"Rock": "Its a tie.", "Paper": "You lose!", "Scissors": "You win!"}, "Paper": {"Rock": "You win!", "Paper": "Its a tie!", "Scissors": "You lose!"}, "Scissors": {"Rock": "You lose!", "Paper": "You win!", "Scissors": "Its a tie."}}
+rps_dict = {
+    "Rock": {"Rock": "Its a tie.", "Paper": "You lose!", "Scissors": "You win!"}, 
+    "Paper": {"Rock": "You win!", "Paper": "Its a tie!", "Scissors": "You lose!"},  
+    "Scissors": {"Rock": "You lose!", "Paper": "You win!", "Scissors": "Its a tie."}
+    }
 
 while True:
     user_choice = input("Choose one: Rock, Paper, or Scissors: > ")
