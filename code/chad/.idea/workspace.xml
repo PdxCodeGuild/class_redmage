@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/credit_card_validationv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/credit_card_validationv1_old_give_up.py" afterDir="false" />
-    </list>
+    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,14 +21,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="27" />
+          <entry key="py" value="28" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -99,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/credit_card_validationv1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="317">
@@ -110,6 +108,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rot13_NOT FINISHED.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -365,13 +368,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-19" y="23" width="1785" height="1341" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32380953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32380953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5181102" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5181102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39960238" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,6 +500,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rot13_NOT FINISHED.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
