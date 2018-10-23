@@ -3,20 +3,8 @@ Full Stack Python Day Class 2018-10-15
 
 ## Python Labs Assigned:
 
-Lab 01  
-Lab 02  
-Lab 03  
-Lab 04  
-Lab 05  
-Lab 06  
-Lab 07  
-Lab 08  
-Lab 09  
-Lab 10  
-Lab 11  
-Lab 12  
-Lab 14  
-Lab 15  
+Lab 01 - Lab 15  
+Lab 17  
 Lab 19  
 Lab 20  
 
