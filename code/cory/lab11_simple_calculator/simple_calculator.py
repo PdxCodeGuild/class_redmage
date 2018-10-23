@@ -17,7 +17,7 @@ while end == False:
             break
         for x in opr_input:
             if len(opr_input) >= 2:
-                print("The program didn't like that input... Let's try again.")
+                print("The program didn't like that input... Let's try again. (+, -, *, /)")
                 break
             while x not in opr_list:
                 print('You need to choose an operation! (+, -, *, /)')

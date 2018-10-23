@@ -6,6 +6,14 @@ print(hello('h', 'e', 'l', 'l', 'o'))
 '''
 # Problem 2
 
+def missing_char(string):
+    out_list = []
+    for i in range(len(string)):
+        out_list.append(string[0:i] + string[i+1:len(string)])
+    return out_list
+question = input("What word would you like to slice? > ")
+print(missing_char(question))
+
 # Problem 3
 '''
 def latest_letter(letter1):
