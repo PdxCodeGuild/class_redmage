@@ -16,6 +16,9 @@ Practice 03
 
 ## Odds and Ends
 
+Are exceptions good practice? (Includes list of exceptions and a lot of code philosophy)  
+https://stackoverflow.com/questions/16138232/is-it-a-good-practice-to-use-try-except-else-in-python
+
 Official Python Style Guide (PEP 8)  
 https://www.python.org/dev/peps/pep-0008/
 
