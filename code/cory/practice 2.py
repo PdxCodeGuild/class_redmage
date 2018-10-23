@@ -5,7 +5,7 @@ def hello(letter1, letter2, letter3, letter4, letter5):
 print(hello('h', 'e', 'l', 'l', 'o'))
 '''
 # Problem 2
-
+'''
 def missing_char(string):
     out_list = []
     for i in range(len(string)):
@@ -13,7 +13,7 @@ def missing_char(string):
     return out_list
 question = input("What word would you like to slice? > ")
 print(missing_char(question))
-
+'''
 # Problem 3
 '''
 def latest_letter(letter1):
