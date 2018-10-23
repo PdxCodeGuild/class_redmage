@@ -41,9 +41,9 @@ def money_calc(wins):
     elif wins == 6:
         money_balance += 25000000
         print('You Won Big $25 MILLON')
-        input('Paused You Won The Jackpot')
-        print(user_picked)
-        print(computer_picked)
+        input('Paused You Won The Jackpot'))
+        print
+        print(user_picked(computer_picked)
     return money_balance
 
 # Function To See If There Are Any Winning Tickets
