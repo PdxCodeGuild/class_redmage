@@ -41,9 +41,9 @@ def money_calc(wins):
     elif wins == 6:
         money_balance += 25000000
         print('You Won Big $25 MILLON')
-        input('Paused You Won The Jackpot')
-        print(user_picked)
-        print(computer_picked)
+        input('Paused You Won The Jackpot'))
+        print
+        print(user_picked(computer_picked)
     return money_balance
 
 # Function To See If There Are Any Winning Tickets
@@ -87,6 +87,52 @@ print(f'You Have Played {counter} Many Times')
 print(f'Your Average is Win Rate is {money_balance / counter} ')
 
 
+<<<<<<< HEAD
+def computer_choices(computer_picked):
+    track_num = 1
+    while track_num < 7:
+        computer_pick = random.randint(0,100)
+        computer_picked.append(computer_pick)
+        track_num += 1
+        if track_num == 7:
+            return computer_picked
+
+def user_choices(user_picked):
+    track_num = 1
+    while track_num < 7:
+        user_pick = random.randint(0,100)
+        user_picked.append(user_pick)
+        track_num += 1
+        if track_num == 7:
+            return user_picked
+
+def ifwon(user_picked, computer_picked, wins):
+    if computer_picked[0] == user_picked[0]:
+        wins += 2
+    if computer_picked[1] == user_picked[1]:
+        wins += 1   
+    if computer_picked[2] == user_picked[2]:
+        wins += 1 
+    if computer_picked[3] == user_picked[3]:
+        wins += 1   
+    if computer_picked[4] == user_picked[4]:
+        wins += 1   
+    if computer_picked[5] == user_picked[5]:
+        wins += 1
+    return wins
+
+
+x = 0
+
+while x < 10000000:
+    print(user_choices(user_picked))
+    print(computer_choices(computer_picked))
+    print(ifwon(user_picked, computer_picked, wins))
+    x += 1
+
+print(f'You Won {wins} Times!!!')
+=======
+>>>>>>> b2e7b67c556a0613e76ae9ca4d0b12daf2cdb8c3
 
 
     
