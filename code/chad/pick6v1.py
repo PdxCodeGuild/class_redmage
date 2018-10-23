@@ -41,7 +41,7 @@ def ifwon(user_picked, computer_picked, wins):
 
 x = 0
 
-while x < 10:
+while x < 10000000:
     print(user_choices(user_picked))
     print(computer_choices(computer_picked))
     print(ifwon(user_picked, computer_picked, wins))
