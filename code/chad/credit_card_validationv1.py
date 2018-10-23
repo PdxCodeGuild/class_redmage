@@ -1,50 +1,49 @@
-import random
+card_number_in = input('What is the credit card number that you would like to evaluate? > ')
 
-#ask the user to enter a 16 digit number
-user_number = 4565454345678765 #input('Input a 16 Digit Number')
+if len(card_number_in) != 16:
+    print('You Entered a invalid amount of numbers or characters')
+    quit()
 
-#function to double ever other number
+def convert_string(a):
+    print(a)
+    x = list(a)
+    for i in range(len(a)):
+        x[i] = int(a[i])
+    return x
 
+def double_element(b):
+    tempList = []
+    for i in range(0, len(b)):
+        if i % 2 == 0:
+            tempList.append(b[i] * 2)
 
-
-def check_number(user_number):
-    #make numbers into a list to be able to manipulate
-    user_number = list(str(user_number))
-    print(user_number)
-    #poping the last digit off and storing it for later as check value
-    popped_numer = user_number.pop(-1)
-    print(user_number)
-    user_number.reverse()
-    print(user_number)
-    user_number = double_num(user_number)
-    print(user_number)
-    ######
-    user_list = []
-    print(type(user_number))
-    for num in user_number:
-        user_list.append(int(num))
-   
-
-    print(type(user_list[0]))
-    print(user_list)
-    user_list2 = []
-    for num in user_list:
-        if num % 2 == 0:
-            user_list2.append(num*2)
         else:
-            user_list2.append(num)
-    print(user_list2)
-    user_list2 = sum(user_list2)
-    print(user_list2)
-    print((user_list2 % 10) == popped_numer)
-       
-    
+            tempList.append(b[i])
+    return tempList
 
-#check to see if the number is valid
-if len(str(user_number)) == 16:
-    print(f' Your Credit Card {user_number} Validated!')
-    check_number(user_number)
+def find_second_digit(c):
+    into_list = list(str(c))
+    out_list = int(into_list[1])
+    return out_list
 
-else:
-    print('You Entered A Invalid Card Number')
-    
+
+# Calling Function convert_string(card_number_in) to conver string to integer
+converted_card_intList = convert_string(card_number_in)
+print(f'Converted Card Numbers Into Integers {converted_card_intList}')
+#slice off last number and store it into a vairable
+popoff1 = converted_card_intList.pop(-1)
+print(f'You popped off number {popoff1}')
+#Reversing the digists of list in place
+converted_card_intList.reverse()
+print(f'Reversed The Card Numbers {converted_card_intList}')
+#Calling Function To Double Ever Other Element in List
+double_list = double_element(converted_card_intList)
+print(f'Doubled The List Every Other Index {double_list}')
+#Sum all the digits in the list
+sum_list = sum(double_list)
+print(sum_list)
+#Call function to find second digit
+found_second_digit = find_second_digit(sum_list)
+print(f'The Second Digit In the number is {found_second_digit}')
+#print evaluation to find if True or False
+print(popoff1 == found_second_digit)
