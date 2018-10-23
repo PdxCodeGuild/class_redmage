@@ -87,7 +87,7 @@
 
 while True:
     to_meters = {"ft": .3048, "mi": 1609.34, "me": 1, "km": 1000, "yrd": .9144, "in": .0254}
-    
+
     user_distance = float(input("What is the distance? > "))
     
     distance_input = ''

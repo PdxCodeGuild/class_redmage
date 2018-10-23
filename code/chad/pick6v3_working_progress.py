@@ -9,6 +9,7 @@ returned_win_won = ()
 # How Many Times The Game Was Played
 counter = 0
 
+
 # Function To Pick Both The User and COmputer TIckets
 def get_choices():
     picked = []
@@ -17,9 +18,11 @@ def get_choices():
         picked.append(pick)
     return picked
 
-#Function To Calculate Wins
+
+# Function To Calculate Wins, total_won = {toal_wins0, ++How Many Picks Won}
 def money_calc(wins):
     money_balance = 0
+    total_won = {0:0, 0_won:1_won, 2_won:0, 3_won:, 4_won:0, 5_won:0, 6_won:0,}
     if wins == 0:
         money_balance -= 1
     elif wins == 1:
@@ -33,6 +36,7 @@ def money_calc(wins):
         print('You Won Big $50k')
         print(user_picked)
         print(computer_picked)
+
     elif wins == 5:
         money_balance += 1000000
         print('You Won Big $100k')
@@ -45,6 +49,7 @@ def money_calc(wins):
         print(user_picked)
         print(computer_picked)
     return money_balance
+
 
 # Function To See If There Are Any Winning Tickets
 def ifwon(user_picked, computer_picked):
@@ -60,7 +65,7 @@ def ifwon(user_picked, computer_picked):
 
 
 # Loop To Random Pick User Ticket and Random Pick COmputer Ticket
-for num2 in range(1000000000):
+for num2 in range(10000000):
     computer_picked = get_choices()
     user_picked = get_choices()
     returned_win_won = ifwon(user_picked, computer_picked)
@@ -68,18 +73,13 @@ for num2 in range(1000000000):
     counter += 1
     wins += returned_win_won[0]
     money_balance += returned_win_won[1]
-    f = open("/var/www/lottery_python/Lottery_Results.txt", "w+")
-    f.write(f"You won {wins} Times "
-            f"\nYou Now Have {money_balance} Dollars Total Money"
-            f"\nYou Have Played {counter} Many Times"
-            f"\nYour Average Win Rate is {money_balance / counter}")
+    #f = open("/var/www/lottery_python/Lottery_Results.txt", "w+")
+    #f.write(f"You won {wins} Times "
+            #f"\nYou Now Have {money_balance} Dollars Total Money"
+            #f"\nYou Have Played {counter} Many Times"
+            #f"\nYour Average Win Rate is {money_balance / counter}")
 
-    f.close()
-
-
-
-
-
+    #f.close()
 
 print(f'You Won {wins} Times')
 print(f'You Now Have {money_balance} Dollars Total Money')
@@ -87,52 +87,5 @@ print(f'You Have Played {counter} Many Times')
 print(f'Your Average is Win Rate is {money_balance / counter} ')
 
 
-<<<<<<< HEAD
-def computer_choices(computer_picked):
-    track_num = 1
-    while track_num < 7:
-        computer_pick = random.randint(0,100)
-        computer_picked.append(computer_pick)
-        track_num += 1
-        if track_num == 7:
-            return computer_picked
-
-def user_choices(user_picked):
-    track_num = 1
-    while track_num < 7:
-        user_pick = random.randint(0,100)
-        user_picked.append(user_pick)
-        track_num += 1
-        if track_num == 7:
-            return user_picked
-
-def ifwon(user_picked, computer_picked, wins):
-    if computer_picked[0] == user_picked[0]:
-        wins += 2
-    if computer_picked[1] == user_picked[1]:
-        wins += 1   
-    if computer_picked[2] == user_picked[2]:
-        wins += 1 
-    if computer_picked[3] == user_picked[3]:
-        wins += 1   
-    if computer_picked[4] == user_picked[4]:
-        wins += 1   
-    if computer_picked[5] == user_picked[5]:
-        wins += 1
-    return wins
 
 
-x = 0
-
-while x < 10000000:
-    print(user_choices(user_picked))
-    print(computer_choices(computer_picked))
-    print(ifwon(user_picked, computer_picked, wins))
-    x += 1
-
-print(f'You Won {wins} Times!!!')
-=======
->>>>>>> b2e7b67c556a0613e76ae9ca4d0b12daf2cdb8c3
-
-
-    
