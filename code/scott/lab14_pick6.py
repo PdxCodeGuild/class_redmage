@@ -88,4 +88,3 @@ if winner == True:
     print(f"Congratulations, you actually won! You only had to buy {tickets_bought} tickets to do it. You spent {total_spent}, and your total winnings are {total_won}. This brings your final balance to {balance}.")
 else:
     print(f"Congratulations, you managed to spend ${total_spent} buying {tickets_bought} tickets. Your total winnings: ${total_won}. This brings your final balance to {balance}.")
-

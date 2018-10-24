@@ -5,6 +5,7 @@ Full Stack Python Day Class 2018-10-15
 
 Lab 01 - Lab 15  
 Lab 17  
+Lab 18  
 Lab 19  
 Lab 20  
 
@@ -15,6 +16,9 @@ Practice 02
 Practice 03  
 
 ## Odds and Ends
+
+Python concept practice problems (may require registration, may not be Python 3)  
+http://www.asmarterwaytolearn.com/python/index-of-exercises.html
 
 Are exceptions good practice? (Includes list of exceptions and a lot of code philosophy)  
 https://stackoverflow.com/questions/16138232/is-it-a-good-practice-to-use-try-except-else-in-python

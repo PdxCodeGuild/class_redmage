@@ -18,7 +18,7 @@ while True:
             elif prev_guesses[-1] < user_guess:
                 print("Closer...")
         prev_guesses.append(user_guess)
-        guess_count = guess_count + 1
+        guess_count += 1
 
     elif int(user_guess) > rand_num:
         print("Too high! Guess again!")
@@ -28,10 +28,10 @@ while True:
             elif prev_guesses[-1] > user_guess:
                 print("Closer...")
         prev_guesses.append(user_guess)
-        guess_count = guess_count + 1
+        guess_count += 1
 
     elif int(user_guess) == rand_num:
         print("You got it!")
-        guess_count = guess_count + 1
+        guess_count += 1
         print(f"It took you {guess_count} tries to guess the number!")
         break
