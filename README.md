@@ -3,17 +3,30 @@ Full Stack Python Day Class 2018-10-15
 
 ## Python Labs Assigned:
 
-Lab 01  
-Lab 02  
-Lab 03  
-Lab 04  
-Lab 08  
-Lab 09  
+Lab 01 - Lab 15  
+Lab 17  
+Lab 19  
+Lab 20  
 
 ## Python Labs Optional:
 
+Practice 01  
+Practice 02  
+Practice 03  
 
 ## Odds and Ends
+
+Python concept practice problems (may require registration, may not be Python 3)  
+http://www.asmarterwaytolearn.com/python/index-of-exercises.html
+
+Are exceptions good practice? (Includes list of exceptions and a lot of code philosophy)  
+https://stackoverflow.com/questions/16138232/is-it-a-good-practice-to-use-try-except-else-in-python
+
+Official Python Style Guide (PEP 8)  
+https://www.python.org/dev/peps/pep-0008/
+
+PEP-8 Tutorial and Guide  
+https://www.datacamp.com/community/tutorials/pep8-tutorial-python-code
 
 Pitfalls of Floating Point Numbers and Work-Arounds  
 https://docs.python.org/3/tutorial/floatingpoint.html
