@@ -26,7 +26,7 @@ while len(jackalopes) < 1000:
             pair_count += 1 # breed them!
     pair_count //= 2
     for i in range(pair_count):
-        jackalopes.append(0)
+        jackalopes.extend([0, 0])
 
 
 print('Year: ', year)
