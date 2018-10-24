@@ -28,11 +28,11 @@ def visualization(x):
     while l > 0:
         for i in range(len(x)):
             if x[i]< l:
-                print(" ", sep= "  ",end=" ")
+                print(" ", end=" ")
             elif x[i] == l:
-                print("x", sep= "  ",end=" ")
+                print("x", end=" ")
             elif x[i] > l:
-                print("x",sep="  ",end=" ")
+                print("x",end=" ")
         print()
         l -= 1   
 
