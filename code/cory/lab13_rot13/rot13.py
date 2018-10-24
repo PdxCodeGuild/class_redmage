@@ -32,7 +32,7 @@ def rot13_decrypt(rotation):
     # Use .extend to pass the values of a list into rot13_list. If using  rot13_list.append(abc_list[x]), it makes a list inside a list.
     rot13_list.extend(abc_list[rotation:len(abc_list)] + abc_list[0:rotation]) 
 
-    # Create an encrypted dictionary, so when we ask the user what string they want to encrypt the dictionary will be ready and set. (a: n, b: o, c: p)
+    # Create an encrypted dictionary, so when we ask the user what string they want to decrypt the dictionary will be ready and set. (a: n, b: o, c: p)
     decryption_dictionary = {}
     for i in range(len(abc_list)):
         decryption_dictionary[rot13_list[i]] = abc_list[i]

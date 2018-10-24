@@ -25,14 +25,14 @@ print(latest_letter('pneumonoultramicroscopicsilicovolcanocovniosis'))
 '''
 
 # Problem 4 < NOT DONE
-'''
+# '''
 def count_hi(letter):
     x = letter.split()
     print(x)
     return letter.count(letter)
 
 print(count_hi('hihihi'))
-'''
+# '''
 
 # Problem 5
 
