@@ -17,6 +17,9 @@ Practice 03
 
 ## Odds and Ends
 
+All Algorithms implemented in Python  
+https://github.com/TheAlgorithms/Python
+
 Python concept practice problems (may require registration, may not be Python 3)  
 http://www.asmarterwaytolearn.com/python/index-of-exercises.html
 
