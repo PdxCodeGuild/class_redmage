@@ -14,6 +14,7 @@ Lab 20
 Practice 01  
 Practice 02  
 Practice 03  
+Practice 04  
 
 ## Odds and Ends
 
