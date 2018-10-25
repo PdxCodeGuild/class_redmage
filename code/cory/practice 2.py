@@ -24,7 +24,7 @@ def latest_letter(letter1):
 print(latest_letter('pneumonoultramicroscopicsilicovolcanocovniosis'))
 '''
 
-# Problem 4 < NOT DONE
+# Problem 4 < NOT DONE # Try using count method
 # '''
 def count_hi(letter):
     x = letter.split()
