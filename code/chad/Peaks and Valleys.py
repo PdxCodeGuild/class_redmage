@@ -50,39 +50,52 @@ def find_data_valleys(data):
 def graph(data,peak,valley):
     print(peak)
     print(valley)
-    print(data)
+    print(f'len of data {len(data)}')
+    print(f'len of data minus one{len(data)-1}')
     #counter for adding X's for graph purpose not for index or actual counting
     counter = 0
     graph_data = []
     for num in range(len(data)):
-        #If num is the first number put X in graph for starting point add one to counter
+        print(f'THe COunter is at {counter}')
         if num == 0:
             graph_data.append(counter+1)
             counter += 1
-            continue
-        #if data in index num is not in a peak of valley run this
-        if data[num] not in peak and data[num] not in valley:
-            if data[num] > data[num - 1]:
-                graph_data.append(counter+1)
-                counter += 1
-            elif data[num] < data[num-1]:
-                graph_data.append(counter-1)
-                counter -= 1
-        #if data in index num IS in a peak of valley run this
-        if data[num] in peak: 
-            graph_data.append(counter+1)
-            counter += 1
-
-        if data[num] in valley:
+            print('First Iteration adding one')
+        elif num == (len(data)-1):
+            print('you hit the end of the list')
+            break
+        elif data[num] < data[num-1] and data[num] > data[num+1]:
             graph_data.append(counter-1)
+            print(f'{num} is less than previous/ahead minus one')
             counter -= 1
+        elif data[num] == data[num-1]:
+            graph_data.append(counter)
+            print(f'{num} is same just adding the same x number')
+        elif data[num] > data[num-1] and data[num] < data[num+1]:
+            graph_data.append(counter+1)
+            print(f'{num} is more than previous adding one')
+            counter +=1
+        elif data[num] > data[num-1] and data[num] > data[num+1]:
+            graph_data.append(counter)
+            print(f'{num} you hit a peak')
+            counter += 1
+        elif data[num] < data[num-1] and data[num] < data[num+1]:
+            graph_data.append(counter-1)
+            print(f'{num} You hit a valley')
+            counter -=1
+
+
+
+        
     return graph_data
 
 #Fucntion Called from step 5 To Graph The Data, add to a mutable object and combine
 def graph_data(data):
-    collect_data = []
+    #collect_data = []
+    print(data)
     for num in data:
-        print('x'*num)
+        (print('\n'+'x' * num, end=''))
+    
         
     #collect_data = ''.join(collect_data)
     #print(collect_data)
@@ -107,6 +120,6 @@ print(f'You Found Valleys At Index Positions {found_data_valleys} In Your Data L
 
 #4. Call Function To Get Data For Grapshing Your Results
 get_graph_data = graph(got_user_data, found_data_peaks, found_data_valleys)
-
+print(get_graph_data)
 #5. Call Function TO Input Step 4 and concatinate X's into a string
-graph_data(get_graph_data)
+#graph_data(get_graph_data)
