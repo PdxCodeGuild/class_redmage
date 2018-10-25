@@ -51,18 +51,42 @@ def graph(data,peak,valley):
     print(peak)
     print(valley)
     print(data)
-    counter = 1
+    #counter for adding X's for graph purpose not for index or actual counting
+    counter = 0
     graph_data = []
     for num in range(len(data)):
-        #list index 
-        if num not in peak and num not in valley:
-            if data[num] > data[num-1]
+        #If num is the first number put X in graph for starting point add one to counter
+        if num == 0:
             graph_data.append(counter+1)
-            elif data[num] == 
-            
-        elif num in peak or num in valley:
-            graph_data.append(counter)
-    print(graph_data)
+            counter += 1
+            continue
+        #if data in index num is not in a peak of valley run this
+        if data[num] not in peak and data[num] not in valley:
+            if data[num] > data[num - 1]:
+                graph_data.append(counter+1)
+                counter += 1
+            elif data[num] < data[num-1]:
+                graph_data.append(counter-1)
+                counter -= 1
+        #if data in index num IS in a peak of valley run this
+        if data[num] in peak: 
+            graph_data.append(counter+1)
+            counter += 1
+
+        if data[num] in valley:
+            graph_data.append(counter-1)
+            counter -= 1
+    return graph_data
+
+#Fucntion Called from step 5 To Graph The Data, add to a mutable object and combine
+def graph_data(data):
+    collect_data = []
+    for num in data:
+        print('x'*num)
+        
+    #collect_data = ''.join(collect_data)
+    #print(collect_data)
+
 
 
 #Welcome Print Statemetn
@@ -81,5 +105,8 @@ found_data_valleys = find_data_valleys(got_user_data)
 #Print What the Valley Indexes Are
 print(f'You Found Valleys At Index Positions {found_data_valleys} In Your Data List')
 
-#4. Call Function To Graph Your Results
-graph(got_user_data, found_data_peaks, found_data_valleys)
+#4. Call Function To Get Data For Grapshing Your Results
+get_graph_data = graph(got_user_data, found_data_peaks, found_data_valleys)
+
+#5. Call Function TO Input Step 4 and concatinate X's into a string
+graph_data(get_graph_data)
