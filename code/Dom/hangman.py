@@ -233,8 +233,8 @@ while loop_flag:
 
             if user_guess not in guess_list:
                   guess_list.append(user_guess)
-            if user_guess not in word_answer:
-                  num_guess -= 1
+                  if user_guess not in word_answer:
+                        num_guess -= 1
             else:
                   guess_print = ", ".join(guess_list)
                   print(f"you already guessed {guess_print} ")
