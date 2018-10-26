@@ -8,6 +8,8 @@ Lab 17
 Lab 18  
 Lab 19  
 Lab 20  
+Mob - Jackalope  
+Group - Hangman
 
 ## Python Labs Optional:
 
