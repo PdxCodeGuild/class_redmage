@@ -58,5 +58,3 @@ while len(jack_list) > 0:
     # print(year)
     # print('\n')
     print(f"Year {year}, {len(jack_list)} is population.")
-
-
