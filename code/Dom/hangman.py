@@ -199,38 +199,56 @@ num_guess = 10
 
 loop_flag = True
 while loop_flag:
-    
-    #word_answer = random.choice(hangman_words)
-    # print(word_answer)
-    guess_string = ''
-    for l in word_answer:
-        if l in guess_list:
-            guess_string += l + " "
-        else:
-            guess_string += "_ "
+      
+      win_lose_flag = True # For winning and loosing
+      
+      guess_string = ''
+      for l in word_answer:
+            if l in guess_list:
+                  guess_string += l + " "
+            else:
+                  guess_string += "_ "
 
-    if guess_string.split() == list(word_answer):
-        print("\nYou win!\n")
-        print(guess_string.replace(" ","").upper())
-        break
+      if guess_string.split() == list(word_answer):
+            print("\nYou win!\n")
+            print(guess_string.replace(" ","").upper())
+            win_lose_flag = False
+      
 
-    print(HANGMANPICS[10-num_guess])
-    if num_guess == 0:
-        print(f'\nYou lose....the answer was {word_answer}\n')
-    
-        break
+      if num_guess == 0:
+            print(f'\nYou lose....the answer was {word_answer}\n')
+            win_lose_flag = False
+      
+      print(HANGMANPICS[10-num_guess])
 
-    print (guess_string)
-    print(f'You have {num_guess} guesses remaining')
-    user_guess = input("Guess a letter: ")
-    if len(user_guess) != 1:
-        user_guess = input("Guess a letter: ")
+      print(word_answer) # just for testing
+      
+      print (guess_string)
+      print(f'You have {num_guess} guesses remaining')
+      
+      if win_lose_flag == True:
+            user_guess = ''
+            while len(user_guess) != 1:
+                  user_guess = input("Guess a letter: ")
 
-    if user_guess not in guess_list:
-        guess_list.append(user_guess)
-    if user_guess not in word_answer:
-        num_guess -= 1
-    else:
-        guess_print = ", ".join(guess_list)
-        print(f"you already guessed {guess_print} ")
+            if user_guess not in guess_list:
+                  guess_list.append(user_guess)
+            if user_guess not in word_answer:
+                  num_guess -= 1
+            else:
+                  guess_print = ", ".join(guess_list)
+                  print(f"you already guessed {guess_print} ")
+
+      if win_lose_flag == False:
+            end_input = ''
+            while end_input != 'y' and end_input != 'n':
+                  end_input = input('Would you like to play again? (y/n) > ').lower()
+            
+            if end_input == 'y':
+                  word_answer = random.choice(hangman_words)
+                  guess_list = []
+                  num_guess = 10
+            else:
+                  loop_flag = False
+
 
