@@ -3,11 +3,7 @@ Full Stack Python Day Class 2018-10-15
 
 ## Python Labs Assigned:
 
-Lab 01 - Lab 15  
-Lab 17  
-Lab 18  
-Lab 19  
-Lab 20  
+Lab 01 - Lab 20  
 Mob - Jackalope  
 Group - Hangman
 
