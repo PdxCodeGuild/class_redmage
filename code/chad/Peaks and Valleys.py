@@ -1,4 +1,5 @@
 # Function from Step 1 to ask user for data and return data as a list
+
 def user_data():
     user_data = []
     while True:
@@ -48,10 +49,6 @@ def find_data_valleys(data):
 
 #Graph Results and Return to Step 4 from peaks and valley parameters in steps 1 and 2
 def graph(data,peak,valley):
-    print(peak)
-    print(valley)
-    print(f'len of data {len(data)}')
-    print(f'len of data minus one{len(data)-1}')
     #counter for adding X's for graph purpose not for index or actual counting
     counter = 0
     graph_data = []
@@ -68,21 +65,22 @@ def graph(data,peak,valley):
             graph_data.append(counter-1)
             print(f'{num} is less than previous/ahead minus one')
             counter -= 1
-        elif data[num] == data[num-1]:
-            graph_data.append(counter)
-            print(f'{num} is same just adding the same x number')
+        #elif data[num] == data[num-1]:
+            #graph_data.append(counter)
+            #print(f'{num} is same just adding the same x number')
         elif data[num] > data[num-1] and data[num] < data[num+1]:
             graph_data.append(counter+1)
             print(f'{num} is more than previous adding one')
             counter +=1
         elif data[num] > data[num-1] and data[num] > data[num+1]:
-            graph_data.append(counter)
+            graph_data.append(counter+1)
             print(f'{num} you hit a peak')
-            counter += 1
+            counter +=1
         elif data[num] < data[num-1] and data[num] < data[num+1]:
             graph_data.append(counter-1)
             print(f'{num} You hit a valley')
             counter -=1
+
 
 
 
@@ -92,10 +90,12 @@ def graph(data,peak,valley):
 #Fucntion Called from step 5 To Graph The Data, add to a mutable object and combine
 def graph_data(data):
     #collect_data = []
+    graph_char = 'x'
     print(data)
-    for num in data:
-        (print('\n'+'x' * num, end=''))
-    
+
+        #print(graph_char * num, end='  ')
+
+
         
     #collect_data = ''.join(collect_data)
     #print(collect_data)
@@ -122,4 +122,4 @@ print(f'You Found Valleys At Index Positions {found_data_valleys} In Your Data L
 get_graph_data = graph(got_user_data, found_data_peaks, found_data_valleys)
 print(get_graph_data)
 #5. Call Function TO Input Step 4 and concatinate X's into a string
-#graph_data(get_graph_data)
+graph_data(get_graph_data)
