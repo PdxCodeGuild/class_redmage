@@ -10,4 +10,5 @@ for x in new_set:
 
 
 
-#print(new_set)
+import string
+string.ascii_lette

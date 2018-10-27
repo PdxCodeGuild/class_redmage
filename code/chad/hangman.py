@@ -85,16 +85,19 @@ def new_word_blanks(game_word):
 def get_letter():
     while True:
         user_input = input("Enter a letter to play. ")
-        if user_input in string.asccii_letter and len(user_input) == 1:
-            user_input = user_input.upper
+        if user_input in string.ascii_letters and len(user_input) == 1:
+            user_input = user_input.upper()
             return user_input
         print("You did not enter a letter. Try again.")
+        print(user_input)
+        print(type(user_input))
 
 # word_blanks = word_blank(game_word)
 
 alphabet = string.ascii_uppercase
 
 numbers = string.digits
+
 
 # operations to start a fresh game
 win = False
@@ -110,8 +113,9 @@ print("Welcome to Hangman. Enter 'new' to start a new game. Enter 'quit' at any 
 # if they have not won or lost yet
 while win == False and loss == False:
 
-    # making sure the user has entered a single lette
+    # making sure the user has entered a single letter
     user_input = get_letter()
+    print(user_input)
 
     # letteting the user start a new game
     if user_input == "new":
@@ -127,13 +131,6 @@ while win == False and loss == False:
     elif user_input == "quit":
         SystemExit
 
-    if user_input in numbers:
-        continue
-    if len(user_input) != 1:
-        continue
-    else:
-        user_input = user_input.upper()
-        break
     # letting the user start a new game
 
     # checking for the letter has already been guessed
