@@ -44,7 +44,7 @@ def infecetd_disease(jack, i):
     is_isnot_infeceted = random.randint(0, 2)
     # Check If population is extinct
 
-    if jack['infected'] >= 3:
+    if jack['infected'] > 3:
         infectedtracker.append(jackalope_tracker.pop(i))
         #print('you had a infected jackolope')
         time.sleep(.2)
@@ -78,8 +78,9 @@ while flag:
             infecetd_disease(jackalope_tracker[i], i)
         #jackolopes are going extinct before the loop can run again. catch error
         except IndexError:
-            print(f'you are at index{i}, jack must have been infected/popped and same index called again which '
-                  f'doesnt exist anymore, catch error and keep going ')
+            print(f'you are at index{i}, jack must have been infected/popped at same index and then called again which '
+                  f'doesnt exist anymore, catch error and keep going since it is just a jackalope that died and not a '
+                  f'real error')
             print(jackalope_tracker)
             print('')
             time.sleep(3)
