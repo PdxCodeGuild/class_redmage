@@ -7,7 +7,8 @@ for i in range(width):
     for j in range(height):
         r, g, b = pixels[i, j]
 
-        #Y = 0.299 * R + 0.587 * G + 0.114 * B
+
+        Y = 0.299 * R + 0.587 * G + 0.114 * B
 
         pixels[i, j] = (r, g, b)
 

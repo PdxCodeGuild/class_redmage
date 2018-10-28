@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" beforeDir="false" afterPath="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" beforeDir="false" afterPath="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +26,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="1" />
-          <entry key="py" value="45" />
+          <entry key="py" value="47" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="18" />
         </counts>
@@ -34,7 +35,7 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="44" />
+          <entry key="Python" value="46" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -42,13 +43,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="97" />
-          <entry key="py" value="18446" />
+          <entry key="py" value="18508" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="97" />
-          <entry key="Python" value="18433" />
+          <entry key="Python" value="18495" />
           <entry key="Scratch" value="13" />
         </counts>
       </usages-collector>
@@ -61,7 +62,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
@@ -71,10 +72,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/_test.py">
+        <entry file="file://$PROJECT_DIR$/lab_16/lab_16_image_manip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="719">
+              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -125,9 +135,10 @@
         <option value="$PROJECT_DIR$/lab_15/number_to_phrase.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chadv2.py" />
-        <option value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
-        <option value="$PROJECT_DIR$/test/_test.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" />
+        <option value="$PROJECT_DIR$/test/_test.py" />
+        <option value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
+        <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" />
       </list>
     </option>
   </component>
@@ -178,7 +189,12 @@
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_16" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chad" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_17" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -211,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jackolope_done_by_chadv2">
+  <component name="RunManager" selected="Python.jackolope_done_by_chad">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,7 +270,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hangman" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="jackolope_done_by_chad" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,11 +278,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/group_mob" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hangman.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,18 +335,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.chad_jackalope" />
-      <item itemvalue="Python.hangman" />
       <item itemvalue="Python.lab_16_image_manip" />
       <item itemvalue="Python.jackolope_done_by_chadv2" />
       <item itemvalue="Python._test" />
+      <item itemvalue="Python.jackolope_done_by_chad" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jackolope_done_by_chad" />
+        <item itemvalue="Python.lab_16_image_manip" />
         <item itemvalue="Python.jackolope_done_by_chadv2" />
         <item itemvalue="Python._test" />
-        <item itemvalue="Python.lab_16_image_manip" />
         <item itemvalue="Python.chad_jackalope" />
-        <item itemvalue="Python.hangman" />
       </list>
     </recent_temporary>
   </component>
@@ -349,6 +365,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="23" width="1754" height="1341" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27708095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -423,24 +440,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_16/lab_16_image_manip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_16/lab_16_image_manip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
         </state>
       </provider>
     </entry>
