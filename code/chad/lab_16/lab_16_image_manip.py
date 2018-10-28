@@ -7,9 +7,6 @@ for i in range(width):
     for j in range(height):
         r, g, b = pixels[i, j]
 
-
-        Y = 0.299 * R + 0.587 * G + 0.114 * B
-
-        pixels[i, j] = (r, g, b)
-
+        y = 0.299*r + 0.587*b + 0.114*g
+        pixels[i, j] = (int(y), int(y),int(y))
 img.show()

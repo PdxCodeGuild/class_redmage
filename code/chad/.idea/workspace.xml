@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" beforeDir="false" afterPath="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_18/Peaks and Valleys.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_18/peaks_and_valleys.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,31 +28,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="1" />
-          <entry key="py" value="47" />
+          <entry key="py" value="51" />
           <entry key="pyi" value="1" />
-          <entry key="txt" value="18" />
+          <entry key="txt" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="46" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Python" value="50" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="97" />
-          <entry key="py" value="18508" />
+          <entry key="dummy" value="133" />
+          <entry key="py" value="20469" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="97" />
-          <entry key="Python" value="18495" />
-          <entry key="Scratch" value="13" />
+          <entry key="PLAIN_TEXT" value="133" />
+          <entry key="Python" value="20230" />
+          <entry key="Scratch" value="239" />
         </counts>
       </usages-collector>
     </session>
@@ -59,32 +61,36 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_16/lab_16_image_manip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="342">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py">
+        <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+            <state relative-caret-position="475">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab_21/text.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="1881" selection-start-line="1881" selection-end-line="1881" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" lean-forward="true" selection-end-line="1881" />
             </state>
           </provider>
         </entry>
@@ -133,17 +139,20 @@
         <option value="$PROJECT_DIR$/chad_jackalope.py" />
         <option value="$PROJECT_DIR$/jackolope_done_by_chad.py" />
         <option value="$PROJECT_DIR$/lab_15/number_to_phrase.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chadv2.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" />
-        <option value="$PROJECT_DIR$/test/_test.py" />
-        <option value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" />
+        <option value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
+        <option value="$PROJECT_DIR$/test/_test.py" />
+        <option value="$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/lab_21/text.txt" />
+        <option value="$PROJECT_DIR$/lab_21/lab_21v1.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
+    <option name="x" value="11" />
     <option name="y" value="23" />
     <option name="width" value="1754" />
     <option name="height" value="1341" />
@@ -189,12 +198,17 @@
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_16" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_18" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_17" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_21" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chad" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,11 +222,12 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/group_mob" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab_21" />
+      <recent name="$PROJECT_DIR$/group_mob" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -227,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jackolope_done_by_chad">
+  <component name="RunManager" selected="Python.lab_21v1">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,69 +256,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="chad_jackalope" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jackolope_done_by_chad.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="jackolope_done_by_chad" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/group_mob" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="jackolope_done_by_chadv2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/group_mob" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,20 +285,83 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lab_18_peaks_and_valleysv2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_18" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lab_21v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_21" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_21/lab_21v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.chad_jackalope" />
       <item itemvalue="Python.lab_16_image_manip" />
-      <item itemvalue="Python.jackolope_done_by_chadv2" />
       <item itemvalue="Python._test" />
-      <item itemvalue="Python.jackolope_done_by_chad" />
+      <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
+      <item itemvalue="Python.lab_21v1" />
+      <item itemvalue="Python.scratch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.jackolope_done_by_chad" />
-        <item itemvalue="Python.lab_16_image_manip" />
-        <item itemvalue="Python.jackolope_done_by_chadv2" />
+        <item itemvalue="Python.lab_21v1" />
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
         <item itemvalue="Python._test" />
-        <item itemvalue="Python.chad_jackalope" />
+        <item itemvalue="Python.lab_16_image_manip" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +379,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="23" width="1754" height="1341" extended-state="0" />
+    <frame x="11" y="23" width="1754" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27708095" />
@@ -430,9 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -441,7 +453,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/_test.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_18/peaks_and_valleys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="66" column="24" selection-end-line="124" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_16/lab_16_image_manip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -450,17 +494,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_16/lab_16_image_manip.py">
+    <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="646">
+          <caret line="34" lean-forward="true" selection-end-line="1881" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py">
+    <entry file="file://$PROJECT_DIR$/lab_21/text.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        <state relative-caret-position="810">
+          <caret line="1881" selection-start-line="1881" selection-end-line="1881" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
         </state>
       </provider>
     </entry>
