@@ -10,6 +10,8 @@ for i in range(width):
     for j in range(height):
         r, g, b = pixels[i, j]
 
+# This line is used for v1
+
         # y = int(0.299*r + 0.587*g + 0.114*b)        
         # # r = y
         # # b = y
@@ -17,6 +19,7 @@ for i in range(width):
 
         h, s, v = colorsys.rgb_to_hsv(r/255, g/255, b/255)
         
+# Changing the values in this region satisfies version 2.
 
         h +=0
         s +=0
