@@ -27,7 +27,7 @@ print(peaks_valleys(data))
 
 def landscaping(x):
     v = max(x)
-    # print(v)
+    print(f"The highest peak is a value: {v}!")
     while v > 0:
         time.sleep(.75)
         for i in range(len(x)-1):
