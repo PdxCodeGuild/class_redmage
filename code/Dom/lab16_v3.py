@@ -39,7 +39,6 @@ circle_radius = 10
 draw.ellipse((circle_x-circle_radius, circle_y-circle_radius, circle_x+circle_radius, circle_y+circle_radius), fill='black', outline='black')
 #the mouth
 draw.arc([200,100,300,175],50, 135, fill="black")
-)
 
 
 img.show()
