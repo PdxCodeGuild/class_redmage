@@ -31,7 +31,6 @@ if did_file_load:
         doc_characters = list(doc_characters)
         doc_characters.sort()
         doc_characters.reverse()
-
         # Removes all punctuation
         for punc in punct:
             for i in range((len(doc_characters)) - 1, 0, -1):
@@ -56,7 +55,7 @@ if did_file_load:
         doc_words = doc_words.split(' ')
         doc_words.sort()
         doc_words.reverse()
-        
+
         # Removes all spaces
         doc_words = no_spaces(doc_words)
         
