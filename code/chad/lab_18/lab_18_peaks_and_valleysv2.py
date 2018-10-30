@@ -58,15 +58,18 @@ def graph(data, peak, valley):
     # counter for adding X's for graph purpose not for index or actual counting
     counter = 0
     graph_data = []
-    max_in_data = max(data)
-    for i in data:
-        if i == max_in_data:
+    max_in_data = len(data)
+    #for i in range(len(data))
+    #    if data[i] < data[i]:
+     #       print('x'*max_in_data)
+    print(data)
+    print(max_in_data)
+    for i in range(len(data)):
+        if i == len(data)-1:
+            print('you got to the end of the list')
+            break
+        if data[i] < data[i+1]:
             print('x')
-        elif i != max_in_data:
-            print(' ', end=' ')
-        if i < data[i-1]
-
-
     #for num in range(len(data)):
     #for i in data:
         #print('x'* i)

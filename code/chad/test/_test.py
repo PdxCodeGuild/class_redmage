@@ -1,2 +1,4 @@
-user_data = [4,5,6,7,6,5,4,3,4,5,6,5,4,3,2,3,4,3]
-
+    for i in range(len(word_count)):
+        for text in word_count[i]:
+            if '\n' in text:
+                word_count[i] = word_count[i].replace('\n', '')
