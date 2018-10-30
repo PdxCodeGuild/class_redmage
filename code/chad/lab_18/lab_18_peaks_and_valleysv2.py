@@ -55,25 +55,26 @@ def find_data_valleys(data):
 
 # Graph Results and Return to Step 4 from peaks and valley parameters in steps 1 and 2
 def graph(data, peak, valley):
+    #user_data = [4,5,6,7,6,5,4,3,4,5,6,5,4,3,2,3,4,3]
     # counter for adding X's for graph purpose not for index or actual counting
     counter = 0
     graph_data = []
-    max_in_data = len(data)
-    #for i in range(len(data))
-    #    if data[i] < data[i]:
-     #       print('x'*max_in_data)
+    max_data = max(data)
+    
     print(data)
-    print(max_in_data)
-    for i in range(len(data)):
-        if i == len(data)-1:
-            print('you got to the end of the list')
-            break
-        if data[i] < data[i+1]:
-            print('x')
-    #for num in range(len(data)):
-    #for i in data:
-        #print('x'* i)
-
+    print(max_data)
+    # Loop over each index position
+    while max_data > 0:
+        for i in range(len(data)):
+            #compare value with max of value and plot x's
+            if i < 1:
+                print('', end='')
+            elif i == 1:
+                print('X', end='')
+            elif i > 1:
+                print('X', end='')
+        
+    max_data -= 1    
     return graph_data
 
 
