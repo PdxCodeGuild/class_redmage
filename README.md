@@ -5,6 +5,7 @@ Full Stack Python Day Class 2018-10-15
 
 Lab 01 - Lab 20  
 Lab 22  
+Lab 23  
 Mob - Jackalope  
 Group - Hangman
 
@@ -14,6 +15,7 @@ Practice 01
 Practice 02  
 Practice 03  
 Practice 04  
+Practice 05  
 
 ## Odds and Ends
 
