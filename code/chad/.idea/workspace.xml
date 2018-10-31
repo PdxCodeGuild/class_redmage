@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="" />
+    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/_test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +25,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="1" />
-          <entry key="py" value="51" />
+          <entry key="py" value="52" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="22" />
         </counts>
@@ -31,7 +34,7 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="50" />
+          <entry key="Python" value="51" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -39,13 +42,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="133" />
-          <entry key="py" value="20469" />
+          <entry key="py" value="20672" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="133" />
-          <entry key="Python" value="20230" />
+          <entry key="Python" value="20433" />
           <entry key="Scratch" value="239" />
         </counts>
       </usages-collector>
@@ -63,10 +66,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+        <entry file="file://$PROJECT_DIR$/test/_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="133">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -84,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="34" lean-forward="true" selection-end-line="1881" />
+              <caret line="34" selection-end-line="1881" />
             </state>
           </provider>
         </entry>
@@ -137,17 +140,17 @@
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" />
         <option value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
-        <option value="$PROJECT_DIR$/test/_test.py" />
         <option value="$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/lab_21/text.txt" />
         <option value="$PROJECT_DIR$/lab_21/lab_21v1.py" />
+        <option value="$PROJECT_DIR$/test/_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="23" />
+    <option name="x" value="516" />
+    <option name="y" value="26" />
     <option name="width" value="1754" />
     <option name="height" value="1341" />
   </component>
@@ -226,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lab_21v1">
+  <component name="RunManager" selected="Python._test">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,10 +344,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._test" />
         <item itemvalue="Python.lab_21v1" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
-        <item itemvalue="Python._test" />
         <item itemvalue="Python.lab_16_image_manip" />
       </list>
     </recent_temporary>
@@ -363,14 +366,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="23" width="1754" height="1341" extended-state="0" />
+    <frame x="1096" y="26" width="1754" height="1341" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27708095" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27708095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31259844" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31259844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,13 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab_18/peaks_and_valleys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -480,7 +476,7 @@
     <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="34" lean-forward="true" selection-end-line="1881" />
+          <caret line="34" selection-end-line="1881" />
         </state>
       </provider>
     </entry>
@@ -491,6 +487,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -498,10 +501,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+    <entry file="file://$PROJECT_DIR$/test/_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="133">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
