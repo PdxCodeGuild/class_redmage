@@ -1,4 +1,1 @@
-name, address, address 2, city, state, zip, phone, email
-Chad Bean, 1516 NE Hancock, Apt 402, Portland, OR, 97202, 310-867-5182, crb4u@yahoo.com
-Robert Bean, 2520 Larkinwood Dr, , Missoula, MT 59804, 406-327-8444, robean12@yahoo.com
-Jessica Bean, 120 South Grove St, Apt 6, Missoula, MT, 59804, 808-265-0668, bean.jessica@gmail.com
+name,address,address 2,city,state,zip,phone,emailChad Bean,1516 NE Hancock,Apt 402,Portland,OR,97202,310-867-5182,crb4u@yahoo.comRobert Bean,2520 Larkinwood Dr,(address line 2),Missoula,MT,59804,406-327-8444,robean12@yahoo.comJessica Bean,120 South Grove St,Apt 6,Missoula,MT,59804,808-265-0668,bean.jessica@gmail.com

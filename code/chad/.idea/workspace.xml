@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_23/contact_list.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lab_23/contact_list.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_23/lab_23v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_23/lab_23v1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="csv" value="2" />
           <entry key="png" value="1" />
-          <entry key="py" value="52" />
+          <entry key="py" value="54" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="22" />
         </counts>
@@ -33,22 +36,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="51" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Python" value="53" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="csv" value="28" />
           <entry key="dummy" value="133" />
-          <entry key="py" value="20672" />
+          <entry key="py" value="26583" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="133" />
-          <entry key="Python" value="20433" />
+          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="Python" value="26344" />
           <entry key="Scratch" value="239" />
         </counts>
       </usages-collector>
@@ -66,28 +70,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-end-line="67" />
+              <folding>
+                <marker date="1541023688000" expanded="true" signature="3104:3730" ph="..." />
+                <marker date="1541023688000" expanded="true" signature="3751:4407" ph="..." />
+                <marker date="1541023688000" expanded="true" signature="4428:4433" ph="..." />
+                <marker date="1541023688000" expanded="true" signature="5067:5271" ph="..." />
+                <marker date="1541023688000" expanded="true" signature="5282:5287" ph="..." />
+                <marker date="1541023688000" expanded="true" signature="5298:6348" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab_23/contact_list_save.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_21/text.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="1881" selection-start-line="1881" selection-end-line="1881" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" selection-end-line="1881" />
+            <state relative-caret-position="57">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -145,13 +166,16 @@
         <option value="$PROJECT_DIR$/lab_21/text.txt" />
         <option value="$PROJECT_DIR$/lab_21/lab_21v1.py" />
         <option value="$PROJECT_DIR$/test/_test.py" />
+        <option value="$PROJECT_DIR$/lab_23/contact_list_save.csv" />
+        <option value="$PROJECT_DIR$/lab_23/contact_list.csv" />
+        <option value="$PROJECT_DIR$/lab_23/lab_23v1.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="26" />
-    <option name="width" value="1754" />
+    <option name="x" value="204" />
+    <option name="y" value="23" />
+    <option name="width" value="2139" />
     <option name="height" value="1341" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -195,6 +219,11 @@
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_23" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chad" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -229,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._test">
+  <component name="RunManager" selected="Python.lab_23v1">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,27 +272,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab_16_image_manip" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,6 +322,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lab_23v1" type="PythonConfigurationType" factoryName="Python">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_23" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_23/lab_23v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,7 +365,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.lab_16_image_manip" />
+      <item itemvalue="Python.lab_23v1" />
       <item itemvalue="Python._test" />
       <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
       <item itemvalue="Python.lab_21v1" />
@@ -348,7 +377,6 @@
         <item itemvalue="Python.lab_21v1" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
-        <item itemvalue="Python.lab_16_image_manip" />
       </list>
     </recent_temporary>
   </component>
@@ -366,14 +394,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1096" y="26" width="1754" height="1341" extended-state="0" />
+    <frame x="204" y="23" width="2139" height="1341" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27708095" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31259844" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31496063" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,6 +501,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -487,10 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+    <entry file="file://$PROJECT_DIR$/test/_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="57">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -501,10 +536,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/_test.py">
+    <entry file="file://$PROJECT_DIR$/lab_23/contact_list_save.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="57">
+          <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-end-line="67" />
+          <folding>
+            <marker date="1541023688000" expanded="true" signature="3104:3730" ph="..." />
+            <marker date="1541023688000" expanded="true" signature="3751:4407" ph="..." />
+            <marker date="1541023688000" expanded="true" signature="4428:4433" ph="..." />
+            <marker date="1541023688000" expanded="true" signature="5067:5271" ph="..." />
+            <marker date="1541023688000" expanded="true" signature="5282:5287" ph="..." />
+            <marker date="1541023688000" expanded="true" signature="5298:6348" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
