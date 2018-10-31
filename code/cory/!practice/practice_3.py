@@ -89,6 +89,10 @@ def print_every_other(nums):
     return out_list
 
 print(print_every_other(nums))
+
+
+def print_every_other(nums)
+    while len(nums) > 4: 
 '''
 
 # Problem 5
@@ -104,4 +108,34 @@ print(reverse(nums))
 '''
 
 # Problem 6
+'''
+nums = [0, 5, 22, 45, 50, 23, 1]
+def extract_less_than_ten(nums):
 
+    new_list = []
+    for i in range(len(nums) - 1, -1, -1):
+        if nums[i] < 10:
+            x = nums.pop(i)
+            new_list.append(x)    
+    return new_list
+
+print(nums)
+print(extract_less_than_ten(nums))
+'''
+
+# Problem 7
+# Write a function to find all common elements between two lists.
+
+nums1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+nums2 = [1, 3, 5, 7, 9]
+
+def common_elements(nums1, nums2):
+    new_list = []
+    for i in nums2:
+        for i in nums1:
+            if nums2[i] == nums1[i]:
+                new_list.append(nums1[i])
+
+    return new_list
+
+print(common_elements(nums1, nums2))
