@@ -16,6 +16,10 @@ Practice 02
 Practice 03  
 Practice 04  
 Practice 05  
+  
+Optional - LCR Simulator  
+Optional - Road Trip  
+Optional - Sock Sorter  
 
 ## Odds and Ends
 
