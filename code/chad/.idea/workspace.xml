@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_23/contact_list.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lab_23/contact_list.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_23/lab_23v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_23/lab_23v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/practice_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice/practice_strings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
         <counts>
           <entry key="csv" value="2" />
           <entry key="png" value="1" />
-          <entry key="py" value="56" />
+          <entry key="py" value="57" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="22" />
         </counts>
@@ -36,7 +36,7 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="55" />
+          <entry key="Python" value="56" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -45,13 +45,13 @@
         <counts>
           <entry key="csv" value="28" />
           <entry key="dummy" value="133" />
-          <entry key="py" value="29240" />
+          <entry key="py" value="29746" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="161" />
-          <entry key="Python" value="28992" />
+          <entry key="Python" value="29498" />
           <entry key="Scratch" value="248" />
         </counts>
       </usages-collector>
@@ -68,20 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_23/contact_list_save.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" selection-end-column="91" />
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -89,8 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab_23/lab_23v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+            <state relative-caret-position="510">
+              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="35" column="39" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="88">
+              <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -160,14 +160,15 @@
         <option value="$PROJECT_DIR$/test/_test.py" />
         <option value="$PROJECT_DIR$/lab_23/lab_23v1.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
-        <option value="$PROJECT_DIR$/lab_23/lab_23v3.py" />
         <option value="$PROJECT_DIR$/lab_23/contact_list.csv" />
+        <option value="$PROJECT_DIR$/lab_23/lab_23v3.py" />
+        <option value="$PROJECT_DIR$/practice/practice_strings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
-    <option name="y" value="23" />
+    <option name="x" value="758" />
+    <option name="y" value="36" />
     <option name="width" value="2139" />
     <option name="height" value="1341" />
   </component>
@@ -256,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lab_23v3">
+  <component name="RunManager" selected="Python.practice_strings">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -270,27 +271,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab_18_peaks_and_valleysv2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_18" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,6 +342,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="practice_strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/practice_strings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -386,18 +387,18 @@
     <list>
       <item itemvalue="Python.lab_23v1" />
       <item itemvalue="Python._test" />
-      <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
       <item itemvalue="Python.lab_21v1" />
       <item itemvalue="Python.scratch" />
       <item itemvalue="Python.lab_23v3" />
+      <item itemvalue="Python.practice_strings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.practice_strings" />
         <item itemvalue="Python.lab_23v3" />
         <item itemvalue="Python._test" />
         <item itemvalue="Python.lab_21v1" />
         <item itemvalue="Python.scratch" />
-        <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
       </list>
     </recent_temporary>
   </component>
@@ -415,7 +416,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="23" width="2139" height="1341" extended-state="0" />
+    <frame x="758" y="36" width="2139" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
@@ -558,20 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab_23/contact_list_save.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -579,10 +566,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>

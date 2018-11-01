@@ -16,15 +16,25 @@ print(double(user_input))
 '''
 import random
 user_input = input('Give Me A String? >')
-
+trackList = []
 def remove(x):
     new_list = []
-    for num in range(5):
+    while True:
         old_list = list(x)
-        old_list.pop(random.sample(old_list, 3))
+        random_number = random.randint(0, len(old_list)-1)
+        print(f'Current Tracklist is {trackList}')
+        print(random_number)
+        if random_number not in trackList:
+            print(random_number)
+            trackList.append(random_number)
+            old_list[random_number] = old_list.pop()
+        if random_number in trackList:
+            continue
         print(old_list)
         join_list = ''.join(old_list)
         new_list.append(join_list)
+        if len(trackList) == len(old_list):
+            break
     print(new_list)
     return new_list
 
