@@ -3,10 +3,9 @@
 # Create list for first digit, and another for second digit (ten, twenty, thirty), (one, two, three)
 def conversion(number):
 
-    hundreds_list = ['', 'One Hundred', 'Two Hundred', 'Three Hundred', 'Four Hundred', 'Five Hundred', 'Six Hundred', 'Seven Hundred', 'Eight Hundred', 'Nine Hundred']
-    tens_list = ['', 'Ten', 'Twenty', 'Thirty', 'Fourty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Nienty']
-    ones_list = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
-    teens_list = ['', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen']
+    hundreds_list = ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM']
+    tens_list = ['', 'X', 'XX', 'XXX', 'XXL', 'L', 'LX', 'LXX', 'LXXX', 'XC']
+    ones_list = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
 
     hundreds_digit = number // 100
 
@@ -16,9 +15,6 @@ def conversion(number):
     tens_digit = number // 10
     ones_digit = number % 10
 
-    # If number is a teen number:
-    if number >= 11 and number <= 19:
-        return ' '.join([hundreds_list[hundreds_digit], teens_list[ones_digit]])
     # If number ends in a whole tens number (ex 150)
     if ones_digit == 0:
         return ' '.join([hundreds_list[hundreds_digit], tens_list[tens_digit]])
@@ -31,9 +27,8 @@ def conversion(number):
     # Ask for user input
 
 end_flag = False
-
 while end_flag == False:
-    number = int(input("What number would you like to convert to english? (0 to 99)> "))
+    number = int(input("What number would you like to convert to Roman Numerals? (0 to 999)> "))
     print(f"The number you chose was {conversion(number)}")
 
     loop_flag = True
