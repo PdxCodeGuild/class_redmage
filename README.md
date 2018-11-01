@@ -11,15 +11,18 @@ Group - Hangman
 
 ## Python Labs Optional:
 
+###### Strongly Recommended:
 Practice 01  
 Practice 02  
 Practice 03  
 Practice 04  
 Practice 05  
-  
+Lab 24
+
+###### Optional Labs:
 Optional - LCR Simulator  
 Optional - Road Trip  
-Optional - Sock Sorter  
+Optional - Sock Sorter
 
 ## Odds and Ends
 
