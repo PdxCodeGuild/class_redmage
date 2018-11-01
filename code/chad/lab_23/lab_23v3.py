@@ -1,10 +1,12 @@
 import time, string
 
-#Contact template To Be Used For File Operations
-contact_template = ('name', 'address', 'address 2', 'city', 'state', 'zip', 'phone', 'email')
+# Contact template To Be Used For File Operations
+contact_template = ('name','address','address 2','city','state','zip','phone','email')
+
+# Final List is the list that the program runs off of, it is the current contact list util it gets saved
 final_list = []
 
-#Open File and close after saving as contact_list
+#Open File and close after saving as contact_list variable, return contact list to the call
 def open_file():
     with open('contact_list.csv', 'r') as contacts:
         contact_list = contacts.read().split('\n')
@@ -21,10 +23,6 @@ def parse_file(contact_list):
     for element in contact_list:
         element = split_list.append(element.split(','))
 
-# Need to take each sublist under list index[0] which is our column descriptions
-# put into a new_list of dictionaries by index position
-
-#final_list.append([{split_list[0][i]: split_list[i][i]} for element in split_list[1:] for i in range(len(element)-1)])
 
 #For each element (which each element is a list of elements), itterate through top level element in the list
 # and for each top level element iterate through each subelement and create a temp dictionary called start_dict,
@@ -38,6 +36,9 @@ def parse_file(contact_list):
 
 def save_file():
     write_list = ''
+    #Write the template back to the top of the csv
+    write_list += ','.join(contact_template)
+    write_list += '\n'
     for element in final_list:
         element_list = element.values()
         write_list += ','.join(element_list)
@@ -144,6 +145,7 @@ def menu():
               '\t 3. Update An Existing Record?\n'
               '\t 4. Delete A Existing Record?\n'
               '\t 5. Print All Contact Records?\n'
+              '\t 6. Save and Quit Program!!!!?\n'
               "Type 'end', 'quit', 'q', 'exit', 'done' To Exit This Program")
         if user_input == '1':
             add_new_contact()
@@ -155,17 +157,20 @@ def menu():
         elif user_input == '4':
             delete_contact()
         elif user_input == '5':
-            print(print_all_contacts())
+            print_all_contacts()
+        elif user_input == '6':
+            save_file()
+            quit()
         else:
             if user_input != ('1', '2', '3', '4', '5'):
                 print(f'\n\n\n\nYou Typed An Invalid Number\n')
                 time.sleep(3)
 
-#Step 1 open the file, read, store in variable return and close.
+# Step 1 open the file, read, store in variable return and close.
 contact_list = open_file()
 # Step 2 parse the file into a list of dictionaries to be used by the program
 contact_list = parse_file(contact_list)
-#Step 3 Run the program and startup the menu
+# Step 3 Run the program and startup the menu
 menu()
 
 
