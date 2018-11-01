@@ -2,6 +2,7 @@ import time, string
 
 #Contact template To Be Used For File Operations
 contact_template = ('name', 'address', 'address 2', 'city', 'state', 'zip', 'phone', 'email')
+final_list = []
 
 #Open File and close after saving as contact_list
 def open_file():
@@ -11,14 +12,12 @@ def open_file():
     return  contact_list
 
 
-
-
-
 #From the open file we get a contact list with a list of long string line including commas such as
 #'name, address, address 2, city, state, zip, phone, email', com',.... new string
 #even though there are commas seperating name, address, ect it is one string
 #Need to split each element in the list of long strings a new list based on the ',' commas
 def parse_file(contact_list):
+    split_list = []
     for element in contact_list:
         element = split_list.append(element.split(','))
 
@@ -41,29 +40,23 @@ def save_file():
     write_list = ''
     for element in final_list:
         element_list = element.values()
-        write_list = ','.join(element_list)
-    print(f'Here is the final list to write {write_list}')
+        write_list += ','.join(element_list)
+        write_list += '\n'
+    print(f'Here is the final list to write \n{write_list}')
     with open('contact_list.csv','w') as contacts:
         contacts.write(write_list)
     contacts.close()
 
 def add_new_contact():
+    #Decided to use a count instead of length since appending immediatly and not storing in a list to count first
     count = 0
     while True:
         ask_another = input('Would You Like To Add A New Contact?').lower()
-        if ask_another in ('end', 'quit', 'q', 'exit', 'done', 'no'):
+        if ask_another in ('end', 'quit', 'q', 'exit', 'done', 'no', 'n'):
             print('You Have Finished Entering Contacts!!')
+            break
             if count == 0:
                 return print('You Have Not Added Any Contacts')
-            return {contact_template[0]:add_name,
-                    contact_template[1]:add_address1,
-                    contact_template[2]:add_address2,
-                    contact_template[3]:add_city,
-                    contact_template[4]:add_state,
-                    contact_template[5]:add_zip,
-                    contact_template[6]:add_phone,
-                    contact_template[7]:add_email
-                    }
         else:
             add_name = input('Please Enter The Full Name Of Your Contact: > ').capitalize()
             add_address1 = input('Please Enter The First Address Line Of Your Contact: > ').capitalize()
@@ -73,7 +66,18 @@ def add_new_contact():
             add_zip = input('Please Enter The Zip Of Your Contact: > ')
             add_phone = input('Please Enter The Phone Of Your Contact: > ')
             add_email = input('Please Enter The Email Of Your Contact: > ')
+            final_list.append({contact_template[0]: add_name,
+                               contact_template[1]: add_address1,
+                               contact_template[2]: add_address2,
+                               contact_template[3]: add_city,
+                               contact_template[4]: add_state,
+                               contact_template[5]: add_zip,
+                               contact_template[6]: add_phone,
+                               contact_template[7]: add_email
+                               })
+            #If else runs and user types intput increase count so begining of loop doesnt kick you out
             count += 1
+    save_file()
 
 def retrieve_contact():
     #Setup A Temporary List To Return Back To Call Once Completed
@@ -117,7 +121,7 @@ def delete_contact():
         if final_ask in ('y', 'yes'):
             popped_contact = final_list.pop(contact_input)
             print(f'\n\nYou Deleted {popped_contact}\n From Your Contacts')
-
+    save_file()
 def print_all_contacts():
     temp_list = []
     contact_number = 0
@@ -160,7 +164,7 @@ def menu():
 #Step 1 open the file, read, store in variable return and close.
 contact_list = open_file()
 # Step 2 parse the file into a list of dictionaries to be used by the program
-parse_file(contact_list)
+contact_list = parse_file(contact_list)
 #Step 3 Run the program and startup the menu
 menu()
 

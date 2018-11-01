@@ -30,6 +30,16 @@ for element in split_list[1:]:
         start_dict.update(({split_list[0][i]: element[i]}))
     final_list.append(start_dict)
 
+def save_file():
+    write_list =
+    for element in final_list:
+        element_list = element.values()
+        write_list = ','.join(element_list)
+    print(f'Here is the final list to write {write_list}')
+    with open('contact_list.csv','w') as contacts:
+        contacts.write(write_list)
+    contacts.close()
+
 def add_new_contact():
     count = 0
     while True:
@@ -73,11 +83,7 @@ def retrieve_contact():
     if len(temp_list) == 0:
         print('There Were No Matches')
     if len(temp_list) > 0:
-
         return [elem for i in temp_list for elem in i]
-
-
-
 
 def update_contact():
     print(print_all_contacts())
@@ -91,6 +97,7 @@ def update_contact():
             value_change = input('What Is The Updated Value?')
             final_list[int(contact_input)][update_element] = value_change
             print(f'\n\n\nHere Is The Changed Contact: \n {(final_list[int(contact_input)])}')
+    save_file()
 
 def delete_contact():
     print(print_all_contacts())
