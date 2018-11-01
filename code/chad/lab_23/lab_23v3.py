@@ -1,7 +1,7 @@
 import time, string
 
 # Contact template To Be Used For File Operations
-contact_template = ('name','address','address 2','city','state','zip','phone','email')
+contact_template = ('name', 'address', 'address 2', 'city', 'state', 'zip', 'phone', 'email')
 
 # Final List is the list that the program runs off of, it is the current contact list util it gets saved
 final_list = []
@@ -11,7 +11,7 @@ def open_file():
     with open('contact_list.csv', 'r') as contacts:
         contact_list = contacts.read().split('\n')
     contacts.close()
-    return  contact_list
+    return contact_list
 
 
 #From the open file we get a contact list with a list of long string line including commas such as
@@ -21,8 +21,12 @@ def open_file():
 def parse_file(contact_list):
     split_list = []
     for element in contact_list:
-        element = split_list.append(element.split(','))
-
+        split_list.append(element.split(','))
+    for index in split_list:
+        for element in index:
+            if len(element) == 0:
+                # Looping through elements and pop from list if == len 0
+                split_list.pop()
 
 #For each element (which each element is a list of elements), itterate through top level element in the list
 # and for each top level element iterate through each subelement and create a temp dictionary called start_dict,
@@ -33,15 +37,15 @@ def parse_file(contact_list):
             start_dict.update(({split_list[0][i]: element[i]}))
         final_list.append(start_dict)
 
-
 def save_file():
+    print(final_list)
     write_list = ''
     #Write the template back to the top of the csv
     write_list += ','.join(contact_template)
     write_list += '\n'
     for element in final_list:
-        element_list = element.values()
-        write_list += ','.join(element_list)
+        element = element
+        write_list += ','.join(element)
         write_list += '\n'
     print(f'Here is the final list to write \n{write_list}')
     with open('contact_list.csv','w') as contacts:
@@ -51,6 +55,8 @@ def save_file():
 def add_new_contact():
     #Decided to use a count instead of length since appending immediatly and not storing in a list to count first
     count = 0
+    #temp_list of dictionaries to get saved when finished
+    temp_list = []
     while True:
         ask_another = input('Would You Like To Add A New Contact?').lower()
         if ask_another in ('end', 'quit', 'q', 'exit', 'done', 'no', 'n'):
@@ -67,7 +73,7 @@ def add_new_contact():
             add_zip = input('Please Enter The Zip Of Your Contact: > ')
             add_phone = input('Please Enter The Phone Of Your Contact: > ')
             add_email = input('Please Enter The Email Of Your Contact: > ')
-            final_list.append({contact_template[0]: add_name,
+            temp_list.append({contact_template[0]: add_name,
                                contact_template[1]: add_address1,
                                contact_template[2]: add_address2,
                                contact_template[3]: add_city,
@@ -78,6 +84,7 @@ def add_new_contact():
                                })
             #If else runs and user types intput increase count so begining of loop doesnt kick you out
             count += 1
+    final_list.append(temp_list)
     save_file()
 
 def retrieve_contact():
@@ -170,6 +177,7 @@ def menu():
 contact_list = open_file()
 # Step 2 parse the file into a list of dictionaries to be used by the program
 contact_list = parse_file(contact_list)
+
 # Step 3 Run the program and startup the menu
 menu()
 
