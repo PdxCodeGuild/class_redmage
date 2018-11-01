@@ -38,14 +38,14 @@ def parse_file(contact_list):
         final_list.append(start_dict)
 
 def save_file():
-    print(final_list)
+    print(f'final list at the top of save file{final_list}')
     write_list = ''
     #Write the template back to the top of the csv
     write_list += ','.join(contact_template)
     write_list += '\n'
     for element in final_list:
-        element = element
-        write_list += ','.join(element)
+        element_list = element.values()
+        write_list += ','.join(element_list)
         write_list += '\n'
     print(f'Here is the final list to write \n{write_list}')
     with open('contact_list.csv','w') as contacts:
@@ -73,7 +73,7 @@ def add_new_contact():
             add_zip = input('Please Enter The Zip Of Your Contact: > ')
             add_phone = input('Please Enter The Phone Of Your Contact: > ')
             add_email = input('Please Enter The Email Of Your Contact: > ')
-            temp_list.append({contact_template[0]: add_name,
+            final_list.append({contact_template[0]: add_name,
                                contact_template[1]: add_address1,
                                contact_template[2]: add_address2,
                                contact_template[3]: add_city,
@@ -84,7 +84,7 @@ def add_new_contact():
                                })
             #If else runs and user types intput increase count so begining of loop doesnt kick you out
             count += 1
-    final_list.append(temp_list)
+
     save_file()
 
 def retrieve_contact():
