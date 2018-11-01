@@ -31,7 +31,7 @@ for i in range(0,(len(word_list) -1)):
 # for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
 #     print(words[i])
 word_find = input(f"Type in a word to find the words which most frequently follow it in {path}: ").lower()
-words_found = {k:v for k, v in word_dict.items() if word_find == k[0]}
+words_found = {k:v for k, v in word_dict.items() if word_find == k[0]} # looks for input word in the first place in tuple keys saves as new dict
 found = list(words_found.items())
 found.sort(key=lambda tup: tup[1], reverse=True)
 for i in range(min(10, len(found))):  # print the top 10 words, or all of them, whichever is smaller
