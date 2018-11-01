@@ -56,14 +56,27 @@ def remove_blanks_check(new_book):
     return new_book
 
 #Sort List and make into dictionary with how many words exist
-def make_dict(new_book):
+def find10(new_book):
     new_book = sorted(new_book)
-    for i in new_book:
-        print(f'You found {new_book.count(i)} of {i}')
-        input()
+    
+    #Store the finds from the loop below in a temp dictionary before returning
+    temp_dic = []
 
-    #for i in range(len(new_book)):
-     #   if 
+    #Count Instances of Words and Append to list
+    for i in new_book:
+        count = new_book.count(i)
+        temp_dic.append((count, i))
+
+    make_list = list(temp_dic)
+    
+    make_set = set((make_list))
+    make_set = sorted(make_set, reverse=True)
+
+    # Loop Through Last 10 Items and return
+    
+    for item in make_set[0:10]:
+        print(item)
+     
 
 #Call function rem_puc to lowercase and remove puctuation and return into a list
 new_book = rem_punc(data)
@@ -75,13 +88,7 @@ new_book = rem_newlines(new_book)
 new_book = remove_blanks_check(new_book)
 
 #Take words Sort and put in dictionary with value how many times they appear
-make_dictionary = make_dict(new_book)
+make_dictionary = find10(new_book)
 
-#Print List Of Words
-#print(new_book)
 
-#Print Dictionary Word COunt
-#print(make_dictionary)
-
-#Print How Many BLanks Popped out
 print(f'You popped {len(count_popped_blanks)} Blanks')
