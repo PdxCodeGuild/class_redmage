@@ -7,7 +7,7 @@ Lab 01 - Lab 23
 Lab 25  
 Mob - Jackalope  
 Group - Hangman  
-Tuesday 11/13: Presentations for eith Lab 26 OR your own custom project utilizing the Python library of your choice
+Tuesday 11/13: Presentations for either Lab 26 OR your own custom project utilizing the Python library of your choice
 
 ## Python Labs Optional:
 
