@@ -163,7 +163,7 @@ import math
 class Rotator:
     
     def __init__(self, alpha):
-        self.setAlpha(alpha)
+        self.set_alpha(alpha)
     
     def set_alpha(self, alpha): #encapsulation
         self.__alpha = alpha
