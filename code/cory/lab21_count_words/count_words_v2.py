@@ -57,6 +57,7 @@ for key in tup_list:
     else:
         main_dict.update({key: 1})
 
+# Used to count number of pairs in final print statements
 num_of_pairs = len(main_dict)
 
 # Sorted by largest. Added if True: to minimize screen space
