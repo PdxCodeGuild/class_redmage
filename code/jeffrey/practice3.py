@@ -106,20 +106,133 @@ import random
 # print(common_elements(nums1,nums2))
 
 # # Problem 8
-list1 = [random.randrange(1,100,1,_int=int) for _ in range(3)]
-list2 = [random.randrange(1,100,1,_int=int) for _ in range(3)]
-print(len(list1), len(list2))
+# list1 = [random.randrange(1,100,1,_int=int) for _ in range(3)]
+# list2 = [random.randrange(1,100,1,_int=int) for _ in range(3)]
+# print(len(list1), len(list2))
 
-def combine(x,y):
-    new_list = []
-    i = 0
-    if len(x) == len(y):
-        while i < len(x):
-            new_list.append((x[i]))
-            new_list.append((y[i]))
-            i+=1
-    else:
-        return False
-    return new_list
+# def combine(x,y):
+#     new_list = []
+#     i = 0
+#     if len(x) == len(y):
+#         while i < len(x):
+#             new_list.append((x[i]))
+#             new_list.append((y[i]))
+#             i+=1
+#     else:
+#         return False
+#     return new_list
 
-print(combine(list1,list2))
+# print(combine(list1,list2))
+
+# # Problem 9
+# nums = [5,6,3,2,1]
+# target = 7
+
+# def find_pair(nums, target):
+#     new_list = []
+#     tar = target
+#     for x in nums:
+#         if x < tar:
+#             y = tar - x
+#             if y in nums and (x, y) and (y,x) not in new_list:
+#                 new_list.append((x, y))
+#     return new_list
+
+# print(find_pair(nums,target))
+
+# # Problem 10
+# list1 = [5,2,1,5,7]
+# list2 = [6,8,2,4]
+
+# def merge(list1,list2):
+#     new_list = []
+#     for i in range(len(list1)):
+#         if len(list1) > len(list2):
+#             try:
+#                 new_list.append([list1[i],list2[i]])
+#             except:
+#                 new_list.append([list1[i]])
+#         elif len(list1) < len(list2):
+#             try:
+#                 new_list.append([list1[i],list2[i]])
+#             except:
+#                 new_list.append([list2])
+#         else:
+#             new_list.append([list1[i],list2[i]])
+#     return new_list
+
+# print(merge(list1,list2))
+
+# # Problem 11
+# my_list_of_lists = [[5,2,3],[4,5,1],[7,6,3]]
+
+# def fire(listolists):
+#     new_list = []
+#     for i in range(len(listolists)):
+#         for num in range(len(listolists)):
+#             new_list.append(listolists[i][num])
+#     return new_list
+
+# print(fire(my_list_of_lists))
+# print("Isildur!!!!!!!!!")
+
+# # Problem 12
+# def whoisfibbin():
+#     fib_list = [1,1]
+#     i=2
+#     n = int(input("How many Fibonaccis do you want? "))
+        
+#     while len(fib_list) < n:
+#         sum1 = fib_list[i-1] + fib_list[i-2]
+#         i+=1
+#         fib_list.append(sum1)
+        
+#     return ','.join(map(str, fib_list))
+
+# print(whoisfibbin())
+
+# # Problem 13
+# nums = [1,2,4,4,4,4,5,5,6,7,8,8,8,8,9]
+
+# def min(nums):
+#     nums.sort() 
+#     return nums[0]
+
+# print(f'min: {min(nums)}')
+
+# def max(nums):
+#     nums.sort()
+#     return nums[-1]
+
+# print(f'max: {max(nums)}')
+
+# def mean(nums):
+#     zero = 0
+#     for num in nums:
+#         zero +=num
+#     return round(zero/len(nums),2)
+
+# print(f'mean: {mean(nums)}')
+
+# def mode(nums):
+#     new_dict = {}
+#     some_list = []
+#     for num in nums:
+#         new_dict.update({num:nums.count(num)})
+#     new_list = list(new_dict.values())
+#     print(new_list)
+#     new_list.sort()
+#     print(new_list)
+#     values = new_list[-1]
+#     print(values)
+#     # if values in new_dict.values():
+#     #     some_list.append(new_dict[values])
+#     for key,value in new_dict.items():
+#         if value == values:
+#             some_list.append(str(key))
+
+#     return ','.join(some_list)
+
+# print(f'mode: {mode(nums)}')
+
+# # Problem 14
