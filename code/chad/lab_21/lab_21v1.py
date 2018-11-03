@@ -34,9 +34,6 @@ def remove_blanks_action():
     num_popped = 0
     for i in range(len(new_book)):
         if i == len(new_book):
-            print('done with list')
-            print(f'you are at index {i}')
-            print(f' The length of book is now {len(new_book)}')
             return num_popped
         if '' == new_book[i]:
             count_popped_blanks.append(new_book.pop(i))
@@ -73,11 +70,33 @@ def find10(new_book):
     make_set = sorted(make_set, reverse=True)
 
     # Loop Through Last 10 Items and return
-    
+    print('\n\nHere is the Top words:\n')
     for item in make_set[0:10]:
         print(item)
-     
 
+#Function TO Find Unique Pairs:
+
+def unique_pairs(data):
+    unique_list = []
+    #create new list with word pairs
+    for i in range(len(data)):
+        try:
+            unique_list.append((data[i], data[i+1]))
+        except:
+            pass
+    filtered_list = []
+    for i in unique_list:
+        count = unique_list.count(i)
+        filtered_list.append((count, (i)))
+    sorted_list = sorted(filtered_list)
+    sorted_sort = set(sorted_list)
+    sorted_sort = sorted(sorted_sort)
+    
+    #Print The top 10 counted word pairs
+    print('\n\nHere are the top counted word pairs\n')
+    for i in sorted_sort[-1:-11:-1]:
+        print(i)
+        
 #Call function rem_puc to lowercase and remove puctuation and return into a list
 new_book = rem_punc(data)
 
@@ -90,5 +109,7 @@ new_book = remove_blanks_check(new_book)
 #Take words Sort and put in dictionary with value how many times they appear
 make_dictionary = find10(new_book)
 
+#Find Unique Pairs Of Words:
+unique_pairs(new_book)
 
 print(f'You popped {len(count_popped_blanks)} Blanks')
