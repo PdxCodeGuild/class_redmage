@@ -3,23 +3,24 @@ Full Stack Python Day Class 2018-10-15
 
 ## Python Labs Assigned:
 
-Lab 01 - Lab 20  
-Lab 22  
-Lab 23  
+Lab 01 - Lab 23  
 Mob - Jackalope  
 Group - Hangman
 
 ## Python Labs Optional:
 
+###### Strongly Recommended:
 Practice 01  
 Practice 02  
 Practice 03  
 Practice 04  
 Practice 05  
-  
+Lab 24
+
+###### Optional Labs:
 Optional - LCR Simulator  
 Optional - Road Trip  
-Optional - Sock Sorter  
+Optional - Sock Sorter
 
 ## Odds and Ends
 

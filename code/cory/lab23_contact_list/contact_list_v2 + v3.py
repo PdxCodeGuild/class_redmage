@@ -179,29 +179,81 @@ def delete():
     
     return
 
+# Function to save user data
+def save():
+    loop_flag = True
+    while loop_flag:
+        
+        save_input = ''
+        while save_input != 'y' and save_input != 'n':
+            save_input = input("\nWould you like to save the current changes to the data? (y/n) > ")
+
+            if save_input != 'y' and save_input != 'n':
+                print("\nThe program doesn't seem to like that input... Let's try that again.")
+
+        if save_input == 'n':
+            print("\n...")
+
+            loop_flag = False
+
+            break
+
+        elif save_input == 'y':
+            
+            # Compile all user data, change to string so csv can read
+            contacts_list = get_contact_list()
+
+            # String for keys
+            out_keys = ''
+            for i in range(len(keys)):
+                out_keys += keys[i] + ','
+            out_keys = out_keys.rstrip(',')
+            out_keys += "\n"
+
+            # String for user data
+            out_data = ''
+            for i in range(len(contacts_list)):
+                out_data += contacts_list[i]['name'] + ','
+                out_data += contacts_list[i]['favorite fruit'] + ','
+                out_data += contacts_list[i]['favorite color']
+                out_data += "\n"
+
+            with open('contacts.csv', 'w') as contacts:
+                contacts.write(out_keys)
+                contacts.write(out_data)
+                contacts.close()
+            
+            print("\n...")
+
+            loop_flag = False
+
+            break
+
 # User Interface
 interface_flag = True
 while interface_flag:
     
-    interface_options = ['options', 'create', 'retrieve', 'update', 'delete', 'quit']
+    interface_options = ['options', 'create', 'retrieve', 'update', 'delete', 'quit', 'save']
 
     menu = input("\nWelcome to the main menu. What would you like to do? (try 'options') > ").lower()
 
     if menu == 'options':
 
-            print("\nThe commands available are: 'Create', 'Retrieve', 'Update', or 'Delete'.")
+            print("\nThe commands available are: 'Create', 'Retrieve', 'Update', 'Save' or 'Delete'.")
             
             print("\nIf you would like to quit the program, you must type 'quit'.")
 
     if menu == 'create':
-        create = create()
-        user_values.extend(create)
-
+        user_values.extend(create())
+        
     if menu == 'retrieve':
         retrieve()
     
     if menu == 'update':
         update()
+
+    if menu == 'save':
+        save()
 
     if menu == 'delete':
         delete()

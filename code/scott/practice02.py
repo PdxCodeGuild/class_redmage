@@ -55,3 +55,31 @@
 # print(string_finder(bigstring, search_string))
 
 # Problem 5
+# def cat_dog_counter(catdog_string):
+#     catcount = catdog_string.count("cat")
+#     dogcount = catdog_string.count("dog")
+#     if catcount == dogcount:
+#         return True
+#     else:
+#         return False
+
+# user_string = "catdogdogcatcatdog"
+# print(cat_dog_counter(user_string))
+
+# Problem 6
+
+# def occurence_counter(string_to_search, string_to_find):
+#     count = string_to_search.count(string_to_find)
+#     return count
+
+# Problem 7
+
+def lower_strip(string):
+    string = string.lower().strip()
+    return string
+
+test1 = "SUPER!"
+test2 = "        NANNANANANA BATMAN        "
+
+print(lower_strip(test1))
+print(lower_strip(test2))
