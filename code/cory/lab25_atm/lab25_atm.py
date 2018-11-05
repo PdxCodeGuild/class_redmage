@@ -45,7 +45,7 @@ class Atm:
     # returns the amount of interest calculated on the account
     def calc_interest(self):
         '''Shows amount of interest gained'''
-        return self.interest * self.balance
+        return f"Interest gained is ${round(self.interest * self.balance)}."
 
     def print_transactions(self):
         out_string = '\n'
@@ -54,16 +54,16 @@ class Atm:
         return out_string
 
 start_bal = int(input("What is your starting balance? > "))
-user1 = Atm(1.001, start_bal)
+user1 = Atm(.01, start_bal)
 
 #Main loop, just control + C to exit
 while True:
     
-    options_list = ['check balance', 'deposit', 'withdraw', 'history', 'check withdrawal']
+    options_list = ['check balance', 'deposit', 'withdraw', 'history', 'check withdrawal', 'interest gained']
 
     options = ''
     while options not in options_list:
-        options = input("What would you like to do? (check balance, deposit, withdraw, history, check withdrawal) > ").lower()
+        options = input("What would you like to do? (check balance, deposit, withdraw, history, check withdrawal, interest gained) > ").lower()
         if options not in options_list:
             print("\nOptions didn't like that answer. Try again.\n")
     
@@ -85,6 +85,9 @@ while True:
     elif options == 'check withdrawal':
         check_withdrawl_input = int(input('How much would you like to check? > '))
         print(user1.check_withdrawal(check_withdrawl_input))
+
+    elif options == 'interest gained':
+        print(user1.calc_interest())
 
     else:
         print("\nOptions didn't like that answer. Try again.\n")
