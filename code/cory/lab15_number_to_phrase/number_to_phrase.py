@@ -1,4 +1,4 @@
-# Version 1
+# Version 2
 
 # Create list for first digit, and another for second digit (ten, twenty, thirty), (one, two, three)
 def conversion(number):
@@ -41,12 +41,11 @@ while end_flag == False:
         end_inp = ''
         while end_inp != 'y' and end_inp != 'n':
             end_inp = input('Would you like to run this again? (y/n) > ').lower()
-            print("You need to type either 'y' or 'n'")
         if end_inp == 'n':
             print("You're all done!")
-            end_flag == True
-            loop_flag == False
+            end_flag = True
+            loop_flag = False
             break
         else:
-            loop_flag == False
+            loop_flag = False
             break

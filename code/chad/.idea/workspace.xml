@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="" />
+    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="csv" value="2" />
           <entry key="png" value="1" />
-          <entry key="py" value="51" />
+          <entry key="py" value="58" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="22" />
         </counts>
@@ -30,23 +33,24 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="50" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Python" value="57" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="csv" value="28" />
           <entry key="dummy" value="133" />
-          <entry key="py" value="20469" />
+          <entry key="py" value="30465" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="133" />
-          <entry key="Python" value="20230" />
-          <entry key="Scratch" value="239" />
+          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="Python" value="30217" />
+          <entry key="Scratch" value="248" />
         </counts>
       </usages-collector>
     </session>
@@ -56,35 +60,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="76">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab_23/lab_23v3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+        <entry file="file://$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="527">
+              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_21/text.txt">
+        <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="1881" selection-start-line="1881" selection-end-line="1881" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" lean-forward="true" selection-end-line="1881" />
+            <state relative-caret-position="88">
+              <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -103,6 +125,7 @@
       <find>print</find>
       <find>counter</find>
       <find>total</find>
+      <find>d</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -137,18 +160,24 @@
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad_adding_disease.py" />
         <option value="$PROJECT_DIR$/group_mob/jackolope_done_by_chad.py" />
         <option value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
-        <option value="$PROJECT_DIR$/test/_test.py" />
         <option value="$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/lab_21/text.txt" />
         <option value="$PROJECT_DIR$/lab_21/lab_21v1.py" />
+        <option value="$PROJECT_DIR$/lab_23/contact_list_save.csv" />
+        <option value="$PROJECT_DIR$/test/_test.py" />
+        <option value="$PROJECT_DIR$/lab_23/lab_23v1.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/lab_23/contact_list.csv" />
+        <option value="$PROJECT_DIR$/lab_23/lab_23v3.py" />
+        <option value="$PROJECT_DIR$/practice/practice_strings.py" />
+        <option value="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="23" />
-    <option name="width" value="1754" />
+    <option name="x" value="904" />
+    <option name="y" value="31" />
+    <option name="width" value="2139" />
     <option name="height" value="1341" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -192,6 +221,21 @@
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
+              <item name="lab_23" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chad" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chad" type="462c0819:PsiDirectoryNode" />
+              <item name="python_final_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chad" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -226,7 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lab_21v1">
+  <component name="RunManager" selected="Python.pdf_filer_pypdf2_outputs">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,48 +284,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab_16_image_manip" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_16" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_16/lab_16_image_manip.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab_18_peaks_and_valleysv2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_18" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_18/lab_18_peaks_and_valleysv2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -311,7 +313,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="lab_23v1" type="PythonConfigurationType" factoryName="Python">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -319,11 +321,74 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_23" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_23/lab_23v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lab_23v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_23" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_23/lab_23v3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pdf_filer_pypdf2_outputs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="practice_strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/practice_strings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,19 +398,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.lab_16_image_manip" />
+      <item itemvalue="Python.lab_23v1" />
       <item itemvalue="Python._test" />
-      <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
       <item itemvalue="Python.lab_21v1" />
-      <item itemvalue="Python.scratch" />
+      <item itemvalue="Python.lab_23v3" />
+      <item itemvalue="Python.practice_strings" />
+      <item itemvalue="Python.pdf_filer_pypdf2_outputs" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lab_21v1" />
-        <item itemvalue="Python.scratch" />
-        <item itemvalue="Python.lab_18_peaks_and_valleysv2" />
+        <item itemvalue="Python.pdf_filer_pypdf2_outputs" />
+        <item itemvalue="Python.practice_strings" />
+        <item itemvalue="Python.lab_23v3" />
         <item itemvalue="Python._test" />
-        <item itemvalue="Python.lab_16_image_manip" />
+        <item itemvalue="Python.lab_21v1" />
       </list>
     </recent_temporary>
   </component>
@@ -363,14 +429,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="23" width="1754" height="1341" extended-state="0" />
+    <frame x="904" y="31" width="2139" height="1341" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27708095" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31259844" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4574803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab_18/peaks_and_valleys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -477,10 +536,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab_21/58166-0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="34" lean-forward="true" selection-end-line="1881" />
+          <caret line="34" selection-end-line="1881" />
         </state>
       </provider>
     </entry>
@@ -491,17 +557,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+    <entry file="file://$PROJECT_DIR$/test/_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="1291">
+          <caret line="147" column="37" lean-forward="true" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_21/lab_21v1.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/contact_list_save.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
         </state>
       </provider>
     </entry>
