@@ -1,3 +1,5 @@
+import re
+
 # d = {'a1':5, 'a2':2, 'a3':3, 'b1':10, 'b2':1, 'b3':1, 'c1':4, 'c2':5, 'c3':6}
 
 # def unify(my_dict):
@@ -23,6 +25,9 @@
 # string_test = 'hello'
 # list1 = [string_test + 5]
 
-string = 'cba'
-string = sorted(string)
-print(string)
+# string = 'cba'
+# string = sorted(string)
+# print(string)
+
+lines = ["There was an old man from Peru,", "Who said he had nothing to do,", "So he sat on the stairs,", "And counted he hairs,", "And found he had seventy-two"]
+
