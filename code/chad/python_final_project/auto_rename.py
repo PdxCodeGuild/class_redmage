@@ -66,21 +66,21 @@ def file_format(keyword_match, ocrdata):
     final_date += date[0:4] + '-' + date[4:6] + '-' + date[6:8] + '-' + date[8:10]
 #Get type for file in dictionary from keyword
     file_type = list(keyword_match.values())
-    final_type = str((file_type[0][0]))
+    final_type = str((file_type[0][1]))
 #Get company name for file in dictionary from keyword
-    keyword_name = list(keyword_match.keys())
-    print(keyword_name)
-    final_name = str(keyword_name[0])
+    keyword_name = list(keyword_match.values())
+    final_name = str((keyword_name[0][0]))
 #Construct string together for file rename operation
     final_filename += final_date + ' - ' + final_type + ' - ' + final_name
     return final_filename
 
 #Funciotn To Auto Rename File 
-def auto_rename(file_formated):
+def auto_rename(file_formated, filename, source_dir, target_dir):
 #Source of File To 
-    src = source_file
-    dst = ''
+    src = source_dir + filename
+    dst = target_dir
     dst += file_formated + '.pdf'
+    print(src)
     print(dst)
     os.rename(src, dst)
     # os.rename(file_formated)
@@ -88,6 +88,7 @@ def auto_rename(file_formated):
 def menu():
     #source_directory = input('What is the source directory that you want to rename all pdfs? > ')
     source_directory = '/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/doc_send/'
+    target_directory = '/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/doc_receive/'
     os.chdir(source_directory)
     enum_folder = os.listdir(source_directory)
     
@@ -96,14 +97,15 @@ def menu():
         opened_pdf = open_pdf(filename)
         #Compare ocr data with keywords to match
         found_match = find_matches(made_dict, opened_pdf)
-        #Use matched data to generate file format for autorename function
- 
+        #Use matched data to generate file format for autorename function, if/else:
+        # To see if found_match returns None, if None continue
         if found_match is None:
             continue
         else:
             file_formated = file_format(found_match, opened_pdf)
             print(file_formated)
-
+        #Send file_formated into function to do actual file rename
+        auto_renamed = auto_rename(file_formated,filename, source_directory, target_directory)
    
     # 
 
@@ -111,8 +113,7 @@ def menu():
 
     # 
 
-    # #Send file_formated into function to do actual file rename
-    # auto_renamed = auto_rename(file_formated)
+    # 
 
 #Open keyword csv and split into a dictionary with key being the company.
 #This will be used for the autorename and file move functions
