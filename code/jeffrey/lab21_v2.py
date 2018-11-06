@@ -20,8 +20,19 @@ input_text = re.sub(r'[!"#$%&\'""()*+,-./:;<=>?@[\]^_`{|}~]', ' ', input_text)
 
 word_list = input_text.split()
 
-counter = collections.Counter(word_list)
+big_dict = {}
 
-print(counter.most_common(50))
+for i in range(len(word_list)-1):
+    if (word_list[i],word_list[i+1]) not in big_dict.keys():
+        big_dict[(word_list[i],word_list[i+1])] = 1
+    elif (word_list[i],word_list[i+1]) in big_dict.keys():
+        big_dict[(word_list[i],word_list[i+1])] += 1
+
+print(big_dict)
+
+words = list(big_dict.items())
+words.sort(key=lambda tup: tup[1], reverse=True)
+for i in range(min(10, len(words))):
+    print(words[i])
 
 print(f"My program took {time.time() - start_time} to run")

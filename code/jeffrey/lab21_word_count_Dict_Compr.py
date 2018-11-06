@@ -19,15 +19,11 @@ input_text = re.sub(r'[!"#$%&\'""()*+,-./:;<=>?@[\]^_`{|}~]', ' ', input_text)
 
 word_list = input_text.split()
 
-# print(word_list)
-# print(string.punctuation)
-
 big_dict = {x:word_list.count(x) for x in set(word_list)}
 
-# word_dict is a dictionary where the key is the word and the value is the count
-words = list(big_dict.items()) # .items() returns a list of tuples
-words.sort(key=lambda tup: tup[1], reverse=True)  # sort largest to smallest, based on count
-for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
+words = list(big_dict.items())
+words.sort(key=lambda tup: tup[1], reverse=True)
+for i in range(min(10, len(words))):
     print(words[i])
 
 print(f"My program took {time.time() - start_time} to run")

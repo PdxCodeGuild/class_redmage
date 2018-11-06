@@ -29,5 +29,5 @@ import re
 # string = sorted(string)
 # print(string)
 
-lines = ["There was an old man from Peru,", "Who said he had nothing to do,", "So he sat on the stairs,", "And counted he hairs,", "And found he had seventy-two"]
+# lines = ["There was an old man from Peru,", "Who said he had nothing to do,", "So he sat on the stairs,", "And counted he hairs,", "And found he had seventy-two"]
 
