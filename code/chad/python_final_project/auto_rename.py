@@ -4,8 +4,10 @@ print(f'You Are Working In A {os.name} EnVironment')
 
 #Ask User To Set The Path Where PDFs Are Stored:
 #path_input = input('What Path Are The PDFs Stored That You Would Like To Rename? > ')
-path_input = input('What Is The Source Folder You Would Like To Work In? > ')
-file_name = input('What Is the File Name You Would Like To Rename? > ')
+    # path_input = input('What Is The Source Folder You Would Like To Work In? > ')
+    # file_name = input('What Is the File Name You Would Like To Rename? > ')
+
+
 
 # Function To keyword Map
 def keyword_map():
@@ -28,12 +30,12 @@ def make_dict(keyword_map):
     return final_listOfDic
     
 # Open Pdf and extract useful data
-def open_pdf():
+def open_pdf(file_name):
     # with open('/tmp/doc_send/nwebill.pdf', 'rb') as pdf:
     #     pdfread = PyPDF2.PdfFileReader(pdf)
     # return pdfread
     #Had to resort to this way because the with open did not work
-    f = open(source_file, 'rb')
+    f = open(file_name, 'rb')
     pdfread = PyPDF2.PdfFileReader(f)
     f.close
     return pdfread
@@ -43,6 +45,7 @@ def find_matches(keywords, ocrdata):
     #Extract ocr text from ocrdata
     page = ocrdata.getPage(0)
     extract_text = page.extractText()
+    extract_text = extract_text.lower()
     #For each dictionary in keywords
     for listindex in keywords:
         #For each keyword in dictionary
@@ -50,8 +53,7 @@ def find_matches(keywords, ocrdata):
             #If key in dictionary (keyword) the extracted ocr text then return that whole dictionary
             if in_dict in extract_text:
                 return listindex
-        # if keys in extract_text:
-        #     print('you found a match')
+       
 
 def file_format(keyword_match, ocrdata):
     final_filename = ''
@@ -59,7 +61,6 @@ def file_format(keyword_match, ocrdata):
     final_date = ''
     page = ocrdata.getDocumentInfo()
     date = (page['/CreationDate'])
-    print(date)
     date = date[2:12]
 #I added two more characters on the timestamp to avoid any duplicates
     final_date += date[0:4] + '-' + date[4:6] + '-' + date[6:8] + '-' + date[8:10]
@@ -68,29 +69,55 @@ def file_format(keyword_match, ocrdata):
     final_type = str((file_type[0][0]))
 #Get company name for file in dictionary from keyword
     keyword_name = list(keyword_match.keys())
+    print(keyword_name)
     final_name = str(keyword_name[0])
 #Construct string together for file rename operation
     final_filename += final_date + ' - ' + final_type + ' - ' + final_name
+    return final_filename
 
 #Funciotn To Auto Rename File 
 def auto_rename(file_formated):
-#Source of File To Rename
-    src =   
-    os.rename(file_formated)
+#Source of File To 
+    src = source_file
+    dst = ''
+    dst += file_formated + '.pdf'
+    print(dst)
+    os.rename(src, dst)
+    # os.rename(file_formated)
+
+def menu():
+    #source_directory = input('What is the source directory that you want to rename all pdfs? > ')
+    source_directory = '/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/doc_send/'
+    os.chdir(source_directory)
+    enum_folder = os.listdir(source_directory)
+    
+    for filename in enum_folder:
+        # Call func and open pdf file, return variable containing all the ocr information needed
+        opened_pdf = open_pdf(filename)
+        #Compare ocr data with keywords to match
+        found_match = find_matches(made_dict, opened_pdf)
+        #Use matched data to generate file format for autorename function
+ 
+        if found_match is None:
+            continue
+        else:
+            file_formated = file_format(found_match, opened_pdf)
+            print(file_formated)
+
+   
+    # 
+
+    # 
+
+    # 
+
+    # #Send file_formated into function to do actual file rename
+    # auto_renamed = auto_rename(file_formated)
 
 #Open keyword csv and split into a dictionary with key being the company.
 #This will be used for the autorename and file move functions
 keyword_map = keyword_map()
 made_dict = make_dict(keyword_map)
 
-#Open pdf file and return variable containing all the ocr information needed
-opened_pdf = open_pdf()
-
-#Compare ocr data with keywords to match
-found_match = find_matches(made_dict, opened_pdf)
-
-#Use matched data to generate file format for autorename function
-file_formated = file_format(found_match, opened_pdf)
-
-#Send file_formated into function to do actual file rename
-auto_renamed = auto_rename(file_formated)
+#Run Program
+menu()
