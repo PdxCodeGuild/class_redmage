@@ -2,14 +2,7 @@ import os, datetime, PyPDF2
 
 print(f'You Are Working In A {os.name} EnVironment')
 
-#Ask User To Set The Path Where PDFs Are Stored:
-#path_input = input('What Path Are The PDFs Stored That You Would Like To Rename? > ')
-    # path_input = input('What Is The Source Folder You Would Like To Work In? > ')
-    # file_name = input('What Is the File Name You Would Like To Rename? > ')
-
-
-
-# Function To keyword Map
+# Function To keyword Map which contains all info to rename file
 def keyword_map():
     with open('/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/keywords.csv', 'r') as keywords:
         keyword_map = keywords.read().strip('\n').split('\n')
@@ -43,6 +36,7 @@ def open_pdf(file_name):
 def find_matches(keywords, ocrdata):
     #[{'keyword': ('type', 'to_dir')}, {'Northwestern Energy': ('Bill', '/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/doc_receive')}]
     #Extract ocr text from ocrdata
+#I might need to scan mulitple pages
     page = ocrdata.getPage(0)
     extract_text = page.extractText()
     extract_text = extract_text.lower()
@@ -54,7 +48,6 @@ def find_matches(keywords, ocrdata):
             if in_dict in extract_text:
                 return listindex
        
-
 def file_format(keyword_match, ocrdata):
     final_filename = ''
 #Get Creation Date For Rename Function
@@ -107,14 +100,6 @@ def menu():
         #Send file_formated into function to do actual file rename
         auto_renamed = auto_rename(file_formated,filename, source_directory, target_directory)
    
-    # 
-
-    # 
-
-    # 
-
-    # 
-
 #Open keyword csv and split into a dictionary with key being the company.
 #This will be used for the autorename and file move functions
 keyword_map = keyword_map()
