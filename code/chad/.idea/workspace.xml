@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_final_project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/auto_rename.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/auto_rename.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank1000.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank102.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank152.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank182.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank212.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank215.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank229.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank249.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank288.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank344.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank493.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank549.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank602.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank611.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank653.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank654.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank667.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank681.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank700.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank720.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank737.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank803.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank850.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank951.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank972.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/test_kivy.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +52,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="2" />
+          <entry key="csv" value="3" />
           <entry key="png" value="1" />
-          <entry key="py" value="58" />
+          <entry key="py" value="64" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="22" />
         </counts>
@@ -33,8 +62,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="57" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="63" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -42,14 +71,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="28" />
-          <entry key="dummy" value="133" />
-          <entry key="py" value="30465" />
+          <entry key="dummy" value="138" />
+          <entry key="py" value="32394" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="161" />
-          <entry key="Python" value="30217" />
+          <entry key="PLAIN_TEXT" value="166" />
+          <entry key="Python" value="32146" />
           <entry key="Scratch" value="248" />
         </counts>
       </usages-collector>
@@ -57,56 +86,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_23/lab_23v3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py">
+        <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+            <state relative-caret-position="207">
+              <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+              <folding>
+                <marker date="1541569615000" expanded="true" signature="4572:4648" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+        <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+            <state relative-caret-position="281">
+              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_final_project/keywords.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="106" selection-start-line="2" selection-start-column="106" selection-end-line="2" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -122,10 +127,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
       <find>counter</find>
       <find>total</find>
       <find>d</find>
+      <find>print</find>
+      <find>filename</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -171,12 +177,18 @@
         <option value="$PROJECT_DIR$/lab_23/lab_23v3.py" />
         <option value="$PROJECT_DIR$/practice/practice_strings.py" />
         <option value="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" />
+        <option value="$PROJECT_DIR$/python_final_project/test.py" />
+        <option value="$PROJECT_DIR$/python_final_project/blank_rename_file.py" />
+        <option value="$PROJECT_DIR$/python_final_project/test_kivy.py" />
+        <option value="$PROJECT_DIR$/python_final_project/editor.kv.py" />
+        <option value="$PROJECT_DIR$/python_final_project/backup_auto_rename.py" />
+        <option value="$PROJECT_DIR$/python_final_project/auto_rename.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="904" />
-    <option name="y" value="31" />
+    <option name="x" value="459" />
+    <option name="y" value="23" />
     <option name="width" value="2139" />
     <option name="height" value="1341" />
   </component>
@@ -216,22 +228,13 @@
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_21" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="lab_23" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="python_final_project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
               <item name="python_final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="doc_send" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +254,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python_final_project/doc_send" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -270,8 +274,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pdf_filer_pypdf2_outputs">
-    <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.auto_rename">
+    <configuration name="auto_rename" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,11 +283,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/auto_rename.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,7 +296,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lab_21v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="backup_auto_rename" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,11 +304,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_21" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_21/lab_21v1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/backup_auto_rename.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="blank_rename_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/blank_rename_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -334,28 +359,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lab_23v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_23" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_23/lab_23v3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pdf_filer_pypdf2_outputs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,7 +371,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -376,7 +380,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_kivy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,11 +388,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/practice_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,19 +403,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.lab_23v1" />
-      <item itemvalue="Python._test" />
-      <item itemvalue="Python.lab_21v1" />
-      <item itemvalue="Python.lab_23v3" />
-      <item itemvalue="Python.practice_strings" />
-      <item itemvalue="Python.pdf_filer_pypdf2_outputs" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.auto_rename" />
+      <item itemvalue="Python.test_kivy" />
+      <item itemvalue="Python.blank_rename_file" />
+      <item itemvalue="Python.backup_auto_rename" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pdf_filer_pypdf2_outputs" />
-        <item itemvalue="Python.practice_strings" />
-        <item itemvalue="Python.lab_23v3" />
-        <item itemvalue="Python._test" />
-        <item itemvalue="Python.lab_21v1" />
+        <item itemvalue="Python.auto_rename" />
+        <item itemvalue="Python.backup_auto_rename" />
+        <item itemvalue="Python.test_kivy" />
+        <item itemvalue="Python.blank_rename_file" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +433,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="904" y="31" width="2139" height="1341" extended-state="0" />
+    <frame x="459" y="23" width="2139" height="1341" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -564,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab_23/contact_list_save.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -578,17 +576,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+    <entry file="file://$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        <state relative-caret-position="527">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
+    <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="133">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -599,17 +597,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/practice_strings.py">
+    <entry file="file://$PROJECT_DIR$/lab_23/contact_list.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        <state relative-caret-position="76">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab_23/lab_23v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/editor.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/blank_rename_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/keywords.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="106" selection-start-line="2" selection-start-column="106" selection-end-line="2" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+          <folding>
+            <marker date="1541569615000" expanded="true" signature="4572:4648" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

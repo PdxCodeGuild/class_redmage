@@ -1,7 +1,7 @@
 import os, random
 
-source = '/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/doc_send/'
-destination = '/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/doc_send/'
+source = '/Users/chadbean/Documents/Programing and Development/github/class_redmage/code/chad/python_final_project/doc_send/'
+destination = '/Users/chadbean/Documents/Programing and Development/github/class_redmage/code/chad/python_final_project/doc_receive/'
 
 for filename in os.listdir(source):
     print(filename)
