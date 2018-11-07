@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python_final_project/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/auto_rename.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/auto_rename.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank1000.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank102.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank152.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank182.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank212.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank215.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank229.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank249.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank288.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank344.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank493.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank549.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank602.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank611.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank653.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank654.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank667.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank681.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank700.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank720.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank737.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank803.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank850.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank951.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank972.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/test_kivy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-05-31-11 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-05-31-11 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-06-12-07 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-12-07 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-06-23-07 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-23-07 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-06-24-07 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-24-07 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-06-26-12 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-26-12 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-07-29-08 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-29-08 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-10-13-06 - Bill - Republic Services.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-10-13-06 - Bill - Republic Services.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-10-13-07 - Bill - Republic Services.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-10-13-07 - Bill - Republic Services.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2015-12-03-14 - Bill - Republic Services.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2015-12-03-14 - Bill - Republic Services.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2016-01-07-18 - Bill - Republic Services.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-07-18 - Bill - Republic Services.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2016-01-29-08 - Bill - Northwestern Energy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-29-08 - Bill - Northwestern Energy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2016-01-29-08 - Bill - Republic Services.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-29-08 - Bill - Republic Services.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_receive/2016-04-22-09 - Bill - Republic Services.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/2016-04-22-09 - Bill - Republic Services.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+              <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
               <folding>
                 <marker date="1541569615000" expanded="true" signature="4572:4648" ph="..." />
               </folding>
@@ -101,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+            <state relative-caret-position="167">
+              <caret line="95" column="62" lean-forward="true" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -187,7 +170,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="459" />
+    <option name="x" value="234" />
     <option name="y" value="23" />
     <option name="width" value="2139" />
     <option name="height" value="1341" />
@@ -433,15 +416,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="23" width="2139" height="1341" extended-state="0" />
+    <frame x="234" y="23" width="2139" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4574803" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4574803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,15 +641,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        <state relative-caret-position="167">
+          <caret line="95" column="62" lean-forward="true" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+          <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
           <folding>
             <marker date="1541569615000" expanded="true" signature="4572:4648" ph="..." />
           </folding>
