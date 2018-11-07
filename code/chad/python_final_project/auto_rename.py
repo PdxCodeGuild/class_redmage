@@ -6,7 +6,7 @@ match_notfound = []
 
 # Function To keyword Map which contains all info to rename file
 def keyword_map():
-    with open('keywords.csv', 'r') as keywords:
+    with open('__keyword_Filepointer.csv', 'r') as keywords:
         keyword_map = keywords.read().strip('\n').split('\n')
     keywords.close()
     return keyword_map
