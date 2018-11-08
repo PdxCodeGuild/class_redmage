@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python_final_project/rules/__keyword_Filepointer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/autorename_testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/auto_rename.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/auto_rename.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/backup_auto_rename.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/backup_auto_rename.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/keywords.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/_test.py" beforeDir="false" />
-    </list>
+    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +23,7 @@
         <counts>
           <entry key="csv" value="3" />
           <entry key="png" value="1" />
-          <entry key="py" value="65" />
+          <entry key="py" value="66" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="25" />
         </counts>
@@ -40,7 +32,7 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="64" />
+          <entry key="Python" value="65" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -94,11 +86,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/autorename_testing.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1729">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -190,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="234" />
     <option name="y" value="23" />
     <option name="width" value="2139" />
@@ -279,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._test">
+  <component name="RunManager" selected="Python.backup_auto_rename">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -416,9 +417,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.backup_auto_rename" />
         <item itemvalue="Python._test" />
         <item itemvalue="Python.auto_rename" />
-        <item itemvalue="Python.backup_auto_rename" />
         <item itemvalue="Python.test_kivy" />
         <item itemvalue="Python.blank_rename_file" />
       </list>
@@ -438,7 +439,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="23" width="2139" height="1341" extended-state="1" />
+    <frame x="234" y="23" width="2139" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
@@ -645,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="132" column="47" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/rules/republicservices.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -690,6 +684,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
