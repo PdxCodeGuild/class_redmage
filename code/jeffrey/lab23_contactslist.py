@@ -19,24 +19,43 @@ for i in range(1,len(lines)):
 
 print(contacts_dict)
 
-def create(choice):
+# List of CRUD FUNCTIONS BELOW
+def create():
+    user_val2 = input(f'Input your {(keys[1])}: ')
+    user_val3 = input(f'Input your {(keys[2])}: ')
+    entry_str = ','.join([user_name,user_val2,user_val3])
+    for x in range(len(entry_str.split(','))):
+        line = entry_str.split(',')
+        entry = dict(zip(keys,line))
+        contacts_dict.append(entry)
+    print(contacts_dict)
 
-def retrieve(choice):
+# def retrieve():
 
-def update(choice):
+# def update():
 
-def delete(choice):
+# def delete():
 
 while True:
+    user_name = input(f'What is your {(keys[0])}? \n')
     choice = input(f'''
-    You have four options for actions:
-    \n1. 'create' for making a new record
-    \n2. 'retrieve' for retreiving a record
-    \n3. 'update' for updating a record
-    \n4.  'delete' for deleting a record
-    \nWhat would you like to do? 
+    Welcome {user_name}, you have four options for actions:
+    1. 'create' for making a new record
+    2. 'retrieve' for retreiving a record
+    3. 'update' for updating a record
+    4.  'delete' for deleting a record\n
+    What would you like to do? 
     ''')
-    if choice ==
-user_val1 = input(f'Input your {(keys[0])}:')
-user_val2 = input(f'Input your {(keys[1])}:')
-user_val3 = input(f'Input your {(keys[2])}:')
+    if choice.lower() == 'create':
+        create()
+    # elif choice.lower() == 'retrieve':
+    #     retrieve()
+    # elif choice.lower() == 'update':
+    #     update()
+    # elif  choice.lower() == 'delete':
+    #     delete()
+    end_prog = input('Input any key to do another action or "quit" to exit the program:\n')
+    if end_prog.lower() == 'quit':
+        break
+
+
