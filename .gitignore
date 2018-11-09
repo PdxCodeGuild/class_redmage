@@ -119,3 +119,5 @@ ENV/
 
 # Node
 node_modules
+#config for python project
+config.py
