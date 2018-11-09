@@ -6,7 +6,7 @@ match_notfound = []
 
 # Function To keyword Map which contains all info to rename file
 def keyword_map():
-    with open('__keyword_Filepointer.csv', 'r') as keywords:
+    with open('/home/chad/Documents/git_hub/class_redmage/code/chad/python_final_project/rules/__keyword_Filepointer.csv', 'r') as keywords:
         keyword_map = keywords.read().strip('\n').split('\n')
     keywords.close()
     return keyword_map
@@ -78,9 +78,9 @@ def auto_rename(file_formated, filename, source_dir, target_dir):
 
 def run_rename():
     # Change source directory where files will be renamed from
-    source_directory = '/Users/chadbean/Documents/Programing and Development/github/class_redmage/code/chad/python_final_project/doc_send/'
+    source_directory = 'doc_send/'
     # Change target directory where renamed files will be moved to
-    target_directory = '/Users/chadbean/Documents/Programing and Development/github/class_redmage/code/chad/python_final_project/doc_receive/'
+    target_directory = 'doc_receive/'
     enum_folder = os.listdir(source_directory)
     
     for filename in enum_folder:
