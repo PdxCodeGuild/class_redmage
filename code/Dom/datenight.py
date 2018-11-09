@@ -22,7 +22,7 @@ def find_restaurant(r_list,day):
     for business in r_list:
         r_check = yelp_api.business_query(business)
         try:
-            restaurants = [(r_check['name'], r_check["location"]["display_address"],r_check["coordinates"]) for item in r_check["hours"][0]["open"] if item['day']== day and int(item["start"])<= 1700 and int(item['end'])<=2359]
+            restaurants = [(r_check['name'], r_check["location"]["display_address"],r_check["coordinates"]) for item in r_check["hours"][0]["open"] if item['day']== day and int(item["start"])<= 1700 < int(item['end'])<=2359]
         except:
             pass
     return random.choice(restaurants)
