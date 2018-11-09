@@ -1,0 +1,4 @@
+Line 1 Keyword name in pretty format such as Northwestern Energy
+Line 2 Path to main folder
+Line 3 Path to subfolder
+Line 4 Second tier dictionary of keyword,value ('4plex','Grove 4Plex')

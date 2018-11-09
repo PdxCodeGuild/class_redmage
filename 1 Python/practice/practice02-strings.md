@@ -1,5 +1,5 @@
 
-# Practice: Strings
+# Practice 2: Strings
 
 For each practice problem, write a function that returns a value (not just prints it). You can then call the function a couple times to test it, comment those calls out, and move on to the next problem. An example of this format is given below.
 

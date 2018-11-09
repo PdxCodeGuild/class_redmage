@@ -25,7 +25,8 @@ def parse_file(contact_list):
     for index in split_list:
         for element in index:
             if len(element) == 0:
-                # Looping through elements and pop from list if == len 0
+                # Looping through elements and pop from list if == len 0, I had to do this because the loop was inserting
+                # A blank at the end of the list
                 split_list.pop()
 
 #For each element (which each element is a list of elements), itterate through top level element in the list
@@ -38,16 +39,16 @@ def parse_file(contact_list):
         final_list.append(start_dict)
 
 def save_file():
-    print(final_list)
     write_list = ''
     #Write the template back to the top of the csv
     write_list += ','.join(contact_template)
     write_list += '\n'
     for element in final_list:
-        element = element
-        write_list += ','.join(element)
+        element_list = element.values()
+        write_list += ','.join(element_list)
         write_list += '\n'
-    print(f'Here is the final list to write \n{write_list}')
+        print('\n'*10)
+    print(f'Here is the final list to write: \n\n\n{write_list}')
     with open('contact_list.csv','w') as contacts:
         contacts.write(write_list)
     contacts.close()
@@ -73,7 +74,7 @@ def add_new_contact():
             add_zip = input('Please Enter The Zip Of Your Contact: > ')
             add_phone = input('Please Enter The Phone Of Your Contact: > ')
             add_email = input('Please Enter The Email Of Your Contact: > ')
-            temp_list.append({contact_template[0]: add_name,
+            final_list.append({contact_template[0]: add_name,
                                contact_template[1]: add_address1,
                                contact_template[2]: add_address2,
                                contact_template[3]: add_city,
@@ -84,7 +85,7 @@ def add_new_contact():
                                })
             #If else runs and user types intput increase count so begining of loop doesnt kick you out
             count += 1
-    final_list.append(temp_list)
+
     save_file()
 
 def retrieve_contact():
@@ -100,8 +101,10 @@ def retrieve_contact():
                 pre_list.append(index[i])
             temp_list.append(pre_list)
     if len(temp_list) == 0:
+        print('\n'*10)
         print('There Were No Matches')
     if len(temp_list) > 0:
+        print('\n' * 10)
         return [elem for i in temp_list for elem in i]
 
 def update_contact():
@@ -142,18 +145,19 @@ def print_all_contacts():
 
 def menu():
     while True:
-        user_input = input('\n\nWelcome To Chads Contact List Program\n'
+        user_input = input('\n\n \u001b[34mWelcome To Chads Contact List Program\n'
               '\n'
-              'Type the Number Below For The Function That You Would Like To Do\n'
+              '\u001b[31mType the Number Below For The Function That You Would Like To Do\n'
               '\n'
-              'Would You like to:\n'
-              '\t 1. Create A New Contact?\n'
+              '\u001b[37mWhat Would You like to:\n'
+              '\t\u001b[36m 1. Create A New Contact?\n'
               '\t 2. Retrieve A Contact Record?\n'
               '\t 3. Update An Existing Record?\n'
               '\t 4. Delete A Existing Record?\n'
               '\t 5. Print All Contact Records?\n'
               '\t 6. Save and Quit Program!!!!?\n'
-              "Type 'end', 'quit', 'q', 'exit', 'done' To Exit This Program")
+              )
+        print('\n' * 100)
         if user_input == '1':
             add_new_contact()
         elif user_input == '2':
