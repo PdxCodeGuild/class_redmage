@@ -118,11 +118,11 @@ msg2['From'] = "scottharvey@gmail.com"
 msg2['To'] = "scottharvey@gmail.com"
 
 session = smtplib.SMTP('smtp.mailgun.org', 587)
-session.login('postmaster@sandbox26572ae867e141539882237b8515e913.mailgun.org','b5c86266cdc1aa820b43e61c48129835-4412457b-3ca88440')
+session.login('postmaster@sandbox26572ae867e141539882237b8515e913.mailgun.org','dFVkA4puaW3juNc')
 session.sendmail(msg1['From'], msg1['To'], msg1.as_string())
 session.quit()
 
 session = smtplib.SMTP('smtp.mailgun.org', 587)
-session.login('postmaster@sandbox26572ae867e141539882237b8515e913.mailgun.org', 'b5c86266cdc1aa820b43e61c48129835-4412457b-3ca88440')
+session.login('postmaster@sandbox26572ae867e141539882237b8515e913.mailgun.org', 'dFVkA4puaW3juNc')
 session.sendmail(msg2['From'], msg2['To'], msg2.as_string())
 session.quit()

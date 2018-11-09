@@ -1,25 +1,38 @@
+import math
 
+class Point:
+    def __init__(self, x, y):  # this is the initializer
+        self.x = x  # these are member variables
+        self.y = y
 
-# def new_year(jack_list):
-#     for jack in jack_list:
-#         jack_list[jack] = jack_list[jack] + 1
-#         if jack_list[jack] in range(4, 9):
-#             jack_list.append(0)
-#         if jack_list[jack] == 10:
-#             jack_list.pop(jack)
-#     return jack_list
+    def distance(self, p):  # method, or 'member function'
+        dx = self.x - p.x
+        dy = self.y - p.y
+        return math.sqrt(dx*dx + dy*dy)
 
+    def scale(self, v):
+        self.x *= v
+        self.y *= v
 
-# yr_num = 0
+    @staticmethod
+    def from_polar(r, theta):  # static methods belong to the type, not the instance
+        px = r * math.cos(theta)
+        py = r * math.sin(theta)
+        return Point(px, py)
 
-# jack_list = [0, 0]
+    def __str__(self):  # specify a str conversion
+        return '['+str(self.x)+','+str(self.y)+']'
+    
+    def __repr__(self):
+        return f'Point({self.x},{self.y})'
 
-# while yr_num <= 1000:
-#     jack_list = new_year(jack_list)
-#     pop = len(jack_list)
-#     yr_num += 1
-#     print(f"Year {yr_num} and the population is {pop}")
+p = Point(5, 2)  # call the initializer, instantiate the class
+print(p.x)  # 5
+print(p.y)  # 2
 
-import string
+print(type(p))  # Point
 
-abc = string.ascii_uppercase()
+polar_point = Point.from_polar(5.0, math.pi/6)
+print(polar_point)
+polar_point.scale(2)
+print(polar_point)
