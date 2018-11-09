@@ -44,6 +44,12 @@ In all three presentations, you should first explain the development process and
 
 ## Odds and Ends
 
+The Four Major Programming Paradigms  
+http://www.eecs.ucf.edu/~leavens/ComS541Fall97/hw-pages/paradigms/major.html
+
+More Programming Paradigms  
+http://cs.lmu.edu/~ray/notes/paradigms/
+
 Awesome Python (list of frameworks/libraries/software/resources)  
 https://awesome-python.com/
 
