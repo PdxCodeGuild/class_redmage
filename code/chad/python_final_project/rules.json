@@ -1,17 +1,23 @@
 {
-    "northwes":{"prettyname":"Northwest Energy", 
+    "northwest", "northwestern", "northwestern energy":{"prettyname":"Northwest Energy",
         "l2keywords":{"4plex":"4 Plex Grove St", 
-            "2520":"2520 Larkinwood Dr"},
+            "2520":"2520 Larkinwood Dr",
+            "7602":"7602 Half Acre Loop"},
         "type":"Bill"},
 
-    "republic":{"prettyname":"Republic Services", 
+    "republic":{"prettyname":"Republic Services",
         "l2keywords":{"happy":"Happy Valley", 
+            "2520":"2520 Larkinwood Dr",
+            "grove":"120 South Grove St"},
+        "type":"Bill"},
+    "mountain sup":{"prettyname":"Mountain Supply",
+        "l2keywords":{"happy":"Happy Valley",
             "2520":"2520 Larkinwood Dr",
             "grove":"120 South Grove St"},
         "type":"Bill"},
         
     "home depot":{"prettyname":"Home Depot", 
-        "l2keywords":{"happy":"Happy Valley", 
+        "l2keywords":{"happy valley":"Happy Valley",
             "2520":"2520 Larkinwood Dr",
             "grove":"120 South Grove St"},
         "type":"Reciept"}

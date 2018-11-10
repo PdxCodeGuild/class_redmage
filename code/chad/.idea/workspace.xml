@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="" />
+    <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-05-31-11 - Bill - Northwest Energy - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-05-31-11 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-12-07 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-23-07 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-24-07 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-26-12 - Bill - Northwest Energy - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-26-12 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-02-07 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-28-07 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-28-08 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-28-09 - Bill - Northwest Energy - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-28-09 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-07-29-06 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-08-11-21 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-08-28-08 - Bill - Northwest Energy - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-08-28-08 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-08-28-09 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-09-18-11 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-09-18-11 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-10-01-07 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-10-11-13 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-10-13-06 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-10-13-07 - Bill - Republic Services - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-12-03-13 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-12-03-14 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-12-03-14 - Bill - Republic Services - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-12-03-14 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-07-18 - Bill - Republic Services - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-07-18 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-29-08 - Bill - Northwest Energy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-29-08 - Bill - Republic Services - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-01-29-08 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-02-05-09 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-02-26-13 - Bill - Republic Services - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-02-26-13 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2016-04-22-09 - Bill - Republic Services.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank159.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank218.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank229.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank286.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank338.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank450.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank457.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank535.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank561.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank579.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank669.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank685.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank692.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank70.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank713.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank733.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank787.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank92.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank942.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/rules.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +82,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="3" />
+          <entry key="json" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="66" />
+          <entry key="py" value="68" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="25" />
         </counts>
@@ -31,8 +92,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
+          <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="65" />
+          <entry key="Python" value="67" />
           <entry key="PythonStub" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -41,14 +103,16 @@
         <counts>
           <entry key="csv" value="124" />
           <entry key="dummy" value="157" />
-          <entry key="py" value="32576" />
+          <entry key="json" value="130" />
+          <entry key="py" value="33849" />
           <entry key="txt" value="303" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JSON" value="130" />
           <entry key="PLAIN_TEXT" value="584" />
-          <entry key="Python" value="32328" />
+          <entry key="Python" value="33601" />
           <entry key="Scratch" value="248" />
         </counts>
       </usages-collector>
@@ -56,27 +120,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <marker date="1541609663000" expanded="true" signature="4585:4661" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python_final_project/rules/__keyword_Filepointer.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_final_project/rules/northwestenergy.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,19 +130,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/autorename_testing.py">
+        <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="246">
+              <caret line="101" column="21" lean-forward="true" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
+        <entry file="file://$PROJECT_DIR$/python_final_project/rules.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1729">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="152">
+              <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_final_project/blank_rename_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -132,8 +184,9 @@
       <find>counter</find>
       <find>total</find>
       <find>d</find>
-      <find>print</find>
       <find>filename</find>
+      <find>print</find>
+      <find>lower()</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -179,7 +232,6 @@
         <option value="$PROJECT_DIR$/practice/practice_strings.py" />
         <option value="$PROJECT_DIR$/python_final_project/pdf_filer_pypdf2_outputs.py" />
         <option value="$PROJECT_DIR$/python_final_project/test.py" />
-        <option value="$PROJECT_DIR$/python_final_project/blank_rename_file.py" />
         <option value="$PROJECT_DIR$/python_final_project/test_kivy.py" />
         <option value="$PROJECT_DIR$/python_final_project/editor.kv.py" />
         <option value="$PROJECT_DIR$/python_final_project/auto_rename.py" />
@@ -188,11 +240,14 @@
         <option value="$PROJECT_DIR$/python_final_project/rules/template.txt" />
         <option value="$PROJECT_DIR$/python_final_project/rules/northwestenergy.txt" />
         <option value="$PROJECT_DIR$/test/_test.py" />
+        <option value="$PROJECT_DIR$/python_final_project/blank_rename_file.py" />
+        <option value="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" />
+        <option value="$PROJECT_DIR$/python_final_project/rules.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
+    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="2139" />
     <option name="height" value="1341" />
@@ -239,12 +294,7 @@
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
               <item name="python_final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="rules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="data_set" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,6 +314,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python_final_project/doc_send" />
       <recent name="$PROJECT_DIR$/lab_21" />
       <recent name="$PROJECT_DIR$/group_mob" />
     </key>
@@ -280,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.backup_auto_rename">
+  <component name="RunManager" selected="Python.auto_rename_jsonv1">
     <configuration name="_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -315,6 +366,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/auto_rename.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auto_rename_jsonv1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -386,42 +458,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_kivy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_final_project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_final_project/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.lab_23v1" />
       <item itemvalue="Python.auto_rename" />
-      <item itemvalue="Python.test_kivy" />
-      <item itemvalue="Python.blank_rename_file" />
       <item itemvalue="Python.backup_auto_rename" />
       <item itemvalue="Python._test" />
+      <item itemvalue="Python.auto_rename_jsonv1" />
+      <item itemvalue="Python.blank_rename_file" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.auto_rename_jsonv1" />
+        <item itemvalue="Python.blank_rename_file" />
         <item itemvalue="Python.backup_auto_rename" />
         <item itemvalue="Python._test" />
         <item itemvalue="Python.auto_rename" />
-        <item itemvalue="Python.test_kivy" />
-        <item itemvalue="Python.blank_rename_file" />
       </list>
     </recent_temporary>
   </component>
@@ -439,7 +490,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="23" width="2139" height="1341" extended-state="0" />
+    <frame x="4" y="23" width="2139" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22720897" />
@@ -447,7 +498,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4574803" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18110237" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,8 +516,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/make_changev3.py" />
-    <entry file="file://$PROJECT_DIR$/magic_eightballv3.py" />
     <entry file="file://$PROJECT_DIR$/pick6v1_hosted.py" />
     <entry file="file://$PROJECT_DIR$/pick6v1_old.py" />
     <entry file="file://$PROJECT_DIR$/test_code.py" />
@@ -639,37 +688,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_final_project/blank_rename_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/rules/republicservices.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python_final_project/rules/template.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python_final_project/rules/northwestenergy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <marker date="1541609663000" expanded="true" signature="4585:4661" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,17 +705,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/autorename_testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/backup_auto_rename.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1729">
           <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/autorename_testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/rules/northwestenergy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/rules/template.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/blank_rename_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="101" column="21" lean-forward="true" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_final_project/rules.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
