@@ -1,5 +1,5 @@
 import os, PyPDF2, time, json
-
+print(f'You Started with {len(os.listdir())}')
 #Top Level variable to grab files that did not get renamed and ones that were renamed to lated be listed
 matches_found = []
 match_notfound = []
@@ -17,7 +17,6 @@ def open_pdf(file_name,):
     f = open(file_name, 'rb')
     pdfread = PyPDF2.PdfFileReader(f)
     f.close
-    pdfread = pdfread.getPage(0).extractText()
     return pdfread
        
 def file_format(keyword_match, ocrdata):
@@ -40,10 +39,20 @@ def file_format(keyword_match, ocrdata):
     return final_filename
 
 #Funciotn To Auto Rename File 
-def auto_rename(file, finalname_list):
-    final_filename = ''.join(finalname_list[0])
+def auto_rename(pypdf2_file, file, finalname_list):
+    #Variable that date slices go into
+    final_date = ''
+    #pypdf2 file gets passed into function and opened here to extract creation date
+    date = pypdf2_file.getDocumentInfo()['/CreationDate']
+    #Slice the main date part
+    date = date[2:12]
+    #concatinate final_date string with slices of above slice
+    final_date += date[0:4] + '-' + date[4:6] + '-' + date[6:8] + '-' + date[8:10]
+
+    final_filename = final_date + ' - ' + ''.join(finalname_list[0])
     print(final_filename)
     os.rename(file, final_filename)
+    print(f'You ended with {print(os.listdir())} files')
 
 def find_matchL1(opened_file):
     for keyword in keyword_map:
@@ -66,7 +75,8 @@ def run_renameL1(keyword_map):
     for file in enum_folder:
         finalname_list = []
         #extract OCR data and return to match with keywords:
-        opened_file = open_pdf(file)
+        pypdf2_file = open_pdf(file)
+        opened_file = pypdf2_file.getPage(0).extractText()
         #call level one function to match first level keyword with ocrdata
         found_matchL1  = find_matchL1(opened_file)
         #if keyword matches True then
@@ -80,7 +90,7 @@ def run_renameL1(keyword_map):
                 found_matchL1['prettyname'], ' - ', 
                 found_matchL2,
                 '.pdf'])
-                auto_rename(file, finalname_list)
+                auto_rename(pypdf2_file, file, finalname_list)
             elif found_matchL2 is None:
                 ##If no L2 Keyword is found rename the file wihtout a L2keyword
                 #call file rename function
@@ -88,7 +98,7 @@ def run_renameL1(keyword_map):
                 finalname_list.append([found_matchL1['type'], ' - ',
                 found_matchL1['prettyname'],
                 '.pdf'])
-                auto_rename(file, finalname_list)
+                auto_rename(pypdf2_file, file, finalname_list)
       
 def matches_notfound(matches_not_found, matches_found):
     print('\n\nThe Following Files Did Match!!')
@@ -110,3 +120,10 @@ ran_renameL1 = run_renameL1(keyword_map)
 
 #Tell user about files that did and did not match keywords
 #matches_notfound(match_notfound, matches_found)
+
+
+#Here is some help with the json dictionary
+# print(rules.keys()) # Level 1 is keywords
+# print(rules['northwes']['l2keywords']) #Level 2 keywords
+# print(rules['northwes']['l2keywords']['4plex']) # Level 2 Pretty Name
+# print(rules['prettyname']['type'])
