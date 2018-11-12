@@ -1,6 +1,6 @@
 import json
 
-with open('rules.json') as rulefile:
+with open('northwest_energy.json') as rulefile:
     rules = json.load(rulefile)
 
 

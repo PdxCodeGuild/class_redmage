@@ -36,7 +36,7 @@ def find_matches(file, ocr_text):
     #ocr_text = ocr_text.lower()
     os.chdir('..')
     os.chdir('rules')
-    with open('rules.json') as f:
+    with open('northwest_energy.json') as f:
         rules = json.load(f)
 #{'Northwestern Energy': {'extract': {'saddress': 'Service Address: (.*?),', 'acct': '([\\d\\-]+?)CUSTOMER:ACCOUNT NUMBER'}, 'format': 'date-saddress-acct', 'dir': 'nwenergy'}}
 # For each rule such as Northwest Energy
