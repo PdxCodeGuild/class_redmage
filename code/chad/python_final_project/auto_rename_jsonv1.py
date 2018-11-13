@@ -8,11 +8,8 @@ from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 import compare_words
 
+#Starting Working Directory For Refrence Point Of Where Python Was Ran From
 starting_wd = os.getcwd()
-
-#Top Level variable to grab files that did not get renamed and ones that were renamed to lated be listed
-matches_found = []
-match_notfound = []
 
 # Function To keyword Map which contains all info to rename file
 def json_keys():
@@ -30,15 +27,10 @@ def json_keys():
 # Open Pdf and extract useful data
 def open_pdf(file_name):
     rsrcmgr = PDFResourceManager()
-
     retstr = StringIO()
-
     codec = 'utf-8'
-
     laparams = LAParams()
-
     device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
-
     print(os.getcwd())
     with open(file_name, 'rb') as fp:
         interpreter = PDFPageInterpreter(rsrcmgr, device)
@@ -152,18 +144,6 @@ def run_rename(json_keys, set_folder):
                     continue
             except:
                 except_counter += 1
-    # print(try_counter)
-    # print(except_counter)
-
-def matches_notfound(matches_not_found, matches_found):
-    print('\n\nThe Following Files Did Match!!')
-    for match in matches_found:
-        print(match)
-    time.sleep(2)
-    print('\n\nThe Following Files Did Not Find Any Matches. You Will Either Have To Be Manually Renamed Or New Renaming Rule Created:\n')
-    for match in matches_not_found:
-        print(match)
-    time.sleep(2)
 
 def menu():
 
@@ -184,31 +164,33 @@ def menu():
               "4.) - Start AutoRename Process Of Files You Set In Folder From Option #1\n"
               "5.) - Exit This Probram\n"
               "> "))
-
-        if user_input <= 5:
-            if user_input == 1:
-                ocr_file = input('Enter The File including Full Path That You Wish To View The OCR Contents? > ')
-                ocr_data = open_pdf(ocr_file)
-                print(ocr_data)
-            if user_input == 2:
-                key_counter = 0
-                for key in keys:
-                    print(f'Item Number: {key_counter}')
-                    print(key)
-                    key_counter += 1
-            if user_input == 3:
-                word_path = input('Which Folder Would You Like To Compare Words From? Make Sure EOL Has A "/" > ')
-                compared_words = compare_words.run_compare_words(word_path)
-                print(compared_words)
-                with open(starting_wd + '/word_compare.csv', 'w') as cwords:
-                    cwords.write(compared_words)
-            if user_input == 4:
-                run_rename(keys, set_folder)
-            if user_input == 5:
-                print('You Chose To Quit The Program!!')
-                break
-        else:
+        try:
+            if user_input <= 5:
+                if user_input == 1:
+                    ocr_file = input('Enter The File including Full Path That You Wish To View The OCR Contents? > ')
+                    ocr_data = open_pdf(ocr_file)
+                    print(ocr_data)
+                if user_input == 2:
+                    key_counter = 0
+                    for key in keys:
+                        print(f'Item Number: {key_counter}')
+                        print(key)
+                        key_counter += 1
+                if user_input == 3:
+                    word_path = input('Which Folder Would You Like To Compare Words From? Make Sure EOL Has A "/" > ')
+                    compared_words = compare_words.run_compare_words(word_path)
+                    print(compared_words)
+                    with open(starting_wd + '/word_compare.csv', 'w') as cwords:
+                        cwords.write(compared_words)
+                if user_input == 4:
+                    run_rename(keys, set_folder)
+                    print(matches_found, match_notfound)
+                if user_input == 5:
+                    print('You Chose To Quit The Program!!')
+                    break
+        except:
             print('You Typed An Invalid Number. Please Try Again')
+            continue
 
 #Start Program Menu
 menu()

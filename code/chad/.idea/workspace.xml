@@ -2,72 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938617ac-9254-4ec2-b23a-2cdd5b428ac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python_final_project/rules/northwest_energy.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/blank_rename_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank10.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank11.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank12.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank13.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank14.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank15.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank16.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank17.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank18.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank18.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank19.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank20.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank21.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank22.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank22.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank23.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank23.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank24.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank24.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank25.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank25.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-05-31-11-35 - Bill - Northwest Energy - 2506 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-02-08-86 - Bill - Mountain Supply - Larkinwood.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-12-07-8 - Bill - Northwest Energy - 2506 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-23-07-1 - Bill - Mountain Supply - Larkinwood.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-23-07-27 - Bill - Northwest Energy - 7602 Half Acre Loop.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-24-07-62 - Bill - Northwest Energy - 2510 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-26-12-42 - Bill - Northwest Energy - 2520 Larkinwood Dr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-26-12-52 - Bill - Northwest Energy - 120 S Grove Duplex.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-26-12-64 - Bill - Northwest Energy - 120 S Grove Tr.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/2015-06-30-07-61 - Bill - Mountain Supply - Larkinwood.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank18.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank20.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank21.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank22.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank23.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank24.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank25.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank26.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank27.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank28.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank28.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank29.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank29.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank30.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank30.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank31.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank31.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank32.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank32.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank28.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank29.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank30.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank31.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank32.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank33.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank34.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank35.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank36.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank37.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank38.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank38.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank38.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank39.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank4.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank40.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank41.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank42.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank43.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank43.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank44.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank44.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank43.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank44.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank45.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank46.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank47.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank47.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank47.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank48.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank49.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank5.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank50.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank51.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank52.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank53.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank54.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank54.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank54.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank55.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank56.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank57.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank58.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank59.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank60.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/doc_send/testblank60.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank60.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank61.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank62.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/old_files/auto_renamev2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/old_files/auto_renamev2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/old_files/template.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/rules/northwestenergy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/old_files/northwestenergy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/rules/republicservices.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/old_files/republicservices.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/rules/template.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/rules/temptext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/old_files/temptext.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_final_project/test_ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_final_project/test_ocr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank63.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank64.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank65.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank66.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank67.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank68.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank69.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank70.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank71.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank72.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank73.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank74.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank75.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank76.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank77.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank78.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank79.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank80.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank81.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank82.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_final_project/doc_send/testblank9.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +127,7 @@
           <entry key="csv" value="124" />
           <entry key="dummy" value="177" />
           <entry key="json" value="557" />
-          <entry key="py" value="38787" />
+          <entry key="py" value="38966" />
           <entry key="txt" value="304" />
         </counts>
       </usages-collector>
@@ -119,7 +135,7 @@
         <counts>
           <entry key="JSON" value="557" />
           <entry key="PLAIN_TEXT" value="605" />
-          <entry key="Python" value="38539" />
+          <entry key="Python" value="38718" />
           <entry key="Scratch" value="248" />
         </counts>
       </usages-collector>
@@ -130,11 +146,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="160" column="20" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="20" />
+            <state relative-caret-position="209">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
-                <marker date="1542051720000" expanded="true" signature="6289:7059" ph="..." />
+                <marker date="1542065056000" expanded="true" signature="5771:6553" ph="..." />
               </folding>
             </state>
           </provider>
@@ -249,9 +265,9 @@
         <option value="$PROJECT_DIR$/python_final_project/keyword_generator.py" />
         <option value="$PROJECT_DIR$/python_final_project/doc_send/compare_words.py" />
         <option value="$PROJECT_DIR$/python_final_project/compare_words.py" />
-        <option value="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" />
         <option value="$PROJECT_DIR$/python_final_project/blank_rename_file.py" />
         <option value="$PROJECT_DIR$/python_final_project/rules/northwest_energy.json" />
+        <option value="$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py" />
       </list>
     </option>
   </component>
@@ -298,12 +314,6 @@
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
               <item name="chad" type="462c0819:PsiDirectoryNode" />
               <item name="python_final_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chad" type="462c0819:PsiDirectoryNode" />
-              <item name="python_final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="doc_send" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chad" type="b2602c69:ProjectViewProjectNode" />
@@ -510,12 +520,12 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1351" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18984374" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18984374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42734376" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42734376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -816,11 +826,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_final_project/auto_rename_jsonv1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="160" column="20" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="20" />
+        <state relative-caret-position="209">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1542051720000" expanded="true" signature="6289:7059" ph="..." />
+            <marker date="1542065056000" expanded="true" signature="5771:6553" ph="..." />
           </folding>
         </state>
       </provider>
