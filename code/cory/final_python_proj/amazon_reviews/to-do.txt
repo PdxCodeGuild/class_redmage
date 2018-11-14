@@ -41,3 +41,13 @@ ValueError: invalid literal for int() with base 10: 'a'
 
 
 # Add a search function to look up books
+
+
+
+
+
+# Not in csv...
+Harden: Lee Harden, Book 1Oct 23, 2018
+$0.00-$21.95
+Audible Audiobook,Kindle Edition
+5 out of 5 stars 72
