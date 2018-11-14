@@ -27,3 +27,4 @@ Include the following:
 ## Part 4
 
 * Peruse the [complete HTML element list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and try to incorporate some of them.
+* Peruse the [complete CSS property list](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) and further refine the style of your page elements.
