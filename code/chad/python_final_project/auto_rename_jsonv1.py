@@ -45,7 +45,7 @@ def open_pdf(file_name):
         text = retstr.getvalue()
     device.close()
     retstr.close()
-
+    print(text)
     return text
 
 #Function To Do the Actual Rename Of File
