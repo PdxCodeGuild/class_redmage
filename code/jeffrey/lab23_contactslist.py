@@ -40,8 +40,8 @@ def retrieve():
             print(f'\n{contacts_dict[i]}\n')
             return contacts_dict
 
-def update():
-    
+# def update():
+
 
 # def delete():
 
