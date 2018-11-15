@@ -41,10 +41,12 @@ def retrieve():
             return contacts_dict
 
 # def update():
-
+def update():
+    pass
 
 # def delete():
-
+def delete():
+    pass
 
 while True:
     choice = input(f'''

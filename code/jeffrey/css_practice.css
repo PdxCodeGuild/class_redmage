@@ -1,0 +1,9 @@
+#box-model{
+    width: 400px;
+    border: 2px solid salmon;
+    text-align: justify;
+    font-family: helvetica, Arial, sans-serif;
+    padding: 100px 50px 25px 250px;
+    margin: 100px auto 0;
+    box-shadow: 0 0 20px -4px chartreuse;
+}
