@@ -17,27 +17,36 @@ for i in range(1,len(lines)):
     # add those mini-dict entries to the list
     contacts_dict.append(entry)
 
-print(contacts_dict)
+user_name = input(f'What is your {(keys[0])}? \n')
 
 # List of CRUD FUNCTIONS BELOW
 def create():
-    user_val2 = input(f'Input your {(keys[1])}: ')
-    user_val3 = input(f'Input your {(keys[2])}: ')
-    entry_str = ','.join([user_name,user_val2,user_val3])
-    for x in range(len(entry_str.split(','))):
-        line = entry_str.split(',')
-        entry = dict(zip(keys,line))
+    user_val1 = input(f'Input the {(keys[0])}: ')
+    user_val2 = input(f'Input the {(keys[1])}: ')
+    user_val3 = input(f'Input the {(keys[2])}: ')
+    
+    entry_str = (user_val1,user_val2,user_val3)
+    
+    checker = input(f'Enter "yes" if you want to add: {entry_str}')
+    
+    if checker.lower() == 'yes':
+        entry = dict(zip(keys,entry_str))
         contacts_dict.append(entry)
-    print(contacts_dict)
 
-# def retrieve():
+def retrieve():
+    user_val1 = input(f'What is the {(keys[0])} of the record that you would like to retrieve? ').lower()
+    for i in range(len(contacts_dict)):
+        if user_val1 == contacts_dict[i][(keys[0])]:
+            print(f'\n{contacts_dict[i]}\n')
+            return contacts_dict
 
 # def update():
 
+
 # def delete():
 
+
 while True:
-    user_name = input(f'What is your {(keys[0])}? \n')
     choice = input(f'''
     Welcome {user_name}, you have four options for actions:
     1. 'create' for making a new record
@@ -48,8 +57,8 @@ while True:
     ''')
     if choice.lower() == 'create':
         create()
-    # elif choice.lower() == 'retrieve':
-    #     retrieve()
+    elif choice.lower() == 'retrieve':
+        retrieve()
     # elif choice.lower() == 'update':
     #     update()
     # elif  choice.lower() == 'delete':

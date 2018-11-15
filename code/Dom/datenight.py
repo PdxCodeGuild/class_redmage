@@ -122,4 +122,4 @@ music = find_music(coordinates,day_dict[day])
 
 other = find_other(coordinates,day_dict[day])
 print("")
-print(f'Next {day} you will enjoy {meal} at {r_name} located at {" ".join(r_address)} \n\nThen you can:\n\n{movie}\n{music}\n{other}\nHave a great night!')
+print(f'Next {day} you will enjoy {meal} at {r_name} located at {" ".join(r_address)} \n\nThen you can:\n{movie}\n{music}\n{other}\nHave a great night!')

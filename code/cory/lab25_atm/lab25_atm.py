@@ -47,6 +47,7 @@ class Atm:
         '''Shows amount of interest gained'''
         return f"Interest gained is ${round(self.interest * self.balance)}."
 
+    # prints transaction list
     def print_transactions(self):
         out_string = '\n'
         for key in self.transactions:
