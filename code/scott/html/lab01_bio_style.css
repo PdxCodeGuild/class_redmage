@@ -1,0 +1,40 @@
+html {
+    background-color: lightgrey;
+}
+body > * {
+    text-align: center;
+}
+
+#p1 {
+    font-size: 30px;
+}
+
+
+#p2 {
+    font-size: 15px;
+}
+
+img {
+    border-radius: 45px;
+    border-width: 10px;
+    border-style: dotted;
+    border-color: blue; 
+    float: top;
+    margin-right: 35px;
+}
+
+li {
+    font-family: cursive;
+    font-size:25px;
+    align-content: left;
+    list-style-position: inside
+}
+
+blockquote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+ul {
+    list-style-type: square;
+}

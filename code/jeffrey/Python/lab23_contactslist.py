@@ -40,11 +40,13 @@ def retrieve():
             print(f'\n{contacts_dict[i]}\n')
             return contacts_dict
 
+# def update():
 def update():
-    
+    pass
 
 # def delete():
-
+def delete():
+    pass
 
 while True:
     choice = input(f'''
