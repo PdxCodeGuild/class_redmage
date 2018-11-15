@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2, h3 {
+  color: green;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+ul li {
+  color:red;
+}
+
+
+ul {
+  border: 3px solid darkgoldenrod;
+  font-family: 'Courier New', Courier, monospace
+}
+
+#box-model p {
+  border: 2px solid salmon;
+  text-align: justify;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 20px;
+  margin: 5%;
+  box-shadow: 0 0 20px -4px darkred;
+}
+
+@media (min-width: 800px) {
+  #box-model p {
+    width: 40%;
+    float: left;
+    padding: 100px 50px 25px 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #box-model p {
+    width: 23.333%;
+  }
+}
