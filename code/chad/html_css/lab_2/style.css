@@ -1,5 +1,6 @@
 body {
-    #background-image: url("https://images.pexels.com/photos/696680/pexels-photo-696680.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/696680/pexels-photo-696680.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+
 
 }
 #blogpost1  h2{
@@ -7,13 +8,24 @@ body {
     box-shadow: 0 0 15px darkblue;
     margin-bottom: 0%;
     box-sizing: border-box;
-    width: 100%;
+    width: 35%;
+    clear: both;
 }
 #blogpost1  p{
     border: 5px outset black;
-    box-shadow: 0 0 15px darkblue;
+    box-shadow: 0 0 10px darkblue;
     margin-top: 0%;
     margin-bottom: 5%;
     box-sizing: border-box;
-    width: 100%;
+    width: 35%;
+    clear: both;
+}
+#navitems {
+    width: 50%;
+   float: right;
+    
+}
+
+#menutitle {
+    width: 25%;
 }
