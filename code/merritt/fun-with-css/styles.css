@@ -49,6 +49,30 @@ ul {
   display: none;
 }
 
+#position {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: green;
+  color: lightsteelblue;
+  z-index: -1;
+}
+#header > h1 {
+  background-color: green;
+  color: lightsteelblue;
+}
+
+.first-div {
+  margin-top: 80px; 
+}
+
 @media (min-width: 800px) {
   #box-model p {
     width: 40%;
