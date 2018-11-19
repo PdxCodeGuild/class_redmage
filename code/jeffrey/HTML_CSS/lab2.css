@@ -1,0 +1,87 @@
+body, html {
+    /* height: 100%;
+    margin: 0; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(230, 230, 230, 0.904);
+}
+
+#menu-fonts {
+  font-family: 'Chivo', sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://ichef.bbci.co.uk/news/1024/media/images/81922000/jpg/_81922927_81922926.jpg");
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: top;
+}
+
+/* .hero-text {
+  text-align: left;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  color: white; */
+/* } */
+
+.navs {
+  float: right;
+  padding-top: 5px;
+  padding-right: 5px;
+  width: auto;
+  text-align: right;
+  margin: 0;
+}
+
+.title{
+  float: left;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: pink;  
+  width: auto;
+  text-align: left;
+  margin: 0;
+  font-size: 75%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p{
+  color: red;
+}
+
+ul {
+  float: right;
+}
+
+ul li {
+  padding-top: 5px;
+  padding-right: 5px;
+  width: auto;
+  color: whitesmoke;
+  text-align: right;
+  margin: 0;
+  font-size: 60%;
+  list-style-type: none;
+  float: right;
+}
+
+nav a:link, a:hover, a:visited, a:active {
+  color: wheat;
+  text-decoration: none;
+  text-underline-position: none; 
+}
+
+#box-model {
+  border: 2px solid;
+  border-color:blueviolet;
+  width: 65%;
+  margin: auto;
+}
