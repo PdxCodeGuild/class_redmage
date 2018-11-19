@@ -1,6 +1,13 @@
 # class_redmage
 Full Stack Python Day Class 2018-10-15
 
+## HTML/CSS Labs Assigned:
+
+Lab 01  
+Lab 02 (use floats)  
+Lab 03 (use flexbox/css grid)  
+Lab 04 (frameworks and layout are up to you)  
+
 ## Python Labs Assigned:
 
 Lab 01 - Lab 23  
@@ -43,6 +50,14 @@ In all three presentations, you should first explain the development process and
 - what is the future of the project? what features (if any) will you work on next?
 
 ## Odds and Ends
+
+Bootstrap Documentation  
+http://getbootstrap.com/docs/4.1/getting-started/introduction/
+
+CSS-Tricks  
+https://css-tricks.com  
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+https://css-tricks.com/snippets/css/complete-guide-grid/  
 
 The Four Major Programming Paradigms  
 http://www.eecs.ucf.edu/~leavens/ComS541Fall97/hw-pages/paradigms/major.html
