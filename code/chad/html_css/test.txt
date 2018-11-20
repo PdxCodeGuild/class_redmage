@@ -1,7 +1,0 @@
-Ive narrowed the LLC down to setting it up in Oregon and not a another state for the following reason:
-    - Oregon doesnt make you list the members of a llc only the organizer. Essentially I can be the face and our operating agreement will spell out all the other details. Someone is going to need to be a face anyways because it will be near impossible to get a bank account as a anonymous llc. Banks need to see at least one member from what im reading.
-    - Only large companys usually benefit from setting up in another state
-    - There is no tax advantage to setting up in antoher state. In fact it looks like we might be double taxed. We still have to get a business license in Oregon and Oregon will require us to pay taxes here.
-    - You MUST comply with laws in both states not just your own state. This can be painful to figure out.
-
-    

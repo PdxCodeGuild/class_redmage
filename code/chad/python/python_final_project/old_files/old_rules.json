@@ -1,0 +1,20 @@
+{
+    "repub": {
+        "extract": {
+            "saddress": "(grove...)",
+            "acct": "([\\d\\-]+?)customer:account number"
+        },
+        "format": "date-saddress-acct",
+        "dir": "nwenergy"
+    }, 
+    "northwest": {
+        "extract": {
+            "saddress": "service address: (.*?),",
+            "acct": "([\\d\\-]+?)customer:account number"
+        },
+        "format": "date-saddress-acct",
+        "dir": "nwenergy"
+      
+
+    }
+}
