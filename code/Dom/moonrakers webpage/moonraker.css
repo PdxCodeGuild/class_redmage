@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.title{
+    
+    grid-area: header
+}
+.plots{
+    display:flex;
+    justify-content: space-between;
+    grid-area: main;
+    flex-wrap: nowrap;
+}
+.plots img{
+    display:block
+}
+.plots p {
+    align-content: center;
+}
+
+.sidenav {
+    grid-area:sidebar
+}
+.mainimage {
+    justify-content: center;
+    grid-area: mainpic
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 
+    "sidebar header . "
+    ". mainpic ."
+    ". main main "
+
+}
+
