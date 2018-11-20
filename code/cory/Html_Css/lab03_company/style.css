@@ -11,47 +11,68 @@ body {
     padding: 0 6px;
 }
 
+#fixed-header {
+    box-sizing: content-box;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(158, 153, 153);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 24px auto 0;
+    padding: 0;
+    max-width: 450px;
+}
+
+.first-text {
+    box-sizing: content-box;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(158, 153, 153);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 24px 0 0;
+    padding: 0 6px;
+}
+
 ul {
-    margin: 0;
-    padding: 24px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    margin: 12px 0;
+    padding: 0;
 }
 
 img {
     display: block;
 }
 
+.logo {
+    display: none;
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    min-height: 75px;
+    margin: 10px;
+    border-radius: 3px;
+}
+
 .body {
-    background-image: url("https://i.pinimg.com/564x/00/b7/42/00b742855e80e9936d803c3e32c196e1.jpg");
+    background-image: url("https://i.pinimg.com/originals/4f/f9/66/4ff96679c89d5f58abe33279d26cd436.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .main-container {
     max-width: 450px;
-    
-    /* margin: 0 6px; */
-    /* padding: 0 12px; */
-}
-
-li {
-    border: 2px solid black;
-    border-radius: 24px;
-    margin: 0 6px;
-    background-color: white;
-    list-style: none;
-    display: inline-block;
 }
 
 button {
-    /* border: 2px solid black; */
-    /* border-radius: 24px; */
     margin: 0 6px;
-    /* background-color: white; */
-    /* list-style: none; */
-    /* display: inline-block; */
+    overflow: hidden;
+    font-size: 18px;
+    border-radius: 12px;
+    max-width: 300px;
+    width: auto;
 }
 
 /* button:active {
@@ -60,23 +81,12 @@ button {
     transform: translateY(4px);
 } */
 
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-
 h1 {
     font-size: 24px;
 }
 
 p {
     text-align: justify;
-    /* margin: 0 12px; */
 }
 
 img {
@@ -85,13 +95,15 @@ img {
 
 .card-main {
     box-sizing: content-box;
-    /* width: 300px;
-    height: 300px; */
+    max-width: 450px;
+    max-height: 400px;
     border: 3px;
     border-style: solid;
     border-color: rgb(158, 153, 153);
     margin: 6px 0;
     background-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-top {
@@ -106,6 +118,10 @@ img {
     
 }
 
+.all-cards {
+    margin: auto;
+}
+
 .card-text p {
     text-align: center;
     box-sizing: content-box;
@@ -118,4 +134,104 @@ img {
 .dog {
     width: 100%;
     height: inherit;
+}
+
+@media screen and (min-width: 925px) {
+
+    .main-container {
+        max-width: 925px;
+    }
+
+    .center {
+        padding: 0;
+    }
+
+    #fixed-header.center {
+        max-width: none;
+        height: 97px;
+        width: 100%;
+        border-right: 3px;
+        border-left: 3px;
+        border-top: 3px;
+        border-radius: 0;
+        margin: 0;
+        /* padding: 12px; */
+        background-color: rgba(19, 17, 17, 0.85);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .all-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    #card5 {
+        grid-column: 1 / span 2;
+    }
+
+    .logo {
+        display: inline;
+        grid-column: 1;
+        /* margin-left: 25px; */
+    }
+
+    .first-text {
+        margin: 120px auto 20px;
+    }
+
+    ul {
+        grid-template: 1fr / 6fr;
+        /* grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    button {
+        width: 200px;
+        margin: auto;
+        margin-right: 10px;
+        margin-left: auto;
+        height: 50px;
+    }
+
+    #b1 {
+        grid-column: 4;
+    }
+
+    #b2 {
+        grid-column: 5;
+    }
+
+    #b3 {
+        grid-column: 6;
+    }
+}   
+
+@media screen and (min-width: 1400px) {
+
+    .main-container {
+        max-width: 1400px;
+    }
+    .all-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #card1, #card2, #card3 {
+        grid-row: 1;
+
+    }
+
+    #card4 {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+    }
+    
+    #card5 {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
 }
