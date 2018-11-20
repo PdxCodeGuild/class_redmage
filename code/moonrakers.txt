@@ -7,3 +7,14 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyDgrnMks6chbPKsiyfbsID5y
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuj0gMb_aa0v1mo8IFfV4zrwZMKMiTN1ihL5MPEwKDyMCCMzlJVg
 
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Hv9UzBxQjXrcOUQLlebXZ8HqZOGuSizZUR9hK_av8zeiQ2Ry
+
+NEED TO DO:
+1. Type out an about section
+2. Hover over image changes
+3. slideshow of images? might need javascript
+4. bottom nav links to our privacy policy and legal
+5. Format sidebar to make it pretty
+6. Add our company image top left
+7. General Styling
+8. Media Controls.
+9. Make Sidebar Black
