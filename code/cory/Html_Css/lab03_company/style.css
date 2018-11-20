@@ -18,22 +18,22 @@ ul {
     grid-template-columns: 33% 33% 33%;
 }
 
-/* 
-.text-align {
-    text-align: center;
-} */
-
-#main-container {
-    max-width: 450px;
-    /* margin: 0 6px; */
-    /* padding: 0 12px; */
+img {
+    display: block;
 }
 
-.background-img {
-    position: fixed;
-    /* width: 450px; */
-    z-index: -1;
-    text-align: none;
+.body {
+    background-image: url("https://i.pinimg.com/564x/00/b7/42/00b742855e80e9936d803c3e32c196e1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.main-container {
+    max-width: 450px;
+    
+    /* margin: 0 6px; */
+    /* padding: 0 12px; */
 }
 
 li {
