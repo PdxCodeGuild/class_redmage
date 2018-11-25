@@ -93,4 +93,18 @@ while True:
     if end_prog.lower() == 'quit':
         break
 
+# sending back to csv reverets and prints back the first operation to the csv:
+new_data = []
+#starts list with the keys 
+new_data.append(",".join(keys))
+#converts the values from every dict to a list
+for i in range(len(contacts_dict)):
+    data_list = list(contacts_dict[i].values()) 
+    data = ",".join(data_list)
+    new_data.append(data)
+#formats the list to a string seperated by \n
+new_data = "\n".join(new_data)
 
+
+with open('contact_list.csv', "w") as file:
+    file.write(str(new_data))
