@@ -1,0 +1,81 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    </head>
+    
+    <body>
+        <header>
+           <h1>Tenant Application</h1>
+        </header>
+        <form>
+            <fieldset>
+                    <label for="firstname">First Name</label>
+                <input type="text" pattern="a-z" title="Must Contain Only Letters" id="firstname" required/>
+                    <label for="lastname">Last Name</label>
+                <input type="tel" pattern="a-z" title="Must Contain Only Letters" id="lastname" required/>
+                    <label for="homephone">Home Phone</label>
+                <input type="tel" pattern="0-9" min="10" max="10" title="Must Contain Only Numbers and 10 Digits Long" id="homephone" required/>
+                    <label for="cellphone">Cell Phone</label>
+                <input type="tel" pattern="0-9" min="10" max="10" id="cellphone" required/>
+                    <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" required/>
+                    <label for="ssn">Social Security Number</label>
+                <input type="number" min="9" max="9" id="ssn" required/>
+                    <label for="dl">Drivers License Number</label>
+                <input type="num" id="dl" required/>
+                    <label for="email">Email</label>
+                <input type="num" id="email" required/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Current Address</h2>
+                    <label for="currentaddress">Street Address</label>    
+                <input type="text" id="currentaddress" required/>
+                    <label for="currentcity">City</label>
+                <input type="text" id="currentcity" required/> 
+                    <label for="currentstate">State</label>
+                <input type="text" id="currentstate" required/>
+                    <label for="zip">Zip / Postal Code</label>
+                <input type="text" id="zip" required/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Previous Address</h2>
+                    <label for="previousaddress">Street Address</label>    
+                <input type="text" id="previousaddress" required/>
+                    <label for="previouscity">City</label>
+                <input type="text" id="previouscity" required/> 
+                    <label for="previousstate">State</label>
+                <input type="text" id="previousstate" required/>
+                    <label for="zip">Zip / Postal Code</label>
+                <input type="text" id="zip" required/>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Current Employer</h2>
+                    <label for="currentemployername">Name</label>    
+                <input type="text" id="currentemployername" required/>
+                    <label for="currentemployeraddress">Street Address</label>    
+                <input type="text" id="currentemployeraddress" required/>
+                    <label for="currentemployeraddress">Address</label>    
+                <input type="text" id="currentemployeraddress" required/>
+                    <label for="currentemployerstate">State</label>    
+                <input type="number" id="currentemployerstate" required/>
+                    <label for="currentemployerzip">Zip</label>    
+                <input type="text" id="currentemployerzip" required/>
+                    <label for="currentemployerphone">Phone</label>    
+                <input type="number" id="currentemployerphone" required/>
+                    <label for="currentemployerstartdate">Start Date</label>    
+                <input type="date" id="currentemployerstartdate" required/>
+                    <label for="currentemployerstartdate">End Date</label>    
+                <input type="date" id="currentemployerstartdate" required/>
+            </fieldset>
+            <br>
+            <input type="submit">
+            
+        </form>
+        <footer>
+    
+        </footer>
+    </body>
