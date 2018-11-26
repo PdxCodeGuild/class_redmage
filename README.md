@@ -7,6 +7,19 @@ Lab 01
 Lab 02 (use floats)  
 Lab 03 (use flexbox/css grid)  
 Lab 04 (frameworks and layout are up to you)  
+Lab 05
+
+## HTML/CSS Optional:
+
+###### Strongly Recommended:
+[CSS Diner](https://flukeout.github.io/)  
+[Flexbox Froggy](http://flexboxfroggy.com/)  
+[Grid Garden](http://cssgridgarden.com/)  
+
+###### Optional Labs + Topics:
+Optional - Animations  
+[Sass Basics](https://sass-lang.com/guide)  
+[BEM](http://getbem.com/introduction/)  
 
 ## Python Labs Assigned:
 
