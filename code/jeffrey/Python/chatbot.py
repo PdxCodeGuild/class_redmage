@@ -1,8 +1,6 @@
 import random
 import re
 
-bot_names = ["Clark", "Henry", "Germaine", "Peter", "Sam", "Alice","Clara","Samantha", "Olive"]
-
 bot_template = "BOT : {0}"
 user_template = "USER : {0}"
 

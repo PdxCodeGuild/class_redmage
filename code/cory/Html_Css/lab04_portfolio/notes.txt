@@ -1,0 +1,7 @@
+> Check to see if font color is the same as button background
+
+> Background on mobile doesn't scroll. Try positioning it in the center and fixing it to allow scrolling.
+
+> Choose new fucking social buttons
+
+> Try different colors with buttons
