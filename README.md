@@ -64,6 +64,11 @@ In all three presentations, you should first explain the development process and
 
 ## Odds and Ends
 
+MDN: How To Style Forms  
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms  
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Advanced_styling_for_HTML_forms  
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_build_custom_form_widgets  
+
 Bootstrap Documentation  
 http://getbootstrap.com/docs/4.1/getting-started/introduction/
 
