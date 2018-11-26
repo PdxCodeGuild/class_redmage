@@ -56,3 +56,28 @@ The output should look something like the following:
     that is suitable for an average person 16-17 years old.
 
     --------------------------------------------------------
+    
+## Version 2
+
+We've used `*args` and `**kwargs` to get parameters from function calls. There's something similar we can use to access command line parameters when the Python script is run, `sys.argv`.
+
+```python
+# args.py
+
+import sys
+
+print(sys.argv)
+```
+
+```
+$ python args.py
+['args.py']
+
+$ python args.py arg1 arg2
+['args.py', 'arg1', arg2']
+
+$ python args.py example.txt spoon fork
+['args.py', 'example.txt', 'spoon', 'fork']
+```
+
+Modify your ARI calculator to accept the name of the text file to read via command line arguements. Be sure to provide a fallback in case the user forgets to enter anything.

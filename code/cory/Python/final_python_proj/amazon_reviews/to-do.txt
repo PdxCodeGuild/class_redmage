@@ -1,0 +1,53 @@
+# Calling titles by number in all list:
+
+Cant call titles by sorted number. 
+
+
+
+
+# Calling authors by number:
+
+if user_input in author_list:
+                    for i in range(len(scifi_dictionaries)):
+                        if scifi_dictionaries[i]['Author'] == user_input:
+                            print('\n' + scifi_dictionaries[i]['Title'] + '\n')
+
+Cant call title by sorted author, just names.
+
+
+
+
+
+# Page changing when using a letter
+
+ try:
+                        change_page = int(change_page)
+                        if int(change_page) in range(1, 7):
+                            page = page_changer(int(change_page))
+                    except ValueError as ValueError:
+                            pass
+
+Still gives value error with invalid base
+
+Which page would you like to go to? (1 - 6) > a
+Traceback (most recent call last):
+  File ".\amazon_reviews_project.py", line 101, in genre_scifi
+    change_page = int(change_page)
+ValueError: invalid literal for int() with base 10: 'a'
+
+
+
+
+
+
+# Add a search function to look up books
+
+
+
+
+
+# Not in csv...
+Harden: Lee Harden, Book 1Oct 23, 2018
+$0.00-$21.95
+Audible Audiobook,Kindle Edition
+5 out of 5 stars 72
