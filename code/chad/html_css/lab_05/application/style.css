@@ -1,11 +1,19 @@
 
-fieldset {
-    display: grid;
-    grid-template-rows: 25%;
-    grid-row-start: 1;
-    font-weight: bold;
-    font-size: 1em;
+form ul{
+    display:flex;
+    flex-direction: column
+    
+
 }    
+form label {
+    float: left;
+  
+}
+
+form input {
+    float: right;
+    
+}
 
 body {
     margin: 100px
@@ -23,9 +31,4 @@ legend {
 }
 fieldset {
     background-color: rgb(248, 246, 246);
-}
-div {
-    margin: 10px auto;
-    width: 100%;
-  
 }
