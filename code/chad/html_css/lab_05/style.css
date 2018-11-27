@@ -1,8 +1,7 @@
 
-fieldset {
+fieldset label{
     display: grid;
-    grid-template-rows: 25%;
-    grid-row-start: 1;
+    grid-template-rows: 25% 25% 25%;
     font-weight: bold;
     font-size: 1em;
 }    
