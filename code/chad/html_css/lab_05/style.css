@@ -1,8 +1,31 @@
+
+fieldset {
+    display: grid;
+    grid-template-rows: 25%;
+    grid-row-start: 1;
+    font-weight: bold;
+    font-size: 1em;
+}    
+
+body {
+    margin: 100px
+}
 h1 {
     font-size: 50px;
-    font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-family: 'Nanum Gothic Coding', monospace;
     text-align: center;
-    
+ 
+}
+legend {
+    font-size: 30px;
 
+}
+fieldset {
+    background-color: rgb(248, 246, 246);
+}
+div {
+    margin: 10px auto;
+    width: 100%;
+  
 }
