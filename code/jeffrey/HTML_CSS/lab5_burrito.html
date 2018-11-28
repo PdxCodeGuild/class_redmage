@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Burrito Bonanza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lab5_burritto.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Raleway" rel="stylesheet">
+  </head>
+  <body class="container">
+    <div class="item-a round">
+      <h1 style="text-align: center">
+        Burrito Bonanza
+      </h1>
+    </div>
+    <div class="item-b">
+      <img src="58727fbcf3a71010b5e8ef09.png" alt="burrito">
+      <div>You get a burrito.. !</div>
+    </div>
+    <div class="item-c round">
+      <form action="https://postb.in/4b0eP7W8" method="post" class="wrap space-around">
+        <h2>Customize your burrito below!</h2>
+        <div class="width-it">
+          <fieldset>
+            <legend>Beans Choice</legend>
+            <label for="radio-blackbeans">black</label>
+            <input type="radio" name="beans" value="blackbeans" id="radio-blackbeans">
+            <label for="radio-pintobeans">pinto</label>
+            <input type="radio" name="beans" value="pintobeans" id="radio-pintobeans">
+          </fieldset>
+          <fieldset>
+            <legend>Meat Choice</legend>
+              <label for="radio-carnitas">carnitas</label>
+              <input type="radio" name="meat" value="carnitas" id="radio-carnitas">
+              <label for="radio-chicken">chicken</label>
+              <input type="radio" name="meat" value="chicken" id="radio-chicken">
+              <label for="radio-sofritas">sofritas</label>
+              <input type="radio" name="meat" value="sofritas" id="radio-sofritas">
+              <label for="radio-none-meat">none</label>
+              <input type="radio" name="meat" value="none" id="radio-none-meat">
+          </fieldset>
+          <fieldset>
+            <legend>Tortilla Type</legend>
+              <label for="radio-whiteflower">white flour</label>
+              <input type="radio" name="tortilla" value="whiteflour" id="radio-whiteflower">
+              <label for="radio-wheatflower">wheat flour</label>
+              <input type="radio" name="tortilla" value="wheatflour" id="radio-wheatflower">
+              <label for="radio-spinach">spinach</label>
+              <input type="radio" name="tortilla" value="spinach" id="radio-spinach">
+              <label for="radio-corn">corn</label>
+              <input type="radio" name="tortilla" value="corn" id="radio-corn">
+              <label for="radio-none-tortilla">naked (none)</label>
+              <input type="radio" name="tortilla" value="none" id="radio-none-tortilla">
+            </fieldset>
+            <fieldset>
+              <legend>Rice Choice</legend>
+                <label for="radio-whiterice">white</label>
+                <input type="radio" name="rice" value="whiterice" id="radio-whiterice">
+                <label for="radio-brownrice">brown</label>
+                <input type="radio" name="rice" value="brownrice" id="radio-brownrice">
+            </fieldset>
+            <fieldset>
+              <legend>Add-ons</legend>
+                <label for="check-cheese">cheese</label>
+                <input type="checkbox" name="cheese" value="cheese" id="check-cheese">
+                <label for="check-sour_cream">sour cream</label>
+                <input type="checkbox" name="sour_cream" value="sour_cream" id="check-sour_cream">
+            </fieldset>
+          </div>
+          <div class="width-it">
+            <fieldset class="personal-details">
+              <legend>Personal Details</legend>
+                <label for="text-name">Input your name:</label>
+                <input type="text" name="name" id="text-name" pattern="[a-zA-Z]+" required>
+                <label for="email-email">Enter your email address:</label>
+                <input type="email" name="email" id="email-email" required>
+                <label for="tel-phone">Enter your phone #:</label>
+                <input type="tel" name="phone" id="tel-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
+                <label for="text-zipcode">Enter your zipcode</label>
+                <input type="text" name="zipcode" id="text-zipcode" required pattern="[0-9]{5}|[0-9]{5}-[0-9]{4}" title="ex. 98456 or 98456-8432">
+            </fieldset>
+          </div>
+    </div>
+    <div class="item-e round">
+      <input type="submit">
+      <button type="reset">Reset</button>
+    </div>
+  </body>
+</html>
