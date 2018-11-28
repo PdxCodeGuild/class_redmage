@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+    <img src="\C:\Users\ArcticAzn\Desktop\Website pics\shrimp.jpg" alt="Shrimp" width="600" height="400">
+  </a>
+  <div class="desc">Shrimp and Grits</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="korean pork.jpg">
+    <img src="img_forest.jpg" alt="Pork" width="600" height="400">
+  </a>
+  <div class="desc">Korean Pork Po Boy</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="tortellini.jpg">
+    <img src="img_lights.jpg" alt="Pasta" width="600" height="400">
+  </a>
+  <div class="desc">House Made Tortellini</div>
+</div>
+
+</body>
+</html>

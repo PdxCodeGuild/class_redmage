@@ -1,0 +1,34 @@
+
+form ul{
+    display:flex;
+    flex-direction: column
+    
+
+}    
+form label {
+    float: left;
+  
+}
+
+form input {
+    float: right;
+    
+}
+
+body {
+    margin: 100px
+}
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-align: center;
+ 
+}
+legend {
+    font-size: 30px;
+
+}
+fieldset {
+    background-color: rgb(248, 246, 246);
+}

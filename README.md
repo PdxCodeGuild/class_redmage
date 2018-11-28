@@ -7,6 +7,19 @@ Lab 01
 Lab 02 (use floats)  
 Lab 03 (use flexbox/css grid)  
 Lab 04 (frameworks and layout are up to you)  
+Lab 05
+
+## HTML/CSS Optional:
+
+###### Strongly Recommended:
+[CSS Diner](https://flukeout.github.io/)  
+[Flexbox Froggy](http://flexboxfroggy.com/)  
+[Grid Garden](http://cssgridgarden.com/)  
+
+###### Optional Labs + Topics:
+Optional - Animations  
+[Sass Basics](https://sass-lang.com/guide)  
+[BEM](http://getbem.com/introduction/)  
 
 ## Python Labs Assigned:
 
@@ -50,6 +63,11 @@ In all three presentations, you should first explain the development process and
 - what is the future of the project? what features (if any) will you work on next?
 
 ## Odds and Ends
+
+MDN: How To Style Forms  
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms  
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Advanced_styling_for_HTML_forms  
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_build_custom_form_widgets  
 
 Bootstrap Documentation  
 http://getbootstrap.com/docs/4.1/getting-started/introduction/
