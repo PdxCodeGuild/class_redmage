@@ -1,0 +1,223 @@
+
+<head>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="style.css">
+   
+    </head>
+    
+    <body>
+        <header>
+           <h1>Tenant Application</h1>
+        </header>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+                        <label for="firstname">First Name</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="firstname" required/>
+                        <label for="lastname">Last Name</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="lastname" required/>
+                        <label for="homephone">Home Phone</label>
+                    <input type="tel" id="homephone" required/>
+                        <label for="cellphone">Cell Phone</label>
+                    <input type="tel"  id="cellphone" required/>
+                        <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" required/>
+                        <label for="ssn">Social Security Number</label>
+                    <input type="text" min="9" max="9" id="ssn" required/>
+                        <label for="dl">Drivers License Number</label>
+                    <input type="text" id="dl" required/>
+                        <label for="email">Email</label>
+                    <input type="text" id="email" required/>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Current Address</legend>
+                
+                        <label for="currentaddress">Street Address</label>    
+                    <input type="text" id="currentaddress" required/>
+                        <label for="currentcity">City</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentcity" required/> 
+                        <label for="currentstate">State</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentstate" required/>
+                   
+                              
+                        <label for="zip">Zip / Postal Code</label>
+                    <input type="text" id="zip" required/>
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Previous Address</legend>
+                
+                        <label for="previousaddress">Street Address</label>    
+                    <input type="text" id="previousaddress" required/>
+                        <label for="previouscity">City</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="previouscity" required/> 
+                        <label for="previousstate">State</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="previousstate" required/>
+                
+
+                
+                        <label for="zip">Zip / Postal Code</label>
+                    <input type="number" id="zip" required/>
+                
+ 
+            </fieldset>
+       
+            <fieldset>
+                <legend>Current Employer</legend>
+                
+                        <label for="currentemployername">Name</label>    
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentemployername" required/>
+                        <label for="currentemployeraddress">Street Address</label>    
+                    <input type="text" id="currentemployeraddress" required/>
+                        <label for="currentemployeraddress">Address</label>    
+                    <input type="text" id="currentemployeraddress" required/>
+                
+
+                        <label for="currentemployerstate">State</label>    
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentemployerstate" required/>
+                        <label for="currentemployerzip">Zip</label>    
+                    <input type="text"  id="currentemployerzip" required/>
+                        <label for="currentemployerphone">Phone</label>    
+                    <input type="tel" id="currentemployerphone" required/>
+            
+               
+                        <label for="currentemployerstartdate">Start Date</label>    
+                    <input type="date" id="currentemployerstartdate" required/>
+                        <label for="currentemployerstartdate">End Date</label>    
+                    <input type="date" id="currentemployerstartdate" required/>
+                        <label>May We Contact This Employer?</label>  
+                        <label for="currentemployermaycontactyes">Yes</label> 
+                    <input type="radio" name="currentemployermaycontact" value="Yes" id="currentemployermaycontactyes" required/>
+                        <label for="currentemployermaycontactno">No</label>
+                    <input type="radio" name="currentemployermaycontact" value="No" id="currentemployermaycontactno" required/>                
+                  
+
+                    <legend>Previous Employer</legend>
+                        <label for="previousemployername">Name</label>    
+                    <input type="text" id="previousemployername" required/>
+                        <label for="previousemployeraddress">Street Address</label>    
+                    <input type="text" id="previousemployeraddress" required/>
+                        <label for="previousemployeraddress">Address</label>    
+                    <input type="text" id="previousemployeraddress" required/>
+                
+                
+                        <label for="previousemployerstate">State</label>    
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters"  id="previousemployerstate" required/>
+                        <label for="previousemployerzip">Zip</label>    
+                    <input type="text"  id="previousemployerzip" required/>
+                        <label for="previousemployerphone">Phone</label>    
+                    <input type="tel" id="previousemployerphone" required/>
+                
+
+                        <label for="previousemployerstartdate">Start Date</label>    
+                    <input type="date" id="previousemployerstartdate" required/>
+                        <label for="previousemployerstartdate">End Date</label>    
+                    <input type="date" id="previousemployerstartdate" required/>
+                        <label>May We Contact This Employer?</label>  
+                        <label for="previousemployermaycontactyes">Yes</label> 
+                    <input type="radio" name="previousemployermaycontact" value="Yes" id="previousemployermaycontactyes" required/>
+                        <label for="previousemployermaycontactno">No</label>
+                    <input type="radio" name="previousemployermaycontact" value="No" id="previousemployermaycontactno" required/>  
+                
+                </fieldset>
+            
+            <fieldset>
+                <legend>Additional People That Will Be Living At The Residence</legend>
+
+                        <label for="people1" >Person 1</label>
+                    <input type="text" id="people1" >
+                        <label for="people2" >Person 2</label>
+                    <input type="text" id="people2">
+                        <label for="people3" >Person 3</label>
+                    <input type="text" id="people3">
+                        <label for="people4" >Person 4</label>
+                    <input type="text" id="people4">
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Questions</legend>
+                    <label>Will You Have Full Deposit?</label>
+                    <input type="radio" name="deposit" id="deposityes" required>
+                        <label for="deposityes">Yes</label>
+                    <input type="radio" name="deposit" id="depositno" required>
+                        <label for="depositno">No</label> 
+                
+                
+                    <label>Have You Ever Been Convicted Of A Felony?</label>
+                    <input type="radio" name="convicted" id="convictedyes" required>
+                        <label for="convictedyes">Yes</label>
+                    <input type="radio" name="convicted" id="convictedno" required>
+                        <label for="convictedno">No</label> 
+
+               
+            
+                <label>Do You Have Any Dogs?</label>
+                <input type="radio" name ="dogyes" id="dogyes" required>
+                    <label for="dogyes">Yes</label>
+                <input type="radio" name ="dogyes" id="dogno" required>
+                    <label for="dogno">No</label> 
+                    <label for="doganswer">If Yes Please Describe The Dogs You Own</label>
+                <input type="text" id=doganswer>
+
+                
+            
+                <label>Do You Have Any Cats That Will Be Living With You?</label>
+                <input type="radio" name ="catyes" id="catyes" required>
+                    <label for="catyes">Yes</label>
+                <input type="radio" name ="catyes" id="catno" required>
+                    <label for="catno">No</label> 
+                    <label for="catanswer">If Yes Please Describe The Cat You Own</label>
+                <input type="text" id=catanswer>
+                
+            
+            
+                <label>Do You Have Any Water Filled Furnature?</label>
+                <input type="radio" name ="waterfurnature" id="waterfurnatureyes" required>
+                    <label for="waterfurnatureyes">Yes</label>
+                <input type="radio" name ="waterfurnature" id="waterfurnatureno" required>
+                    <label for="waterfurnatureno">No</label> 
+                    <label for="waterfurnatureanswer">If Yes Please Describe The Water Filled Furnature You Own</label>
+                <input type="text" id=waterfurnatureanswer>
+
+     
+            
+                <label>Have You Ever Been Evicted?</label>
+                <input type="radio" name ="evicted" id="evictedyes" required>
+                    <label for="evictedyes">Yes</label>
+                <input type="radio" name ="evicted" id="evictedno" required>
+                    <label for="evictedno">No</label> 
+                    <label for="evictedanswer">If Yes Please Describe The Circumstances That You Were Evicted</label>
+                <input type="text" id=evictedanswer>
+
+             
+                <label>Do You Have Any Judgements?</label>
+                <input type="radio" name ="judgement"  id="judgementsyes" required>
+                    <label for="judgementsyes">Yes</label>
+                <input type="radio" name ="judgement"  id="judgementsno" required>
+                    <label for="judgementsno">No</label> 
+                    <label for="judgementsanswer">If Yes Please Describe Judgments</label>
+                <input type="text" id=judgementsanswer>
+            
+                <label>Do You Have Any Collections (Collections That Are Medical or Education Related Do Not Count)?</label>
+                <input type="radio" name ="collections" id="collectionsyes" required>
+                    <label for="collectionsyes">Yes</label>
+                <input type="radio" name ="collections" id="collectionsno" required>
+                    <label for="collectionsno">No</label> 
+                    <label for="collectionsanswer">If Yes Please Describe Collections You Have</label>
+                <input type="text" id=collectionsanswer>
+
+            </fieldset>
+            
+            
+            <input type="submit">
+            
+        </form>
+        <footer>
+    
+        </footer>
+</body>

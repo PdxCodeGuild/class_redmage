@@ -1,0 +1,309 @@
+
+<head>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="style.css">
+   
+    </head>
+    
+    <body>
+        <div class="body-inner">
+        <header>
+           <h1>Tenant Application</h1>
+        </header>
+        
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <ul>
+                    <li>
+                    <label for="firstname">First Name</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="firstname" required/>
+                    </li>
+                    <li>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="lastname" required/>
+                    </li>
+                    <li>
+                    <label for="homephone">Home Phone</label>
+                    <input type="tel" id="homephone" required/>
+                    </li>
+                    <li>
+                    <label for="cellphone">Cell Phone</label>
+                    <input type="tel"  id="cellphone" required/>
+                    </li>
+                    <li>
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" required/>
+                    </li>
+                    <li>
+                    <label for="ssn">Social Security Number</label>
+                    <input type="text" min="9" max="9" id="ssn" required/>
+                    </li>
+                    <li>
+                    <label for="dl">Drivers License Number</label>
+                    <input type="text" id="dl" required/>
+                    </li>
+                    <li>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required/>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Current Address</legend>
+                <ul>
+                    <li>
+                    <label for="currentaddress">Street Address</label>    
+                    <input type="text" id="currentaddress" required/>
+                    </li>
+                    <li>
+                    <label for="currentcity">City</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentcity" required/> 
+                    </li>
+                    <li>
+                    <label for="currentstate">State</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentstate" required/>     
+                    </li>
+                    <li>
+                    <label for="zip">Zip / Postal Code</label>
+                    <input type="text" id="zip" required/>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Previous Address</legend>
+                <ul>
+                    <li>
+                    <label for="previousaddress">Street Address</label>    
+                    <input type="text" id="previousaddress" required/>
+                    </li>
+                    <li>
+                    <label for="previouscity">City</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="previouscity" required/> 
+                    </li>
+                    <li>
+                    <label for="previousstate">State</label>
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="previousstate" required/>
+                    </li>
+                    <li>
+                    <label for="zip">Zip / Postal Code</label>
+                    <input type="number" id="zip" required/>
+                    </li>
+ 
+            </fieldset>
+       
+            <fieldset>
+                <legend>Current Employer</legend>
+                <ul>
+                    <li>
+                    <label for="currentemployername">Name</label>    
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentemployername" required/>
+                    </li>
+                    <li>
+                    <label for="currentemployeraddress">Street Address</label>    
+                    <input type="text" id="currentemployeraddress" required/>
+                    </li>
+                    <li>
+                    <label for="currentemployeraddress">Address</label>    
+                    <input type="text" id="currentemployeraddress" required/>
+                    </li>
+                
+                    <li>
+                    <label for="currentemployerstate">State</label>    
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters" id="currentemployerstate" required/>
+                    </li>
+                    <li>
+                    <label for="currentemployerzip">Zip</label>    
+                    <input type="text"  id="currentemployerzip" required/>
+                    <li>
+                    <label for="currentemployerphone">Phone</label>    
+                    <input type="tel" id="currentemployerphone" required/>
+                    </li>
+                    <li>
+                    <label for="currentemployerstartdate">Start Date</label>    
+                    <input type="date" id="currentemployerstartdate" required/>
+                    </li>
+                    <li>
+                    <label for="currentemployerstartdate">End Date</label>    
+                    <input type="date" id="currentemployerstartdate" required/>
+                    </li>
+                    <li> 
+                    <label>May We Contact This Employer?</label>  
+                    <input class="radio" type="radio" name="currentemployermaycontact" value="Yes" id="currentemployermaycontactyes" required/>
+                    <label class="radio" for="currentemployermaycontactyes">Yes</label>
+                    <input class="radio" type="radio" name="currentemployermaycontact" value="No" id="currentemployermaycontactno" required/>                
+                    <label class="radio" for="currentemployermaycontactno">No</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Previous Employer</legend>
+                <ul>
+                    <li>
+                    <label for="previousemployername">Name</label>    
+                    <input type="text" id="previousemployername" required/>
+                    </li>
+                    <li>
+                    <label for="previousemployeraddress">Street Address</label>    
+                    <input type="text" id="previousemployeraddress" required/>
+                    </li>
+                    <li>
+                    <label for="previousemployeraddress">Address</label>    
+                    <input type="text" id="previousemployeraddress" required/>
+                    </li>
+                    <li>
+                    <label for="previousemployerstate">State</label>    
+                    <input type="text" pattern="[a-zA-Z]" title="Field Must Only Contain Letters"  id="previousemployerstate" required/>
+                    </li>
+                    <li>
+                    <label for="previousemployerzip">Zip</label>    
+                    <input type="text"  id="previousemployerzip" required/>
+                    </li>
+                    <li>
+                    <label for="previousemployerphone">Phone</label>    
+                    <input type="tel" id="previousemployerphone" required/>
+                    </li>
+                
+                    <li>
+                    <label for="previousemployerstartdate">Start Date</label>    
+                    <input type="date" id="previousemployerstartdate" required/>
+                    </li>
+                    <li>
+                    <label for="previousemployerstartdate">End Date</label>    
+                    <input type="date" id="previousemployerstartdate" required/>
+                    </li>
+                    <li>
+                    <label>May We Contact This Employer?</label>  
+                    <input class="radio" type="radio" name="previousemployermaycontact" value="Yes" id="previousemployermaycontactyes" required/>
+                    <label class="radio" for="previousemployermaycontactyes">Yes</label>
+                    <input class="radio" type="radio" name="previousemployermaycontact" value="No" id="previousemployermaycontactno" required/>  
+                    <label class="radio" for="previousemployermaycontactno">No</label>
+                    </li>
+                </ul>
+                </fieldset>
+            
+            <fieldset>
+                <legend>Additional People That Will Be Living At The Residence</legend>
+                <ul>
+                    <li>
+                    <label for="people1" >Person 1</label>
+                    <input type="text" id="people1" >
+                    </li>
+                    <li>
+                    <label for="people2" >Person 2</label>
+                    <input type="text" id="people2">
+                    </li>
+                    <li>
+                    <label for="people3" >Person 3</label>
+                    <input type="text" id="people3">
+                    </li>
+                    <li>
+                    <label for="people4" >Person 4</label>
+                    <input type="text" id="people4">
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Questions</legend>
+                <ul>
+                    <li>
+                    <label>Will You Have Full Deposit?</label>
+                    <input class="radio" type="radio" name="deposit" id="deposityes" required>
+                    <label class="radio" for="deposityes">Yes</label>
+                    <input class="radio" type="radio" name="deposit" id="depositno" required>
+                    <label class="radio" for="depositno">No</label> 
+                    </li>
+                    <li>
+                    <label>Have You Ever Been Convicted Of A Felony?</label>
+                    <input class="radio" type="radio" name="convicted" id="convictedyes" required>
+                    <label class="radio" for="convictedyes">Yes</label>
+                    <input class="radio" type="radio" name="convicted" id="convictedno" required>
+                    <label class="radio" for="convictedno">No</label> 
+                    </li>
+               
+                    <li>
+                    <label>Do You Have Any Dogs?</label>
+                    <input class="radio" type="radio" name ="dogyes" id="dogyes" required>
+                    <label class="radio" for="dogyes">Yes</label>
+                    <input class="radio" type="radio" name ="dogyes" id="dogno" required>
+                    <label class="radio" for="dogno">No</label> 
+                    </li>
+                    <li>
+                    <input class="radioques" type="text" id=doganswer>
+                    <label class="radioques"  for="doganswer">If Yes Please Describe The Dogs You Own</label>
+                    </li>
+                    <li>
+                    <label>Do You Have Any Cats That Will Be Living With You?</label>
+                    <input class="radio" type="radio" name ="catyes" id="catyes" required>
+                    <label class="radio" for="catyes">Yes</label>
+                    <input class="radio" type="radio" name ="catyes" id="catno" required>
+                    <label class="radio" for="catno">No</label> 
+                    </li>
+                    <li>
+                    <label class="radioques"for="catanswer">If Yes Please Describe The Cat You Own</label>
+                    <input class="radioques" type="text" id=catanswer>
+                    </li>
+                    <li>
+                    <label>Do You Own Water Filled Furnature That Will Be In Rental?</label>
+                    <input class="radio" type="radio" name ="waterfurnature" id="waterfurnatureyes" required>
+                    <label class="radio" for="waterfurnatureyes">Yes</label>
+                    <input class="radio" type="radio" name ="waterfurnature" id="waterfurnatureno" required>
+                    <label class="radio" for="waterfurnatureno">No</label> 
+                    </li>
+                    <li>
+                    <label class="radioques" for="waterfurnatureanswer">If Yes Please Describe The Water Filled Furnature</label>
+                    <input class="radioques" type="text" id=waterfurnatureanswer>
+                    </li>
+        
+                    <li>
+                    <label>Have You Ever Been Evicted?</label>
+                    <input class="radio" type="radio" name ="evicted" id="evictedyes" required>
+                    <label class="radio" for="evictedyes">Yes</label>
+                    <input class="radio" type="radio" name ="evicted" id="evictedno" required>
+                    <label class="radio" for="evictedno">No</label> 
+                    </li>
+                    <li>
+                    <label class="radioques" for="evictedanswer">If Yes Please Describe Circumstances That You Were Evicted</label>
+                    <input class="radioques" type="text" id=evictedanswer>
+                    </li>
+                    <li>
+                    <label>Do You Have Any Judgements?</label>
+                    <input class="radio" type="radio" name ="judgement"  id="judgementsyes" required>
+                    <label class="radio" for="judgementsyes">Yes</label>
+                    <input class="radio" type="radio" name ="judgement"  id="judgementsno" required>
+                    <label class="radio" for="judgementsno">No</label> 
+                    </li>
+                    <li>
+                    <label class="radioques" for="judgementsanswer">If Yes Please Describe Judgments</label>
+                    <input class="radioques" type="text" id=judgementsanswer>
+                    </li>
+                    <li>
+                    <label>Do You Have Any Collections (Medical/Education Related Do NOT Count)?</label>
+                    <input class="radio" type="radio" name ="collections" id="collectionsyes" required>
+                    <label class="radio" for="collectionsyes">Yes</label>
+                    <input class="radio" type="radio" name ="collections" id="collectionsno" required>
+                    <label class="radio" for="collectionsno">No</label> 
+                    </li>
+                    <li>
+                    <label class="radioques" for="collectionsanswer">If Yes Please Describe Collections You Have</label>
+                    <input class="radioques" type="text" id=collectionsanswer>
+                    </li>
+            </ul>
+            </fieldset>
+            
+            <div class="formbutton">
+            <input type="submit">
+            </div>
+
+        </form>
+    
+        <footer>
+    
+        </footer>
+    </div>
+</body>
