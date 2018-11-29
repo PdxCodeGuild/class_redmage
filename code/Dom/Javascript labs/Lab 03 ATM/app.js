@@ -37,17 +37,26 @@ while (session) {
     command = prompt("Choose: deposit, withdrawl, check balance, history or exit:");{
         if (command === "deposit") {
             amount = parseFloat(prompt("Deposit amount:"));
-            alert(`You have deposited ${amount}`) 
-            atm.deposit(amount);
+            while (isNaN(amount)) {
+                alert("that is not a valid amount");
+                amount = parseFloat(prompt("Deposit amount:"));
+            }alert(`You have deposited ${amount}`);
+            atm.deposit(amount);          
         }else if (command === "withdrawl"){
             amount =parseFloat(prompt("Withdrawl amount:"));
-            atm.withdrawl(amount);
+            while (isNaN(amount)) {
+                alert("that is not a valid amount");
+                amount = parseFloat(prompt("Withdrawl amount"));
+            }atm.withdrawl(amount);
         }else if (command == "check balance") {
             alert(atm.checkBalance());
         }else if (command == "history"){
             alert(atm.printTrans());
         }else if (command == "exit") {
             alert("Have a great day");
+            session = false;
+        }else if (command == null) {
+            alert("Goodbye");
             session = false;
         }else {
             alert("Invalid command, try again.")
