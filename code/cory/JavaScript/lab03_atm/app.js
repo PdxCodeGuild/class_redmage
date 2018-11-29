@@ -3,26 +3,25 @@ class ATM {
     constructor(interest=.01, balance=0) {
         this.interest = interest;
         this.balance = balance;
-        this.transactionList = [];
+        this.transactionDict = {};
         this.transactionCounter = 0;
     }
 
     getBalance() {
-        // alert(transactionCounter)
         return this.balance;
     }
 
     deposit(num) {
         this.balance += num;
         this.transactionCounter += 1;
-        this.transactionList.push(`You Deposited ${this.balance}.`)
+        this.transactionDict[`Transaction number ${this.transactionCounter} : `] = `You Deposited ${num}.`
     }
 
     withdraw(num) {
         if (num <= this.balance) {
             this.balance -= num;
             this.transactionCounter += 1;
-            this.transactionList.push(`You withdrew ${this.balance}.`)
+            this.transactionDict[`Transaction number ${this.transactionCounter} : `] = `You withdrew ${num}.`
         } else if (num > this.balance) {
             alert(`You have ${this.balance} available, you cannot withdraw ${num}!`)
         }
@@ -30,8 +29,9 @@ class ATM {
     }
 
     transaction() {
-        // alert("test")
-        return this.transactionList;
+        for (let x in this.transactionDict) {
+            alert(x + " " + this.transactionDict[x]);
+        }
     }
 
 }
@@ -41,43 +41,41 @@ var loopPerm = true;
 
 while (loopPerm) {
 
-    permList = ["Balance", "Deposit", "Withdraw", "Transactions", "Quit"]
+    permList = ["balance", "deposit", "withdraw", "transactions", "quit"]
 
-    userInput = prompt("What would you like to do: Balance, Deposit, Withdraw, Transactions, or Quit: ")
+    userInput = prompt("What would you like to do: Balance, Deposit, Withdraw, Transactions, or Quit: ").toLowerCase()
 
-    for (let i = 0; i < permList.length; ++i) {
+    console.log(userInput)
 
-        if (userInput == permList[i].toLowerCase()) {
-        
-            if (userInput == permList[0].toLowerCase()) {
-                alert(atm.getBalance());
-            }
+    if (permList.indexOf(userInput) >= 0) {
 
-            if (userInput == permList[1].toLowerCase()) {
-                depositAmount = prompt("How much would you like to deposit?");
-                atm.deposit(parseInt(depositAmount));
-            }
-
-            if (userInput == permList[2].toLowerCase()) {
-                withdrawAmount = prompt("How much would you like to withdraw?");
-                atm.withdraw(parseInt(withdrawAmount));
-            }
-
-            if (userInput == permList[3].toLowerCase()) {
-                atm.transaction()
-            }
-            
+        if (userInput == permList[0]) {
+            alert(atm.getBalance());
         }
 
+        else if (userInput == permList[1]) {
+            depositAmount = prompt("How much would you like to deposit?");
+            atm.deposit(parseInt(depositAmount));
+        }
+
+        else if (userInput == permList[2]) {
+            withdrawAmount = prompt("How much would you like to withdraw?");
+            atm.withdraw(parseInt(withdrawAmount));
+        }
+
+        else if (userInput == permList[3]) {
+            atm.transaction();
+        }
+
+        else if (userInput == permList[4]) {
+            var loopPerm = false;
+        }
+        
     }
 
-    if (userInput == permList[4].toLowerCase()) {
-        var loopPerm = false;
+    else {
+        alert("The computer didn't like that input... Please try again.");
     }
+    
 
 }
-
-
-// else {
-//     alert("The computer didn't like that answer... Please try again.")
-// }
