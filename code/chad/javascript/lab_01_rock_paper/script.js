@@ -1,27 +1,30 @@
 let items = {rock:"paper", paper:"scissors", scissors:"rock"};
 
-while (true) {
-    var userInput = prompt("Choose Rock, Paper or Scissors");
-    userInput.toLocaleLowerCase;
-    if (userInput === "paper" || "rock" || "scissors") {break};
-    
-}
-
-userInput.toLocaleLowerCase
-console.log(`You Chose ${userInput}`)
-
 let computerValues = ['rock', 'paper', 'scissors']
 let computerChoice = computerValues[ Math.random() * computerValues.length | 0 ];
-console.log(`Computer Chooses ${computerChoice}`)
+console.log(`Computer Chooses ${computerChoice}`);
 
+function calculateFunc(textValue) {
+    if (textValue === computerChoice) {
+        alert('You Have A Tie');
+    }
+    else if (items[textValue] === computerChoice) {
+        alert('Computer Won');
+    }
+    else {
+        alert('User Won');
+        console.log("you got here");
+    }
+}
+let btn = document.getElementById('btn_submit');
+let usertext = document.getElementById('userInput');
 
-if (userInput === computerChoice) {
-    alert('You Have A Tie')
-}
-else if (items[userInput] === computerChoice) {
-    alert('Computer Won')
-}
-else {
-    alert('User Won')
-    console.log("you got here")
-}
+    
+btn.addEventListener("click", function(evt) {
+    let textValue = usertext.value;
+    textValue = textValue.toLocaleLowerCase();
+    console.log(textValue);
+    if (textValue === "rock" || textValue === "paper" || textValue === "scissors"){
+    calculateFunc(textValue);
+    }
+})
