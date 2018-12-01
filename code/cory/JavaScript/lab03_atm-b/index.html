@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+  
+    <body>
+    
+        <header>
+
+            <h1>PDX Code Bank</h1>
+            <div id="transaction-container">
+                <button id="transaction-btn" class="center">Show/Hide Transactions</button>
+            </div>
+
+        </header>
+
+        <div class="main-div center">
+
+            <form id="main-field" class="center">
+
+                <div id="withdraw-container">
+                    <input type="text" id="withdraw-input" placeholder="Withdraw Amount">
+                    <label for="withdraw"><button id="withdraw-btn">Withdraw</button></label>
+                </div>
+
+                <div id="deposit-container">
+                    <input type="text" id="deposit-input" placeholder="Deposit Amount">
+                    <label for="deposit" id="deposit-btn"><button>Deposit</button></label>
+                </div>
+                
+                <div id="balance-container">
+                    <button id="bal-btn1">Check Balance</button>
+                    <button id="bal-btn2">Clear Balance</button>
+                </div>
+
+            </form>
+        
+            <div id="transactions" class="center">
+                
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+
+        <script src="app.js"></script>
+    
+    </body>
+
+</html>
