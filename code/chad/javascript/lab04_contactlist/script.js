@@ -13,10 +13,10 @@ btnSearch.addEventListener("click", function() {
     for (var key in contactList) {
         str = (contactList[key]["displayName"]);
         str = str.toLowerCase();
-        console.log(str);
-        console.log(searchText);
         test = str.search(searchText);
-        console.log(test);
+        if (test == 0) {
+            outputName.value = key["displayname"] 
+        }
         }
     }
 )
