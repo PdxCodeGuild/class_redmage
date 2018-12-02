@@ -1,18 +1,90 @@
-body {
-    background-color: rgba(225, 228, 231, 0.973);
-    
+html {
+    background: grey;
+  }
+#logo {
+    display: none;
 }
-#sidebar {
-    box-sizing: border-box;
-    border: 3px solid;
-    width: 11%;
-    height: 100%;
-    float: left;
-    
-    
-}
-.mobile-nav-links {
+  .soc {
+    margin-top: 5px;
+    display: block;
     list-style: none;
-    text-align: center;
-    
-}
+  }
+  .soc li {
+    display: inline-block;
+  }
+  .soc a, .soc svg {
+    display: block;
+  }
+  .soc a {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+  }
+  .soc svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .icon {
+    background: black;
+    border-radius: 100%;
+    color: white;
+    fill: white;
+  }
+  .icon:hover {
+    background: white;
+    color: black;
+    fill: black;
+  }
+  
+  .facebook:hover {
+    color: #3B579D;
+    fill: #3B579D;
+  }
+  
+  .github {
+    background: white;
+    color: black;
+    fill: black;
+  }
+  .github:hover {
+    background: #6441a5;
+    color: white;
+    fill: white;
+  }
+  
+  .linkedin:hover {
+    color: #007BB6;
+    fill: #007BB6;
+  }
+  
+  .stackoverflow:hover {
+    color: #fe7a15;
+    fill: #fe7a15;
+  }
+  
+  .upwork:hover {
+    color: #96D953;
+    fill: #96D953;
+  }
+  
+  
+
+
+  @media screen and (min-width: 768px) {
+    .soc {
+
+    }
+    #logobar {
+        float: right;
+        margin-right: 50px;
+    }
+    #logo {
+        display: block;
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+  }
+      
