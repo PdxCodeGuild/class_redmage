@@ -1,0 +1,70 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    width: 115px;
+}
+
+#transaction-btn {
+    width: auto;
+}
+
+.main-div {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main-field {
+    height: 220px;
+    width: 350px;
+    grid-column: 1;
+    margin-top: 48px;
+    /* padding: 12px 0; */
+    display: grid;
+    grid-template-rows: 50px 50px 1fr;
+    grid-template-columns: 1fr;
+    border: 2px solid black;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+form div {
+    margin: auto 12px;
+}
+
+#withdraw-container {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#deposit-container {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#balance-container {
+    margin: 12px 12px 12px;
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#transactions {
+    display: block;
+    width: 350px;
+    grid-column: 2;
+    border: 2px solid black;
+    max-width: 100%;
+    margin-top: 48px;
+}
+
+#transactions p {
+    padding-left: 12px;
+    margin: 12px 0;
+}
