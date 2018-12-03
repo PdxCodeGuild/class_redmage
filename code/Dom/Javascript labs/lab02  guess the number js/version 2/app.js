@@ -7,7 +7,7 @@ let btn = document.querySelector('#btn');
 console.log(num)
 
 function reset() {
-    num = Math.floor(Math.random()*21);
+    num = Math.floor((Math.random()*21)+1);
     guessNum = 0;
     lastGuess = 0; 
     console.log(num);
