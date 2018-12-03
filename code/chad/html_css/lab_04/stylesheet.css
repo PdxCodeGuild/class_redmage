@@ -73,9 +73,7 @@ html {
 
 
   @media screen and (min-width: 768px) {
-    .soc {
-
-    }
+    
     #logobar {
         float: right;
         margin-right: 50px;
@@ -87,4 +85,8 @@ html {
         margin-top: 5px;
     }
   }
-      
+  @media screen and (max-width: 348px) {
+      #headingtext h1 {
+        font-size: 26px;
+      }
+}     

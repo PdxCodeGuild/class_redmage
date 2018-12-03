@@ -1,5 +1,5 @@
 import string, time
-with open('/home/chad/Documents/git_hub/class_redmage/code/chad/lab_21/text.txt', 'r') as book:
+with open('text.txt', 'r') as book:
     data = book.read()
 book.close()
 
