@@ -12,7 +12,8 @@ function newItem() {
     deletebtn.setAttribute("type", "button");
     deletebtn.setAttribute("class","btn btn-danger btn-sm");
     checkbox.setAttribute("type", "checkbox");
-    deletebtn.innerText = "Del";
+    listItem.setAttribute("class", "list-group-item")
+    deletebtn.innerText = "Delete";
     listItem.appendChild(checkbox);
     listItem.appendChild(document.createTextNode(newEntry));
     listItem.appendChild(deletebtn);
