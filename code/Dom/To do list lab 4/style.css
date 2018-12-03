@@ -5,9 +5,13 @@ html{
     box-sizing: inherit;
 }
 
+
+
 li button{
     margin-left: 50px;
+    float:right;
 }
 li input{
     margin-right: 50px;
+    float: left;
 }
