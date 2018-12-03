@@ -8,18 +8,26 @@ function newItem() {
     let newEntry = addItem.value;
     let listItem = document.createElement("li");
     let checkbox = document.createElement("input");
+    let deletebtn = document.createElement("button");
+    deletebtn.setAttribute("type", "button");
+    deletebtn.setAttribute("class","btn btn-danger btn-sm");
     checkbox.setAttribute("type", "checkbox");
+    deletebtn.innerText = "Del";
     listItem.appendChild(checkbox);
     listItem.appendChild(document.createTextNode(newEntry));
+    listItem.appendChild(deletebtn);
     items.appendChild(listItem);
     addItem.value = "";
     checkbox.addEventListener("change",function(){
         if (this.checked) { 
-            let done = listItem.strike();
-            this.innerHTML = done;
+            listItem.style.textDecoration="line-through"; 
         }else {
+            listItem.style.textDecoration= "none";
         }
     });
+    deletebtn.addEventListener("click", function(){
+        items.removeChild(listItem)
+    })
 }
 
 addBtn.addEventListener("click", newItem);
