@@ -4,3 +4,12 @@ html{
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 100px;
+    color: red;
+}

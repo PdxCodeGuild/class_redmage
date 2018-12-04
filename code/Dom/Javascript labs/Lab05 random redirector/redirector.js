@@ -1,5 +1,5 @@
-let urlsList = ["https://www.slashfilm.com/", "https://www.cnn.com", "https://www.guitarcenter.com", "https://www.oregonlive.com", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"];
-let destination = urlsList[(Math.round(Math.random()*5))];
+let urlsList = ["https://www.slashfilm.com/", "https://www.cnn.com", "https://www.guitarcenter.com", "https://www.oregonlive.com", "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://i.kym-cdn.com/photos/images/original/000/276/668/ad3.jpg"];
+let destination = urlsList[(Math.round(Math.random()*(urlsList.length)))];
 console.log(destination);
 
 function redirect(){
