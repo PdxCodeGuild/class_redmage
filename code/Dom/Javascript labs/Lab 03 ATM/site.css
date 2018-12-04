@@ -4,3 +4,19 @@ html{
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+#deposit, #withdrawl{
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+}
+
+.column{
+    font-family: 'Oswald', sans-serif;
+}
