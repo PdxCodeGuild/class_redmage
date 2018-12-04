@@ -12,13 +12,13 @@ h1 {
     width: 1200px;
 }
 
-#winning-wrapper, #user-wrapper {
+#winning-wrapper, #user-wrapper, #results-wrapper {
     width: 800px;
     display: grid;
     grid-template: auto 1fr 1fr / 1fr 1fr 1fr;
 }
 
-#winning-wrapper button, #user-wrapper button {
+#winning-wrapper button, #user-wrapper button, #results-wrapper button {
     width: 200px;
     height: 100px;
     margin: 12px auto;
@@ -58,4 +58,23 @@ h1 {
 #win-btn6, #user-btn6 {
     grid-row: 3;
     grid-column: 3;
+}
+
+#results-title {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+}
+
+#results-btn {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#results-text {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0;
 }

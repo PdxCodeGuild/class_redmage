@@ -10,6 +10,7 @@ createBtn.addEventListener("click", function(e) {
     // Creates check box
     let newBox = document.createElement("input");
     newBox.setAttribute("type", "checkbox");
+    newBox.style.marginRight = "24px"
 
     // Creates P tag
     let newTask = document.createElement("p");
@@ -36,8 +37,17 @@ createBtn.addEventListener("click", function(e) {
     parent.appendChild(newTask);
     newTask.appendChild(newBox);
     // newTask.innerHTML += ` ${taskInput}`;
-    newTask.appendChild(document.createTextNode(` ${taskInput}`));
+    newTask.appendChild(document.createTextNode(`${taskInput}`));
     newTask.appendChild(delButton);
 
     document.getElementById("task-input").value = ""
 });
+
+let taskInput = document.getElementById("task-input");
+taskInput.addEventListener("keyup", function(e){
+    e.preventDefault();
+    if (e.keyCode === 13) {
+        document.getElementById("create-lineitem").click();
+    }
+})
+
