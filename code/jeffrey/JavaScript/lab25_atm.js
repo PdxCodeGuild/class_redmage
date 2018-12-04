@@ -66,19 +66,19 @@ while (flag) {
 
   if (user_input === 1) {
     amount = parseFloat(prompt("How much would you like to deposit: $"));
-    alert(`Account credited with $${amount}.`)
+    alert(`Account credited with $${amount}.`);
     cash.deposit(amount);
   } else if (user_input === 2) {
-      amount = parseFloat(prompt("How much would you like to withdraw: $"))
+      amount = parseFloat(prompt("How much would you like to withdraw: $"));
       if (cash.checkWithdrawal(amount) === false){
         alert("Not enough funds for that withdrawal amount.");
       } else {
         cash.withdraw(amount);
         alert(`Account debited by $${amount}.`)}
   } else if (user_input === 3) {
-      alert(`***Your balance on this account is ${cash.checkBalance()}***`)
+      alert(`***Your balance on this account is ${cash.checkBalance()}***`);
   } else if (user_input === 4) {
-      alert(cash.printTransactions())
+      alert(cash.printTransactions());
   } else if (user_input === 5) {
       flag = false;
   }
