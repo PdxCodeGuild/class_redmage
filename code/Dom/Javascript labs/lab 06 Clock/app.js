@@ -183,3 +183,7 @@ function countItDown(){
 
 enterBtn.addEventListener("click", timer);
 enterBtn.addEventListener("click", countItDown);
+
+$('.slide').on('click', function(){
+    $('#fade-in').toggleClass('show');
+});
