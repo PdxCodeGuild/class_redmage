@@ -4,41 +4,92 @@ html{
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.container {
-    display: flex;
-    flex-direction: row;
-}
 
+.container {
+    border: 3px whitesmoke solid;
+    display:grid;
+    grid-template-rows: 50px 150px auto 200px;
+    grid-template-columns: 160px 300px 160px;
+    background-color: dimgray;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.title {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color:whitesmoke;
+}
 #clock{
+    width: auto;
     align-content: center;
-    display: none;
+    justify-content: center;
+    display: block;
     padding: 5px;
     border: 2px black solid;
-    background: lightblue;
+    background: whitesmoke;
+}
+.button-group{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .button {
-    border: 2px white solid;
+    font-family: 'Roboto', sans-serif;
+    width: 110px;
+    border: 2px whitesmoke solid;
     background: gray;
     color: white;
 }
+.display{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    align-content: center;
+    
+}
 #stopwatcher {
+    grid-column-start: 3;
+    grid-row-start: 2;
     display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 #stopwatch {
-    align-content: center;
+    display:none;
     padding: 5px;
     border: 2px black solid;
-    background: lightblue;
+    background: whitesmoke;
+}
+#laplist {
+    grid-column-start: 3;
+    grid-row-start: 3
 }
 #countdown-time {
     border:1px black solid;
 }
 #countdown-timer {
     display: none;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    padding: 5px
+   
 }
 
 #countdown {
+    display: none;
     padding: 5px;
     border: 2px black solid;
-    background: lightblue;
+    background: whitesmoke;
+}
+#laptimes {
+    color: whitesmoke;
 }
