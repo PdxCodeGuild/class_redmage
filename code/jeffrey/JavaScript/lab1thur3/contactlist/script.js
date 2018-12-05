@@ -1,38 +1,50 @@
 // objects
 let contacts_dict, user_name, keys, new_data, lines;
 
-// # opens a CSV file with write capability and reads it to variable: lines while splitting it on each line
-// with (open('contact_list.csv', 'r+') as file):
-    lines = file.read().split('\n');
-
 // # create a new dict to append to later
-contacts_dict = [];
+contacts_dict = [
+    {
+        Name: "Matthew",
+        FavoriteFruit: "blackberries",
+        FavoriteColor: "orange",
+        Age: 23,
+    },
+    {
+        Name: "Sam",
+        FavoriteFruit: "pineapple",
+        FavoriteColor: "blue",
+        Age: 35,
+    },
+    {
+        Name: "Jeffrey",
+        FavoriteFruit: "banana",
+        FavoriteColor: "violet",
+        Age: 29,
+    },
+    {
+        Name: "Ben",
+        FavoriteFruit: "persimmon",
+        FavoriteColor: "black",
+        Age: 22,
+    }
+]
 
 // # user the first line as header to create the keys for the dict
-keys = lines[0].split(',');
-
-// # loop through the lines adding the them to the dict under their appropriate keys starting after the header line (row)
-for (i=0; i<lines.length;i++){
-    // # splits each line based off the commas
-    line = lines[i].split(',');
-    // # creates a dict out of the keys and the line items so that the items at the index fit into the keys at the same index (it makes them friends and then they are added into a dict)
-    entry = dict(zip(keys,line));
-    // # add those mini-dict entries to the list
-    contacts_dict.append(entry);
-}
+// keys = lines[0].split(',');
 
 
-user_name = prompt(`What is your ${(keys[0])}?`);
+user_name = prompt(`What is your name?`);
 
 // # List of CRUD FUNCTIONS BELOW
 function create(){
     var checker, entry_str, user_val1, user_val2, user_val3;
 
-    user_val1 = prompt(`Input the ${(keys[0])}: `);
-    user_val2 = prompt(`Input the ${(keys[1])}: `);
-    user_val3 = prompt(`Input the ${(keys[2])}: `);
+    user_val1 = prompt(`Input the name: `);
+    user_val2 = prompt(`Input the favorite fruit: `);
+    user_val3 = prompt(`Input the favorite color: `);
+    user_val4 = prompt(`Input the age: `);
 
-    entry_str = (lower(user_val1),lower(user_val2),lower(user_val3));
+    entry_str = (lower(user_val1),lower(user_val2),lower(user_val3),parseInt(user_val4));
 
     checker = prompt(`Enter 'no if you don't want to add: ${entry_str}`);
 

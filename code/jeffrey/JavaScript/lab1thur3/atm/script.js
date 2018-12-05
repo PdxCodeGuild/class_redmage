@@ -26,7 +26,7 @@ class Atm {
   checkWithdrawal(amount){
       if ((this.balance - amount) >= 0) {
           return true;
-      } else {
+      }else {
           return false;
         }
   }
@@ -37,7 +37,7 @@ class Atm {
         this.balance -= amount;
         this.trans.push(`$${amount} withdrawn`);
         return this.balance;
-      } else {
+      }else {
         return ("Error: Not enough money to withdraw that amount.");
       }
   }
@@ -51,7 +51,7 @@ class Atm {
   printTransactions() {
     if (this.trans.length == 0) {
       return ("No transactions yet.");
-    } else {
+    }else {
       return (`Transactions: ${this.trans.join(", ")}`);
     }
   }
@@ -66,22 +66,29 @@ while (flag) {
 
   if (user_input === 1) {
     amount = parseFloat(prompt("How much would you like to deposit: $"));
-    alert(`Account credited with $${amount}.`);
-    cash.deposit(amount);
-  } else if (user_input === 2) {
+    if (isNaN(amount) === false) {
+        alert(`Account credited with $${amount}.`);
+        cash.deposit(amount);
+    }else {
+        alert(`Try again using numbers. '${amount}' ins't a number.`);
+    }
+  }else if (user_input === 2) {
       amount = parseFloat(prompt("How much would you like to withdraw: $"));
-      if (cash.checkWithdrawal(amount) === false){
-        alert("Not enough funds for that withdrawal amount.");
-      } else {
-        cash.withdraw(amount);
-        alert(`Account debited by $${amount}.`)}
-  } else if (user_input === 3) {
+      if (isNaN(amount) === false) {
+        if (cash.checkWithdrawal(amount) === false){
+            alert("Not enough funds for that withdrawal amount.");
+          } else {
+            cash.withdraw(amount);
+            alert(`Account debited by $${amount}.`)}
+      }else{
+          alert(`Try again using numbers. '${amount}' ins't a number.`);
+      }
+
+  }else if (user_input === 3) {
       alert(`***Your balance on this account is ${cash.checkBalance()}***`);
-  } else if (user_input === 4) {
+  }else if (user_input === 4) {
       alert(cash.printTransactions());
-  } else if (user_input === 5) {
+  }else if (user_input === 5) {
       flag = false;
   }
 }
-
-// *****************deal with NaN*************************
