@@ -1,0 +1,44 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#clock{
+    align-content: center;
+    display: none;
+    padding: 5px;
+    border: 2px black solid;
+    background: lightblue;
+}
+.button {
+    border: 2px white solid;
+    background: gray;
+    color: white;
+}
+#stopwatcher {
+    display:none;
+}
+#stopwatch {
+    align-content: center;
+    padding: 5px;
+    border: 2px black solid;
+    background: lightblue;
+}
+#countdown-time {
+    border:1px black solid;
+}
+#countdown-timer {
+    display: none;
+}
+
+#countdown {
+    padding: 5px;
+    border: 2px black solid;
+    background: lightblue;
+}
