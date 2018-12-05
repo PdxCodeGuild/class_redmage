@@ -6,9 +6,12 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+        <title>Javascript Lab 6</title>
     </head>
   
-    <body>
+    <body class="center">
     
         <header>
 
@@ -19,9 +22,16 @@
 
         <div id="main-div">
 
-            <div id="clock-wrapper">
-                
+            <div id="controller-wrapper" class="center">
+                <button id="show-clock">Show Clock</button>
+                <button id="show-laps">Show Laps</button>
+                <button id="show-countdown">Show Countdown</button>
             </div>
+            
+
+            <div id="clock-wrapper">   
+            </div>
+
 
             <div id="lap-timer-wrapper">
                 <div id="clock">
@@ -51,17 +61,18 @@
                 <div id="countdown-btn-wrapper">
                     <button id="countdown-start-btn">Start</button>
                     <button id="countdown-stop-btn">Stop</button>
+                    <button id="countdown-reset-btn">Reset</button>
                 </div>
 
                 <div id="countdown-list-wrapper">
-                    <form>
+                    <!-- <form> -->
                         <select id="countdown-list">
-                            <option>Hour</option>
-                            <option>Minute</option>
                             <option>Second</option>
+                            <option>Minute</option>
+                            <option>Hour</option>
                         </select>
                         <input type="text" id="countdown-input" placeholder="Enter Time Here">
-                    </form>
+                    <!-- </form> -->
 
                     <div id="submit-button-wrapper">
                         <button id="countdown-input-btn">Submit</button>
