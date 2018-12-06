@@ -1,0 +1,72 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: rgb(140, 228, 9);
+    background-color: black;
+}
+#console-text{
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+}
+
+#console-text:after {
+    content: "_";
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(140, 228, 9);
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
