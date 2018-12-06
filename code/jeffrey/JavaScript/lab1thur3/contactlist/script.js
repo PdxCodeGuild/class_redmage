@@ -1,8 +1,8 @@
 // objects
-let contacts_dict, user_name, keys, new_data, lines;
+let user_name, keys, new_data, lines;
 
 // # create a new dict to append to later
-contacts_dict = [
+let contacts_dict = [
     {
         Name: "Matthew",
         FavoriteFruit: "blackberries",
@@ -29,109 +29,126 @@ contacts_dict = [
     }
 ]
 
-// # user the first line as header to create the keys for the dict
-// keys = lines[0].split(',');
+// function loops through the (key) array and assigns each element in the array into a prompt and asks for the value, puts into array
+function getVals (arr){
+  let list2 = [];
+  for(element in arr){
+      let input = prompt(`Input the ${arr[element]}:`);
+      list2.push(input);
+  }
+  return list2;
+}
 
+// function loops through object extracting the keys into a list
+function getKeys (object) {
+  let list1 = [];
+  for(let key in object) {
+      list1.push(key);
+  }
+  return list1;
+}
 
 user_name = prompt(`What is your name?`);
 
 // # List of CRUD FUNCTIONS BELOW
 function create(){
-    var checker, entry_str, user_val1, user_val2, user_val3;
+  let keys = getKeys(contacts_dict[0]);
 
-    user_val1 = prompt(`Input the name: `);
-    user_val2 = prompt(`Input the favorite fruit: `);
-    user_val3 = prompt(`Input the favorite color: `);
-    user_val4 = prompt(`Input the age: `);
+  let values = getVals(keys);
 
-    entry_str = (lower(user_val1),lower(user_val2),lower(user_val3),parseInt(user_val4));
+  // creates a new object and blends the key.value pairs into an object
+  let result = {};
+  keys.forEach((key, i) => result[key] = values[i]);
 
-    checker = prompt(`Enter 'no if you don't want to add: ${entry_str}`);
+  checker = prompt(`Enter 'no if you don't want to add: ${result}`).toLowerCase();
 
-    if (lower(checker) != 'no'){
-        entry = dict(zip(keys,entry_str));
-        contacts_dict.append(entry);
-        alert('Record created!');
-        return contacts_dict;
-    }
+  if (checker != 'no'){
+    contacts_dict.push(result);
+    alert('Record created!');
+    return contacts_dict;
+  }
 }
 
-
 function retrieve(){
-    var user_val1 = lower(prompt(`What is the ${keys[0]} of the record that you would like to retrieve? `));
+  let keys = getKeys(contacts_dict[0]);
 
+  let input = prompt(`What is the ${keys[0]} of the record that you would like to retrieve? `);
+
+  let result = contacts_dict.map(a => a.Name);
+
+  if (result.includes(input) === true){
     for (i=0; i<contacts_dict.length; i++){
-        if (user_val1 == contacts_dict[i][keys[0]]){
-            print(`\nRecord: ${contacts_dict[i]}\n`);
-            return;
-        }
+      if (input === contacts_dict[i].Name){
+        alert(`Record: \n${contacts_dict[i].Name}\n${contacts_dict[i].FavoriteFruit}\n${contacts_dict[i].FavoriteColor}\n${contacts_dict[i].Age}`);
+        return;
+      }
     }
+  }else {
+    alert(`Record not found.`);
+  }
 }
 
 
 // # def update():
 function update(){
-    var record = lower(input(`What is the ${keys[0]} of the record that you would like to update?`));
-    var attribute = lower(prompt(`What is the attribute that you would like to set: "{keys[0]}", "{keys[1]}", or "{keys[2]}"?`));
-    var new_attribute = prompt(`What would you like to change the "${attribute}" to? `);
-    if (attribute in keys){
-        for (i=0; i<contacts_dict.length;i++){
-            if (record == contacts_dict[i][keys[0]]){
-                contacts_dict[i][attribute] = new_attribute;
-                alert("Update complete!\n");
-                return contacts_dict;
-            }
-        }
-    }
+  let keys = getKeys(contacts_dict[0]);
+  console.log(keys);
+  let record = prompt(`What is the ${keys[0]} of the record that you would like to update?`);
+
+  let attribute = prompt(`What is the attribute that you would like to set: "${keys[0]}", "${keys[1]}", "${keys[2]}", or "${keys[3]}"?`);
+
+  let new_attribute = prompt(`What would you like to change the "${attribute}" to? `);
+
+  if (keys.includes(attribute) === true) {
+      for (i=0; i<contacts_dict.length;i++){
+          if (record === contacts_dict[i][keys[0]]){
+              contacts_dict[i][attribute] = new_attribute;
+              return contacts_dict;
+          }
+      }
+  }else {
+    alert(`Attribute not found.`);
+  }
 }
 
 // # def delete():
 function deleteFunc(){
-    var record = prompt(`What is the ${keys[0]} of the record that you would like to delete?`);
+  let keys = getKeys(contacts_dict[0]);
+
+  let record = prompt(`What is the ${keys[0]} of the record that you would like to delete?`);
+
+  let result = contacts_dict.map(a => a.Name);
+
+  if (result.includes(record) === true){
 
     for (i=0;i<contacts_dict.length;i++){
-        if (record == contacts_dict[i][keys[0]]){
-            contacts_dict.remove(contacts_dict[i]);
-            alert("Record deleted.");
-            return contacts_dict;
-        }
+      if (record === contacts_dict[i][keys[0]]){
+          contacts_dict.splice(i, 1);
+      }
     }
+    alert("Record deleted.");
+  }else {
+    alert("Record not found.")
+  }
 }
 
 while (true){
-    alert(contacts_dict)
-    choice = prompt(`Welcome ${user_name}, you have four options for actions:\n1. 'create' for making a new record\n2. 'retrieve' for retreiving a record\n3. 'update' for updating a record\n4.  'delete' for deleting a record\nWhat would you like to do?`)
-    if (choice.lower() == 'create') {
-        create();
-    }else if (choice.lower() == 'retrieve') {
-        retrieve();
-    }else if (choice.lower() == 'update') {
-        update();
-    }else if (choice.lower() == 'delete') {
-        deleteFunc();
-    }
+  choice = prompt(`Welcome ${user_name}, you have four options for actions:\n1. 'create' for making a new record\n2. 'retrieve' for retreiving a record\n3. 'update' for updating a record\n4.  'delete' for deleting a record\nWhat would you like to do?`).toLowerCase();
 
-    end_prog = prompt('Input any key to do another action or "quit" to exit the program:');
+  if (choice === 'create') {
+    create();
+  }else if (choice === 'retrieve') {
+    retrieve();
+  }else if (choice === 'update') {
+    update();
+  }else if (choice === 'delete') {
+    deleteFunc();
+  }
 
-    if (end_prog.lower() == 'quit'){
-        break;
-    }
+  end_prog = prompt('Input any key to do another action or "quit" to exit the program:').toLowerCase();
+
+  if (end_prog === 'quit'){
+      break;
+  }
 }
 
-// # sending back to csv reverets and prints back the first operation to the csv:
-new_data = [];
-// #starts list with the keys
-new_data.append(",".join(keys));
-// #converts the values from every dict to a list
-for (i=0; i<contacts_dict.length;i++){
-    data_list = list(contacts_dict[i].values());
-    data = ",".join(data_list);
-    new_data.append(data);
-}
-
-// #formats the list to a string seperated by \n
-new_data = "\n".join(new_data);
-
-// with (open('contact_list.csv', "w") as file){
-    // file.write(str(new_data));
-// }
