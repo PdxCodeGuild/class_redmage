@@ -238,8 +238,6 @@ void main()
 }
 `
 
-console.log(textString)
-
 let consoleText = document.getElementById("console-text");
 let conSole= document.getElementById("console");
 let bodyScreen= document.getElementsByTagName("body")
@@ -248,9 +246,81 @@ addEventListener("keydown", typeText);
 
 function typeText() {
     consoleText.textContent +=`${textString[i]}`;
-    i++;
-    window.scrollBy(0,100);
-    if (i%40 == 0){
-        
-    };
+	i++;
+	console.log(i)
+	window.scrollBy(0,100);
+	if (i ===100) {
+		window.popUp();
+	}else if (i ===175){
+		window.popUp();
+	}else if (i === 250){
+	window.access()
+	}else if (i === 300){
+		window.progressBar();
+	}
+}
+let redMessages = ["ACCESS DENIED", "BREACH DETECTED"]
+
+
+// Get the modal
+let modal = document.getElementById('myModal1');
+let modal2 = document.getElementById("myModal2");
+let modal3 = document.getElementById("myModal3");
+let progress = document.getElementById("myProgress");
+// Get the display text field in modal
+let windowText = document.getElementById("window-text");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function popUp() {
+	modal.style.display = "block";
+	windowText.textContent = redMessages[Math.floor(Math.random()*2)];
+	progress.style.display="none";
+	modal2.style.display="none";
+	modal3.style.display= "none";
+	
+	}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", function() {
+		modal.style.display = "none";
+		progress.style.display="none"
+		modal2.style.display="none";
+		modal3.style.display= "none";
+	})
+	
+function access(){
+	modal.style.display = "none";
+	modal2.style.display="none";
+	progress.style.display="none";
+	modal3.style.display="block";
+}
+
+function progressBar(){
+	modal2.style.display="block";
+	progress.style.display="block";
+	modal.style.display = "none";
+	modal3.style.display = "none";
+	setTimeout(move, 1000);
+}
+
+function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
 }

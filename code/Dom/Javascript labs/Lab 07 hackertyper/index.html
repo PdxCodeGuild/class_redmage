@@ -10,8 +10,30 @@
     </head>
     <body>
         <div id= "console">
-            <pre id= "console-text"></pre>
-            
+            <pre id= "console-text"></pre>   
+        </div>
+        <!-- pop up window  -->
+        <div class="modal" id="myModal1">
+            <div id="modal-content">
+                <span class="close"></span>
+                <p id="window-text">ACCESS DENIED</p>
+            </div>
+        </div>
+        <div class="modal" id="myModal2">
+            <div id="modal-content2">
+                <span class="close"></span>
+                <div id="myProgress">
+                    <p id="download">STARTING DOWNLOAD</p>
+                    <div id="myBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="myModal3">
+            <div id="modal-content3">
+                <span class="close"></span>
+                    <p id="access">ACCESS GRANTED</p>
+                </div>
+            </div>
         </div>
         <script src="app.js"></script> 
     </body>
