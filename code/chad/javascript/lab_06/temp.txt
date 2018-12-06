@@ -1,0 +1,39 @@
+
+
+
+let clockTime = document.getElementById("pclock-time")
+let displayLap = document.getElementById("displaylap")
+let startButton = document.getElementById("start-button")
+let lapButton = document.getElementById("lap-button")
+
+setInterval(clockTimer, 1000);
+
+startButton.addEventListener("click", function() {
+    setInterval(stopWatch, 1000);
+})
+
+lapButton.addEventListener("click", function() {
+    let getTime = stoplapTime.toTimeString;
+    displaylap.innerHTML = stoplapTime;
+})
+
+
+function clockTimer() {
+    let time = new Date()
+    clockTime.innerHTML = time.toLocaleTimeString();
+    // location.reload();
+    
+}
+
+let stoplapTime = new Date();
+stoplapTime.setHours(0,0,0,0);
+
+function stopWatch(){
+    stoplapTime.setSeconds(stoplapTime.getSeconds()+1);
+    displayLap.innerHTML = stoplapTime.toTimeString();
+    
+   
+}
+
+
+

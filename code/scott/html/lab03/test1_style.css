@@ -1,0 +1,15 @@
+html {
+    max-width: 90%;
+    display: block;
+    padding: auto;
+    margin: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 100%;
+}
+

@@ -24,14 +24,14 @@
           <fieldset>
             <legend>Beans Choice</legend>
             <label for="radio-blackbeans">black</label>
-            <input type="radio" name="beans" value="blackbeans" id="radio-blackbeans">
+            <input type="radio" name="beans" value="blackbeans" id="radio-blackbeans" required>
             <label for="radio-pintobeans">pinto</label>
             <input type="radio" name="beans" value="pintobeans" id="radio-pintobeans">
           </fieldset>
           <fieldset>
             <legend>Meat Choice</legend>
               <label for="radio-carnitas">carnitas</label>
-              <input type="radio" name="meat" value="carnitas" id="radio-carnitas">
+              <input type="radio" name="meat" value="carnitas" id="radio-carnitas" required>
               <label for="radio-chicken">chicken</label>
               <input type="radio" name="meat" value="chicken" id="radio-chicken">
               <label for="radio-sofritas">sofritas</label>
@@ -42,7 +42,7 @@
           <fieldset>
             <legend>Tortilla Type</legend>
               <label for="radio-whiteflower">white flour</label>
-              <input type="radio" name="tortilla" value="whiteflour" id="radio-whiteflower">
+              <input type="radio" name="tortilla" value="whiteflour" id="radio-whiteflower" required>
               <label for="radio-wheatflower">wheat flour</label>
               <input type="radio" name="tortilla" value="wheatflour" id="radio-wheatflower">
               <label for="radio-spinach">spinach</label>
@@ -55,7 +55,7 @@
             <fieldset>
               <legend>Rice Choice</legend>
                 <label for="radio-whiterice">white</label>
-                <input type="radio" name="rice" value="whiterice" id="radio-whiterice">
+                <input type="radio" name="rice" value="whiterice" id="radio-whiterice" required>
                 <label for="radio-brownrice">brown</label>
                 <input type="radio" name="rice" value="brownrice" id="radio-brownrice">
             </fieldset>
@@ -71,11 +71,11 @@
             <fieldset class="personal-details">
               <legend>Personal Details</legend>
                 <label for="text-name">Input your name:</label>
-                <input type="text" name="name" id="text-name" pattern="[a-zA-Z]+" required>
+                <input type="text" name="name" id="text-name" pattern="[a-zA-Z]+|[a-zA-Z]+ [a-zA-Z]+" title="Format: Name or First Last" required>
                 <label for="email-email">Enter your email address:</label>
-                <input type="email" name="email" id="email-email" required>
+                <input type="email" name="email" id="email-email" title="Format: email@emailhost.com" required>
                 <label for="tel-phone">Enter your phone #:</label>
-                <input type="tel" name="phone" id="tel-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
+                <input type="tel" name="phone" id="tel-phone" pattern="[0-9]{10}|[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 1234567890 or 123-456-7890" required>
                 <label for="text-zipcode">Enter your zipcode</label>
                 <input type="text" name="zipcode" id="text-zipcode" required pattern="[0-9]{5}|[0-9]{5}-[0-9]{4}" title="ex. 98456 or 98456-8432">
             </fieldset>
