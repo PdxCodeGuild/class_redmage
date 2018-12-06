@@ -1,4 +1,4 @@
-let urlList = ["https://www.google.com/", "https://www.wikipedia.org/", "https://www.cnn.com/", "https://www.facebook.com/"]
+let urlList = ["https://www.google.com/", "https://www.wikipedia.org/", "https://www.cnn.com/", "https://www.facebook.com/\n"]
 
 function randomNum() {
     let x = Math.floor(Math.random() * urlList.length);

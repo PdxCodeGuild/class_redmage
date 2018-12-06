@@ -203,3 +203,13 @@ showCountdown.addEventListener("click", function(e) {
 
 
 // -------------------- V4 LAB -------------------- //
+
+<button class="ui icon button">
+  <i class="cloud icon"></i>
+</button>
+
+<div class="ui buttons">
+  <button class="ui button active">One</button>
+  <button class="ui button">Two</button>
+  <button class="ui button">Three</button>
+</div>
