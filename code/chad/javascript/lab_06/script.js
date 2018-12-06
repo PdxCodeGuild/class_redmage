@@ -1,21 +1,25 @@
-
-
-
 let clockTime = document.getElementById("pclock-time");
 let displayLap = document.getElementById("pdisplay-lap");
 let displayLapTime = document.getElementById("display-lapTtimes");
 let startButton = document.getElementById("start-button");
 let lapButton = document.getElementById("lap-button");
 let countDownField = document.getElementById("icountdown-field");
-let countDownBtn = document.getElementById("countdown-submit-button")
+let countDownBtn = document.getElementById("countdown-submit-button");
+let stopButton = document.getElementById("stop-button");
 
 
-setInterval(clockTimer, 1000);
-setInterval(countDownTimer, 1000);
-
+let cocktimerint = setInterval(clockTimer, 1000);
+let cocktimerdownint = setInterval(countDownTimer, 1000);
+let stopbuttonint;
 startButton.addEventListener("click", function() {
-    setInterval(stopWatch, 1000);
+    stopbuttonint = setInterval(stopWatch, 1000);
 })
+
+stopButton.addEventListener("click", function() {
+    clearInterval(stopbuttonint);
+
+})
+
 
 lapButton.addEventListener("click", function() {
     let newp = document.createElement("p");
@@ -39,6 +43,7 @@ stoplapTime.setHours(0,0,0,0);
 function stopWatch(){
     stoplapTime.setSeconds(stoplapTime.getSeconds()+1);
     displayLap.innerHTML = stoplapTime.toTimeString().match(/\d{2}:\d{2}:\d{2}/)[0];
+
 }
 
 countDownBtn.addEventListener("click", function() {
