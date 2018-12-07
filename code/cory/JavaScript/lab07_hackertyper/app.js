@@ -75,7 +75,7 @@ let scriptList = [
 
     "\n",
 
-    "    console.log(counter);\n",
+    "    (counter);\n",
 
     "    counter -= 1;\n",
 
@@ -104,8 +104,18 @@ let scriptList = [
     "\n",
 
 ]
+let counter = 0;
+
+let popupCounter = 0;
+
+let virusCounter = 0;
+
+let virusPopup = document.getElementById("virus-detected");
+
+let bodyVar = document.getElementById("html");
 
 let newSentance = document.createElement("pre");
+
 document.getElementById("main-div").appendChild(newSentance);
 
 function randomNum() {
@@ -117,10 +127,8 @@ function hipsterGen() {
     return scriptList[randomNum()]
 }
 
+virusPopup.style.display = "none"
 
-let counter = 0;
-let popupCounter = 0;
-let bodyVar = document.getElementById("html");
 bodyVar.addEventListener("keypress", function(e) {
 
     newSentance.innerText += scriptList[counter];
@@ -136,14 +144,34 @@ bodyVar.addEventListener("keypress", function(e) {
         let popupHacker = document.createElement("h1");
         popupHacker.classList.add("grow");
         popupHacker.innerText = "HACKING ACTIVATED";
-        document.getElementById("main-div").appendChild(popupHacker);
+        document.getElementById("footer").appendChild(popupHacker);
         popupCounter = 0;
     };
 
     window.scrollBy(0, 100);
+    
 })
 
+bodyVar.addEventListener("keypress", function(e) {
+    if (e.which === 49) {
+        virusCounter++;
+    };
 
+    if (virusCounter === 3) {
+        let virusInterval = setInterval(function() {
+            if (virusPopup.style.display === "block") {
+                virusPopup.style.display = "none";
+            } else if (virusPopup.style.display === "none") {
+                virusPopup.style.display = "block";
+            }
+            virusCounter = 0;
+        }, 500);
+    }
+});
+
+document.onkeypress = function(myEvent) { // doesn't have to be "e"
+    (myEvent.which);
+};
 
 
 // function popuponclick()

@@ -1,15 +1,10 @@
-let myDict = {
-    key: "value",
-    key2: "value2"
-};
+let boxVar = document.getElementById("box-holder");
+boxVar.addEventListener("click", function(e) {
+    if (boxVar.className === "clicked") {
+        boxVar.className = "";
+    } else {
+        boxVar.className = "clicked";
+    };    
+})
 
 
-
-
-
-myDict.key3 = "value3";
-
-for(let key in myDict) {
-    alert(key + " " + myDict[key]);
-
-}

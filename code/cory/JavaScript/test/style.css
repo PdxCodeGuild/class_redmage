@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    padding: 50px;
+}
+
+#box-holder {
+    width: 240px;
+    height: 240px;
+    border: 20px solid black;
+    background-color: gray;
+}
+
+#box {
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms ease-in-out;
+    pointer-events: none;
+}
+
+#box-holder.clicked #box {
+    transform: translate(200px, 150px) rotate(20deg);
+}
