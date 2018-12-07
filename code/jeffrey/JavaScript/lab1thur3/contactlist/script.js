@@ -40,66 +40,66 @@ let contacts_dict = [
     }
 ]
 
-// function loops through the (key) array and assigns each element in the array into a prompt and asks for the value, puts into array
-function getVals (arr){
-  let list2 = [];
-  for(element in arr){
-      let input = prompt(`Input the ${arr[element]}:`);
-      list2.push(input);
-  }
-  return list2;
-}
-
 // function loops through object extracting the keys into a list
 function getKeys (object) {
   let list1 = [];
   for(let key in object) {
       list1.push(key);
-      console.log(key);
   }
   return list1;
 }
 
 function newRecord () {
   let keys = getKeys(contacts_dict[0]);
-  console.log(keys);
-  console.log(contacts_dict);
   let set = document.createElement("div");
+  let submitBtn = document.createElement("INPUT");
+  submitBtn.setAttribute("type", "submit");
 
   set.style.display = "flex";
   set.style.justifyContent = "space-between";
   set.style.width = "100%";
   set.style.marginTop = "5px";
+  set.style.flexDirection = "column";
 
   keys.forEach(function(key) {
-    let textbox;
-    textBox = document.createElement("input");
+    let textBox = document.createElement("input");
     textBox.setAttribute("type", "text");
     textBox.setAttribute("placeholder", key);
+    textBox.setAttribute("class", "createFields")
     set.appendChild(textBox);
   });
+  set.appendChild(submitBtn);
   workSpace.appendChild(set);
+
+  function storeNewRecord() {
+    let createFields = document.getElementsByClassName("createFields");
+    let result = {};
+    for (let i=0; i<createFields.length; i++) {
+      result[createFields[i].placeholder] = createFields[i].value;
+      console.log(createFields[i].placeholder,createFields[i].value);
+    };
+    console.log(result);
+
+    contacts_dict.push(result);
+  }
+
+  function resetPage () {
+    workSpace.removeChild(set);
+  }
+
+  submitBtn.addEventListener("click", function(e) {
+    storeNewRecord(e);
+    resetPage(e);
+  });
 }
 
 // # List of CRUD FUNCTIONS BELOW
 function create(){
-  // let keys = getKeys(contacts_dict[0]);
-
-  // let values = getVals(keys);
-
-  // // creates a new object and blends the key.value pairs into an object
-  // let result = {};
-  // keys.forEach((key, i) => result[key] = values[i]);
-
-  // checker = prompt(`Enter 'no if you don't want to add: ${result}`).toLowerCase();
-
-  // if (checker != 'no'){
-  //   contacts_dict.push(result);
-  //   alert('Record created!');
-  //   return contacts_dict;
-  // }
-  console.log("create");
-  newRecord();
+  if (workSpace.children.length === 0) {
+    newRecord();
+  } else {
+    // do nothing
+  }
 }
 
 function retrieve(){
