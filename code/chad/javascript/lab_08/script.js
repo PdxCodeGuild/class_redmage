@@ -16,10 +16,15 @@ ctx.fillStyle = 'green';
 ctx.fill();
 
 function main_loop() {
+    canvas.onclick = function(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    console.log(x);
+    console.log(y);
     // update the ball's position
     // check if it hit a boundary
     // draw the ball
-    
+    }
     window.requestAnimationFrame(main_loop);
 }
 window.requestAnimationFrame(main_loop);
