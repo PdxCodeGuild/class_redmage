@@ -1,5 +1,16 @@
 // objects
-let user_name, keys, new_data, lines;
+let workSpace = document.getElementById("container");
+
+let createBtn = document.getElementById("create");
+let deleteBtn = document.getElementById("delete");
+let retrieveBtn = document.getElementById("retrieve");
+let updateBtn = document.getElementById("update");
+
+createBtn.addEventListener("click", create);
+deleteBtn.addEventListener("click", deleteFunc);
+retrieveBtn.addEventListener("click", retrieve);
+updateBtn.addEventListener("click", update);
+
 
 // # create a new dict to append to later
 let contacts_dict = [
@@ -44,29 +55,51 @@ function getKeys (object) {
   let list1 = [];
   for(let key in object) {
       list1.push(key);
+      console.log(key);
   }
   return list1;
 }
 
-user_name = prompt(`What is your name?`);
+function newRecord () {
+  let keys = getKeys(contacts_dict[0]);
+  console.log(keys);
+  console.log(contacts_dict);
+  let set = document.createElement("div");
+
+  set.style.display = "flex";
+  set.style.justifyContent = "space-between";
+  set.style.width = "100%";
+  set.style.marginTop = "5px";
+
+  keys.forEach(function(key) {
+    let textbox;
+    textBox = document.createElement("input");
+    textBox.setAttribute("type", "text");
+    textBox.setAttribute("placeholder", key);
+    set.appendChild(textBox);
+  });
+  workSpace.appendChild(set);
+}
 
 // # List of CRUD FUNCTIONS BELOW
 function create(){
-  let keys = getKeys(contacts_dict[0]);
+  // let keys = getKeys(contacts_dict[0]);
 
-  let values = getVals(keys);
+  // let values = getVals(keys);
 
-  // creates a new object and blends the key.value pairs into an object
-  let result = {};
-  keys.forEach((key, i) => result[key] = values[i]);
+  // // creates a new object and blends the key.value pairs into an object
+  // let result = {};
+  // keys.forEach((key, i) => result[key] = values[i]);
 
-  checker = prompt(`Enter 'no if you don't want to add: ${result}`).toLowerCase();
+  // checker = prompt(`Enter 'no if you don't want to add: ${result}`).toLowerCase();
 
-  if (checker != 'no'){
-    contacts_dict.push(result);
-    alert('Record created!');
-    return contacts_dict;
-  }
+  // if (checker != 'no'){
+  //   contacts_dict.push(result);
+  //   alert('Record created!');
+  //   return contacts_dict;
+  // }
+  console.log("create");
+  newRecord();
 }
 
 function retrieve(){
@@ -132,23 +165,23 @@ function deleteFunc(){
   }
 }
 
-while (true){
-  choice = prompt(`Welcome ${user_name}, you have four options for actions:\n1. 'create' for making a new record\n2. 'retrieve' for retreiving a record\n3. 'update' for updating a record\n4.  'delete' for deleting a record\nWhat would you like to do?`).toLowerCase();
+// while (true){
+//   choice = prompt(`Welcome ${user_name}, you have four options for actions:\n1. 'create' for making a new record\n2. 'retrieve' for retreiving a record\n3. 'update' for updating a record\n4.  'delete' for deleting a record\nWhat would you like to do?`).toLowerCase();
 
-  if (choice === 'create') {
-    create();
-  }else if (choice === 'retrieve') {
-    retrieve();
-  }else if (choice === 'update') {
-    update();
-  }else if (choice === 'delete') {
-    deleteFunc();
-  }
+//   if (choice === 'create') {
+//     create();
+//   }else if (choice === 'retrieve') {
+//     retrieve();
+//   }else if (choice === 'update') {
+//     update();
+//   }else if (choice === 'delete') {
+//     deleteFunc();
+//   }
 
-  end_prog = prompt('Input any key to do another action or "quit" to exit the program:').toLowerCase();
+//   end_prog = prompt('Input any key to do another action or "quit" to exit the program:').toLowerCase();
 
-  if (end_prog === 'quit'){
-      break;
-  }
-}
+//   if (end_prog === 'quit'){
+//       break;
+//   }
+// }
 

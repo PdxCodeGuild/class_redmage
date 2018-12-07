@@ -59,10 +59,9 @@ class Atm {
 
 cash = new Atm(500);
 flag = true;
-alert("Thank you for using VERYSECUREDEFINITELYNOTFRAUD ATM\nWhat action would you like to do:\n1 for Deposit\n2 for Withdraw\n3 for Check Balance\n4 for Transaction History\n5 for Finish");
 
 while (flag) {
-  user_input = parseInt(prompt('>'));
+  user_input = parseInt(prompt(`Thank you for using VERYSECUREDEFINITELYNOTFRAUD ATM\nWhat action would you like to do:\n1 for Deposit\n2 for Withdraw\n3 for Check Balance\n4 for Transaction History\n5 for Finish\n>`));
 
   if (user_input === 1) {
     amount = parseFloat(prompt("How much would you like to deposit: $"));
