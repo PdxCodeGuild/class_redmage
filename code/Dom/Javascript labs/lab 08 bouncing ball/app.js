@@ -5,8 +5,8 @@ let ball = {
     radius: (Math.random()*20)+2,
     px: Math.random()*cnv.width,
     py: Math.random()*cnv.height,
-    vx: (2*Math.random()-1)*10,
-    vy: (2*Math.random()-1)*10
+    vx: (2*Math.random()-1)*20,
+    vy: (2*Math.random()-1)*20
 };
 balls = []
 // ctx.beginPath();
@@ -14,7 +14,7 @@ balls = []
 // ctx.fillStyle = 'green';
 // ctx.fill()
 let friction = .99;
-let gravity = 3;
+let gravity = 2;
 function main_loop() {
     let ctx = cnv.getContext("2d");
     ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
@@ -45,6 +45,8 @@ function main_loop() {
      }
      ball.py += ball.vy;
      ball.px += ball.vx;
+     ball.vx *= friction;
+     ball.vy *= friction;
      if (ball.py - ball.radius > 0 ) {
          ball.py += gravity;
      }else if (ball.py + ball.raidous < cnv.height) {
