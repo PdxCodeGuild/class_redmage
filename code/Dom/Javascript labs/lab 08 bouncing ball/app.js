@@ -2,56 +2,58 @@ let cnv = document.getElementById('cnv');
 let ctx = cnv.getContext('2d');
 
 let ball = {
-    radius: 4,
-    px: Math.random()*1000,
-    py: Math.random()*500,
+    radius: (Math.random()*20)+2,
+    px: Math.random()*cnv.width,
+    py: Math.random()*cnv.height,
     vx: (2*Math.random()-1)*10,
     vy: (2*Math.random()-1)*10
 };
-
-ctx.beginPath();
-ctx.arc(ball.px, ball.py, ball.radius, 0, 2 * Math.PI, false);
-ctx.fillStyle = 'green';
-ctx.fill();
-let newX = (ball.px);
-let newY = (ball.py);
-
+balls = []
+// ctx.beginPath();
+// ctx.arc(ball.px, ball.py, ball.radius, 0, 2 * Math.PI, false);
+// ctx.fillStyle = 'green';
+// ctx.fill()
+let friction = .99;
+let gravity = 3;
 function main_loop() {
-    ctx.beginPath();
-    ctx.arc(newX, newY, ball.radius, 0, 2 * Math.PI, false);
-    ctx.fillStyle = "white";
-    ctx.strokeStyle = "white";
-    ctx.stroke();
-    ctx.fill();
-     if (newX > 1000){
-         newX= 1000;
-         ball.vx = ball.vx * .99;
-         ball.vx = -(ball.vx);
-     }else if (newX < 0) {
-         newX= 0;
-         ball.vx = ball.vx * .99;
-         ball.vx = -(ball.vx);
-     }if (newY >500) {
-         newY = 500;
-         ball.vy = ball.vy * .99;
-         ball.vy = -(ball.vy);
-    }else if (newY< 0) {
-         newY = 0;
-         ball.vy = ball.vy * .99;
-         ball.vy = -(ball.vy);
+    let ctx = cnv.getContext("2d");
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fillRect(0, 0, cnv.width, cnv.height);
+    ctx.fillStyle = "blue";
+    // ctx.arc(ball.px, ball.py, ball.radius, 0, 2 * Math.PI, false);
+    // ctx.fill();
+     if ((ball.px + ball.radius) > cnv.width){
+         ball.px = (cnv.width - ball.radius);
+         ball.vx *= friction;
+         ball.vy *= friction;
+         ball.vx *= -1;
+     }else if ((ball.px - ball.radius) < 0) {
+         ball.px= 0 +ball.radius;
+         ball.vx *= friction;
+         ball.vy *= friction;
+         ball.vx *= -1;
+     }if ((ball.py + ball.radius) > cnv.height) {
+         ball.py = (cnv.height - ball.radius);
+         ball.vx *= friction;
+         ball.vy *= friction;
+         ball.vy *= -1;
+    }else if ((ball.py - ball.radius )< 0) {
+         ball.py = ball.radius;
+         ball.vx *= friction;
+         ball.vy *= friction;
+         ball.vy *= -1;
      }
-     newY += ball.vy;
-     if (newY > 0) {
-         newY += 2;
-     }else if (newY < 500) {
-        newY -+ 2;
+     ball.py += ball.vy;
+     ball.px += ball.vx;
+     if (ball.py - ball.radius > 0 ) {
+         ball.py += gravity;
+     }else if (ball.py + ball.raidous < cnv.height) {
+        ball.py += gravity;
      }
-     newX += ball.vx;
+    
      ctx.beginPath();
-     ctx.arc(newX, newY, ball.radius, 0, 2 * Math.PI, false);
-     ctx.fillStyle = 'green';
+     ctx.arc(ball.px, ball.py, ball.radius, 0, 2 * Math.PI, false);
      ctx.fill();
-     console.log(newX, newY)
     window.requestAnimationFrame(main_loop);
 }
 window.requestAnimationFrame(main_loop);
