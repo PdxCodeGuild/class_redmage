@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+#hidden-text {
+    display: none;
+    
+}
+
+pre {
+    white-space: pre-wrap;
+    width: 100%;
+    color: white;
+
+}
+
+#display-text p{
+    position: absolute;
+    background-color: black;
+}

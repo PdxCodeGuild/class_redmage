@@ -1,0 +1,52 @@
+div {
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    border: solid black;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#display-lapTtimes {
+    height: 300px;
+}
+
+#maincontent p h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid black;
+    
+}
+
+#stopwatch {
+    float: left;
+    grid-column-start: 1;
+    border: solid black;
+}
+
+#display-lapTtimes {
+    margin: auto;
+}
+
+#display-lapTtimes {
+    border: solid black;
+    float: right;
+    grid-column-start: 3;
+    
+}
+#countdown-timer {
+    border: solid black;
+    grid-column-start: 2;
+    
+    
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
