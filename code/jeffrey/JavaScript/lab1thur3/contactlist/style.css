@@ -1,4 +1,4 @@
-div#container {
+#container1 {
   border: 2px solid black;
   border-radius: 15px;
   min-height: 100px;
@@ -6,7 +6,20 @@ div#container {
   padding: 10px;
   margin: auto;
   width:75%;
+  margin-top: 10px;
 }
+
+#container2 {
+  border: 2px solid black;
+  border-radius: 15px;
+  min-height: 100px;
+  margin-top: 5px;
+  padding: 10px;
+  margin: auto;
+  width:75%;
+  margin-top: 10px;
+}
+
 
 
 h1 {
@@ -18,7 +31,7 @@ h1 {
   justify-content: center;
 }
 
-button {
+button, .button {
   padding: 10px;
   margin: 10px;
 }
