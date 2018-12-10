@@ -8,6 +8,7 @@ body {
     background-color: rgb(243, 239, 239);
 }
 .container {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -18,6 +19,7 @@ body {
     align-items: center;
     background: white;
     margin: 2px;
+    font-family: 'Playfair Display', serif;
 }
 
 .row {
