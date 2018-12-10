@@ -5,7 +5,7 @@ html{
     box-sizing: inherit;
 }
 body {
-    background-color: rgb(150, 146, 146);
+    background-color: rgb(243, 239, 239);
 }
 .container {
     display: flex;
@@ -14,7 +14,42 @@ body {
 }
 .row-target {
     display:flex;
+    justify-content: center;
     align-items: center;
     background: white;
-    margin: 5px;
+    margin: 2px;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.round {
+    border-radius: 50%;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+.next {
+    background-color: rgb(56, 172, 201);
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: rgba(15, 172, 201, 0.5);
+    color: black;
+  }
+
+  #page-num {
+      display: flex;
+    
+  }
