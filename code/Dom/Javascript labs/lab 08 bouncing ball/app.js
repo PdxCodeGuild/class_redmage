@@ -8,12 +8,12 @@ let ball = {
     vx: (2*Math.random()-1)*20,
     vy: (2*Math.random()-1)*20
 };
-balls = []
+let balls = [];
 // ctx.beginPath();
 // ctx.arc(ball.px, ball.py, ball.radius, 0, 2 * Math.PI, false);
 // ctx.fillStyle = 'green';
 // ctx.fill()
-let friction = .99;
+let friction = .999;
 let gravity = 2;
 function main_loop() {
     let ctx = cnv.getContext("2d");
