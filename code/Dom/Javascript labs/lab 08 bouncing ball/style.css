@@ -6,5 +6,6 @@ html{
 }
 
 #cnv {
-    border: 2px black solid;
+    border: 2px white solid;
+    background: black;
 }

@@ -61,6 +61,7 @@ let startBtn = document.getElementById("start");
 
 startBtn.addEventListener("click", function(){
     startTimer = setInterval(stopWatch, 1000);
+    startBtn.disabled = true;
 });
 
 //  stops timer 
@@ -68,6 +69,7 @@ let stopBtn = document.getElementById("stop");
 
 stopBtn.addEventListener("click", function(){
     clearInterval(startTimer);
+    startBtn.disabled = false;
 });
 
 
@@ -157,6 +159,7 @@ function timer(){
     timerTime.style.display ="none";
     timeUnit.style.display= "none";
     enterBtn.style.display= "none";
+    enterBtn.disabled = true;
     }
 }
 
@@ -177,6 +180,7 @@ function countItDown(){
             timerTime.style.display ="flex";
             timeUnit.style.display= "flex";
             enterBtn.style.display= "flex";
+            enterBtn.disabled = false;
         }
     } , 1000)}
 
