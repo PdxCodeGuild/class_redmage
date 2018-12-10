@@ -121,3 +121,4 @@ ENV/
 node_modules
 #config for python project
 config.py
+config.js
