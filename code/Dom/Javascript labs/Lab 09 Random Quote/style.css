@@ -1,0 +1,20 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: rgb(150, 146, 146);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.row-target {
+    display:flex;
+    align-items: center;
+    background: white;
+    margin: 5px;
+}
