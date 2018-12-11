@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+  
+    <body>
+    
+        <header>
+
+            <div id="pageInputWrapper">
+                <select id="pageInputOption">
+                    <option value="">---</option>
+                </select>
+                <p>Page Number</p>
+            </div>
+
+            <!-- <div id="indexInputWrapper">
+                    <select id="indexInputOption">
+                        <option value="">---</option>
+                    </select>
+                <p>Index Number</p>
+            </div> -->
+
+            <div id="numberOfResultsWrapper">
+                <input type="text" id="numberOfResults" placeholder="Number of Results" value="">
+            </div>
+            <div id="filterWrapper">
+                <input type="text" id="filter" placeholder="Filter" value="funny">
+            </div>
+
+            <button id="submit">Submit</button>
+            <button id="removeAll">Remove All</button>
+
+        </header>
+
+        <div id="main-div">
+
+            <div id="target">
+                
+            </div>
+
+            <div id="textTarget">
+
+            </div>
+        
+        </div>
+
+        <footer>
+        </footer>
+
+        <script src="config.js"></script>
+        <script src="app.js"></script>
+    
+    </body>
+
+</html>

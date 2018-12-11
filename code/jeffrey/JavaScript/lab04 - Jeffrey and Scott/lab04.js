@@ -31,7 +31,7 @@ function newItem() {
             newItem();
         }
     });
-    
+
 
     deleteButton = document.createElement("button");
     deleteButton.innerText = "X";

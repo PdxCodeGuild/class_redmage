@@ -1,5 +1,17 @@
 // objects
-let user_name, keys, new_data, lines;
+let workSpace1 = document.getElementById("container1");
+
+
+let createBtn = document.getElementById("create");
+let deleteBtn = document.getElementById("delete");
+let retrieveBtn = document.getElementById("retrieve");
+let updateBtn = document.getElementById("update");
+
+createBtn.addEventListener("click", create);
+deleteBtn.addEventListener("click", deleteFunc);
+retrieveBtn.addEventListener("click", retrieve);
+updateBtn.addEventListener("click", update);
+
 
 // # create a new dict to append to later
 let contacts_dict = [
@@ -29,16 +41,6 @@ let contacts_dict = [
     }
 ]
 
-// function loops through the (key) array and assigns each element in the array into a prompt and asks for the value, puts into array
-function getVals (arr){
-  let list2 = [];
-  for(element in arr){
-      let input = prompt(`Input the ${arr[element]}:`);
-      list2.push(input);
-  }
-  return list2;
-}
-
 // function loops through object extracting the keys into a list
 function getKeys (object) {
   let list1 = [];
@@ -48,43 +50,147 @@ function getKeys (object) {
   return list1;
 }
 
-user_name = prompt(`What is your name?`);
+function newRecord () {
+  let keys = getKeys(contacts_dict[0]);
+  let set = document.createElement("div");
+  let submitBtn = document.createElement("input");
+  submitBtn.setAttribute("type", "submit");
+  submitBtn.setAttribute("class", "button");
+  let clearBtn = document.createElement("button");
+  clearBtn.setAttribute("type", "submit")
+  clearBtn.innerHTML = "Clear";
+  clearBtn.setAttribute("class", "button");
+  let cancelBtn = document.createElement("button");
+  cancelBtn.setAttribute("type", "submit");
+  cancelBtn.innerHTML = 'Cancel';
+
+  set.style.display = "flex";
+  set.style.justifyContent = "space-between";
+  set.style.width = "100%";
+  set.style.marginTop = "5px";
+  set.style.flexDirection = "column";
+
+  keys.forEach(function(key) {
+    let textBox = document.createElement("input");
+    textBox.setAttribute("type", "text");
+    textBox.setAttribute("placeholder", key);
+    textBox.setAttribute("class", "createFields")
+    set.appendChild(textBox);
+  });
+  set.appendChild(submitBtn);
+  set.appendChild(cancelBtn);
+  set.appendChild(clearBtn);
+  workSpace1.appendChild(set);
+
+  function storeNewRecord() {
+    let createFields = document.getElementsByClassName("createFields");
+    let result = {};
+    for (let i=0; i<createFields.length; i++) {
+      result[createFields[i].placeholder] = createFields[i].value;
+    };
+
+    contacts_dict.push(result);
+  }
+
+  function resetPage () {
+    workSpace1.removeChild(set);
+  }
+
+  submitBtn.addEventListener("click", function(e) {
+    storeNewRecord(e);
+    resetPage(e);
+  });
+  cancelBtn.addEventListener("click", resetPage);
+}
 
 // # List of CRUD FUNCTIONS BELOW
 function create(){
-  let keys = getKeys(contacts_dict[0]);
-
-  let values = getVals(keys);
-
-  // creates a new object and blends the key.value pairs into an object
-  let result = {};
-  keys.forEach((key, i) => result[key] = values[i]);
-
-  checker = prompt(`Enter 'no if you don't want to add: ${result}`).toLowerCase();
-
-  if (checker != 'no'){
-    contacts_dict.push(result);
-    alert('Record created!');
-    return contacts_dict;
+  if (workSpace1.children.length === 0) {
+    newRecord();
+  } else {
+    // do nothing
   }
 }
 
 function retrieve(){
-  let keys = getKeys(contacts_dict[0]);
+  if ( workSpace1.children.length === 0) {
+    let keys = getKeys(contacts_dict[0]);
+    let set = document.createElement("div");
+    let submitBtn = document.createElement("input");
+    submitBtn.setAttribute("type", "submit");
+    submitBtn.setAttribute("class", "button");
+    let clearBtn = document.createElement("button");
+    clearBtn.setAttribute("type", "submit")
+    clearBtn.innerHTML = "Clear";
+    clearBtn.setAttribute("class", "button");
+    let cancelBtn = document.createElement("button");
+    cancelBtn.setAttribute("type", "submit");
+    cancelBtn.innerHTML = 'Cancel';
 
-  let input = prompt(`What is the ${keys[0]} of the record that you would like to retrieve? `);
+    set.style.display = "flex";
+    set.style.justifyContent = "space-between";
+    set.style.width = "100%";
+    set.style.marginTop = "5px";
+    set.style.flexDirection = "column";
 
-  let result = contacts_dict.map(a => a.Name);
+    keys.forEach(function(key) {
+      let textBox = document.createElement("input");
+      textBox.setAttribute("type", "text");
+      textBox.setAttribute("placeholder", key);
+      textBox.setAttribute("class", "createFields")
+      set.appendChild(textBox);
+    });
+    set.appendChild(submitBtn);
+    set.appendChild(cancelBtn);
+    set.appendChild(clearBtn);
+    workSpace1.appendChild(set);
 
-  if (result.includes(input) === true){
-    for (i=0; i<contacts_dict.length; i++){
-      if (input === contacts_dict[i].Name){
-        alert(`Record: \n${contacts_dict[i].Name}\n${contacts_dict[i].FavoriteFruit}\n${contacts_dict[i].FavoriteColor}\n${contacts_dict[i].Age}`);
-        return;
+    function printRecords() {
+      let createFields = document.getElementsByClassName("createFields");
+      let headache = function () {
+        let x;
+        for (let i=0; i<createFields.length; i++) {
+          if (createFields[i].placeholder === "Name") {
+            x = createFields[i].value;
+            console.log(x);
+            return x;
+          }
+        }
+      }
+
+      for (let i=0; i<contacts_dict.length; i++) {
+        if (contacts_dict[i].Name.indexOf(headache()) >= 0) {
+          let arr = Object.values(contacts_dict[i]);
+          console.log(arr);
+          let li = document.createElement("li");
+          li.setAttribute("id", "demon")
+          li.innerText = arr;
+          workSpace1.appendChild(li);
+        }
       }
     }
+
+    function resetPage () {
+      workSpace1.removeChild(set);
+      for (i=workSpace1.children.length-1; i>=0; i--) {
+        function removeElement(elementId) {
+          // Removes an element from the document
+          var element = document.getElementById(elementId);
+          element.parentNode.removeChild(element);
+        }
+        removeElement("demon");
+      }
+    }
+
+    submitBtn.addEventListener("click", function(e) {
+      printRecords(e);
+    });
+
+    cancelBtn.addEventListener("click", resetPage);
+
+    clearBtn.addEventListener("click:", clearForm);
   }else {
-    alert(`Record not found.`);
+    // do nothting
   }
 }
 
@@ -92,36 +198,82 @@ function retrieve(){
 // # def update():
 function update(){
   let keys = getKeys(contacts_dict[0]);
-  console.log(keys);
-  let record = prompt(`What is the ${keys[0]} of the record that you would like to update?`);
+  let set = document.createElement("div");
+  let submitBtn = document.createElement("input");
+  submitBtn.setAttribute("type", "submit");
+  submitBtn.setAttribute("class", "button");
+  let clearBtn = document.createElement("button");
+  clearBtn.setAttribute("type", "submit")
+  clearBtn.innerHTML = "Clear";
+  clearBtn.setAttribute("class", "button");
+  let cancelBtn = document.createElement("button");
+  cancelBtn.setAttribute("type", "submit");
+  cancelBtn.innerHTML = 'Cancel';
 
-  let attribute = prompt(`What is the attribute that you would like to set: "${keys[0]}", "${keys[1]}", "${keys[2]}", or "${keys[3]}"?`);
+  set.style.display = "flex";
+  set.style.justifyContent = "space-between";
+  set.style.width = "100%";
+  set.style.marginTop = "5px";
+  set.style.flexDirection = "column";
 
-  let new_attribute = prompt(`What would you like to change the "${attribute}" to? `);
+  keys.forEach(function(key) {
+    let textBox = document.createElement("input");
+    textBox.setAttribute("type", "text");
+    textBox.setAttribute("placeholder", key);
+    textBox.setAttribute("class", "createFields")
+    set.appendChild(textBox);
+  });
+  set.appendChild(submitBtn);
+  set.appendChild(cancelBtn);
+  set.appendChild(clearBtn);
+  workSpace1.appendChild(set);
 
-  if (keys.includes(attribute) === true) {
-      for (i=0; i<contacts_dict.length;i++){
-          if (record === contacts_dict[i][keys[0]]){
-              contacts_dict[i][attribute] = new_attribute;
-              return contacts_dict;
-          }
+  function printRecords() {
+    let createFields = document.getElementsByClassName("createFields");
+    let headache = function () {
+      let x;
+      for (let i=0; i<createFields.length; i++) {
+        if (createFields[i].placeholder === "Name") {
+          x = createFields[i].value;
+          console.log(x);
+          return x;
+        }
       }
-  }else {
-    alert(`Attribute not found.`);
+    }
+
+    for (let i=0; i<contacts_dict.length; i++) {
+      if (contacts_dict[i].Name.indexOf(headache()) >= 0) {
+        let arr = Object.values(contacts_dict[i]);
+        console.log(arr);
+        let li = document.createElement("li");
+        li.innerText = arr;
+        workSpace1.appendChild(li);
+      }
+    }
   }
+
+  function resetPage () {
+    workSpace1.removeChild(set);
+  }
+
+  submitBtn.addEventListener("click", function(e) {
+    printRecords(e);
+  });
+
+  cancelBtn.addEventListener("click", resetPage);
+
 }
 
 // # def delete():
 function deleteFunc(){
   let keys = getKeys(contacts_dict[0]);
-
   let record = prompt(`What is the ${keys[0]} of the record that you would like to delete?`);
 
   let result = contacts_dict.map(a => a.Name);
 
   if (result.includes(record) === true){
 
-    for (i=0;i<contacts_dict.length;i++){
+    for (i=0;i<=contacts_dict.length;i++){
       if (record === contacts_dict[i][keys[0]]){
           contacts_dict.splice(i, 1);
       }
@@ -131,24 +283,3 @@ function deleteFunc(){
     alert("Record not found.")
   }
 }
-
-while (true){
-  choice = prompt(`Welcome ${user_name}, you have four options for actions:\n1. 'create' for making a new record\n2. 'retrieve' for retreiving a record\n3. 'update' for updating a record\n4.  'delete' for deleting a record\nWhat would you like to do?`).toLowerCase();
-
-  if (choice === 'create') {
-    create();
-  }else if (choice === 'retrieve') {
-    retrieve();
-  }else if (choice === 'update') {
-    update();
-  }else if (choice === 'delete') {
-    deleteFunc();
-  }
-
-  end_prog = prompt('Input any key to do another action or "quit" to exit the program:').toLowerCase();
-
-  if (end_prog === 'quit'){
-      break;
-  }
-}
-
