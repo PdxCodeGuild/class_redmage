@@ -21,12 +21,21 @@
         </div>
         <div class= "container">
             <div class="row">
-                <input type="text" id="search" placeholder="quote search">
+                <input type="text" id="search" placeholder="">
                 <button id="search-btn">Search</button>
                 <a href="#" id= "previous" class="previous round">&#8249;</a>
                 <a href="#" id="next" class="next round">&#8250;</a>
                 <h4 id="page-num"></h4>
-  
+            </div>
+            <div class= "row">
+                <form id="search-by">
+                    <input type="radio" name= "searchby" id="filter" value ="">
+                    <lable for="filter">keyword</lable>
+                    <input type="radio" name= "searchby" id="author" value ="&type=author">
+                    <lable for="filter">author</lable>
+                    <input type="radio" name= "searchby" id="tag" value ="&type=tag">
+                    <lable for="filter">tag</lable>
+                </form>
             </div>
             <div class="row-target">
                 <ol id="s-results"></ol>
