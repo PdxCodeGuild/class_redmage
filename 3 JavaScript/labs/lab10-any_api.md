@@ -2,7 +2,9 @@
 # Lab 10: Any API
 
 
-Choose any API and write a page to interact with it. Be warned: some have particular security restrictions, and some return results in XML (which makes data more difficult to parse). You can view long lists of public APIs [here](https://github.com/toddmotto/public-apis), [here](https://github.com/abhishekbanthia/Public-APIs), and [here](https://apilist.fun/).
+Choose any API and write a page to interact with it. Be warned: some have particular security restrictions, and some return results in XML (which makes data more difficult to parse). You can view long lists of public APIs [here](https://github.com/toddmotto/public-apis), [here](https://github.com/abhishekbanthia/Public-APIs), and [here](https://apilist.fun/).  
+
+Your page should take in some sort of user input and return different results based on that input, and your page should offer some sort of interactivity in the results. You should also apply some sort of basic professional styling -- using a CSS framework is totally fine. This will be the JavaScript project you'll give a mini-presentation on the last JavaScript day of class.
 
 ## User API
 

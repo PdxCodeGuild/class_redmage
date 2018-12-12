@@ -1,6 +1,18 @@
 # class_redmage
 Full Stack Python Day Class 2018-10-15
 
+## JavaScript Labs Assigned:
+
+Lab 01-03  
+Lab 04 (group)  
+Lab 05-09  
+Lab 10 (Presentations Friday 12/14)  
+
+## JavaScript Optional:
+
+Optional - Form Validation  
+Optional - Vue Todos  
+
 ## HTML/CSS Labs Assigned:
 
 Lab 01  
@@ -63,6 +75,21 @@ In all three presentations, you should first explain the development process and
 - what is the future of the project? what features (if any) will you work on next?
 
 ## Odds and Ends
+
+jQuery vs Vanilla vs Vue/React/Angular  
+https://www.academind.com/learn/javascript/jquery-future-angular-react-vue/
+
+Start an HTTP server on your local machine:
+```bash
+cd project/file/path
+python -m http.server
+```
+
+XMLHttpRequest properties/methods/etc  
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+
+Using XMLHttpRequest  
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
 
 MDN: How To Style Forms  
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms  

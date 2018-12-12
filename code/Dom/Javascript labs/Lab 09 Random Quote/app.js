@@ -6,6 +6,7 @@ let search = document.getElementById("search");
 let previous = document.getElementById("previous");
 let next = document.getElementById("next");
 let pageNum = document.getElementById("page-num");
+let searchBy = document.getElementById("searchby");
 
 Btn.addEventListener("click", function(e){
     let req = new XMLHttpRequest();
@@ -36,7 +37,11 @@ req.send();
 
 searchBtn.addEventListener("click", function(e){
     let req = new XMLHttpRequest();
-    let searchText = search.value;
+    let searchVal = document.querySelector('input[name=searchby]:checked').value
+    
+    let searchText = ((search.value).split(' ').join("+"));
+
+    console.log(searchText, searchVal);
     let pageId = 1;
     
     let quotes = document.getElementsByTagName("li");
@@ -53,7 +58,6 @@ req.addEventListener("error", function (e){
 
 req.addEventListener("load", function(e) {
     let response = JSON.parse(req.responseText);
-    console.log(response)
     pageNum.innerText = `pg. ${pageId}`;
     for (let i=0; i< response.quotes.length; i++){
         let li = document.createElement("li");
@@ -67,7 +71,7 @@ next.addEventListener("click", function(){
         pageId += 1;
     for (let i=(quotes.length -1); i >= 0; i--){
         sTarget.removeChild(quotes[i]);};   
-    req.open("GET", `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}`);
+    req.open("GET", `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}${searchVal}`);
     req.setRequestHeader("Authorization", `Token token="${apiKey}"`);
     req.send();
     }  
@@ -77,12 +81,13 @@ previous.addEventListener("click", function(){
     pageId -=1;
     for (let i=(quotes.length -1); i >= 0; i--){
         sTarget.removeChild(quotes[i]);}; 
-    req.open("GET", `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}`);
+    req.open("GET", `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}${searchVal}`);
     req.setRequestHeader("Authorization", `Token token="${apiKey}"`);
     req.send();}
 });
 
-req.open("GET", `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}`);
+req.open("GET", `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}${searchVal}`);
+console.log( `https://favqs.com/api/quotes?page=${pageId}&filter=${searchText}${searchVal}`)
 req.setRequestHeader("Authorization", `Token token="${apiKey}"`);
 req.send();
 })
