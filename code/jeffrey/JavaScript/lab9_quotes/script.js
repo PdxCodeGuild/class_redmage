@@ -98,3 +98,6 @@ searchBtn.addEventListener("click", function(e){
   req.setRequestHeader("Authorization", `Token token="${api_key}"`);
   req.send();
 });
+
+
+// look at .change to make it switch between searching for a keyword and author and tag
