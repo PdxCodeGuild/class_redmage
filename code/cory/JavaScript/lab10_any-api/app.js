@@ -35,7 +35,7 @@ let showFilters = document.getElementById("show-filter");
 let filterWrapper = document.getElementById("main-filter-wrapper");
 
 // Setting default load to Return to Ravnica
-cardSetSearch.value = "LEA";
+// cardSetSearch.value = "LEA";
 
 // Below are URL specific search strings
 
