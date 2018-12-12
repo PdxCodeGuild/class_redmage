@@ -4,3 +4,71 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+h1 {
+  text-align: center;
+  color:paleturquoise;
+}
+
+#oneQuote {
+  display: flex;
+  color: coral;
+  background-color: beige;
+  margin: auto;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+a:link {
+  text-decoration-color: aliceblue;
+  text-decoration-line: none;
+}
+
+a:visited {
+  text-decoration-color: slategrey;
+}
+
+a:active {
+  text-decoration-color: aquamarine;
+}
+
+#searchGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.center_text {
+  text-align: center;
+}
+
+#triangleLeft{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: burlywood transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+#triangleRight{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: burlywood transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+#listQuotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

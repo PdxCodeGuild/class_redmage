@@ -5,9 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ajax</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
+  <h1>Don't Quote Me, but..</h1>
+  <div id="searchGroup">
+        <div>
+            <input id="searchBox" type="search" placeholder="search here xD">
+            <button id="searchBtn" type="submit">Submit</button>
+
+            <h4>
+                <input id="keywordSearch" type="radio" name="searchCrit">
+                <label for="searchFilter">keyword</label>
+            </h4>
+        </div>
+        <p><button id="btn">Random thing someone said once</button></p>
+      </div>
+
+  <div id="oneQuote">
+
+
+      <ul id="target"></ul>
+  </div>
+
+  <div id="listQuotes">
+    <ul id="searchTarget"></ul>
+    <a href="#" id= "pageBack"><div id=triangleLeft class="center_text"></div></a>
+    <a href="#" id="pageForward"><div id=triangleRight class="center_text"></div></a>
+    <h4 id="pageOn" class="center_text"></h4>
+  </div>
+
+
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
