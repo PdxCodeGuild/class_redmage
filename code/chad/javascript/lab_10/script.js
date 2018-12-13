@@ -77,7 +77,7 @@ function runAPI() {
             // textTarget.innerHTML = resultHTML;
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
-        req.setRequestHeader('Authorization', `211641ccc01b3407f73109e32c523d1e6acec5e01`); // apikey is hidden in config.js
+        req.setRequestHeader('Authorization', `211641c`); // apikey is hidden in config.js
     
         req.send();
 }
