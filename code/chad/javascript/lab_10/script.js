@@ -15,9 +15,9 @@ let chkBoxName = document.getElementById("chk-box-name")
 let chkBoxLocation = document.getElementById("chk-box-location")
 let chkBoxPlanguage = document.getElementById("chk-box-programming-languauge")
 
-var chkBoxNameInputValue = ""
-var chkBoxLocationInputValue = ""
-var chkBoxPlanguaugeInputValue = "" 
+var chkBoxNameInputValue;
+var chkBoxLocationInputValue;
+var chkBoxPlanguaugeInputValue;
 
 
 
@@ -54,9 +54,8 @@ function displayFields() {
 }
 
 function runAPI() {
-    let apiUrl = `https://api.github.com/search/users?q="${chkBoxNameInputValue}"${chkBoxLocationInputValue}`;
+    let apiUrl = `https://api.github.com/search/users?q=${chkBoxNameInputValue.replace(/ /g,'+')}+author:name:${chkBoxLocationInputValue}+location`;
     console.log(apiUrl)
-    displayBtn.addEventListener("click", function(e) {
         let req = new XMLHttpRequest();
         req.addEventListener("progress", function(e) {
             console.log(e.loaded);
@@ -78,9 +77,9 @@ function runAPI() {
             // textTarget.innerHTML = resultHTML;
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
-        req.setRequestHeader("Authorization", `${apikey}`); // apikey is hidden in config.js
-        req.send()
-});
+        req.setRequestHeader('Authorization', `211641ccc01b3407f73109e32c523d1e6acec5e01`); // apikey is hidden in config.js
+    
+        req.send();
 }
 
 function searchGit() {
