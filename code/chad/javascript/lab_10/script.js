@@ -54,7 +54,7 @@ function displayFields() {
 }
 
 function runAPI() {
-    let apiUrl = `https://api.github.com/search/users?q=${chkBoxNameInputValue.replace(/ /g,'+')}+author:name:${chkBoxLocationInputValue}+location`;
+    let apiUrl = `https://api.github.com/search/users?q=${chkBoxNameInputValue}+location:${chkBoxLocationInputValue}`;
     console.log(apiUrl)
         let req = new XMLHttpRequest();
         req.addEventListener("progress", function(e) {
@@ -77,7 +77,7 @@ function runAPI() {
             // textTarget.innerHTML = resultHTML;
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
-        req.setRequestHeader('Authorization', `211641c`); // apikey is hidden in config.js
+        req.setRequestHeader('Authorization', `${apikey}`); // apikey is hidden in config.js
     
         req.send();
 }
