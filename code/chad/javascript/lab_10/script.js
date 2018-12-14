@@ -20,9 +20,10 @@ let chkBoxLocation = document.getElementById("chk-box-location")
 let chkBoxPlanguage = document.getElementById("chk-box-programming-languauge")
 
 //setting up variable to use used later
-var chkBoxNameInputValue;
-var chkBoxLocationInputValue;
-var chkBoxPlanguaugeInputValue;
+let chkBoxNameInputValue;
+let chkBoxLocationInputValue;
+let chkBoxPlanguaugeInputValue;
+var userArray;
 
 //event listeners to display divs onces checkboxes are checked
 function displayFields() {
@@ -57,8 +58,24 @@ function displayFields() {
 
 //runs API call after user inputs some information
 function runAPI() {
-    let apiUrl = `https://api.github.com/search/users?q=${chkBoxNameInputValue}+location:${chkBoxLocationInputValue}`;
+    // let apiUrl = `https://api.github.com/search/users?q=${chkBoxNameInputValue}+location:${chkBoxLocationInputValue}+language:${chkBoxPlanguaugeInputValue}`;
+    let apiUrl = `https://api.github.com/search/users?q=`;
+    
+    if (inputUserInputName.value.length > 0) {
+        apiUrl += `${chkBoxNameInputValue}`;
+        console.log(apiUrl)
+    }
+    if (inputUserInputLocation.value.length > 0) {
+        apiUrl += `+location:${chkBoxLocationInputValue}`;
+        console.log(apiUrl)
+    }
+    if (inputUserInputPlanguauge.value.length > 0) {
+        apiUrl += `+language:${chkBoxPlanguaugeInputValue}`;
+        console.log(apiUrl)
+    }
+    
     console.log(apiUrl)
+
         let req = new XMLHttpRequest();
         req.addEventListener("progress", function(e) {
             console.log(e.loaded);
@@ -70,19 +87,28 @@ function runAPI() {
         });
         req.addEventListener("load", function(e) {
             dTarget.innerText = ""
-            console.log(req.responseText);
+            
             let response = JSON.parse(req.responseText);
-            console.log(response);
+            // console.log(req.responseText)
+            
+            userArray = response;
+            for (let i in response["items"]) {
+                    console.log(response["items"][i])
+               
+                    document.getElementById('dtarget').insertAdjacentHTML('beforeend', `<p> ${response["items"][i]["login"]}</p>`);
+            
+            }
             // let resultHTML = `
-            //     <p>${response.quote.body}</p>
-            //     <p><i><a href="${response.quote.url}">${response.quote.author}</a></i></p>
+            //     <p>${response.items[0].login}</p>
+               
             //     `
-            // textTarget.innerHTML = resultHTML;
+            // dTarget.innerHTML = resultHTML;
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
         req.setRequestHeader('Authorization', `${apikey}`); // apikey is hidden in config.js
     
         req.send();
+
 }
 
 
@@ -94,21 +120,20 @@ function searchGit() {
             }
         if (chkBoxLocation.checked == true) {
             chkBoxLocationInputValue = inputUserInputLocation.value;
-            console.log(chkBoxLocationInputValue);
             }
         if (chkBoxPlanguage.checked == true) {
             chkBoxPlanguaugeInputValue = inputUserInputPlanguauge.value;
-            console.log(chkBoxPlanguaugeInputValue);
             }
         runAPI()    
         })
-           
+       
         }
    
 
 function runScript() {
     displayFields();
     searchGit();
+    
 }
 
-runScript()
+runScript();

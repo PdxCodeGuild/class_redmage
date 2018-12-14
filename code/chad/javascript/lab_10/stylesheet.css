@@ -1,3 +1,13 @@
+body {
+    background-image: url("githubback.png");
+    background-color: #f8f2f2;;
+    background-repeat: no-repeat, repeat;
+    background-position: top;
+    background-size: 50%;
+  
+    
+}
+
 #div-user-name {
     display: none;
 }
@@ -8,3 +18,78 @@
 #div-user-planguage {
     display: none;
 }
+
+header {
+    text-align: center;
+    
+}
+
+#div-chkbox-wrapper {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.input-container {
+    margin-top: 2%;
+    grid-column-start: 2;
+}
+#div-display-btn {
+    margin-top: 3%;
+    text-align: center;
+}
+
+#div-wrapper-text-fields {
+    grid-column-start: 2;
+}
+
+
+#btn-wrapper {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+}
+#div-display-btn {
+    grid-column-start: 2;
+}
+#input-display-btn {
+    width: 100%;
+}
+#div-wrapper-text-fields {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+#div-wrapper-text-fields div {
+    grid-column-start: 2;
+    float: right;
+}
+#div-wrapper-text-fields div label {
+    justify-content: right
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+header h1{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+header h4{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 920px) {
+    #div-wrapper-text-fields {
+        max-width: 320px;
+    }
+    
+    #div-chkbox-wrapper {
+        grid-template-columns: 1fr 6fr 1fr;
+  }

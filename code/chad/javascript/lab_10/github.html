@@ -1,67 +1,71 @@
 <html>
-    <head>
+    <head >
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Bootstrap 101 Template</title>
-
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
             
     </head>
-            
-        <body>
+        <div >  
+        <body >
             <header>
                 <h1>GitHub Search</h1>
                 <h4>Check The Below Checkboxes To Search</h2>
             </header>
-                <div id="what-to-search">
-                    <fieldset>
-                        <label for="chk-box-name">Search Names</label>
-                        <input type="checkbox" id="chk-box-name"> 
-                        <label for="chk-box-location">Search Locations</label>
-                        <input type="checkbox" id="chk-box-location"> 
-                        <label for="chk-box-programming-languauge">Search Programing Languages</label>
-                        <input type="checkbox" id="chk-box-programming-languauge"> 
-                    </fieldset>
-                </div>
-                <div id="div-user-name">
-                    <label for="user-input-name">Find Users By Name</label>
-                    <input type="text" id="user-input-name">
-                </div>
-                <div id="div-user-location">
-                        <label for="user-input-location">Find Users By Location</label>
-                        <input type="text" id="user-input-location">
-                </div>
-                <div id="div-user-planguage">
-                        <label for="user-input-planguauge">Find Users By Programing Languauge</label>
-                        <input type="text" id="user-input-planguauge">
-                </div>
-                <div id="div-display.btn">
-                        <input type="button" id="input-display-btn" value="Display">
-                </div>
-                <div id="dtarget">
+                <div id="main-wrapper">
+                    <div id="what-to-search"  >
+                            <div id="div-chkbox-wrapper">
+                                <div class="input-container">
+                                    <label for="chk-box-name" >
+                                    <input type="checkbox" id="chk-box-name"> 
+                                    Search Names
+                                    </label>
+                                </div>  
 
+                                <div class="input-container">
+                                    <label for="chk-box-location" >
+                                    <input type="checkbox" id="chk-box-location"> 
+                                    Search Locations
+                                    </label>
+                                </div>
+                                <div class="input-container">
+                                    <label for="chk-box-programming-languauge">
+                                    <input type="checkbox" id="chk-box-programming-languauge"> 
+                                    Search Programing Languages
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="div-wrapper-text-fields">
+                        <div id="div-user-name">
+                            <label for="user-input-name">
+                            <input type="text" id="user-input-name">
+                            Find Users By Name
+                            </label>
+                        </div >
+
+                        <div id="div-user-location">
+                                <label for="user-input-location">
+                                <input type="text" id="user-input-location">
+                                Find Users By Location
+                                </label>
+                        </div>
+
+                        <div id="div-user-planguage">
+                                <label for="user-input-planguauge">
+                                <input type="text" id="user-input-planguauge">
+                                Find Users By Programing Languauge
+                                </label>
+                        </div>
+
+                        <div id="div-display-btn">
+                                <input type="button" id="input-display-btn" value="Display">
+                        </div>
+                        <div id="btn-wrapper"></div>
+                        <div id="dtarget"></div>
+                    </div>
                 </div>
-
-
-
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="js/bootstrap.min.js"></script>
+            </div> 
 
             <footer>
                 <script src="config.js"></script>
