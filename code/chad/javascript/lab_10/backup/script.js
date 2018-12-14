@@ -118,16 +118,14 @@ function runAPI(e) {
 
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
-        req.setRequestHeader('Authorization', `${apikey}`); // apikey is hidden in config.js
-    
+        req.setRequestHeader('Authorization',"token " + `${apikey}`); // apikey is hidden in config.js
+                //make sure there is a space int he quote after "token "
         req.send();
-
-        
 
 }
 
 
-//once display button is clicked, if checkbox is checked, grab input data before calling api
+//event listeners for buttons, once display button is clicked, if checkbox is checked, grab input data before calling api
 function searchGit() {
     displayBtn.addEventListener("click", function() {
         if (chkBoxName.checked == true) {
@@ -141,9 +139,6 @@ function searchGit() {
             }
         runAPI()    
         })
-       
-        }
-function nextPageFunc() {
     previousBtn.addEventListener("click", function() {
         pageNum --
         runAPI() 
@@ -152,14 +147,17 @@ function nextPageFunc() {
     nextBtn.addEventListener("click", function() {
         pageNum ++
         runAPI() 
-    })
-}
-   
+        })
+    }
+       
+
+
+
 
 function runScript() {
     displayFields();
     searchGit();
-    nextPageFunc();
+  
     
 }
 

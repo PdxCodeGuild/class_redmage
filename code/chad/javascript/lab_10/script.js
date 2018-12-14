@@ -26,7 +26,7 @@ let chkBoxPlanguage = document.getElementById("chk-box-programming-languauge")
 let chkBoxNameInputValue;
 let chkBoxLocationInputValue;
 let chkBoxPlanguaugeInputValue;
-let pageNum = 0
+let pageNum = 1
 var userArray;
 
 //event listeners to display divs onces checkboxes are checked
@@ -77,10 +77,10 @@ function runAPI(e) {
         apiUrl += `+language:${chkBoxPlanguaugeInputValue}`;
         console.log(apiUrl)
     }
-    if (pageNum == 0) {
+    if (pageNum == 1) {
 
     }
-    else if (pageNum != 0) {
+    else if (pageNum != 1) {
         apiUrl += `&page=${pageNum}`;
     }
     
@@ -118,8 +118,8 @@ function runAPI(e) {
 
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
-        req.setRequestHeader('Authorization',"Bearer" + `${apikey}`); // apikey is hidden in config.js
-    
+        req.setRequestHeader('Authorization',"token " + `${apikey}`); // apikey is hidden in config.js
+                //make sure there is a space int he quote after "token "
         req.send();
 
 }
