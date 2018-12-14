@@ -63,7 +63,7 @@ function executeDisplay(){
     
     })
         req.open("GET", siteurl);
-        req.setRequestHeader("Authorization", 'Token token="91317ab2facaee9e61fad12207487e1d"');
+        req.setRequestHeader("Authorization", `Token token="${apikey}"`);
         req.send();
     }
 
