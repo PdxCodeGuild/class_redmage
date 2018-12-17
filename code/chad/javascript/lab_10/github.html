@@ -1,0 +1,79 @@
+<html>
+    <head >
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+            
+    </head>
+        <div >  
+        <body >
+            <header>
+                <h1>GitHub Search</h1>
+                <h4>Check The Below Checkboxes To Search</h2>
+            </header>
+                <div id="main-wrapper">
+                    <div id="what-to-search"  >
+                            <div id="div-chkbox-wrapper">
+                                <div class="input-container">
+                                    <label for="chk-box-name" >
+                                    <input type="checkbox" id="chk-box-name"> 
+                                    Search Names
+                                    </label>
+                                </div>  
+
+                                <div class="input-container">
+                                    <label for="chk-box-location" >
+                                    <input type="checkbox" id="chk-box-location"> 
+                                    Search Locations
+                                    </label>
+                                </div>
+                                <div class="input-container">
+                                    <label for="chk-box-programming-languauge">
+                                    <input type="checkbox" id="chk-box-programming-languauge"> 
+                                    Search Programing Languages
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div id="div-wrapper-text-fields">
+                        <div id="div-user-name">
+                            <label for="user-input-name">
+                            <input type="text" id="user-input-name">
+                            Find Users By Name
+                            </label>
+                        </div >
+
+                        <div id="div-user-location">
+                                <label for="user-input-location">
+                                <input type="text" id="user-input-location">
+                                Find Users By Location
+                                </label>
+                        </div>
+
+                        <div id="div-user-planguage">
+                                <label for="user-input-planguauge">
+                                <input type="text" id="user-input-planguauge">
+                                Find Users By Programing Languauge
+                                </label>
+                        </div>
+
+                        <div id="div-display-btn">
+                                <input type="button" id="input-display-btn" value="Display">
+                        </div>
+                        <div id="btn-wrapper"></div>
+                        <div id="div-page-buttons">
+                            <input type="button" id="input-previous-btn" value="Previous Page">
+                            <input type="button" id="input-next-btn" value="Next Page">
+                        </div>
+                        <div id="dtarget"></div>
+                    </div>
+                </div>
+            </div> 
+
+            <footer>
+                <script src="config.js"></script>
+                <script src="script.js"></script>
+            </footer>
+        </body>
+</html>
