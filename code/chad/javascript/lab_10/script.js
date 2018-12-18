@@ -1,8 +1,11 @@
 //Define Where output text is going to
 let dTarget = document.getElementById("dtarget"); 
 
-//where the results of the output is to be displayed
-let displayBtn = document.getElementById("input-display-btn"); 
+//Page Buttons
+let displayBtn = document.getElementById("input-display-btn");
+let previousBtn = document.getElementById("input-previous-btn");
+let nextBtn = document.getElementById("input-next-btn");
+
 
 //div sections that are hidden by defualt until javascript displays them
 let divUserName = document.getElementById("div-user-name"); 
@@ -19,10 +22,11 @@ let chkBoxName = document.getElementById("chk-box-name")
 let chkBoxLocation = document.getElementById("chk-box-location")
 let chkBoxPlanguage = document.getElementById("chk-box-programming-languauge")
 
-//setting up variable to use used later
+//setting up variable to use used later API Call
 let chkBoxNameInputValue;
 let chkBoxLocationInputValue;
 let chkBoxPlanguaugeInputValue;
+let pageNum = 1
 var userArray;
 
 //event listeners to display divs onces checkboxes are checked
@@ -57,7 +61,7 @@ function displayFields() {
 
 
 //runs API call after user inputs some information
-function runAPI() {
+function runAPI(e) {
     // let apiUrl = `https://api.github.com/search/users?q=${chkBoxNameInputValue}+location:${chkBoxLocationInputValue}+language:${chkBoxPlanguaugeInputValue}`;
     let apiUrl = `https://api.github.com/search/users?q=`;
     
@@ -72,6 +76,12 @@ function runAPI() {
     if (inputUserInputPlanguauge.value.length > 0) {
         apiUrl += `+language:${chkBoxPlanguaugeInputValue}`;
         console.log(apiUrl)
+    }
+    if (pageNum == 1) {
+
+    }
+    else if (pageNum != 1) {
+        apiUrl += `&page=${pageNum}`;
     }
     
     console.log(apiUrl)
@@ -94,25 +104,28 @@ function runAPI() {
             userArray = response;
             for (let i in response["items"]) {
                     console.log(response["items"][i])
-               
-                    document.getElementById('dtarget').insertAdjacentHTML('beforeend', `<p> ${response["items"][i]["login"]}</p>`);
-            
+                    console.log(response["items"][i]["url"])
+                    e.defaultPrevented;
+                    document.getElementById('dtarget').insertAdjacentHTML('beforeend', `
+                    <div id="div-display-data">
+                        <img style="width:100px;height:100px" src="${response["items"][i]["avatar_url"]}" alt="Githubimag">
+                        <a href=${response["items"][i]["html_url"]}></iframe><p class="githubIds">${response["items"][i]["login"]}</p></a>
+                    </div>
+                    `);
+
+                  
             }
-            // let resultHTML = `
-            //     <p>${response.items[0].login}</p>
-               
-            //     `
-            // dTarget.innerHTML = resultHTML;
+
         });
         req.open("GET", `${apiUrl}`); //url is defined on top
-        req.setRequestHeader('Authorization', `${apikey}`); // apikey is hidden in config.js
-    
+        req.setRequestHeader('Authorization',"token " + `${apikey}`); // apikey is hidden in config.js
+                //make sure there is a space int he quote after "token "
         req.send();
 
 }
 
 
-//once display button is clicked, if checkbox is checked, grab input data before calling api
+//event listeners for buttons, once display button is clicked, if checkbox is checked, grab input data before calling api
 function searchGit() {
     displayBtn.addEventListener("click", function() {
         if (chkBoxName.checked == true) {
@@ -126,13 +139,25 @@ function searchGit() {
             }
         runAPI()    
         })
+    previousBtn.addEventListener("click", function() {
+        pageNum --
+        runAPI() 
+    })
+
+    nextBtn.addEventListener("click", function() {
+        pageNum ++
+        runAPI() 
+        })
+    }
        
-        }
-   
+
+
+
 
 function runScript() {
     displayFields();
     searchGit();
+  
     
 }
 

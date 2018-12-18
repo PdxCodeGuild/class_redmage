@@ -61,7 +61,7 @@ req.addEventListener("load", function(e) {
     pageNum.innerText = `pg. ${pageId}`;
     for (let i=0; i< response.quotes.length; i++){
         let li = document.createElement("li");
-        li.innerHTML = `${response.quotes[i].body}<i><a href="${response.quotes[i].url}"> ~${response.quotes[i].author}</a></i></p>`;
+        li.innerHTML = `<p>${response.quotes[i].body}<i><a href="${response.quotes[i].url}"> ~${response.quotes[i].author}</a></i></p>`;
         sTarget.appendChild(li);
     }
 });
