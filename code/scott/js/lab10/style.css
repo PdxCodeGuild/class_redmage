@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    padding: auto;
+    background-color: #D4CDBA;
+}
+
+#container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas:
+        "srch srch rndm rndm rndm rndm"
+        "info info info info info info";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    background-color: #5a677e;
+    border-radius: 20px;
+}
+
+#searchDiv {
+    grid-area: srch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    color: black;
+    font-size: 15px;   
+    width: auto;
+    height: auto;
+    margin: 5px;
+    background-color: #D4CDBA;
+
+    border-radius: 20px;
+    background-color: #009ac4;
+    border: 1px solid black;
+}
+
+#enter {
+    font-size: 15px;
+}
+
+#dateBox {
+    margin: 1px;
+    height: 20px;
+    border-radius: 4px;
+    width: auto;
+}
+
+#searchButton {
+    margin: 5px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+#randomDiv {
+    grid-area: rndm;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: auto;
+
+    color: white;   
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+
+#randomDate {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #009ac4;
+    border: 1px solid black;
+}
+
+#randomYear {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #009ac4;
+    border: 1px solid black;
+}
+
+
+
+#infoDiv {
+    grid-area: info;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: #009ac4;
+    margin: 5px;
+
+    border: 1px solid black;
+    border-radius: 20px;    
+
+    padding: 20px;
+}
+
+#dateDiv {
+    background-color: #D4CDBA;
+    margin: 5px;
+
+    width: 45%;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 8px -8px black;
+}
+
+#yearDiv {
+    background-color: #D4CDBA;
+    margin: 5px;
+
+    width: 45%;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 8px -8px black;
+}
+
+#dayDiv {
+    background-color: #D4CDBA;
+    margin: 5px;
+
+    width: 45%;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 8px -8px black;
+}
