@@ -76,6 +76,18 @@ In all three presentations, you should first explain the development process and
 
 ## Odds and Ends
 
+Django polls tutorial  
+https://docs.djangoproject.com/en/2.1/intro/tutorial01/
+
+Git branching practice  
+https://learngitbranching.js.org/
+
+Oh Shit Git  
+http://ohshitgit.com/
+
+Atlassian Git Tutorials  
+https://www.atlassian.com/git
+
 jQuery vs Vanilla vs Vue/React/Angular  
 https://www.academind.com/learn/javascript/jquery-future-angular-react-vue/
 
