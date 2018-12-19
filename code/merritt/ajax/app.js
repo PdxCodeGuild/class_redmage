@@ -15,15 +15,10 @@ btn.addEventListener("click", function(e) {
 
   req.addEventListener("load", function(e) {
     let response = JSON.parse(req.responseText);
-    console.log(req.responseText);
     console.log(response);
-    response.forEach(function(dog) {
-      let li = document.createElement("li");
-      li.innerText = `${dog.name} is a ${dog.good} dog! Age of ${dog.age}.`;
-      target.appendChild(li);
-    });
   });
 
-  req.open("GET", "ajax.json");
+  req.open("GET", 'https://favqs.com/api/quotes?filter=dog');
+  req.setRequestHeader("Authorization", 'Token token="4b3888849b4ef0bec9f217ffd39869a9"');
   req.send()
 });
