@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django_test_db',
         'USER': 'django_test_db_usr',
-        'PASSWORD': 'NEWbie01**',
+        'PASSWORD': 'NEWpassword01**',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
