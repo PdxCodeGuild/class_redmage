@@ -25,7 +25,7 @@ This will also require `pipenv` to be installed!
    
 ## Create an app
 
-Creating an app to add to your project is done by calling `python manage.py startapp <app_name>`.
+Creating an app to add to your project is done by calling `python manage.py startapp <app_name>`
 
 Django won't recognize your app until you append it to `INSTALLED_APPS` list in `settings.py`.
 eg:
