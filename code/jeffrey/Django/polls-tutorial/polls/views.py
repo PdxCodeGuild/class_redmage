@@ -50,7 +50,7 @@ def newQ (request):
         # check whether it's valid:
         if form.is_valid():
             # process the data in form.cleaned_data as required
-            # ...
+            Question.objects.create(question_text=request.POST['newq'], pub_date=timezone.now())
             # redirect to a new URL:
             return HttpResponseRedirect(reverse('polls:index'))
 
@@ -58,7 +58,7 @@ def newQ (request):
     else:
         form = QuestionForm()
 
-    return render(request, 'newQ.html', {'form': form})
+    return render(request, 'polls/newQ.html', {'form': form})
 
 # def index(request):
 #     latest_question_list = Question.objects.order_by('-pub_date')[:5]
