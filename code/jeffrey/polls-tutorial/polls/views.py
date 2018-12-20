@@ -7,6 +7,8 @@ from django.utils import timezone
 
 from .models import Question, Choice
 
+from .forms import QuestionForm
+
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
@@ -40,20 +42,23 @@ def vote(request, pk):
         selected_choice.save()
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
-class NewPollQView(generic.ListView):
+def newQ (request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = QuestionForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return HttpResponseRedirect(reverse('polls:index'))
 
-    # def view_name(request):
-    #     question = get_object_or_404(Question, pk=pk)
-    # try:
-    #     selected_choice = question.choice_set.get(pk=request.POST['choice'])
-    # except (KeyError, Choice.DoesNotExist):
-    #     return render(request, 'polls/detail.html', {'question': question, 'error_message': "You didn't select a choice",
-    #     })
-    # else:
-    #     selected_choice.votes += 1
-    #     selected_choice.save()
-    #     return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = QuestionForm()
 
+    return render(request, 'newQ.html', {'form': form})
 
 # def index(request):
 #     latest_question_list = Question.objects.order_by('-pub_date')[:5]

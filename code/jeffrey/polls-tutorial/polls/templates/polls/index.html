@@ -15,9 +15,9 @@
 {% endif %}
 
 <div>
-  <form method="POST" action="">
-  {% csrf_token %}
-    Enter a new poll question here: <input type="text" name="handle" value=""><br>
+  <form action="{% url 'polls:newQ' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
     <input type="submit" value="Submit">
-  </form>
+</form>
 </div>
