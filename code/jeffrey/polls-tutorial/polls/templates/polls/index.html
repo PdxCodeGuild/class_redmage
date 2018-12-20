@@ -1,3 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<h1>Welcome to Jeffrey's Polls</h1>
+
 {% if latest_question_list %}
   <ul>
     {% for question in latest_question_list %}
@@ -5,5 +11,13 @@
     {% endfor %}
   </ul>
 {% else %}
-  <p>No polls are available right now.</p>
+  <p>No polls are available</p>
 {% endif %}
+
+<div>
+  <form method="POST" action="">
+  {% csrf_token %}
+    Enter a new poll question here: <input type="text" name="handle" value=""><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
