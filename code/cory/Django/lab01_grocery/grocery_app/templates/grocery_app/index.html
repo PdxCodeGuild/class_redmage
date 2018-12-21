@@ -1,0 +1,33 @@
+<h1>Grocery List</h1>
+
+{% if grocery_list %}
+    {% for grocery in grocery_list %}
+        <p>{{ grocery.item_text }}</p>
+    {% endfor %}
+{% else %} 
+    <p>Your grocery list is empty!</p>
+{% endif %}
+
+
+
+<form action="{% url 'grocery_app:create' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="item_text" value="Test5">
+    <button type="submit">Add Grocery</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
