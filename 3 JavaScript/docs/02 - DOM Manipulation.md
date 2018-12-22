@@ -46,7 +46,7 @@ You can set the value 'inside' a tag `<div>this</div>` using `innerText` and `in
 <script>
     let div1 = document.querySelector('#div1');
     div1.innerText = "Hello World!";
-    
+
     let div2 = document.querySelector('#div2');
     div2.innerHTML = "<p><b>Hello World!</b></p>";
 </script>
