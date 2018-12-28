@@ -1,0 +1,29 @@
+/* *, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item-a {
+  grid-row: 1 /2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item-b {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.item-c {
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
