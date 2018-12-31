@@ -1,3 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<h1> Welcome TO DaChad Polls</h1>
+
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
@@ -7,3 +13,4 @@
 {% else %}
     <p> No polls are avaialble right now.</p>
 {% endif %}
+

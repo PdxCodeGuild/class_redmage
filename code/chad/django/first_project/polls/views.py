@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.urls import reverse
 from django.views import generic
+from django.utils import timezone
+from django.test import TestCase
 # from django.template import loader
 
 from .models import Choice, Question
@@ -11,11 +13,14 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
-        return Question.objects.order_by('-pub_date')[:5]
+        return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
 class DetailView(generic.DeleteView):
     model = Question
     template_name = 'polls/detail.html'
+
+    def get_queryset(self):
+        return Question.objects.filter(pub_date__lte=timezone.now())
 
 class ResultsView(generic.DeleteView):
     model = Question
@@ -34,6 +39,35 @@ def vote(request, pk):
         selected_choice.votes += 1
         selected_choice.save()
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+
+class QuestionResultsViewTests(TestCase):
+    '''Future Question and Past Question'''
+    def test_future_question(self):
+        future_question = create_question(question_text="Future question?", days=61)
+        url = reverse('polls:detail', args=(future_question.id,))
+        response = self.client.geturl(url)
+        self.assertEqual(response.status_code,404)
+
+    def test_past_question(self):
+        past_question = create_question(question_text="Past question?", days=61)
+        url = reverse('polls:results', args=(past_question.id,))
+        response = self.client.get(url)
+        self.assertContains(response, past_question.question_text)
+
+class QuestionDetailViewTests(TestCase):
+    '''Future Question and Past Question'''
+    def test_future_question(self):
+        future_question = create_question(question_text="Future question?", days=61)
+        url = reverse('polls:detail', args=(future_question.id,))
+        response = self.client.geturl(url)
+        self.assertEqual(response.status_code,404)
+
+    def test_past_question(self):
+        past_question = create_question(question_text="Past question?", days=61)
+        url = reverse('polls:results', args=(past_question.id,))
+        response = self.client.get(url)
+        self.assertContains(response, past_question.question_text)
+
 
 
         # def index(request):
