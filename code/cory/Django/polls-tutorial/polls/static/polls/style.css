@@ -1,0 +1,15 @@
+body {
+    /* background: url("images/polls.png"); */
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li, label {
+    color: burlywood;
+}
+
+li a {
+    color: magenta;
+}
+

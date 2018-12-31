@@ -4,7 +4,7 @@ function clock(){
 }
 // starts clock when page loads
 let time = new Date();
-    document.getElementById("clock").innerHTML = time.toLocaleTimeString();
+    document.getElementById("clock").innerText = time.toLocaleTimeString();
     // refreshes every second
 let myClock = setInterval(clock, 1000);
 //hides and shows the clock
@@ -64,7 +64,7 @@ startBtn.addEventListener("click", function(){
     startBtn.disabled = true;
 });
 
-//  stops timer 
+//  stops timer
 let stopBtn = document.getElementById("stop");
 
 stopBtn.addEventListener("click", function(){
@@ -79,7 +79,7 @@ let lapList = document.getElementById("laptimes");
 lapBtn.addEventListener("click", lapTime)
 
 function lapTime(){
-    let laps = document.createElement("li"); 
+    let laps = document.createElement("li");
     let h = swtime.getHours();
     let m = swtime.getMinutes();
     let s = swtime.getSeconds();
@@ -89,7 +89,7 @@ function lapTime(){
     laps.innerText = `${h} : ${m} : ${s}`;
     lapList.appendChild(laps);
 }
-// resets the stopwatch to 0's and removes laps 
+// resets the stopwatch to 0's and removes laps
 let resetBtn = document.getElementById("reset");
 
 resetBtn.addEventListener("click", function(){
@@ -101,7 +101,7 @@ resetBtn.addEventListener("click", function(){
     swtime.setHours(0,0,0,0);
     clearInterval(startTimer);
     document.getElementById("stopwatch").innerText = `${h} : ${m} : ${s}`;
-    
+
 })
 let timerTime = document.getElementById("countdown-time"); //this is the text input field
 let timeUnit = document.getElementById("timeunit");// this is the drop down unit field
@@ -188,6 +188,6 @@ function countItDown(){
 enterBtn.addEventListener("click", timer);
 enterBtn.addEventListener("click", countItDown);
 
-$('.slide').on('click', function(){
+`$('.slide').on('click', function(){
     $('#fade-in').toggleClass('show');
-});
+})`;

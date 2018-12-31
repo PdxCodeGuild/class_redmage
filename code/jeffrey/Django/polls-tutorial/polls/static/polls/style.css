@@ -1,0 +1,38 @@
+/* body { */
+  /* background-image: url("images/polls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+li {
+  color: burlywood;
+  background-color: aquamarine;
+}
+
+li a {
+  color: magenta;
+  background-color: aqua;
+}
+
+h1 {
+  color: violet;
+  background-color: antiquewhite;
+}
+
+p {
+  color: powderblue;
+  background-color: royalblue;
+}
+
+ul {
+  color: white;
+}
+
+label {
+  color: palevioletred;
+  background-color: darkcyan;
+}
+
+div form {
+  background-color: firebrick;
+}

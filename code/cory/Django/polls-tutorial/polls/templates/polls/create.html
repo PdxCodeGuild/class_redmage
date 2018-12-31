@@ -1,0 +1,14 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<h1>Create New Question</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" id="question" placeholder="Enter Question">
+    <input type="text" id="choice1" placeholder="Enter Choice 1">
+    <input type="text" id="choice2" placeholder="Enter Choice 2">
+    <input type="text" id="choice3" placeholder="Enter Choice 3">
+    <input type="submit">
+</form>

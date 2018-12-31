@@ -1,0 +1,1 @@
+let newPoll = document.getElementById("create_new_poll_index")
