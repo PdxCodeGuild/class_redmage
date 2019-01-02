@@ -4,7 +4,7 @@
     {% csrf_token %}
     <ul>
     {% for item in grocery_list_items %}
-        <li>{{ item.item_text }} Qty: {{item.qty}}<input type="checkbox" name="complete {{ item.id }}"></li>
+        <li>{{ item.item_text }} Qty: {{item.qty}} <input type="checkbox" name="{{ item.id }}" value = '{{ item.id }}'></li>
     {% endfor %}
     </ul>
     {% else %}

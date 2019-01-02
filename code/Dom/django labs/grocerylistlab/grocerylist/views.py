@@ -22,15 +22,16 @@ def addItem(request):
   return HttpResponseRedirect(reverse('grocerylist:index'))
 
 def completedItem(request):
-  for item in Item.objects.filter(completed = False).order_by('id'):
-    try:
-      completed_item = Item.get_queryset.get(pk=request.POST["item_text"])
-    except (KeyError, Item.DoesNotExist):
-      return render(request, 'index.html',{
-        "error_message" : "No items completed"
-      })
-    else:
-      completed_item_completed = True
-      completed_item.save()
-      return HttpResponseRedirect(reverse('grocerylist:index'))
+  for completed_item in Item.objects.filter(completed = False).order_by('id'):
+    if str(completed_item.id) in request.POST.values():
+      try:
+        print(request.POST, completed_item.id)
+      except (KeyError, Item.DoesNotExist):
+        return render(request, 'index.html',{
+          "error_message" : "No items completed"
+        })
+      else:
+        completed_item.completed = True
+        completed_item.save()
+  return HttpResponseRedirect(reverse('grocerylist:index'))
      
