@@ -34,5 +34,5 @@ Some examples of user meta data are:
 - Where they clicked the link from
 - etc...
 
-## Version 3 (Optional):
+## Version 3:
 Style your page using any CSS framework of your choice, try and make it look fancy and modern.
