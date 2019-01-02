@@ -1,0 +1,22 @@
+<h1>Grocery List</h1>
+{% if grocery_list_items %}
+<form action ="{% url 'grocerylist:completedItem' %}" method="post">
+    {% csrf_token %}
+    <ul>
+    {% for item in grocery_list_items %}
+        <li>{{ item.item_text }} Qty: {{item.qty}}<input type="checkbox" name="complete {{ item.id }}"></li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>No items.</p>
+    {% endif %}
+<input type="submit" value = "Clear Completed">
+</form>
+<form action="{% url 'grocerylist:addItem' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="item_text" value=""/>
+    <input type='number' name='qty' value=1 />
+    <input type="submit" value= "Add Item"/>
+</form>
+
+
