@@ -15,5 +15,4 @@ class IndexView(generic.ListView):
 def new_grocery(request):
     grocery_text = request.POST['item_text']
     GroceryItem.objects.create(item_text=grocery_text)
-    # grocery.save()
     return HttpResponseRedirect(reverse('grocery_app:index'))

@@ -12,7 +12,7 @@
 
 <form action="{% url 'grocery_app:create' %}" method="post">
     {% csrf_token %}
-    <input type="text" name="item_text" value="Test5">
+    <input type="text" name="item_text">
     <button type="submit">Add Grocery</button>
 </form>
 
