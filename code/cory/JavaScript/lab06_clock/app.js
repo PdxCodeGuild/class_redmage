@@ -146,7 +146,7 @@ function countdownClock() {
     document.getElementById("countdown-timer").innerHTML = v3Date.toLocaleTimeString("en-gb");
     if (v3Date.getHours() === 0 && v3Date.getMinutes() === 0 && v3Date.getSeconds() === 0) {
         clearInterval(myTimerv3);
-        alert("You're Done");
+        // alert("You're Done");
         document.getElementById("countdown-timer-wrapper").style.backgroundColor = "red";
     }
 };

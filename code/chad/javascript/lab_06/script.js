@@ -34,7 +34,7 @@ lapButton.addEventListener("click", function() {
 function clockTimer() {
     let time = new Date()
     clockTime.innerHTML = time.toLocaleTimeString();
-    
+
 }
 
 let stoplapTime = new Date();
@@ -64,7 +64,7 @@ countDownBtn.addEventListener("click", function() {
 function countDownTimer(){
     countTimerTime.setSeconds(countTimerTime.getSeconds()-1);
     displayLap.innerHTML = stoplapTime.toTimeString().match(/\d{2}:\d{2}:\d{2}/)[0];
-    
+
 }
 
 
