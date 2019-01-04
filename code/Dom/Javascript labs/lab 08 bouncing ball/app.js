@@ -52,7 +52,7 @@ function main_loop() {
      }else if (ball.py + ball.raidous < cnv.height) {
         ball.py += gravity;
      }
-    
+
      ctx.beginPath();
      ctx.arc(ball.px, ball.py, ball.radius, 0, 2 * Math.PI, false);
      ctx.fill();
