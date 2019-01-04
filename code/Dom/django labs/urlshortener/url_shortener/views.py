@@ -37,4 +37,6 @@ def redirector(request, ShortUrl):
   if request.method =="GET":
     address = get_object_or_404(Shorten, ShortUrl=ShortUrl)
     long_url = address.Url
+    address.Xs_used += 1
+    address.save()
     return HttpResponseRedirect(long_url)
