@@ -1,0 +1,17 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#container {
+  background-color: black;
+}
+
+#hack_text_target {
+  color: lime;
+  font: courier;
+  font-size: medium;
+}
+
+body {
+  background-color: black;
+}
