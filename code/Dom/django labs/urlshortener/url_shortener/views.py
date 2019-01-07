@@ -30,7 +30,6 @@ def index(request):
     context = {
       'latest_Url' : latest_Url,
     }
-    print(context)
     return render(request,'url_shortener/index.html', context)
 
 def redirector(request, ShortUrl):
