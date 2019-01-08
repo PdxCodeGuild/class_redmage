@@ -3,7 +3,7 @@
 {% block content %}
   <div class="card" id="listview">
     <div class="card-body">
-      <p class="card-text blockquote mb-0">{{ post.body }}</p>
+      <p class="card-text blockquote mb-0" style="color: black">{{ post.body }}</p>
       <a href="{% url 'post_detail' post.pk %}" class="card-link">posted by: {{ post.author }}</a>
         <br>
         <a href="{% url 'post_detail' post.pk %}" class="card-link">{{post.pub_date}}</a>

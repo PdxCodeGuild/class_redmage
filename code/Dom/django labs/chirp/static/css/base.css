@@ -1,10 +1,11 @@
-#listview {
-  display: flex;
-  flex-flow: row
-}
+
 
 body{
   background-color: darkslategrey;
-  color: black
+  color: black;
 }
 
+.footer{
+  position: fixed;
+  text-align: center
+}
