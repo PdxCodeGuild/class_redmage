@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if user.is_authenticated %}
+    {% for post in object_list %}
+    <div class="card" id="listview">
+      <div class="card-body">
+        <p class="card-text blockquote mb-0">{{ post.body }}</p>
+        <a href="{% url 'post_detail' post.pk %}" class="card-link">posted by: {{ post.author }}</a>
+        <br>
+        <a href="{% url 'post_detail' post.pk %}" class="card-link">{{post.pub_date}}</a>
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+  <div class="jumbotron"style="color: darkslategrey">
+      <h1 class="display-4">Hello!</h1>
+      <p class="lead">This is like twitter but without trolls or trumps.</p>
+      <hr class="my-4">
+      <p>Its easy, its fun, its cool.</p>
+      <a class="btn btn-primary btn-lg" href="{% url 'signup' %}" role="button">Sign Up</a>
+</div>
+  {% endif %}
+  
+{% endblock content %}

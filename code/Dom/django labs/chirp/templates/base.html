@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+  <head>
+    <title>Chirp-Twitter clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <div class="navbar navbar-dark bg-dark">
+        <h1><a class= "navbar-brand" href="{% url 'home' %}">Chirp. Worth 2 in the hand.</a></h1>
+         {% if user.is_authenticated %}
+        <a class="navbar-inline" style="color: white" >Welcome, {{ user.username}}!</a>
+        <a class="navbar-inline"href="{% url 'logout' %}">Logout</a>
+      {% else %}
+        <a class="navbar-inline" style="color: white">You are not logged in.</a>
+        <a class="navbar-inline" href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">Sign Up</a>
+      {% endif %}
+        <a class="navbar-inline" href="{% url 'post_new' %}">+ Post a chirp</a>
+      </div>
+      </header>
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
