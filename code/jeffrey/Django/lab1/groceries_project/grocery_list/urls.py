@@ -1,7 +1,10 @@
-from django.urls import path
+from django.conf.urls import url
 
-from . import views
+from grocery_list import views
+
+app_name = "grocery_list"
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name ='index'),
+    url(r'^$', views.index, name='index'),
+
 ]

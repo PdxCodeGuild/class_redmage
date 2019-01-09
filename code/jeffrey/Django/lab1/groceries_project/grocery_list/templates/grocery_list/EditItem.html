@@ -7,14 +7,10 @@
 <body>
   <h1>What's on your list today?</h1>
 
-  {% if latest_grocery_list %}
+  {% if grocery_item_list %}
     <ul>
       {% for item in latest_grocery_list %}
-      <li>
-      {{ item.item_text }}
-      {{ item.created_date }}
-      {{ item.obtained }}
-      </li>
+      <li><a href="{% url 'grocery_list:detail' item.id %}">{{ item.item_text }}</a></li>
       {% endfor %}
     </ul>
   {% else %}
@@ -22,7 +18,7 @@
   {% endif %}
 
   <div>
-    {% comment %} <a href="{% url 'grocery_list:add' %}">Want to add an item to your list today?</a> {% endcomment %}
+    <a href="{% url 'grocery_list:AddItem' %}">Want to add an item to your list today?</a>
   </div>
 </body>
 </html>
