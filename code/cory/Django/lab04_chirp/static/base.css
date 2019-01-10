@@ -1,0 +1,52 @@
+html {
+    background-color: blueviolet;
+    color: white;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: auto;
+    display: flex;
+    border-bottom: 3px solid black;
+}
+
+h2 {
+    display: inline-block;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button-nav {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* margin-right: 24px; */
+}
+
+.home-post-div {
+    background-color: rgba(222, 184, 135, 0.438);
+    border: 1px solid black;
+    margin: 12px;
+    margin-right: 24px;
+}
+
+.home-post-div, .home-post-div p {
+    padding: 12px;
+    margin-left: 24px;
+}
+
+.home-post-div p {
+    font-size: 24px;
+}

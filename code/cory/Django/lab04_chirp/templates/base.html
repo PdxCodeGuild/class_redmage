@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chirp</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}"><h1>Chirp</a> - The Internets Most Valuable Website </h1>
+        <div id="button-nav">
+
+            {% if user.is_authenticated %}
+                <p>Welcome back, {{ user.username }}!</p>
+                <div class="nav-buttons">
+                    <a href="{% url 'post_new' %}"><button id="post">New Post</button></a>
+                    <a href="{% url 'logout' %}"><button id="logout">Logout</button></a>
+                </div>
+            {% else %}
+                <div class="nav-buttons"></div>
+                    <a href="{% url 'login' %}"><button id="login">Login</button></a>
+                    <a href="{% url 'create_new_user' %}"><button id="register">Register</button></a>
+                </div>
+            {% endif %}
+            
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>

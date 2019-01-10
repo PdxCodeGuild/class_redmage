@@ -1,0 +1,48 @@
+body {
+    background-color: blueviolet;
+}
+
+#main-div {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    width: 1200px;
+}
+
+h1 {
+    color: white;
+}
+
+#url_form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+}
+
+#long_input, form button {
+    padding: 12px;
+    margin: 12px;
+}
+
+form button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, ul li {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 24px;
+}
+
+ul li, ul button {
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

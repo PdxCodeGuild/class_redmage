@@ -1,0 +1,36 @@
+{% extends "url_short_app/base.html" %}
+
+{% block body %}
+
+    <div id="main-div">
+        <h1>Enter URL you want shortened</h1>
+        <form id="url_form" action="{% url 'url_short:index' %}" method="POST">
+            {% csrf_token %}
+            <input id="long_input" type="text" placeholder="Long URL" name="new_url">
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if code %}
+            <ul>
+                {% for code in code %}
+                    <li>
+                    <a href="{% url 'url_short:delete' code.pk %}">
+                    <button id=" {{ code.pk }}">Delete</button></a> 
+                    {{ code.url }}&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;
+                    <a href="redirect/{{ code.code }}" target="_blank">localhost:8000/redirect/{{ code.code }}</a>
+                    </li>
+
+                    <li>
+                    Info: clicked {{ code.click_counter }} 
+                    time{{ code.click_counter|pluralize }} | 
+                    IP = {{ code.ip_address }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No URL's have been shortened.</p>
+        {% endif %}
+
+    </div>
+
+{% endblock %}
+

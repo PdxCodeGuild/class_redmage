@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Post Edit:</h1>
+
+
+    <div class="home-post-div">
+        <form action="{% url 'post_edit' post.pk %}" method='post'>
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button type="submit">Edit!</button>
+        </form>
+    </div>
+
+{% endblock %}
