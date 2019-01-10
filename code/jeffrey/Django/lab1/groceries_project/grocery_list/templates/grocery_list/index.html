@@ -1,25 +1,83 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html><head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'grocery_list/style.css' %}" />
 </head>
-<body>
-  <h1>What's on your list today?</h1>
-
+<body class=container>
+  <div class=item>
+    <h1>What's on your list today?</h1>
+    <span>
+    <form action="{% url 'grocery_list:AddView' %}" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit">
+    </form>
+    </span>
+  </div>
+  <div id=out_of_basket class=item-a>
+  <h3>List</h3>
+  <p>Ordered by 'Item Name' A-Z</p>
   {% if latest_grocery_list %}
     <ul>
       {% for item in latest_grocery_list %}
-      <li>
-      {{ item.item_text }}
-      {{ item.created_date }}
-      {{ item.obtained }}
-      </li>
+        <li>
+        Item: {{ item.name }}
+        Created Date: {{ item.created_date }}
+        Quantity: {{ item.quantity }}
+        On-List
+
+        <form action = "{% url 'grocery_list:obtain' item.id %}" method="post" style='display:inline'>
+            {% csrf_token %}
+            <button type='submit' name='obtain' formmethod="post">></button>
+        </form>
+
+        <form action = "{% url 'grocery_list:delete' item.id %}" method="post" style='display:inline'>
+          {% csrf_token %}
+          <button type='submit' name='delete' formmethod="post">-</button>
+        </form>
+
+        </li>
       {% endfor %}
     </ul>
-  {% else %}
-    <p>No items are on your list yet today</p>
-  {% endif %}
+
+    {% else %}
+    <p>No items are on your list yet today.</p>
+    {% endif %}
+  </div>
+
+  <div id=in_basket class=item-b>
+  <h3>Basket</h3>
+  <p>Ordered by Quantity, then obtained date.</p>
+    {% if in_basket_list %}
+      <ul>
+        {% for item in in_basket_list %}
+          <li>
+          Item: {{ item.name }}
+          Created Date: {{ item.created_date }}
+          Obtained Date: {{ item.completed_date }}
+          Quantity: {{ item.quantity }}
+          Obtained
+
+          <form action = "{% url 'grocery_list:obtain' item.id %}" method="post" style='display:inline'>
+            {% csrf_token %}
+            <button type='submit' name='obtain' formmethod="post"><</button>
+          </form>
+
+          <form action = "{% url 'grocery_list:delete' item.id %}" method="post" style='display:inline'>
+            {% csrf_token %}
+            <button type='submit' name='delete' formmethod="post">-</button>
+          </form>
+
+          </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+      <p>No items are in your basket yet.</p>
+    {% endif %}
+  </div>
+
 
   <div>
     {% comment %} <a href="{% url 'grocery_list:add' %}">Want to add an item to your list today?</a> {% endcomment %}
