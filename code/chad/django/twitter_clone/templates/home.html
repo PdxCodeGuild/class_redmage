@@ -1,0 +1,20 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+    {% for tweets in object_list %}
+        {{ tweets.tweet_text }} <br>
+    {% endfor %}
+
+    {% for post in object_list %}
+      <div class="post-entry">
+        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.tweet_text }}</a></h2>
+
+      </div>
+    {% endfor %}
+
+{% endblock content%}

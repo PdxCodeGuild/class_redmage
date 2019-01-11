@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Shorten Url">
+</form>
+    {% for x in data %}
+        <a href="{{ x.url_long_path }}">127.0.0.0:8000/{{ x.url_short_path }}</a> <br>
+    {% endfor %}
+
+</body>
+</html>

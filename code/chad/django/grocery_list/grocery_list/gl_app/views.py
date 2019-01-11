@@ -11,7 +11,7 @@ def index(request):
     context = {
         'items': GroceryItem.objects.all()
     }
-    grocery_text = request.POST['gcname']
+    grocery_text = request.POST['gc_item']
     GroceryItem.objects.create(gcname=grocery_text)
     return HttpResponse(template.render(context, request))
 

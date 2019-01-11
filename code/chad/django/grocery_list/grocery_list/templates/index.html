@@ -9,7 +9,7 @@
         <form action="" method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <input name="gcname" type="text" value="testchad" >
+            <input name="gc_item" type="text" value="testchad" >
             <input type="submit" value="Add Item">
         </form>
         {% for item in items %} <br>

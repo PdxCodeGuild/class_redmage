@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    {% block content %}
+        <div>
+        {% block title %}Worst Grocery List Appy{% endblock title %}
+        <br>
+            {% for x in gl_name %}
+
+                        <br>
+                        <form method="POST" action="{%  url 'gl_app:delete_item' x.id %}">
+                        {% csrf_token %}
+                        {{ x.gc_item }}
+                            <button type="submit" value="Delete">Delete</button>
+                        </form>
+
+
+            {% endfor %}
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            <input name="add_item" type='text'>
+            <input type="submit" value="Add Item">
+        </form>
+
+    {% endblock content %}
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

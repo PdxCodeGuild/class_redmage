@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d983a2c-d855-4a73-b826-3927ff85dddc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../grocery_list2/gl_app/templates/gl_app/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../url_short/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../url_short/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../url_short/url_app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../url_short/url_app/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../url_short/url_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grocery_list/gl_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../grocery_list/gl_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grocery_list/gl_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../grocery_list/gl_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grocery_list/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../grocery_list/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grocery_list2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../grocery_list2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grocery_list2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../grocery_list2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grocery_list2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../grocery_list2/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grocery_list2/gl_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../grocery_list2/gl_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grocery_list2/gl_app/templates/gl_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../grocery_list2/gl_app/templates/gl_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grocery_list2/gl_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../grocery_list2/gl_app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,28 +77,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grocery_list/gl_app/models.py">
+        <entry file="file://$PROJECT_DIR$/../grocery_list/gl_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="120">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grocery_list/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/../grocery_list/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="165">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grocery_list/gl_app/views.py">
+        <entry file="file://$PROJECT_DIR$/../grocery_list/gl_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="15">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -102,7 +127,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -111,14 +136,15 @@
         <option value="$PROJECT_DIR$/grocery_list/gl_app/models.py" />
         <option value="$PROJECT_DIR$/grocery_list/templates/index.html" />
         <option value="$PROJECT_DIR$/grocery_list/gl_app/views.py" />
+        <option value="$PROJECT_DIR$/../grocery_list/gl_app/models.py" />
+        <option value="$PROJECT_DIR$/../grocery_list/gl_app/views.py" />
+        <option value="$PROJECT_DIR$/../grocery_list/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="270" />
-    <option name="y" value="1080" />
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -128,35 +154,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="grocery_list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="grocery_list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
               <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="grocery_list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
               <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
               <item name="gl_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grocery_list" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
-              <item name="grocery_list" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,7 +184,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,17 +315,17 @@
       <workItem from="1546460213672" duration="642000" />
       <workItem from="1546462230004" duration="1545000" />
       <workItem from="1546465598891" duration="349000" />
+      <workItem from="1546891093897" duration="796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21460000" />
+    <option name="totallyTimeSpent" value="22256000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="315" y="1107" width="1321" height="741" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4952381" visible="true" weight="0.23372549" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4952381" visible="true" weight="0.23639274" />
       <window_info id="Structure" order="1" sideWeight="0.50158226" side_tool="true" weight="0.17129135" />
       <window_info id="Favorites" order="2" sideWeight="0.50476193" side_tool="true" weight="0.17355044" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,14 +340,14 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.28642383" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.28632027" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3290735" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32979852" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.13960785" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.13927428" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="right" id="R Graphics" order="6" />
       <window_info anchor="right" id="R Packages" order="7" />
@@ -336,28 +356,33 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../../.." />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a4603012-4f1c-477d-9386-beca06688d88/console.sql" />
     <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/auth_group" />
     <entry file="file://$USER_HOME$/.local/share/virtualenvs/grocery_list-WJs-LgmB/lib/python3.6/site-packages/django/contrib/admin/__init__.py" />
     <entry file="file://$PROJECT_DIR$/manage.py" />
-    <entry file="file://$PROJECT_DIR$/grocery_list/grocery_list/urls.py">
+    <entry file="file://$PROJECT_DIR$/../grocery_list/grocery_list/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/grocery_list/manage.py">
+    <entry file="file://$PROJECT_DIR$/../grocery_list/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grocery_list/grocery_list/settings.py">
+    <entry file="file://$PROJECT_DIR$/../grocery_list/grocery_list/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/grocery_list/gl_app/urls.py">
+    <entry file="file://$PROJECT_DIR$/../grocery_list/gl_app/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/grocery_list/gl_app/admin.py">
+    <entry file="file://$PROJECT_DIR$/../grocery_list/gl_app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
@@ -369,24 +394,87 @@
     </entry>
     <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem" />
     <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/sqlite_master" />
-    <entry file="file://$PROJECT_DIR$/grocery_list/gl_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grocery_list/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grocery_list/gl_app/views.py">
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4dfeaa0c-786d-48d9-9e10-5977bb1ca3a6/schema/main/table/gl_app_groceryitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../grocery_list/gl_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="120">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../grocery_list/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../grocery_list/gl_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
