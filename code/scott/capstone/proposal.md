@@ -1,4 +1,5 @@
-# Capstone Proposal  #### Scott Harvey
+# Capstone Proposal  
+#### Scott Harvey
 
 ## Name
 
