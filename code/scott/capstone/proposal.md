@@ -39,8 +39,4 @@ January
 
 - Fri 18 / Sat 19 - Have completed templates and working site.
 
-- Sun 20 / Mon 21 - Apply CSS
-
-
-
-Here you'll want to come up with some (very rough) estimates of the timeframe for each section. State specifically which steps you'll take in the implementation. This section should also include work you're planning to do after the capstone is finished.
+- Sun 20 / Mon 21 - Apply CSS and finalize
