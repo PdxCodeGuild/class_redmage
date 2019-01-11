@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse, get_object_or_404
+from django.shortcuts import render, reverse, get_object_or_404, get_list_or_404
 from django.urls import reverse_lazy, reverse
 from .models import Post
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -41,6 +41,8 @@ class BlogUserView(LoginRequiredMixin, ListView):
     context_object_name = "posts"
 
     def get_queryset(self):
+        self.author = get_list_or_404(Post, author__username=self.kwargs['author'])
+        
         return Post.objects.filter(author__username=self.kwargs['author']).order_by('-date_posted')
 
 
