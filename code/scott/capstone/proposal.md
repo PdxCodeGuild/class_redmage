@@ -1,9 +1,8 @@
-# Capstone Proposal
-#### Scott Harvey
+# Capstone Proposal  #### Scott Harvey
 
 ## Name
 
-**Nuksha**
+**Insight**
 
 ## Project Overview
 
