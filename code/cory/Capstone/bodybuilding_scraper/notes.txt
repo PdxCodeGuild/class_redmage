@@ -1,0 +1,16 @@
+Name, Type, Muscle Worked, Equipment Used, Level, Work IMG 1, Work IMG 2, Muscle Img, Instructions
+
+wrk_name, wrk_type, wrk_muscle, wrk_equip, wrk_level, wrk_img_1, wrk_img_2, msl_group_img, instructions
+
+
+
+
+'''
+********************************************************************************
+Notes
+********************************************************************************
+'''
+
+*** Change headers to field names that will match the model you create in django
+
+*** Before adding data to MySql, create model and manualy add one exercise using admin pannel. This will make sure EVERYTHING is smooth before adding all your data
