@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 django = "*"
+install = "*"
+django-phone-field = "*"
 
 [requires]
 python_version = "3.6"

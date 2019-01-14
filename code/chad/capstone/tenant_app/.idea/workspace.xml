@@ -2,54 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72edaaa-5fe2-4318-9ec8-a2b3ce48e543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appy/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/twitter_clone/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/twitter_clone/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/twitter_clone/templates/tweet_detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/twitter_clone/tweet_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/url_short/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/url_short/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/url_short/url_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/url_short/url_app/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django/url_short/url_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../django/grocery_list/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../django/grocery_list/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list/grocery_list/gl_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../django/grocery_list/grocery_list/gl_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list/grocery_list/gl_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../django/grocery_list/grocery_list/gl_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list/grocery_list/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../django/grocery_list/grocery_list/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/dataSources/33d0cdd2-5976-4fe0-9718-e14a015e77ce.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/dataSources/33d0cdd2-5976-4fe0-9718-e14a015e77ce/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/dataSources/ee4ee004-625f-41aa-a6bf-6ae31d863eef/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/grocery_list2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/Pipfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/Pipfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/templates/gl_app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/gl_app/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/grocery_list2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/grocery_list2/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/grocery_list2/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/grocery_list2/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../django/grocery_list2/manage.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../appy/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../appy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../appy/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,22 +16,25 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="." />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenant_app/settings.py">
+        <entry file="file://$PROJECT_DIR$/../tenant_app/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tenant_app/urls.py">
+        <entry file="file://$PROJECT_DIR$/../appy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-end-line="22" />
+            <state relative-caret-position="293">
+              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
               <folding>
                 <element signature="e#634#666#0" expanded="true" />
               </folding>
@@ -84,31 +43,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appy/urls.py">
+        <entry file="file://$PROJECT_DIR$/../appy/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#634#666#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
+        <entry file="file://$PROJECT_DIR$/../appy/templates/fill_appy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../appy/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/appy/models.py">
+        <entry file="file://$PROJECT_DIR$/../appy/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="75">
+              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../appy/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../appy/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../appy/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -123,8 +124,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>int</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -134,12 +140,22 @@
         <option value="$PROJECT_DIR$/appy/urls.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/appy/models.py" />
+        <option value="$PROJECT_DIR$/../templates/base.html" />
+        <option value="$PROJECT_DIR$/../templates/home.html" />
+        <option value="$PROJECT_DIR$/../templates/fill_appy.html" />
+        <option value="$PROJECT_DIR$/../appy/urls.py" />
+        <option value="$PROJECT_DIR$/../tenant_app/settings.py" />
+        <option value="$PROJECT_DIR$/../appy/templates/fill_appy.html" />
+        <option value="$PROJECT_DIR$/../appy/admin.py" />
+        <option value="$PROJECT_DIR$/../appy/views.py" />
+        <option value="$PROJECT_DIR$/../appy/forms.py" />
+        <option value="$PROJECT_DIR$/../appy/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="315" />
-    <option name="y" value="1107" />
+    <option name="x" value="45" />
+    <option name="y" value="27" />
     <option name="width" value="1321" />
     <option name="height" value="741" />
   </component>
@@ -156,16 +172,28 @@
         <subPane>
           <expand>
             <path>
-              <item name="tenant_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="tenant_app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tenant_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="tenant_app" type="462c0819:PsiDirectoryNode" />
               <item name="appy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tenant_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenant_app" type="462c0819:PsiDirectoryNode" />
+              <item name="appy" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenant_app" type="462c0819:PsiDirectoryNode" />
+              <item name="appy" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="tenant_app" type="462c0819:PsiDirectoryNode" />
               <item name="tenant_app" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -182,6 +210,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../appy" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,6 +258,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="tenant_app.settings" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/tenant_app-hwB32cPg/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -254,80 +288,127 @@
       <option name="presentableId" value="Default" />
       <updated>1547235119129</updated>
       <workItem from="1547235126626" duration="3750000" />
+      <workItem from="1547239233952" duration="10633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3750000" />
+    <option name="totallyTimeSpent" value="14383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="315" y="1107" width="1321" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49876544" visible="true" weight="0.25333333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3294702" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5012346" side_tool="true" visible="true" weight="0.25333333" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3294702" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3294702" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tenant_app/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tenant_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-end-line="22" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appy/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/../appy/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appy/models.py">
+    <entry file="file://$PROJECT_DIR$/../tenant_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tenant_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/templates/fill_appy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../appy/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
         </state>
       </provider>
     </entry>
