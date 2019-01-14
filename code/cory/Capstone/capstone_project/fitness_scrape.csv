@@ -1,3 +1,5 @@
+workout_name,rating_number,rating_name,workout_type,workout_muscle,workout_equipment,workout_level,workout_img_1,workout_img_2,muscle_group_img,instructions
+
 Dumbbell Bench Press,9.2,Excellent,Strength,Chest,Dumbbell,Beginner,https://www.bodybuilding.com/exercises/exerciseImages/sequences/1/Male/m/1_2.jpg,https://www.bodybuilding.com/exercises/exerciseImages/sequences/1/Male/m/1_1.jpg,https://artifacts.bbcomcdn.com/exercises-app/1.2.1/img/guide-1.gif,"1.) Lie down on a flat bench with a dumbbell in each hand resting on top of your thighs. The palms of your hands will be facing each other.
 
 2.) Then, using your thighs to help raise the dumbbells up, lift the dumbbells one at a time so that you can hold them in front of you at shoulder width.
