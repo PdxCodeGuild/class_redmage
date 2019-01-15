@@ -1,0 +1,103 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+}
+
+/* -------------------- */
+
+/* 
+
+CONTENTS
+
+- CLASSES 
+
+- HEADER CSS STYLING 
+
+- MAIN CONTAINER CSS STYLING
+
+    - BODY SECTION
+
+- FOOTER CSS STYLING 
+
+- MEDIA QUERY 451
+
+- MEDIA QUERY 950
+
+
+Color Pallet:
+    Navy - #073C65
+    Midnight Blue - #205D83
+    Dark Slate Gray - #122D2A
+    Dark Sea Green - #B1C6C4
+    Medium Aquamarine - #76BBC5
+*/
+
+/* -------------------- */
+
+
+/* HEADER SECTION */
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 75px;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+header p {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#hamburger {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+
+header h1, header p {
+    display: inline-block;
+    margin: 6px;
+}
+
+/* BODY SECTION */
+
+#block-content {
+    margin: 6px;
+}
+
+#block-content h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#home-workout-choices {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+#home-workout-choices button {
+    margin-bottom: 12px;
+}
+
+#block-footer {
+    text-align: center;
+}
