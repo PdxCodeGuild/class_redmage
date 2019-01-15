@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('create/', views.tenant_create_form_view, name='create_form'),
+    path('pdf', views.GeneratePDF.as_view())
 ]
