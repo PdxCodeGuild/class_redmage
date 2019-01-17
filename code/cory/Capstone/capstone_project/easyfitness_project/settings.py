@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'easyfitness_app',
     'user_app',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [

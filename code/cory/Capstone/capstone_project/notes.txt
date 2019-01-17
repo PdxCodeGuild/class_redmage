@@ -6,10 +6,6 @@
 
 
 
+To Do:
 
-class Workouts(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-workouts = models.ManyToManyField(Workouts)
-
-admin.site.register(Workouts)
+In 

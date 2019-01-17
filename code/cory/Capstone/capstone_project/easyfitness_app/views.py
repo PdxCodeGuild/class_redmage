@@ -3,8 +3,9 @@ from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse, reverse_lazy
 from .models import Exercise, Workout
-import itertools
 from django.contrib.auth.models import User
+
+import itertools
 
 from django.views.generic import(
     ListView, 
@@ -17,20 +18,25 @@ from django.views.generic import(
 def indexView(request):
     return render(request, "home.html")
 
-# USER VIEWS
-class WorkoutUserView(LoginRequiredMixin, ListView): # Lists Workouts
+
+# ------------------------------------------------------------------------------
+
+
+#  USER VIEWS
+
+# Lists Workouts
+class WorkoutUserView(LoginRequiredMixin, ListView): 
     model = Workout
     template_name = 'user_workout.html'
 
     def get_queryset(self):
-        self.user = get_list_or_404(Workout, user__username=self.kwargs['user'])
-        
-        out_var = Workout.objects.filter(user__username=self.kwargs['user']).order_by('-name')
+       
+        out_var = Workout.objects.filter(user__username=self.kwargs['user']).order_by('-date_created')
         
         return out_var
 
-class WorkoutUserExerciseView(LoginRequiredMixin, ListView): 
 # Lists Exercises in Workouts
+class WorkoutUserExerciseView(LoginRequiredMixin, ListView): 
     model = Exercise
     template_name = 'user_workout_exercises.html'
 
@@ -53,7 +59,9 @@ class WorkoutUserCreateView(CreateView):
     def get_success_url(self):
         return reverse_lazy('user-workout', kwargs = {'user': self.request.user})
 
+
 # ------------------------------------------------------------------------------
+
 
 # DEFAULT CARDIO VIEWS
 def defaultCardioInitView(request):
@@ -98,6 +106,7 @@ class DefaultCardioDetail(DetailView):
 # ------------------------------------------------------------------------------
 
 
+# DEFAULT STRENGTH VIEWS
 def defaultStrengthInitView(request):
     return render(request, "default_strength_init.html" )
 
@@ -153,7 +162,9 @@ class DefaultStrengthDetail(DetailView):
     model = Exercise
     template_name = "default_strength_detail.html"
 
+
 # ------------------------------------------------------------------------------
+
 
 # DEFAULT STRETCH VIEWS
 def defaultStretchInitView(request):

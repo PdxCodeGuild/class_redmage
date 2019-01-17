@@ -29,11 +29,12 @@ CONTENTS
 
 - CLASSES 
 
-- HEADER CSS STYLING 
-
 - MAIN CONTAINER CSS STYLING
 
+    - HEADER
     - BODY SECTION
+    - LOGIN
+    - REGISTER
     - DEFAULT DAY 1
 
 - FOOTER CSS STYLING 
@@ -118,7 +119,10 @@ header h1, header p {
 }
 
 #menu p {
+    margin: 0;
+    padding: 16px 16px 16px 0;
     margin-left: calc(25% + 24px);
+    
 }
 
 #menu.is-active {
@@ -131,12 +135,6 @@ header h1, header p {
 #block-content {
     margin: 6px;
 }
-
-#home-login-register {
-    margin-top: 24px;
-    text-align: center;
-}
-
 
 #block-content h1 {
     font-size: 24px;
@@ -178,6 +176,21 @@ header h1, header p {
     justify-content: center;
     margin: 12px;
     margin-bottom: 24px;
+}
+
+/* LOGIN */
+
+#login-div input {
+    margin-bottom: 24px;
+}
+
+#login-div #div_id_username {
+    margin-top: 24px;
+}
+
+#login-submit {
+    /* margin-top: 48px; */
+    width: 75%;
 }
 
 /* DEFAULT DAY 1 */
