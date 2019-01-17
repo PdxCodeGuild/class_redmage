@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Cardio Page</h1>
+
+<div id="back-button">
+    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
+</div>
+
+<div class="workout-default-days">
+    <a href="{% url 'default-cardio-day1' %}"><button id="workout-default-day1">Day 1</button></a>
+    <a href="{% url 'default-cardio-day2' %}"><button id="workout-default-day2">Day 2</button></a>
+    <a href="{% url 'default-cardio-day3' %}"><button id="workout-default-day3">Day 3</button></a>
+</div>
+
+{% endblock %}

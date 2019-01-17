@@ -5,9 +5,9 @@
 <h1>Welcome, please choose an option to get started:</h1>
 
 <div id="home-workout-choices">
-    <button id="home-button-cardio" href="">Cardio</button>
-    <button id="home-button-strength" href="">Strength</button>
-    <button id="home-button-stretching" href="">Stretching</button>
+    <a href="{% url 'default-cardio-init' %}"><button id="home-button-cardio" >Cardio</button></a>
+    <a href="{% url 'default-strength-init' %}"><button id="home-button-strength">Strength</button></a>
+    <a href="{% url 'default-stretch-init' %}"><button id="home-button-stretching">Stretching</button></a>
 </div>
 
 {% endblock %}

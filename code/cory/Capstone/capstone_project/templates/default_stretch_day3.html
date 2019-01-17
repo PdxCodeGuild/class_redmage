@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Stretch Day 3</h1>
+
+<div id="back-button">
+    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
+</div>
+
+{% for exercise in object_list %}
+    <a href="{% url 'default-stretch-detail' exercise.pk exercise.slug %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p>{{ exercise }}</p>
+                <p>{{ exercise.rating_number}} | {{ exercise.rating_name}}</p>
+            </div>
+            <p id="exercise-card-outer-p">{{ exercise.workout_muscle }}</p>
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock %}

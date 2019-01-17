@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Cardio Init Page</h1>
+
+<div id="back-button">
+    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
+</div>
+
+
+<div class="workout-default-or-custom">
+    <a href="{% url 'default-cardio' %}"><button id="default-workout">Default</button></a>
+    <button id="custom-workout">Custom</button>
+</div>
+
+{% endblock %}
