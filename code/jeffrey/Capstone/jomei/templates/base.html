@@ -5,17 +5,17 @@
     <title>jomei</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  {% block head %}
-  {% endblock head %}
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
-
+    {% block head %}
+    {% endblock head %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="{% url 'about' %}">About</a>
-      <a href="#">Map</a>
-      <a href="#">Layers</a>
+      <a href="{% url 'home' %}">Map</a>
       {% if user.is_authenticated %}
         <a href="{% url 'logout' %}">Logout</a>
       {% else %}
@@ -28,6 +28,8 @@
       <div>
         <h1 style='text-align:center'><a href="/">jomei</a></h1>
       </div>
+      {% block layers %}
+      {% endblock layers %}
     </header>
 
   <div id="container">

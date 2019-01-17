@@ -23,7 +23,7 @@ def newMarker(request):
         tag="test",
         latitude=coordinates['lat'],
         longitude=coordinates['lng'],
-        distance_away=123
+        distance_away=coordinates['distance_away'],
         # layer="test"
         )
 

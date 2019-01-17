@@ -130,6 +130,16 @@ body {
   padding: 16px;
 }
 
+#layers_div {
+
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  height: 30px;
+  width: 150px;
+  margin: auto;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

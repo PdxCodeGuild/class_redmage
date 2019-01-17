@@ -20,19 +20,20 @@ crossorigin=""></script>
 
 {% endblock head %}
 
+{% block layers %}
+{% if user.is_authenticated %}
+<div id="layers_div">
+<button class='material-icons' name='private_btn'>person</button>
+<button class='material-icons' name='friends_btn'>group</button>
+<button class='material-icons' name='universal_btn'>public</button>
+</div>
+{% endif %}
+{% endblock layers %}
+
+
 {% block content %}
   {% if user.is_authenticated %}
-
-
-    <div class="item-a top-div title-font">
-    <a href="#">PoIntED</a>
-  </div>
   <div class="map_location item-b" id="map"></div>
-
-
-
-
-
   <div class="item-c" id="pointTarget">
     <h4>Saved Points</h4>
   </div>

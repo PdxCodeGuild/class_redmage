@@ -12,7 +12,8 @@ let
   myCoordinates,
   markerCoordinates,
   popName,
-  distanceString;
+  distanceString,
+  distance_string;
 
 markers = [];
 
@@ -77,7 +78,26 @@ function initialize() {
     console.log("markerCoordinates is", markerCoordinates);
 
     let toModel_Marker_Data = newMarker.getLatLng();
-    console.log(toModel_Marker_Data);
+
+    let distance = 0;
+
+    if (myCoordinates === undefined){
+      distance_string = "your location was undefined";
+      distanceString = document.createElement("li");
+      distanceString.style.display = "flex";
+      distanceString.innerHTML += distance_string;
+      newPoint2.appendChild(distanceString);
+    } else {
+      distance = getDistance(myCoordinates, markerCoordinates);
+      distanceString = document.createElement("li");
+      distanceString.style.display = "flex";
+      distanceString.innerHTML += distance + " meters";
+      newPoint2.appendChild(distanceString);
+    }
+
+    console.log("distance = ", distance);
+
+    toModel_Marker_Data['distance_away'] = distance;
 
     axios.post('newmarker/', toModel_Marker_Data)
     .then(function (response) {
@@ -87,24 +107,6 @@ function initialize() {
       alert("Was not able to save this marker.")
       console.log(error);
     });
-
-    let distance = 0;
-
-    if (myCoordinates === undefined){
-      distance = "your location was undefined";
-      distanceString = document.createElement("li");
-      distanceString.style.display = "flex";
-      distanceString.innerHTML += distance;
-      newPoint2.appendChild(distanceString);
-
-    } else {
-      distance = getDistance(myCoordinates, markerCoordinates);
-      console.log("distance = ",distance);
-      distanceString = document.createElement("li");
-      distanceString.style.display = "flex";
-      distanceString.innerHTML += distance + " meters";
-      newPoint2.appendChild(distanceString);
-    }
   }
 
   map.on('locationfound', onLocationFound);
