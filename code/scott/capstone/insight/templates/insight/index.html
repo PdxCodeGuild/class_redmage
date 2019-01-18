@@ -1,0 +1,66 @@
+{% extends 'insight/base.html' %}
+
+{% block body %}
+    <div id="container">
+        <div id="searchDiv">
+            <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input id="submit" type="submit" value="Submit" />
+            </form>
+        </div>
+        <div id="api_box_shodan" class="api_box">
+            <div class="result_field">
+                {% for key, value in shodan_search_location.items %}    
+                        <dl class="location">
+                        <dt class="">{{key}}/</dt>
+                        <dd class="">{{value}}</dd>
+                        </dl>
+                {% endfor %}
+            </div>
+            <div class="result_field">
+                {% for key, value in shodan_search_network.items %}
+                        <dl class="network">
+                        <dt class="">{{key}}/</dt>
+                        <dd class="">{{value}}</dd>
+                        </dl>
+                {% endfor %}
+            </div>            
+            <div class="result_field">
+                {% for key, value in shodan_search_device.items %}
+                        <dl class="device">
+                        <dt class="">{{key}}/</dt>
+                        <dd class="">{{value}}</dd>
+                        </dl>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="api_box_censys" class="api_box">
+            <div class="result_field">
+                {% for key, value in censys_search_location.items %}
+                        <dl class="location">
+                        <dt class="">{{key}}/</dt>
+                        <dd class="">{{value}}</dd>
+                        </dl>
+                {% endfor %}
+            </div>
+            <div class="result_field">
+                {% for key, value in censys_search_network.items %}
+                    
+                        <dl class="network">
+                        <dt class="">{{key}}/</dt>
+                        <dd class="">{{value}}</dd>
+                        </dl>
+                {% endfor %}
+            </div>            
+            <div class="result_field">
+                {% for key, value in censys_search_device.items %}
+                        <dl class="device">
+                        <dt class="">{{key}}/</dt>
+                        <dd class="">{{value}}</dd>
+                        </dl>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock body %}
