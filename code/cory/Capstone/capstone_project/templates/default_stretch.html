@@ -4,14 +4,28 @@
 
 <h1>Stretch Page</h1>
 
-<div id="back-button">
-    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
-</div>
-
-<div class="workout-default-days">
-    <a href="{% url 'default-stretch-day1' %}"><button id="workout-default-day1">Day 1</button></a>
-    <a href="{% url 'default-stretch-day2' %}"><button id="workout-default-day2">Day 2</button></a>
-    <a href="{% url 'default-stretch-day3' %}"><button id="workout-default-day3">Day 3</button></a>
+<div id="default-div-wrapper">
+    <a href="{% url 'default-stretch-day1' %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="workout-default-day1">Day 1</p>
+            </div>
+        </div>
+    </a>
+    <a href="{% url 'default-stretch-day2' %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="workout-default-day2">Day 2</p>
+            </div>
+        </div>
+    </a>
+    <a href="{% url 'default-stretch-day3' %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="workout-default-day3">Day 3</p>
+            </div>
+        </div>
+    </a>
 </div>
 
 {% endblock %}

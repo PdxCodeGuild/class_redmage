@@ -4,14 +4,21 @@
 
 <h1>Stretch Init Page</h1>
 
-<div id="back-button">
-    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
-</div>
-
-
-<div class="workout-default-or-custom">
-    <a href="{% url 'default-stretch' %}"><button id="default-workout">Default</button></a>
-    <button id="custom-workout">Custom</button>
+<div id="default-div-wrapper">
+    <a href="{% url 'default-stretch' %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="default-workout">Default</p>
+            </div>
+        </div>
+    </a>
+    <a href="">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="custom-workout">Custom</p>
+            </div>
+        </div>
+    </a>
 </div>
 
 {% endblock %}

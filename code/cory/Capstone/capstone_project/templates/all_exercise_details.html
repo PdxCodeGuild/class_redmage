@@ -5,32 +5,20 @@
 
 <h1>{{ object.workout_name }}</h1>
 
-<form action="{% url 'user-add-to-workout' request.user.username object.pk %}" method="post">
+<form id="add-to-workout" action="{% url 'user-add-to-workout' request.user.username object.pk %}" method="post">
     {% csrf_token %}
-    <select>
+    <select name="workout">
         {% for workout in user.workout_set.all %}
-            <option name="{{ object.workout_name }}">{{ workout }}</option>
+            <option value="{{ workout.pk }}">{{ workout }}</option>
         {% endfor %}
-        <input type="submit" value="Add To Workout">
     </select>
-</form>
-
-<form action="url 'user-workout' request.user " method='POST'>
-    {% csrf_token %}
-    {% for workout in object.workout_set.all %}
-        <p>Test</p>
-    {% endfor %}
+    <input type="submit" value="Add To Workout">
 </form>
 
 <p class="text-center">Workout Level: <b>{{ object.workout_level }}</b></p>
 <p class="text-center">
     Equipment Needed: <b>{{ object.workout_equipment }}</b>
 </p>
-
-
-<div id="back-button">
-    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
-</div>
 
 <div id="exercise-detail-list">
     <img src="{{ object.workout_img_1 }}">

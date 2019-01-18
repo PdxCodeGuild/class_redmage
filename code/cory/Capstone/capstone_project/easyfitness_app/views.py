@@ -49,15 +49,6 @@ class AllExerciseListView(ListView):
         return out_list
 
 def AllExerciseDetail(request, pk, slug):
-    # WorkoutFormSet = modelformset_factory(Workout, fields=('name',))
-    # if request.method == 'POST': # If the form has been submitted...
-    #     formset = WorkoutFormSet(request.POST, request.FILES) # A form bound to the POST data
-    #     if formset.is_valid(): # All validation rules pass
-    #         formset.save()
-    #     return redirect('home') # Redirect after POST
-    # else:
-    #     formset = WorkoutForm() # An unbound form
-
 
     exercise = Exercise.objects.get(pk=pk)
     context = {
@@ -65,10 +56,6 @@ def AllExerciseDetail(request, pk, slug):
     }
 
     return render(request, 'all_exercise_details.html', context)
-
-# class AllExerciseDetail(DetailView):
-#     model = Exercise
-#     template_name = 'all_exercise_details.html'
 
 
 
@@ -96,6 +83,12 @@ class WorkoutUserExerciseView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Exercise.objects.filter(workout__pk=self.kwargs['pk'])
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Add in a QuerySet of all the books
+        context['workout_pk'] = Workout.objects.get(pk=self.kwargs['pk'])
+        return context
+
 class WorkoutUserExerciseDetail(LoginRequiredMixin, DetailView):
     model = Exercise
     template_name = 'user_workout_exercise_detail.html'
@@ -112,18 +105,26 @@ class WorkoutUserCreateView(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         return reverse_lazy('user-workout', kwargs = {'user': self.request.user})
 
-def AddToWorkout(request, pk, user):
+def addToWorkout(request, pk, user):
 
     if request.method == 'POST': # If the form has been submitted...
-        form = WorkoutForm(request.POST) # A form bound to the POST data
-        if form.is_valid(): # All validation rules pass
-            print('Test1')
-        return HttpResponseRedirect(reverse('user-workout', kwargs = {'user': request.user })) # Redirect after POST
-    else:
-        form = WorkoutForm() # An unbound form
+        request.user.workout_set.get(pk=request.POST['workout']).exercises.add(Exercise.objects.get(pk=pk))
 
-    return render(request, 'home')
+        return HttpResponseRedirect(
+            reverse('user-workout', kwargs = {'user': request.user }))
+    else:
+        return render(request, 'home')
     
+def removeFromWorkout(request, pk, user):
+
+    if request.method == 'POST': 
+        request.user.workout_set.get(pk=pk).exercises.remove(Exercise.objects.get(pk=request.POST['exercise']))
+
+        return HttpResponseRedirect(
+            reverse('user-workout', kwargs = {'user': request.user }))
+    else:
+        return render(request, 'home')
+
 
 # ------------------------------------------------------------------------------
 

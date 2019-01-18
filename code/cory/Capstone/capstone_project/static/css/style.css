@@ -74,6 +74,12 @@ Color Pallet: Light to Dark
     box-shadow: 0 4px 2px -3px white;
 }
 
+.div-button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* HEADER SECTION */
 
 header {
@@ -141,34 +147,9 @@ header h1, header p {
     text-align: center;
 }
 
-#home-workout-choices {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-}
-
-#home-workout-choices button {
-    margin-bottom: 12px;
-    width: 100%;
-}
-
-.workout-default-or-custom button {
-    width: 100px;
-    height: 100px;
-}
-
-.workout-default-or-custom {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.workout-default-days {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.workout-default-days button {
-    width: 100px;
+#home-workout-choices p {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #back-button {
@@ -189,11 +170,8 @@ header h1, header p {
 }
 
 #login-submit {
-    /* margin-top: 48px; */
     width: 75%;
 }
-
-/* DEFAULT DAY 1 */
 
 #exercise-card-outer {
     border: 1px solid black;
@@ -207,12 +185,38 @@ header h1, header p {
     justify-content: space-between;
 }
 
+#default-div-list-wrapper #exercise-card-inner p:nth-of-type(1) {
+    width: 175px;
+}
+
 #exercise-card-outer-p {
     margin-top: 0;
 }
+
+/* DEFAULT */
+
+#default-div-wrapper p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* DEFAULT DAY 1 DETAIL */
 
 #exercise-detail-list img {
     width: 100%;
 }
+
+/* DETAIL */
+
+#add-to-workout {
+    display: flex;
+    justify-content: space-around;
+}
+
+#remove-from-workout {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+

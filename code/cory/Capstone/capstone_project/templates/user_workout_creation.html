@@ -2,10 +2,6 @@
 
 {% block content %}
 
-<div id="back-button">
-    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
-</div>
-
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}

@@ -5,3 +5,5 @@ class WorkoutForm(ModelForm):
     class Meta:
         model = Workout
         fields = ['name']
+
+        

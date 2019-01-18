@@ -25,7 +25,9 @@ urlpatterns = [
 
     path('user/<str:user>/create-workout/', views.WorkoutUserCreateView.as_view(), name="user-workout-creation"),
 
-    path('user/<str:user>/add-to-workout/<int:pk>', views.AddToWorkout, name='user-add-to-workout'),
+    path('user/<str:user>/add-to-workout/<int:pk>/', views.addToWorkout, name='user-add-to-workout'),
+
+    path('user/<str:user>/remove-from-workout/<int:pk>/', views.removeFromWorkout, name="user-remove-from-workout"),
 
     # --------------------------------------------------------------------------
 

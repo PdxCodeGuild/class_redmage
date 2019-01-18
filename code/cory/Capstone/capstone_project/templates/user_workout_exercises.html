@@ -2,25 +2,45 @@
 
 {% block content %}
 
-<h1>user_workout_exercises.html</h1>
+<h1>{{ workout_pk }}</h1>
 
-<div id="back-button">
-    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
-</div>
+<a href="">
+    <div class="div-button" id="exercise-card-outer">
+        <div id="exercise-card-inner">
+            <p class="center">Add Exercise</p>
+        </div>
+    </div>
+</a>
 
 {% for exercise in object_list %}
-    <a href="{% url 'user-workout-exercise-detail' exercise.pk exercise.slug %}">
-        <div id="exercise-card-outer">
-            <div id="exercise-card-inner">
-                <p>{{ exercise }}</p>
-                <p>{{ exercise.rating_number}} | {{ exercise.rating_name}}</p>
+    <div id="default-div-list-wrapper">
+        <a href="{% url 'user-workout-exercise-detail' exercise.pk exercise.slug %}">
+            <div id="exercise-card-outer">
+                <div id="exercise-card-inner">
+                    <p>{{ exercise }}</p>
+                    <p>
+                        {% if exercise.rating_number != 'n/a' %}
+                            {{ exercise.rating_number}} | 
+                        {% endif %}
+                        {{ exercise.rating_name}}
+                    </p>
+                </div>
+                <p id="exercise-card-outer-p">{{ exercise.workout_muscle }}</p>
             </div>
-            <p id="exercise-card-outer-p">{{ exercise.workout_muscle }}</p>
-        </div>
-    </a>
+        </a>
+    </div>
 {% endfor %}
 
-<a href=""><button>Add Exercise</button></a>
-<a href=""><button>Delete Exercise</button></a>
+<form id="remove-from-workout" action="{% url 'user-remove-from-workout' request.user.username workout_pk.pk  %}" method="post">
+    {% csrf_token %}
+    <select name="exercise">
+        {% for exercise in object_list %}
+            <option value="{{ exercise.pk }}">{{ exercise }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Remove">
+</form>
+
+
 
 {% endblock %}
