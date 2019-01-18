@@ -42,6 +42,8 @@ function layerClickHandler (e) {
 
 }
 
+
+
 var map = L.map('leaflet', {
   'center': [0, 0],
   'zoom': 0,

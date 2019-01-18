@@ -19,6 +19,12 @@ markers = [];
 
 let test = false;
 
+let saved_user_markers_data = JSON.parse(document.getElementById('marker_data').textContent);
+
+
+
+console.log(saved_user_markers_data);
+
 function initialize() {
   map = L.map('map').setView([45.527453, -122.668923], 10)
 
@@ -30,6 +36,19 @@ function initialize() {
       id: 'mapbox.outdoors'
   }).addTo(map);
 
+    // this function will add all of the pre-existing markers to the map
+  function addToMap(locationArray){
+
+    //iterates through the array object called from the server
+    [].forEach.call(locationArray, function(location){
+
+        marker = L.marker([location.latitude, location.longitude]).addTo(map)}
+        )
+      };
+
+  addToMap(saved_user_markers_data);
+
+  // allows the user to find their own location using the easybutton
   L.control.locate({
     flyTo: true,
     showPopup: false,
@@ -38,24 +57,22 @@ function initialize() {
     follow: false
   }).addTo(map);
 
+  // when location is found adds to map
   function onLocationFound(e) {
     myLocation = L.marker(e.latlng).remove();
     var radius = e.accuracy / 2;
 
     myLocation = L.marker(e.latlng).addTo(map).bindPopup("You are within " + radius + " meters from this point").openPopup();
-    console.log(myLocation);
     L.circle(e.latlng, radius).addTo(map);
     myCoordinates = e.latlng;
-    console.log(myCoordinates);
     myCoordinates = Object.values(myCoordinates);
-    console.log("myCoordinates is", myCoordinates);
   }
-  console.log("myLocation is ",myLocation);
 
-
+  // alert if cannot find location
   function onLocationError(e) {
     alert(e.message);
   }
+
 
   function addMarker(e){
   // Add marker to map at click location; add popup window
