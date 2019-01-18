@@ -49,14 +49,14 @@ class AllExerciseListView(ListView):
         return out_list
 
 def AllExerciseDetail(request, pk, slug):
-    WorkoutFormSet = modelformset_factory(Workout, fields=('name',))
-    if request.method == 'POST': # If the form has been submitted...
-        formset = WorkoutFormSet(request.POST, request.FILES) # A form bound to the POST data
-        if formset.is_valid(): # All validation rules pass
-            formset.save()
-        return redirect('home') # Redirect after POST
-    else:
-        formset = WorkoutForm() # An unbound form
+    # WorkoutFormSet = modelformset_factory(Workout, fields=('name',))
+    # if request.method == 'POST': # If the form has been submitted...
+    #     formset = WorkoutFormSet(request.POST, request.FILES) # A form bound to the POST data
+    #     if formset.is_valid(): # All validation rules pass
+    #         formset.save()
+    #     return redirect('home') # Redirect after POST
+    # else:
+    #     formset = WorkoutForm() # An unbound form
 
 
     exercise = Exercise.objects.get(pk=pk)
@@ -100,10 +100,7 @@ class WorkoutUserExerciseDetail(LoginRequiredMixin, DetailView):
     model = Exercise
     template_name = 'user_workout_exercise_detail.html'
 
-class WorkoutUserCreateView(
-    LoginRequiredMixin,  
-    CreateView
-):
+class WorkoutUserCreateView(LoginRequiredMixin, CreateView):
     model = Workout
     fields = ['name']
     template_name = "user_workout_creation.html"
@@ -115,6 +112,18 @@ class WorkoutUserCreateView(
     def get_success_url(self):
         return reverse_lazy('user-workout', kwargs = {'user': self.request.user})
 
+def AddToWorkout(request, pk, user):
+
+    if request.method == 'POST': # If the form has been submitted...
+        form = WorkoutForm(request.POST) # A form bound to the POST data
+        if form.is_valid(): # All validation rules pass
+            print('Test1')
+        return HttpResponseRedirect(reverse('user-workout', kwargs = {'user': request.user })) # Redirect after POST
+    else:
+        form = WorkoutForm() # An unbound form
+
+    return render(request, 'home')
+    
 
 # ------------------------------------------------------------------------------
 

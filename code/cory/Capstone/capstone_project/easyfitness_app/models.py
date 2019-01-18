@@ -3,14 +3,6 @@ from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 from django.utils import timezone
 
-class Workout(models.Model):
-    name = models.CharField(max_length=30)
-    user = models.ForeignKey('auth.user', on_delete=models.CASCADE)
-    date_created = models.DateTimeField(default=timezone.now)
-
-    def __str__(self):
-        return self.name
-
 class Exercise(models.Model):
     workout_name = models.CharField(max_length=60)
     rating_number = models.CharField(max_length=6)
@@ -24,8 +16,6 @@ class Exercise(models.Model):
     muscle_group_img = models.CharField(max_length=200)
     instructions = models.TextField()
 
-    workout = models.ManyToManyField(Workout)
-
     def instructions_as_list(self):
         return self.instructions.split('\n')
 
@@ -34,3 +24,13 @@ class Exercise(models.Model):
 
     def __str__(self):
         return self.workout_name
+
+class Workout(models.Model):
+    name = models.CharField(max_length=30)
+    user = models.ForeignKey('auth.user', on_delete=models.CASCADE)
+    date_created = models.DateTimeField(default=timezone.now)
+
+    exercises = models.ManyToManyField(Exercise)
+
+    def __str__(self):
+        return self.name

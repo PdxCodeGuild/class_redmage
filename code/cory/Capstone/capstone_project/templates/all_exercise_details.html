@@ -3,9 +3,17 @@
 
 {% block content %}
 
-{{ formset }}
-
 <h1>{{ object.workout_name }}</h1>
+
+<form action="{% url 'user-add-to-workout' request.user.username object.pk %}" method="post">
+    {% csrf_token %}
+    <select>
+        {% for workout in user.workout_set.all %}
+            <option name="{{ object.workout_name }}">{{ workout }}</option>
+        {% endfor %}
+        <input type="submit" value="Add To Workout">
+    </select>
+</form>
 
 <form action="url 'user-workout' request.user " method='POST'>
     {% csrf_token %}

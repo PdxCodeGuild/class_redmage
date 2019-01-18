@@ -25,6 +25,8 @@ urlpatterns = [
 
     path('user/<str:user>/create-workout/', views.WorkoutUserCreateView.as_view(), name="user-workout-creation"),
 
+    path('user/<str:user>/add-to-workout/<int:pk>', views.AddToWorkout, name='user-add-to-workout'),
+
     # --------------------------------------------------------------------------
 
     # CARDIO
