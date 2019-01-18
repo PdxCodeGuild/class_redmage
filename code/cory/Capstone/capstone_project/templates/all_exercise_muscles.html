@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="back-button">
+    <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
+</div>
+
+{% for muscle in object_list %}
+    <a href="{% url 'all-exercise-muscles-list' muscle %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p>{{ muscle }}</p>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock %}

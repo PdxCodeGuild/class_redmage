@@ -28,6 +28,9 @@
         
         <a href=""><p>About</p></a>
         <div class="faux-divider"></div>
+
+        <a href="{%url 'all-exercise-muscles' %}"><p>Exercises</p></a>
+        <div class="faux-divider"></div>
         
         {% if user.is_authenticated %}
             <a href="{% url 'user-workout' request.user %}"><p>Account</p></a>
@@ -42,8 +45,7 @@
             <a href="{% url 'create-new-user' %}"><p>Register</p></a>
             <div class="faux-divider"></div>
         {% endif %}
-    </div>
-    
+    </div>  
 
     <div id="block-content">
         {% if user.is_authenticated %}
@@ -53,9 +55,6 @@
         {% block content %}
         {% endblock %}
     </div>
-
-    
-    
 
     <script src="{% static 'javascript/base.js' %}"></script>
 

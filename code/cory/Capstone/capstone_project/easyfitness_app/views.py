@@ -1,9 +1,17 @@
-from django.shortcuts import render, get_object_or_404, get_list_or_404
+from django.shortcuts import (
+    render, 
+    get_object_or_404, 
+    get_list_or_404, 
+    redirect
+)
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse, reverse_lazy
 from .models import Exercise, Workout
 from django.contrib.auth.models import User
+from .forms import WorkoutForm
+from django.forms import modelformset_factory
+
 
 import itertools
 
@@ -17,6 +25,51 @@ from django.views.generic import(
 
 def indexView(request):
     return render(request, "home.html")
+
+class AllExerciseView(ListView):
+    model = Exercise
+    template_name = "all_exercise_muscles.html"
+
+    def get_queryset(self):
+        
+        out_list = set(
+            Exercise.objects.values_list('workout_muscle', flat=True)
+        )
+
+        out_list = sorted(out_list, key=lambda tup: (tup[0]))
+
+        return out_list
+
+class AllExerciseListView(ListView):
+    model = Exercise
+    template_name = "all_exercise_muscles_list.html"
+
+    def get_queryset(self):
+        out_list = Exercise.objects.filter(workout_muscle=self.kwargs['muscle'])
+        return out_list
+
+def AllExerciseDetail(request, pk, slug):
+    WorkoutFormSet = modelformset_factory(Workout, fields=('name',))
+    if request.method == 'POST': # If the form has been submitted...
+        formset = WorkoutFormSet(request.POST, request.FILES) # A form bound to the POST data
+        if formset.is_valid(): # All validation rules pass
+            formset.save()
+        return redirect('home') # Redirect after POST
+    else:
+        formset = WorkoutForm() # An unbound form
+
+
+    exercise = Exercise.objects.get(pk=pk)
+    context = {
+        'object': exercise
+    }
+
+    return render(request, 'all_exercise_details.html', context)
+
+# class AllExerciseDetail(DetailView):
+#     model = Exercise
+#     template_name = 'all_exercise_details.html'
+
 
 
 # ------------------------------------------------------------------------------
@@ -47,7 +100,10 @@ class WorkoutUserExerciseDetail(LoginRequiredMixin, DetailView):
     model = Exercise
     template_name = 'user_workout_exercise_detail.html'
 
-class WorkoutUserCreateView(CreateView):
+class WorkoutUserCreateView(
+    LoginRequiredMixin,  
+    CreateView
+):
     model = Workout
     fields = ['name']
     template_name = "user_workout_creation.html"

@@ -6,6 +6,14 @@ from . import views
 urlpatterns = [
     path('', views.indexView, name="home"),
 
+    path('all-exercises/', views.AllExerciseView.as_view(), name="all-exercise-muscles"),
+
+    path('all-exercises/<str:muscle>', views.AllExerciseListView.as_view(), name="all-exercise-muscles-list"),
+
+    path('all-exercises/details/<int:pk>/<str:slug>', views.AllExerciseDetail, name="all-exercise-details"),
+
+    # path('all-exercises/details/<int:pk>/<str:slug>', views.AllExerciseDetail.as_view(), name="all-exercise-details"),
+
     # --------------------------------------------------------------------------
     
     # USER
