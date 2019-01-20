@@ -1,14 +1,16 @@
 from django import forms
 from .models import AppyModel
 import datetime
+from django.contrib.auth.models import User
 
 
 choice_yes_no = (('Yes', 'Yes'), ('No', 'No'))
 
 
 class TenantForm(forms.Form):
+    # author = forms.ModelMultipleChoiceField(queryset=AppyModel.objects.all(), required=False)
     first_name = forms.CharField(required=False, label='First Name')
-    last_name = forms.CharField(required=False, label='Bean')
+    last_name = forms.CharField(required=False, label='Last Name')
     social_security_number = forms.CharField(required=False, label='Social Security Number')
     drivers_license_number = forms.CharField(required=False, label='Drivers License Number')
     date_of_birth = forms.DateField(required=False, label='Date Of Birth', initial=datetime.datetime.today)
@@ -80,162 +82,163 @@ class TenantForm(forms.Form):
     add_question_collections_explain = forms.CharField(required=False, label='Explain Collections:',
                                                        widget=forms.Textarea(attrs={'cols': 100}))
 
-    def clean_first_name(self, *args, **kwargs):
-        first_name = self.cleaned_data.get('first_name')
-        if not first_name.isalpha():
-            raise forms.ValidationError("Your Name Contains Invalid Characters")
 
-    def clean_last_name(self):
-        last_name = self.cleaned_data.get('last_name')
-        if not last_name.isalpha():
-            raise forms.ValidationError("Your Name Contains Invalid Characters")
+    # def clean_first_name(self, *args, **kwargs):
+    #     first_name = self.cleaned_data.get('first_name')
+    #     if not first_name.isalpha():
+    #         raise forms.ValidationError("Your Name Contains Invalid Characters")
+    #
+    # def clean_last_name(self):
+    #     last_name = self.cleaned_data.get('last_name')
+    #     if not last_name.isalpha():
+    #         raise forms.ValidationError("Your Name Contains Invalid Characters")
 
-    def clean_social_security_number(self):
-        pass
-
-    def clean_drivers_license_number(self):
-        pass
-
-    def clean_date_of_birth(self):
-        pass
-
-    def clean_home_phone(self):
-        pass
-
-    def clean_cell_phone(self):
-        pass
-
-    def clean_email_address(self):
-        pass
-
-    def clean_current_address(self):
-        pass
-
-    def clean_current_address_line_2(self):
-        pass
-
-    def clean_current_city(self):
-        pass
-
-    def clean_current_state_abv(self):
-        pass
-
-    def clean_current_zip(self):
-        pass
-
-    def clean_previous_address(self):
-        pass
-
-    def clean_previous_address_line_2(self):
-        pass
-
-    def clean_previous_city(self):
-        pass
-
-    def clean_previous_state_abv(self):
-        pass
-
-    def clean_previous_zip(self):
-        pass
-
-    def clean_current_employer_name(self):
-        pass
-
-    def clean_current_employer_address(self):
-        pass
-
-    def clean_current_employer_address_line_2(self):
-        pass
-
-    def clean_current_employer_state_abv(self):
-        pass
-
-    def clean_current_employer_zip(self):
-        pass
-
-    def clean_current_employer_phone(self):
-        pass
-
-    def clean_current_employer_start_date(self):
-        pass
-
-    def clean_current_employer_end_date(self):
-        pass
-
-    def clean_current_employer_may_contact(self):
-        pass
-
-    def clean_previous_employer_name(self):
-        pass
-
-    def clean_previous_employer_address(self):
-        pass
-
-    def clean_previous_employer_address_line_2(self):
-        pass
-
-    def clean_previous_employer_state_abv(self):
-        pass
-
-    def clean_previous_employer_zip(self):
-        pass
-
-    def clean_previous_employer_phone(self):
-        pass
-
-    def clean_previous_employer_start_date(self):
-        pass
-
-    def clean_previous_employer_end_date(self):
-        pass
-
-    def clean_previous_employer_may_contact(self):
-        pass
-
-    def clean_additional_person_1(self):
-        pass
-
-    def clean_additional_person_2(self):
-        pass
-
-    def clean_additional_person_3(self):
-        pass
-
-    def clean_additional_person_4(self):
-        pass
-
-    def clean_add_question_full_deposit(self):
-        pass
-
-    def clean_add_question_felony(self):
-        pass
-
-    def clean_add_question_felony_explain(self):
-        pass
-
-    def clean_add_question_dogs(self):
-        pass
-
-    def clean_add_question_cats(self):
-        pass
-
-    def clean_add_question_water_filled_furniture(self):
-        pass
-
-    def clean_add_question_ever_evicted(self):
-        pass
-
-    def clean_add_question_ever_evicted_explain(self):
-        pass
-
-    def clean_add_question_judgements(self):
-        pass
-
-    def clean_add_question_judgements_explain(self):
-        pass
-
-    def clean_add_question_collections(self):
-        pass
-
-    def clean_add_question_collections_explain(self):
-        pass
+    # def clean_social_security_number(self):
+    #     pass
+    #
+    # def clean_drivers_license_number(self):
+    #     pass
+    #
+    # def clean_date_of_birth(self):
+    #     pass
+    #
+    # def clean_home_phone(self):
+    #     pass
+    #
+    # def clean_cell_phone(self):
+    #     pass
+    #
+    # def clean_email_address(self):
+    #     pass
+    #
+    # def clean_current_address(self):
+    #     pass
+    #
+    # def clean_current_address_line_2(self):
+    #     pass
+    #
+    # def clean_current_city(self):
+    #     pass
+    #
+    # def clean_current_state_abv(self):
+    #     pass
+    #
+    # def clean_current_zip(self):
+    #     pass
+    #
+    # def clean_previous_address(self):
+    #     pass
+    #
+    # def clean_previous_address_line_2(self):
+    #     pass
+    #
+    # def clean_previous_city(self):
+    #     pass
+    #
+    # def clean_previous_state_abv(self):
+    #     pass
+    #
+    # def clean_previous_zip(self):
+    #     pass
+    #
+    # def clean_current_employer_name(self):
+    #     pass
+    #
+    # def clean_current_employer_address(self):
+    #     pass
+    #
+    # def clean_current_employer_address_line_2(self):
+    #     pass
+    #
+    # def clean_current_employer_state_abv(self):
+    #     pass
+    #
+    # def clean_current_employer_zip(self):
+    #     pass
+    #
+    # def clean_current_employer_phone(self):
+    #     pass
+    #
+    # def clean_current_employer_start_date(self):
+    #     pass
+    #
+    # def clean_current_employer_end_date(self):
+    #     pass
+    #
+    # def clean_current_employer_may_contact(self):
+    #     pass
+    #
+    # def clean_previous_employer_name(self):
+    #     pass
+    #
+    # def clean_previous_employer_address(self):
+    #     pass
+    #
+    # def clean_previous_employer_address_line_2(self):
+    #     pass
+    #
+    # def clean_previous_employer_state_abv(self):
+    #     pass
+    #
+    # def clean_previous_employer_zip(self):
+    #     pass
+    #
+    # def clean_previous_employer_phone(self):
+    #     pass
+    #
+    # def clean_previous_employer_start_date(self):
+    #     pass
+    #
+    # def clean_previous_employer_end_date(self):
+    #     pass
+    #
+    # def clean_previous_employer_may_contact(self):
+    #     pass
+    #
+    # def clean_additional_person_1(self):
+    #     pass
+    #
+    # def clean_additional_person_2(self):
+    #     pass
+    #
+    # def clean_additional_person_3(self):
+    #     pass
+    #
+    # def clean_additional_person_4(self):
+    #     pass
+    #
+    # def clean_add_question_full_deposit(self):
+    #     pass
+    #
+    # def clean_add_question_felony(self):
+    #     pass
+    #
+    # def clean_add_question_felony_explain(self):
+    #     pass
+    #
+    # def clean_add_question_dogs(self):
+    #     pass
+    #
+    # def clean_add_question_cats(self):
+    #     pass
+    #
+    # def clean_add_question_water_filled_furniture(self):
+    #     pass
+    #
+    # def clean_add_question_ever_evicted(self):
+    #     pass
+    #
+    # def clean_add_question_ever_evicted_explain(self):
+    #     pass
+    #
+    # def clean_add_question_judgements(self):
+    #     pass
+    #
+    # def clean_add_question_judgements_explain(self):
+    #     pass
+    #
+    # def clean_add_question_collections(self):
+    #     pass
+    #
+    # def clean_add_question_collections_explain(self):
+    #     pass

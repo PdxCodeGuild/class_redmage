@@ -25,7 +25,7 @@ SECRET_KEY = '2cd6qvbw(uoyj12(+l8!b1b6%et$k(k=j22&xd3vr9z)=wj#m-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'appy.apps.AppyConfig'
+    'appy.apps.AppyConfig',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +121,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

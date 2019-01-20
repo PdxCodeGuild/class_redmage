@@ -18,6 +18,7 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('create/', views.tenant_create_form_view, name='create_form'),
+    path('', views.tenant_create_form_view, name='home'),
+    path('signup/', views.SignUp.as_view(), name='signup'),
     path('pdf', views.GeneratePDF.as_view())
 ]

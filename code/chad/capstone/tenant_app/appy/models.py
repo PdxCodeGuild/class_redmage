@@ -1,8 +1,10 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 
 class AppyModel(models.Model):
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     date_time_form_filled = models.DateTimeField(auto_now_add=True)
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)

@@ -5,15 +5,34 @@ from django.http import HttpResponse
 from django.views.generic import View
 from appy.utils import render_to_pdf
 from django.template.loader import get_template
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views import generic
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
+class TenantAppys(LoginRequiredMixin, generic.ListView):
+    model = AppyModel
+    template_name = 'tenant_apps.html'
+
+    def get_queryset(self):
+        return
+
+
+@login_required
 def tenant_create_form_view(request):
-    tenant_form = TenantForm()  #render with get method so you can see the form
+    tenant_form = TenantForm()
     if request.method == 'POST':
-        tenant_form = TenantForm(request.POST)  #Pass in the request data as you initialize the form
+        print(request.user)
+
+        tenant_form = TenantForm(request.POST)
         if tenant_form.is_valid():
+            tenant_form.save(tenant_form.author_id = request.user)
+            
             print(tenant_form.cleaned_data)
             AppyModel.objects.create(**tenant_form.cleaned_data)
+
         else:
             print(tenant_form.errors)
     context = {
@@ -21,6 +40,12 @@ def tenant_create_form_view(request):
     }
 
     return render(request, 'fill_appy.html', context)
+
+
+class SignUp(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('home')
+    template_name = 'signup.html'
 
 
 class GeneratePDF(View):
