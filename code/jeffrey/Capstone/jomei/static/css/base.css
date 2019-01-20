@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1px auto auto 1px;
+  grid-template-rows: 35px 400px auto;
+}
+
+.top-div {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+}
+
+.title-font {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 35px;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.item-b {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:grey;
+  border-radius: 5px;
+}
+
+.item-c {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: aqua;
+}
+
+.item-d {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: peachpuff;
+}
+
+.item-e {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: blueviolet;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#layers_div {
+
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  height: 30px;
+  width: 150px;
+  margin: auto;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

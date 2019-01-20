@@ -19,7 +19,9 @@ def index(request):
         "in_basket_list": Item.objects.filter(obtained = True).order_by('quantity','completed_date').reverse(),
         "form":form
     }
+
     print(context)
+
     return HttpResponse(template.render(context, request))
 
 def AddView(request):

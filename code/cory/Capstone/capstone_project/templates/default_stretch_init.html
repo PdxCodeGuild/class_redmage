@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Stretch Init Page</h1>
+
+<div id="default-div-wrapper">
+    <a href="{% url 'default-stretch' %}">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="default-workout">Default</p>
+            </div>
+        </div>
+    </a>
+    <a href="">
+        <div id="exercise-card-outer">
+            <div id="exercise-card-inner">
+                <p id="custom-workout">Custom</p>
+            </div>
+        </div>
+    </a>
+</div>
+
+{% endblock %}

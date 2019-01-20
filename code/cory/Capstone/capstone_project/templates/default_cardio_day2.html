@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Cardio Day 2</h1>
+
+{% for exercise in object_list %}
+    <div id="default-div-list-wrapper">
+        <a href="{% url 'default-cardio-detail' exercise.pk exercise.slug %}">
+            <div id="exercise-card-outer">
+                <div id="exercise-card-inner">
+                    <p>{{ exercise }}</p>
+                    <p>
+                        {% if exercise.rating_number != 'n/a' %}
+                            {{ exercise.rating_number}} | 
+                        {% endif %}
+                        {{ exercise.rating_name}}
+                    </p>
+                </div>
+                <p id="exercise-card-outer-p">{{ exercise.workout_muscle }}</p>
+            </div>
+        </a>
+    </div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,11 @@
+1/14/2019
+
+- Working through cardio, finished setting up Cardio Init, Cardio Default, and Days 1, 2, and 3. Added back button for easier manipulation. 
+
+- Next step: In Day 1, add hyperlinks to each workout. Get all information in page, then copy. Figure out url path, probably just workout name.
+
+
+
+To Do:
+
+In 

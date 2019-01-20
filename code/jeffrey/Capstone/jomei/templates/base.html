@@ -1,26 +1,57 @@
 {% load static %}
+
 <html>
   <head>
     <title>jomei</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    {% block head %}
+    {% endblock head %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header>
-      <div class="nav-left">
-        <h1><a href="/">jomei</a></h1>
-      </div>
-      </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'home' %}">Map</a>
       {% if user.is_authenticated %}
-        <p>Welcome, {{ user.username}}!</p>
-        <p><a href="{% url 'logout' %}">Logout</a></p>
+        <a href="{% url 'logout' %}">Logout</a>
       {% else %}
-        <p>You are not logged in.</p>
         <p><a href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">Sign Up</a></p>
       {% endif %}
-      {% block content %}
-      {% endblock content %}
     </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Nav</span>
+    <header>
+      <div>
+        <h1 style='text-align:center'><a href="/">jomei</a></h1>
+      </div>
+      {% block layers %}
+      {% endblock layers %}
+    </header>
+
+  <div id="container">
+    {% block content %}
+    {% endblock content %}
+  </div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  {% block scripts %}
+  {% endblock scripts %}
+    </div>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("container").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("container").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
   </body>
 </html>

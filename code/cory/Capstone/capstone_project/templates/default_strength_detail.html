@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ object.workout_name }}</h1>
+<p class="text-center">Workout Level: <b>{{ object.workout_level }}</b></p>
+<p class="text-center">
+    Equipment Needed: <b>{{ object.workout_equipment }}</b>
+</p>
+
+<div id="exercise-detail-list">
+    <img src="{{ object.workout_img_1 }}">
+    <img src="{{ object.workout_img_2 }}">
+    {% for instruction in object.instructions_as_list %}
+        <p>{{ instruction }}</p>
+    {% endfor %}
+    <img src="{{ object.muscle_group_img }}">
+</div>
+
+
+{% endblock %}

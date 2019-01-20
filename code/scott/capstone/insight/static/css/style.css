@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    padding: auto;
+    background-color: rgb(226, 225, 223);
+}
+
+#container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas:
+        ". srch srch srch ."
+        "res1 res1 . res2 res2";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    background-color: #5a677e;
+    border-radius: 20px;
+}
+
+#searchDiv {
+    grid-area: srch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    color: black;
+    font-size: 15px;   
+    width: auto;
+    height: auto;
+    margin: 5px;
+    background-color: #D4CDBA;
+
+    border-radius: 10px;
+    background-color: #009ac4;
+    border: 1px solid black;
+}
+
+#submit {
+    font-size: 12px;
+}
+
+
+
+.api_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1px;
+    border-radius: 4px;
+    width: auto;
+    background-color: white;
+
+    font-size: 11px;
+}
+
+#api_box_shodan {
+    grid-area: res1;
+}
+
+#api_box_censys {
+    grid-area: res2;
+}
+
+.result_field {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2px;
+
+}
+
+.location {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.network {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.device {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+
+

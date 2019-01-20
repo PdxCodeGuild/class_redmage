@@ -1,0 +1,26 @@
+{% extends 'insight/index.html' %}
+
+{% block shodan %}
+    <div id="shodan">
+        <div id="shodan_search_location">
+            {% for key in shodan_search.items %}
+                <div id="shodan_search_{{shodan_search.items.key}}">
+                    {% for item, value in key1.items %}
+                    <p>{{item}}: {{value}}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+            <div id="test">
+            {% for i in shodan_search %}
+            {{i}}
+            {% endfor %}
+            </div>
+        </div>
+
+        <div id="test">
+            {% for i in shodan_search %}
+            {{i}}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock shodan %}

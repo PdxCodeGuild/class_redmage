@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<h1>{{ object.workout_name }}</h1>
+
+<form id="add-to-workout" action="{% url 'user-add-to-workout' request.user.username object.pk %}" method="post">
+    {% csrf_token %}
+    <select name="workout">
+        {% for workout in user.workout_set.all %}
+            <option value="{{ workout.pk }}">{{ workout }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Add To Workout">
+</form>
+
+<p class="text-center">Workout Level: <b>{{ object.workout_level }}</b></p>
+<p class="text-center">
+    Equipment Needed: <b>{{ object.workout_equipment }}</b>
+</p>
+
+<div id="exercise-detail-list">
+    <img src="{{ object.workout_img_1 }}">
+    <img src="{{ object.workout_img_2 }}">
+    {% for instruction in object.instructions_as_list %}
+        <p>{{ instruction }}</p>
+    {% endfor %}
+    <img src="{{ object.muscle_group_img }}">
+</div>
+
+
+{% endblock %}
