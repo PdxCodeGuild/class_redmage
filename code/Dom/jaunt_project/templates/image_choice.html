@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Choose Image{% endblock %}
+
+{% block content %}
+{% if image_list %}
+<form  action="{% url 'artist_profile:selectpic' artistpk %}" method="post"> 
+  {% csrf_token %}
+ 
+  {% for image in image_list %}
+  <div class= "form-check form-check-inline">
+    <input class= "form-check-input" type="radio" name="pic" id="choice{{ image.id }}" value="{{ image.id }}">
+    <img  class= "form-check-label" src="{{ image.image.url }}" style="height: 300px"><br>
+  </div>
+  {% endfor %}
+  <div class="row">
+    <div class="col-md">
+      <input type="submit" class= "btn btn-success" value="Save">
+      <a href="{% url 'artist_profile:upload'  artistpk %}" type="button" class="btn btn-success">Upload New</a>
+    </div>
+  </div>
+</form>
+{% else %}
+  <p>No Images</p>
+    <input type="submit" class= "btn btn-success" value="Save">
+  <a href="{% url 'artist_profile:upload'  artistpk %}" type="button" class="btn btn-success">{{artistpk}} Upload New</a>
+{% endif %}
+
+{% endblock %}

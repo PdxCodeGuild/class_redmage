@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+ <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+  {% for artist in artistprofile_list %}
+    <div class="card" style="width: 18rem;">
+      {% comment %} <img src="" class="card-img-top" alt="{{ artist.artist_name}}"> {% endcomment %}
+      <div class="card-body">
+        <h5 class="card-title">{{artist.artist_name}}</h5>
+        <p class="card-text">{{artist.genre}}</p>
+        <a href="{% url 'artist_profile:artist_detail' artist.id %}" class="btn btn-primary">View Profile</a>
+      </div>
+  </div>
+  {% endfor %}
+  <p><a href= "{% url 'artist_profile:artist_create' %}">create artist profile</a></p>
+
+{% else %}
+<div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a> |
+  <a href="{% url 'signup' %}">sign up</a>
+</div>
+{% endif %}
+</div>
+{% endblock %}
+
+  {% comment %} {% if profile_pic %} {% endcomment %}
