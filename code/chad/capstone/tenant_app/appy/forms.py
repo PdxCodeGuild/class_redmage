@@ -242,3 +242,12 @@ class TenantForm(forms.Form):
     #
     # def clean_add_question_collections_explain(self):
     #     pass
+
+
+class MaintForm(forms.Form):
+    first_name = forms.CharField(required=False, label='First Name')
+    last_name = forms.CharField(required=False, label='Last Name')
+    home_phone = forms.CharField(required=False, label='Home Phone')
+    cell_phone = forms.CharField(required=False, label='Cell Phone')
+    address = forms.CharField(required=False, label='Address')
+    problem_description = forms.CharField(required=False, label='Description Of Problem')

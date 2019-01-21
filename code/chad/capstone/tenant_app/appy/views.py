@@ -1,9 +1,8 @@
-from django.shortcuts import render
-from .forms import TenantForm
-from .models import AppyModel
+from django.shortcuts import render, redirect
+from .forms import TenantForm, MaintForm
+from .models import AppyModel, MaintyModel
 from django.http import HttpResponse
-from django.views.generic import View
-from appy.utils import render_to_pdf
+from django.views.generic import ListView
 from django.template.loader import get_template
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
@@ -19,53 +18,58 @@ class TenantAppys(LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return
 
+class HomeTemplateView(ListView):
+    model = AppyModel
+    template_name = 'home.html'
 
 @login_required
 def tenant_create_form_view(request):
     tenant_form = TenantForm()
+    items = AppyModel.objects.filter(author=request.user).values_list('first_name')
     if request.method == 'POST':
         print(request.user)
 
         tenant_form = TenantForm(request.POST)
         if tenant_form.is_valid():
-            tenant_form.save(tenant_form.author_id = request.user)
-            
+            usr = request.user
+            AppyModel.objects.create(**tenant_form.cleaned_data, author=usr)
+            return redirect('home')
             print(tenant_form.cleaned_data)
-            AppyModel.objects.create(**tenant_form.cleaned_data)
 
         else:
             print(tenant_form.errors)
     context = {
-        'form': tenant_form
+        'tenant_form': tenant_form,
+        'tenant_items': items,
     }
 
     return render(request, 'fill_appy.html', context)
 
+@login_required
+def mainty_form_view(request):
+    maint_form = MaintForm()
+    items = MaintyModel.objects.filter(author=request.user).values_list('first_name')
+    if request.method == 'POST':
+        print(request.user)
+        maint_form = MaintForm(request.POST)
+        if maint_form.is_valid():
+            usr = request.user
+            MaintyModel.objects.create(**maint_form.cleaned_data, author=usr)
+            return redirect('home')
+    context = {
+        'maint_form': maint_form,
+        'maint_items': items,
+    }
+    return render(request, 'maint_request.html', context)
+
+#reserved for a paged for apps created by user
+@login_required
+def tenant_apps_view(request):
+    app_list = AppyModel.objects.filter(author=request.user).values_list('first_name')
+    return render_to_response('tenant_apps.html', {'object_list': app_list})
 
 class SignUp(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('home')
     template_name = 'signup.html'
 
-
-class GeneratePDF(View):
-    def get(self, request, *args, **kwargs):
-        template = get_template('fill_appy.html')
-        context = {
-            "invoice_id": 123,
-            "customer_name": "John Cooper",
-            "amount": 1399.99,
-            "today": "Today",
-        }
-        html = template.render(context)
-        pdf = render_to_pdf('fill_appy.html', context)
-        if pdf:
-            response = HttpResponse(pdf, content_type='application/pdf')
-            filename = "Invoice_%s.pdf" %("12341231")
-            content = "inline; filename='%s'" %(filename)
-            download = request.GET.get("download")
-            if download:
-                content = "attachment; filename='%s'" %(filename)
-            response['Content-Disposition'] = content
-            return response
-        return HttpResponse("Not found")

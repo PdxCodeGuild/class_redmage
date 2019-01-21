@@ -1,14 +1,12 @@
-h2 {
-    text-align: center;
-    padding-bottom: 50px;
-}
-.div-main li {
+
+.div-main {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
 }
 .div-form label{
-    grid-column-start: 2;
+    grid-column-start: 1;
 }
 .div-form input{
-    grid-column-start: 3;
+    grid-column-start: 1;
 }
+

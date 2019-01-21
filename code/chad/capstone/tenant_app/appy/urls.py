@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('', views.tenant_create_form_view, name='home'),
     path('signup/', views.SignUp.as_view(), name='signup'),
-    path('pdf', views.GeneratePDF.as_view())
+    path('tenant_app/', views.tenant_create_form_view, name='tenant_app'),
+    path('maint_request/', views.mainty_form_view, name='maint_request'),
 ]

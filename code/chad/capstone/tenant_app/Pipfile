@@ -6,11 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "*"
+django = "2.1"
 install = "*"
-django-phone-field = "*"
-reportlab = "*"
-xhtml2pdf = "*"
+django-crispy-forms = "*"
 
 [requires]
 python_version = "3.6"

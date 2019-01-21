@@ -66,3 +66,11 @@ class AppyModel(models.Model):
     add_question_collections_explain = models.CharField(max_length=500)
 
 
+class MaintyModel(models.Model):
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    first_name = models.CharField(max_length=20)
+    last_name = models.CharField(max_length=20)
+    home_phone = models.CharField(max_length=10)
+    cell_phone = models.CharField(max_length=10)
+    address = models.CharField(max_length=100)
+    problem_description = models.CharField(max_length=1000)
