@@ -23,9 +23,9 @@
 {% block layers %}
   {% if user.is_authenticated %}
   <div id="layers_div">
-  <button class='material-icons' name='private_btn'>person</button>
-  <button class='material-icons' name='friends_btn'>group</button>
-  <button class='material-icons' name='universal_btn'>public</button>
+    <button class='material-icons' id = 'private_btn' name='private_btn'>person</button>
+    <button class='material-icons' id = 'edit_btn' name='edit_btn'>edit</button>
+    <button class='material-icons' id = 'universal_btn' name='universal_btn'>public</button>
   </div>
 {% endif %}
 
@@ -36,7 +36,7 @@
 
   {% if user.is_authenticated %}
 
-  {{ marker_data_for_js|json_script:"marker_data" }}
+  {{ data|json_script:"marker_data" }}
 
   <div class="map_location item-b" id="map"></div>
   <div class="item-c" id="pointTarget">

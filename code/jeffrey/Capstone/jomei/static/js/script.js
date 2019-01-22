@@ -1,4 +1,4 @@
-
+let truth = true;
 
 let
   map,
@@ -21,11 +21,9 @@ let test = false;
 
 let saved_user_markers_data = JSON.parse(document.getElementById('marker_data').textContent);
 
-
-
 console.log(saved_user_markers_data);
 
-function initialize() {
+function initialize(){
   map = L.map('map').setView([45.527453, -122.668923], 10)
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -47,6 +45,9 @@ function initialize() {
       };
 
   addToMap(saved_user_markers_data);
+
+  // find osmewhere to store the points list for referencing the IDs for deleting them
+
 
   // allows the user to find their own location using the easybutton
   L.control.locate({
@@ -78,45 +79,104 @@ function initialize() {
   // Add marker to map at click location; add popup window
 
     newMarker = new L.marker(e.latlng).addTo(map);
-    newMarker.bindPopup(`${newMarker.getLatLng()}`).openPopup();
+
+    // input the form into the popup
+    // input text field
+    let name_field = document.createElement("input");
+    name_field.type = "text";
+    name_field.placeholder = "Marker name";
+
+    // input text area for tags
+    let tags_field = document.createElement("textarea");
+    tags_field.placeholder = "Place # separated tags here";
+
+    // boolean public or not
+    let public_layer_checkbox = document.createElement('input');
+    public_layer_checkbox.type = "checkbox";
+    public_layer_checkbox.id = "public_check";
+    let checkbox_label = document.createElement('label');
+    checkbox_label.htmlFor = "public_check";
+    checkbox_label.appendChild(document.createTextNode('Dubstep or nah'));
+
+    // create submit button
+    let pop_submit_btn = document.createElement("input");
+    pop_submit_btn.type = "submit";
+    pop_submit_btn.addEventListener('click', postMarker);
+
+    // create delete button
+    let pop_delete_btn = document.createElement('input');
+    pop_delete_btn.type = "button";
+    pop_delete_btn.value = "Delete";
+    pop_delete_btn.addEventListener('click', deleteMarker);
+
+    // add form elements to a flexbox
+    let pop_form = document.createElement("li");
+    pop_form.style.display = "flex";
+    pop_form.style.flexDirection = "column";
+    pop_form.appendChild(name_field);
+    pop_form.appendChild(tags_field);
+    pop_form.appendChild(public_layer_checkbox);
+    pop_form.appendChild(checkbox_label);
+    pop_form.appendChild(pop_submit_btn);
+    pop_form.appendChild(pop_delete_btn);
+
+
+
+    newMarker.bindPopup(pop_form).openPopup();
+
+    // adds the new marker onto the map
     markers.push(newMarker);
+    console.log(newMarker);
+    // creates the flexbox and gets content for putting markers onto the list
+    // should this only be added to the list once a marker is saved
     popString = document.createElement("li");
     popString.style.display = "flex";
     popString.innerHTML += newMarker._popup.getContent();
 
-    let compareBtn = document.createElement("input");
-    compareBtn.type = "checkbox";
+    // change the name but make these the DELETE buttons
+    let select_mark_checkbox = document.createElement("input");
+    select_mark_checkbox.type = "checkbox";
 
-    popString.appendChild(compareBtn);
+    // adds the checkbox and the latlng information to the markers list
+    popString.appendChild(select_mark_checkbox);
     newPoint1.appendChild(popString);
 
+    // adds the newMarker's latlng object to the markerCoordinates variable for calculating distance from origin
     markerCoordinates = newMarker['_latlng'];
     markerCoordinates = Object.values(markerCoordinates);
-    console.log("markerCoordinates is", markerCoordinates);
+    console.log("markerCoordinates for caluclating distance are: ",markerCoordinates);
 
+    // prepares the data for sending to the database
     let toModel_Marker_Data = newMarker.getLatLng();
 
+    // set distance = 0 is origin is not defined
     let distance = 0;
 
     if (myCoordinates === undefined){
+      // if myCoordinates not set then can't find distance
       distance_string = "your location was undefined";
       distanceString = document.createElement("li");
       distanceString.style.display = "flex";
       distanceString.innerHTML += distance_string;
       newPoint2.appendChild(distanceString);
     } else {
+      // find the distance
       distance = getDistance(myCoordinates, markerCoordinates);
       distanceString = document.createElement("li");
       distanceString.style.display = "flex";
       distanceString.innerHTML += distance + " meters";
       newPoint2.appendChild(distanceString);
     }
-
     console.log("distance = ", distance);
-
+    // // adds distance to the Marker_data object
+    // let time = new Date().toLocaleString('en-GB', { hourCycle: 'h24' });
     toModel_Marker_Data['distance_away'] = distance;
+    // toModel_Marker_Data['created_date'] = time;
+    console.log(toModel_Marker_Data);
 
-    axios.post('newmarker/', toModel_Marker_Data)
+    // posts the new marker data to the
+    function postMarker(){
+      axios.post('newmarker/', toModel_Marker_Data)
     .then(function (response) {
       console.log(response);
     })
@@ -124,11 +184,29 @@ function initialize() {
       alert("Was not able to save this marker.")
       console.log(error);
     });
-  }
+    }
+
+    // deletes the marker
+    function deleteMarker(){
+      axios.post($`'deletemarker/' + <int:pk>`, marker)
+        .then(function(response){
+        console.log(response);
+        })
+        .catch(function(error){
+          alert("Was not able to delete this marker.")
+          console.log(error);
+        });
+      };
+    }
+
 
   map.on('locationfound', onLocationFound);
   map.on('locationerror', onLocationError);
+
   map.on('click', addMarker);
+
+
+
 
   newPoint1 = document.createElement("div");
   newPoint1.style.display = "flex";
@@ -150,7 +228,7 @@ function initialize() {
   target2 = document.getElementById("distanceTarget");
   target2.appendChild(newPoint2);
 
-};
+}
 
 let lat1, lat2, lng1, lng2,origin,destination;
 
@@ -170,7 +248,6 @@ function getDistance(origin, destination) {
   let c = 2 * Math.asin(Math.sqrt(a));
   let EARTH_RADIUS = 6371;
   return Math.round(c * EARTH_RADIUS * 1000);
-
 }
 
 function toRadian(degree) {

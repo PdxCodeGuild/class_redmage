@@ -1,18 +1,11 @@
-var template = '<form id="popup-form">\
-  <label for="input-speed">New speed:</label>\
-  <input id="input-speed" class="popup-input" type="number" />\
-  <table class="popup-table">\
-    <tr class="popup-table-row">\
-      <th class="popup-table-header">Arc numer:</th>\
-      <td id="value-arc" class="popup-table-data"></td>\
-    </tr>\
-    <tr class="popup-table-row">\
-      <th class="popup-table-header">Current speed:</th>\
-      <td id="value-speed" class="popup-table-data"></td>\
-    </tr>\
-  </table>\
-  <button id="button-submit" type="button">Save Changes</button>\
-</form>';
+// var template = '<form id="popup-form">\
+//   <label for="input-name">Name:</label>\
+//   <input id="input-name" class="popup-input" type="text" />\
+//   <label for="input-tag">Tags:</label>\
+//   <input id="input-tag" class="popup-input" type="text" />\
+
+//   <button id="button-submit" type="button">Save Changes</button>\
+// </form>';
 
 function layerClickHandler (e) {
 

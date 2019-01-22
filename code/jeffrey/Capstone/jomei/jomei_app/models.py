@@ -16,8 +16,9 @@ class Point(models.Model):
     latitude = models.DecimalField(max_digits=9, decimal_places=6)
     longitude = models.DecimalField(max_digits=9, decimal_places=6)
     distance_away = models.PositiveIntegerField()
-
-    # layer = models.ForeignKey(Layer, on_delete=models.CASCADE)
+    layer = models.BooleanField(default=False)
+    created_date = models.DateTimeField("date_created", auto_now_add=True)
+    last_modified_date = models.DateTimeField("last_date_modified", auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -29,7 +30,9 @@ class UserLocationPoint(models.Model):
     latitude = models.DecimalField(max_digits=9, decimal_places=6)
     longitude = models.DecimalField(max_digits=9, decimal_places=6)
     distance_away = models.PositiveIntegerField()
-    # layer = models.ForeignKey(Layer, on_delete=models.CASCADE)
+    layer = models.BooleanField(default=False)
+    created_date = models.DateTimeField("date_created", auto_now_add=True)
+    last_modified_date = models.DateTimeField("last_date_modified", auto_now_add=True)
 
     def __str__(self):
         return self.name
