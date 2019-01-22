@@ -42,8 +42,6 @@ INSTALLED_APPS = [
     'artist_profile.apps.ArtistProfileConfig',
     'dashboard.apps.DashboardConfig',
     'tours.apps.ToursConfig',
-    'schedule',
-    'djangobower'
     
 ]
 
@@ -72,7 +70,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.request',
             ],
         },
     },
@@ -127,15 +124,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-# STATICFILES_FINDER=[
-# 'djangobower.finders.BowerFinder',
-# ]
-# BOWER_COMPONENTS_ROOT = '/jaunt_project/components/'
-# BOWER_INSTALLED_APPS = (
-#     'jquery',
-#     'jquery-ui',
-#     'bootstrap'
-# )
 
 STATIC_URL = '/static/'
 

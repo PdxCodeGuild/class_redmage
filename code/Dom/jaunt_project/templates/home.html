@@ -18,10 +18,15 @@
   <p><a href= "{% url 'artist_profile:artist_create' %}">create artist profile</a></p>
 
 {% else %}
-<div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a> |
-  <a href="{% url 'signup' %}">sign up</a>
+<div class= container>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Jaunt</h1>
+    <p class="lead">This is an app to help independent musicians plan and book successful tours.</p>
+    <hr class="my-4">
+    <p>Try is yourself</p>
+    <a class="btn btn-secondary btn-lg" href="{% url 'login' %}" role="button">Login</a>
+    <a class="btn btn-secondary btn-lg" href="{% url 'signup' %}" role="button">Sign Up</a>
+  </div>
 </div>
 {% endif %}
 </div>

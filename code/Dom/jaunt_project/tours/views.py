@@ -8,11 +8,13 @@ from django.core.files.storage import FileSystemStorage
 from .forms import CreateTour
 from artist_profile.models import ArtistProfile, ArtistImage
 from artist_profile.forms import ImageForm
-from .models import Tour, Venue
+from .models import Tour, Venue, City
+import ast
+
 
 def tour_proposal(request): 
   if request.method == "POST":
-    form = CreateTour(request.POST)
+    form = CreateTour(request.user, request.POST)
     if form.is_valid():
       artist = form.cleaned_data["artist"]
       tour_name = form.cleaned_data["tour_name"]
@@ -23,8 +25,6 @@ def tour_proposal(request):
       date_start = form.cleaned_data["date_start"]
       date_end = form.cleaned_data["date_end"]
       region = form.cleaned_data["region"]
-      days = (date_end) - (date_start)
-      print(days)
       tour = Tour(
         artist= artist,
         tour_name=tour_name, 
@@ -37,31 +37,89 @@ def tour_proposal(request):
         region = region,
       )
       tour.save()
-      form = CreateTour()
+      cities = City.objects.order_by('priority')
+      days = tour.date_end - tour.date_start
+      days = days.days
+      print(days)
+      city_list = []
+      while days > len(city_list):
+        for city in cities:
+          if city.priority == 1:
+            if days > 0:
+              city_list.append((city.city, city.state))
+              days -= 1
+          elif city.priority == 2:
+            if days >0:
+              city_list.append((city.city, city.state))
+              days -= 1
+          elif city.priority == 3:
+            if days > 0:
+              city_list.append((city.city, city.state))
+              days -= 1
+      tour.city_list = city_list
+      tour.save()
+      form = CreateTour(request.user)
       return HttpResponseRedirect(reverse('tours:tours_detail', args=(tour.id,) ))
   elif request.method == "GET":
-    form = CreateTour()
+    form = CreateTour(request.user)
   return render(request, "tour_create.html", {'form': form} )
-    
+
+ 
+def edit(request, pk):
+  tour = get_object_or_404(Tour, pk=pk)
+  if request.method == "POST":
+    form = CreateTour(request.user, request.POST)
+    if form.is_valid():
+      tour.artist = form.cleaned_data["artist"]
+      tour.tour_name = form.cleaned_data["tour_name"]
+      tour.performers = form.cleaned_data["performers"]
+      tour.guarantee = form.cleaned_data["guarantee"]
+      tour.door_split = form.cleaned_data["door_split"]
+      tour.venue_size = form.cleaned_data["venue_size"]
+      tour.date_start = form.cleaned_data["date_start"]
+      tour.date_end = form.cleaned_data["date_end"]
+      tour.region = form.cleaned_data["region"]
+      tour.save()
+      cities = City.objects.order_by('priority')
+      days = tour.date_end - tour.date_start
+      days = days.days
+      print(days)
+      city_list = []
+      for city in cities:
+        while days > len(city_list):
+          if city.priority == 1:
+            if days > 0:
+              city_list.append((city.city, city.state))
+              days -= 1
+          if city.priority == 2:
+            if days >0:
+              city_list.append((city.city, city.state))
+              days -= 1
+          if city.priority == 3:
+            if days > 0:
+              city_list.append((city.city, city.state))
+              days -= 1
+      tour.city_list = city_list
+      tour.save()
+      return HttpResponseRedirect(reverse('tours:tours_detail', args=(tour.id,) ))
+  else:
+    form = CreateTour(request.user)
+  return render(request, "tour_edit.html", {'form': form} )
+
+class DeleteTour(LoginRequiredMixin, DeleteView):
+  model = Tour
+  template_name= "tour_delete.html"
+  success_url = reverse_lazy('home')
+
 class TourView(LoginRequiredMixin, DetailView):
   model = Tour
   template_name = "tours_detail.html"
 
+  def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    cities = ast.literal_eval(self.object.city_list)
+    context["cities"] = [City.objects.get(city= city[0]) for city in cities]
+    print(context["cities"][2].venue_set.all())
+    return context
 
-# class TourList(LoginRequiredMixin, ListView):
-
-
-  # def get_context_data(self, **kwargs):
-  #   context = super().get_context_data(**kwargs)
-  #   if Tour.objects.get(pk= self.kwargs['pk']).profile_pic:
-  #     profile_pic_id = ArtistProfile.objects.get(pk= self.kwargs['pk']).profile_pic
-  #     context['profile_pic'] = ArtistImage.objects.get(pk= profile_pic_id)
-  #     print(context['profile_pic'].image.url)
-  #   return context
-
-
-# def tourview(request):
-#   return # detail view of the tour that shows tour and show search results
-
-# def touredit(request):
-#  return "place to edit the tour details  "
+    

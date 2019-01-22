@@ -22,9 +22,11 @@
   </div>
 </form>
 {% else %}
+<div>
   <p>No Images</p>
+  <br>
     <input type="submit" class= "btn btn-success" value="Save">
-  <a href="{% url 'artist_profile:upload'  artistpk %}" type="button" class="btn btn-success">{{artistpk}} Upload New</a>
+  <a href="{% url 'artist_profile:upload'  artistpk %}" type="button" class="btn btn-success">Upload New</a>
 {% endif %}
 
 {% endblock %}

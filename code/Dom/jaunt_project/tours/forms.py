@@ -5,15 +5,15 @@ from artist_profile.models import ArtistProfile
 from users.models import CustomUser
 
 VENUE_SIZE_CHOICES = [
-  ( "30- 100", "SM (30- 100)"),
-  ("101 - 300", "MD (101 - 300)"),
-  ("301-600", "LG (301-600)")
+  ( "50- 150", "SM (50- 150)"),
+  ("151 - 500", "MD (151 - 500)"),
+  ("500-1000", "LG (500-1000)")
 ]
 
 REGION_CHOICES = [
-  ("NW", "NorthWest"),
-  ("CA", "California"),
-  ("SW", "SouthWest"),
+  ("NorthWest", "NorthWest"),
+  ("California", "California"),
+  ("SouthWest", "SouthWest"),
   
   ]
 
@@ -44,4 +44,6 @@ class CreateTour(forms.Form):
     choices=REGION_CHOICES)
 
 
- 
+  def __init__(self, user, *args, **kwargs):
+    super(CreateTour, self).__init__(*args, **kwargs)
+    self.fields['artist'].queryset = ArtistProfile.objects.filter(user=user)

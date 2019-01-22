@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
+
 {% block title %}Tour Profile{% endblock %}
 
 {% block content %}
@@ -8,9 +9,9 @@
   <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
     <div class="btn-group-vertical bd-sidebar btn-group-lg" role="group" >
       <h2>Menu</h2>
-      {% comment %} <a href="{% url 'tour:image_choice' tour.id %}" type="button" class="btn btn-secondary">Change Image</a>
-      <a type="button" class="btn btn-secondary"href="{% url 'artist_profile:artist_edit' artistprofile.id %}">ProfileEdit</a>
-      <a type="button" class="btn btn-secondary" href="{% url 'artist_profile:artist_delete' artistprofile.id %}">Delete</></a> {% endcomment %}
+      {% comment % <a href="{% url 'tour:image_choice' tour.id %}" type="button" class="btn btn-secondary">Change Image</a> {% endcomment %}
+      <a type="button" class="btn btn-secondary"href="{% url 'tours:tour_edit' tour.id %}">Edit Tour Details</a>
+      <a type="button" class="btn btn-secondary" href="{% url 'tours:tour_delete' tour.id %}">Delete</a>
     </div>
   </div>
   <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
@@ -27,28 +28,24 @@
     <p class= "bd-lead">{{tour.date_start}} - {{tour.date_end}}</p>
     <p class= "bd-lead">Region: {{tour.region}} </p>
     <p class= "bd-lead">Asking Price: {{tour.guarantee}} </p>
-      <p class= "bd-lead">Venue Size: {{tour.venue_size}} </p>
-    {% comment %} {% if artist.twitter %} {% endcomment %}
-      {% comment %} <p>Twitter: <a href= "https:twitter.com/{{artistprofile.twitter}}">@{{artistprofile.twitter}}</a></p> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
-    {% comment %} {% if artist.instagram %} {% endcomment %}
-      {% comment %} <p>Instagram: <a href= "https:instagram.com/{{artistprofile.instagram}}">@{{artistprofile.instagram}}</a></p> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
-    {% comment %} {% if artist.facebook %} {% endcomment %}
-      {% comment %} <p>Facebook: <a href= "https:facebook.com/{{artistprofile.twitter}}">{{artistprofile.facebook}}</a></p> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
-    {% comment %} {% if artist.bandcamp %} {% endcomment %}
-     {% comment %} <p>bandcamp: <a href= "https:{{artistprofile.bandcamp}}.bandcamp.com/">{{artistprofile.bandcamp}}</a></p> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
-    {% comment %} <p>{{artistprofile.description}}</p> {% endcomment %}
+    <p class= "bd-lead">Venue Size: {{tour.venue_size}} </p>
+
       {% else %}
         <p>You are not logged in</p>
         <a href="{% url 'login' %}">login</a> |
         <a href="{% url 'signup' %}">sign up</a>
       {% endif %}
   </div>
-   <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
-    
+  <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+    <ul>
+  {% for city in cities %}
+    <li> {{city.city}}, {{city.state}} </li>
+      <ul>
+   {% for venue in city.venue_set.all %}
+      <li> {{venue.name}} {{venue.capacity}} </li>
+    {% endfor %}
+      </ul>
+  {% endfor %}
+    </ul>
   </div>
-</div>
 {% endblock %}

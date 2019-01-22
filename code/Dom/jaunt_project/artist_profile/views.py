@@ -69,13 +69,6 @@ class ImageChoice(LoginRequiredMixin, ListView):
 
   def get_queryset(self):
     return ArtistImage.objects.filter(artist__id=self.kwargs["pk"])
-  
-  # def get_success_url(self):
-  #   artistid = self.kwargs['pk']
-  #   print(artistid)
-  #   return reverse_lazy("artist_profile:artist_detail", kwargs={"pk": artistid})
-
-
 
 # view for picking the image and saving the image id 
 def selectpic(request, pk):
@@ -92,17 +85,4 @@ def selectpic(request, pk):
     artist.save()
     return HttpResponseRedirect(reverse('artist_profile:artist_detail', args=(artist.id,)))
 
-# def selectpic(request, pk):
-#   artist = get_object_or_404(ArtistProfile, pk= pk)
-#   try:
-#     selected_image = artist.artistimage_set.get(pk = request.POST["pic"])
-#     artist.profile_pic = selected_image
-#     artist.save()
-#   except (KeyError, ArtistImage.DoesNotExist):
-#     return render(request, "artist.html", { 
-#       "artist": artist, 
-#       "error_message": "You didn't select a photo."
-#     })
- 
-#   return HttpResponseRedirect(reverse('artist_profile:artist_detail', args=(artist.id,)))
 

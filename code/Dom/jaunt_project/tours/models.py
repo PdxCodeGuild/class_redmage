@@ -21,6 +21,8 @@ class Tour(models.Model):
   region = models.CharField(max_length= 10) 
   #ability to add a tour poster to the proposal 
   tour_pic= models.IntegerField(null=True, blank=True)
+  #string of suggested cities to route through
+  city_list= models.TextField()
 
   def __str__(self):
     return self.tour_name
@@ -28,12 +30,29 @@ class Tour(models.Model):
   def get_absolute_url(self):
         return reverse('home')
 
+class Region(models.Model):
+  name = models.CharField(max_length= 10)
 
-class Venue(models.Model):
-  name = models.CharField(max_length= 30)
-  capacity = models.IntegerField()
-  address= models.CharField(max_length = 200)
+  def __str__(self):
+    return self.name
+
+class City(models.Model):
+  region = models.ForeignKey(Region, on_delete= models.CASCADE)
   city = models.CharField(max_length= 20)
   state = models.CharField(max_length = 2)
-  region = models.CharField(max_length = 10)
-  
+  priority = models.IntegerField()
+
+  class Meta:
+    verbose_name_plural = "Cities"
+    
+  def __str__(self):
+    return self.city
+
+class Venue(models.Model):
+  city = models.ForeignKey(City, on_delete= models.CASCADE)
+  name = models.CharField(max_length= 30)
+  capacity = models.IntegerField()
+  address= models.CharField(max_length = 200, null=True, blank=True)
+ 
+  def __str__(self):
+    return self.name
