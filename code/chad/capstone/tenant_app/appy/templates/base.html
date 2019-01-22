@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,12 +35,14 @@
         <br>
         <div class="div-submitted">
             <h4>Submitted</h4>
+                    {% if title == "Tenant Application" %}
+                        {% for i in tenant_items %}
+                            {{ i.first_name }} <br>
+                        {% endfor %}
+                    {% endif %}
 
-                    {% for i in tenant_items %}
-                        {{ i }} <br>
-                    {% endfor %}
                     {% for i in maint_items %}
-                        {{ i }} <br>
+                        {{ i.first_name }} <br>
                     {% endfor %}
         </div>
      {% endblock sidebar%}

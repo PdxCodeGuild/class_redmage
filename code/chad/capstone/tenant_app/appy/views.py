@@ -11,12 +11,6 @@ from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class TenantAppys(LoginRequiredMixin, generic.ListView):
-    model = AppyModel
-    template_name = 'tenant_apps.html'
-
-    def get_queryset(self):
-        return
 
 class HomeTemplateView(ListView):
     model = AppyModel
@@ -25,7 +19,8 @@ class HomeTemplateView(ListView):
 @login_required
 def tenant_create_form_view(request):
     tenant_form = TenantForm()
-    items = AppyModel.objects.filter(author=request.user).values_list('first_name')
+    items = AppyModel.objects.filter(author=request.user)
+    print(items)
     if request.method == 'POST':
         print(request.user)
 
@@ -48,7 +43,7 @@ def tenant_create_form_view(request):
 @login_required
 def mainty_form_view(request):
     maint_form = MaintForm()
-    items = MaintyModel.objects.filter(author=request.user).values_list('first_name')
+    items = MaintyModel.objects.filter(author=request.user)
     if request.method == 'POST':
         print(request.user)
         maint_form = MaintForm(request.POST)
