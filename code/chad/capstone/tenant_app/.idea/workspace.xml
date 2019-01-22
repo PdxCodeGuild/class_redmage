@@ -1,62 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c72edaaa-5fe2-4318-9ec8-a2b3ce48e543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appy/templates/maint_request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69eff9c7-3893-4c07-bb28-2bfc2ab4f16a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69eff9c7-3893-4c07-bb28-2bfc2ab4f16a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69eff9c7-3893-4c07-bb28-2bfc2ab4f16a/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69eff9c7-3893-4c07-bb28-2bfc2ab4f16a/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tenant_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tenant_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/form_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/form_validation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/forms_orginal" beforeDir="false" afterPath="$PROJECT_DIR$/appy/forms_orginal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/forms_required_false" beforeDir="false" afterPath="$PROJECT_DIR$/appy/forms_required_false" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0002_auto_20190111_2237.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0002_auto_20190111_2237.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0003_auto_20190111_2238.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0003_auto_20190111_2238.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0004_auto_20190114_2248.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0004_auto_20190114_2248.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0005_appymodel_author.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0005_appymodel_author.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0006_auto_20190117_2157.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0006_auto_20190117_2157.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0007_auto_20190118_0007.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0007_auto_20190118_0007.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/0008_auto_20190118_2339.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/0008_auto_20190118_2339.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/model.bak" beforeDir="false" afterPath="$PROJECT_DIR$/appy/model.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/static/appy/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/appy/static/appy/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/static/appy/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/appy/static/appy/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/fill_appy.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/fill_appy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/password_reset_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/password_reset_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/tenant_app.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/tenant_app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tenant_app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tenant_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tenant_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tenant_app/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/tenant_app/wsgi.py" afterDir="false" />
-    </list>
+    <list default="true" id="c72edaaa-5fe2-4318-9ec8-a2b3ce48e543" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/appy/static/appy/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -453,11 +398,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92234000" />
+    <option name="totallyTimeSpent" value="93063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="97" y="25" width="1704" height="1342" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876544" visible="true" weight="0.23164861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -473,7 +417,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3712" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3712" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32979852" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -481,7 +425,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.345367" />
+      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.345367" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +547,7 @@
     <entry file="file://$PROJECT_DIR$/appy/static/appy/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
