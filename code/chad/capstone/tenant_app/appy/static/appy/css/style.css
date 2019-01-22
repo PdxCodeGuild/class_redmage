@@ -1,12 +1,4 @@
-
-.div-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+.div-submitted {
+    display: flex;
+    flex-direction: column;
 }
-.div-form label{
-    grid-column-start: 1;
-}
-.div-form input{
-    grid-column-start: 1;
-}
-

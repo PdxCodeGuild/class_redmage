@@ -35,7 +35,7 @@ def tenant_create_form_view(request):
             print(tenant_form.errors)
     context = {
         'tenant_form': tenant_form,
-        'tenant_items': items,
+        'items': items,
     }
 
     return render(request, 'fill_appy.html', context)
@@ -53,7 +53,7 @@ def mainty_form_view(request):
             return redirect('home')
     context = {
         'maint_form': maint_form,
-        'maint_items': items,
+        'items': items,
     }
     return render(request, 'maint_request.html', context)
 

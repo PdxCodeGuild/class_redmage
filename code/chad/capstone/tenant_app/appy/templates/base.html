@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="{% static "/appy/css/style.css" %}" />
@@ -35,15 +35,9 @@
         <br>
         <div class="div-submitted">
             <h4>Submitted</h4>
-                    {% if title == "Tenant Application" %}
-                        {% for i in tenant_items %}
-                            {{ i.first_name }} <br>
+                        {% for i in items %}
+                            <div>{{ i.id }} {{ i.date_time_form_filled }}</div>
                         {% endfor %}
-                    {% endif %}
-
-                    {% for i in maint_items %}
-                        {{ i.first_name }} <br>
-                    {% endfor %}
         </div>
      {% endblock sidebar%}
 
