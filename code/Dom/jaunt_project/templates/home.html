@@ -6,7 +6,7 @@
 {% block content %}
 {% if user.is_authenticated %}
 <div class="row">
-  <div class=" col-2 bd-content">
+  <div class=" col-3 bd-content">
     <h3> Artist Profiles:</h3>
       {% for artist in artistprofile_list %}
     <div class="card" style="width: auto;">
@@ -29,22 +29,22 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src ="{% static 'images/calendar.jpeg' %}" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="bloglinks"><a href="https://www.ascap.com/help/career-development/booking-your-own-tour-a-how-to-guide"><strong>Booking Your Own Tour</strong></a></h3>
+            <div class="carousel-caption d-none d-md-block bloglinks">
+              <h3><a href="https://www.ascap.com/help/career-development/booking-your-own-tour-a-how-to-guide"><strong>Booking Your Own Tour</strong></a></h3>
               <p></p>
             </div>
           </div>
            <div class="carousel-item">
             <img class="d-block w-100" src ="{% static 'images/taxes.jpeg' %}" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="bloglinks"><a href="https://nmbx.newmusicusa.org/five-timely-tax-tips-for-musicians/"><strong>Tax Tips for Indie Musicians</strong></a></h3>
+            <div class="carousel-caption d-none d-md-block bloglinks">
+              <h3><a href="https://nmbx.newmusicusa.org/five-timely-tax-tips-for-musicians/"><strong>Tax Tips for Indie Musicians</strong></a></h3>
               <p></p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src ="{% static 'images/tools.jpeg' %}"  alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="bloglinks" ><a href="https://diymusician.cdbaby.com/musician-tips/4-ways-promote-album-independently/"><strong>4 DIY Promotion Ideas</strong></a></h3>
+            <div class="carousel-caption d-none d-md-block bloglinks">
+              <h3><a href="https://diymusician.cdbaby.com/musician-tips/4-ways-promote-album-independently/"><strong>4 DIY Promotion Ideas</strong></a></h3>
               <p></p>
             </div>
           </div>
