@@ -6,29 +6,52 @@
 {% block content %}
 <div class="row justify-content-center">
   <div class="col-md-8">
-    <h1 class="mt-2">Edit Profile</h1>
-    <hr class="mt-0 mb-4">
     <form method="post">
       {% csrf_token %}
-      {{ form|crispy }}
-      <button type="submit" class="btn btn-success">Update</button>
+      <div class ="row">
+        <h1 class="mt-2">Edit Profile</h1>
+        <hr class="mt-0 mb-4">
+      </div>
+      <div class = "row">
+        <div class= "col-4">
+          {{ form.artist_name| as_crispy_field }}
+        </div>
+        <div class= "col-4">
+          {{ form.genre| as_crispy_field }}
+        </div>
+      </div>
+       <div class = "row">
+        <div class= "col-4">
+          {{ form.contact_first_name| as_crispy_field }}
+        </div>
+        <div class= "col-4">
+          {{ form.contact_last_name| as_crispy_field }}
+        </div>
+      </div>
+       <div class = "row">
+        <div class= "col-4">
+          {{ form.contact_phone| as_crispy_field }}
+        </div>
+        <div class= "col-4">
+          {{ form.contact_email| as_crispy_field }}
+        </div>
+      </div>
+      <div class = "row">
+        <div class= "col-4">
+          {{form.description | as_crispy_field }}
+        </div>
+        <div class= "col-2">
+          {{ form.twitter| as_crispy_field }}
+          {{ form.instagram| as_crispy_field }}
+          {{ form.bandcamp| as_crispy_field }}
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-4">
+          <button type="submit" class="btn btn-success">Update</button>
+        </div>
+      </div>
     </form> 
   </div>
 </div>
-{% comment %} <form action= "{% url 'artist_profile:artist_edit' %}" method="post">
-  {% csrf_token %}
-  <label for="artistName">Artist/Band Name:</label>
-  <input type ="text" name="artist_name" id="artistName">
-  <label for="genre">Genre:</label>
-  <input type ="text" name="genre" id="genre">
-  <label for="contact_first_name">Contact First Name:</label>
-  <input type ="text" name="contact_first_name" id="contactFirstName">
-  <label for="contact_last_name">Contact Last Name:</label>
-  <input type ="text" name="contact_last_name" id="contact_last_name">
-  <label for="contact_phone">Contact Phone Number:</label>
-  <input type ="tel" name="contact_phone" id="contact_phone">
-  <label for="contact_email">Contact Email:</label>
-  <input type ="email" name="contact_email" id="contact_email">
-  <button type="submit">Save</button>
-</form> {% endcomment %}
 {% endblock %}

@@ -5,37 +5,35 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+<div class = "row">
+  <div class="col-2 bd-sidebar">
     <div class="btn-group-vertical bd-sidebar btn-group-lg" role="group" >
-      <h2>Menu</h2>
+      <h1 class="mt-2">Menu</h1>
       <a href="{% url 'artist_profile:image_choice' artistprofile.id %}" type="button" class="btn btn-secondary">Change Image</a>
-      <a type="button" class="btn btn-secondary"href="{% url 'artist_profile:artist_edit' artistprofile.id %}">ProfileEdit</a>
-      <a type="button" class="btn btn-secondary" href="{% url 'artist_profile:artist_delete' artistprofile.id %}">Delete</></a>
+      <a type="button" class="btn btn-secondary"href="{% url 'artist_profile:artist_edit' artistprofile.id %}">Edit Profile</a>
+      <a type="button" class="btn btn-secondary" href="{% url 'artist_profile:artist_delete' artistprofile.id %}">Delete Profile</></a>
     </div>
   </div>
-  <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+  <div class="col-6 bd-content">
     {% if profile_pic %}
     <img src="{{ profile_pic.image.url}}" alt="{{ artistimage.artist_name}}" style="width: 400px">
-     {% comment %} {% if artistprofile.profile_pic %}
-    <img src="{{ artistprofile.profile_pic.image.url}}" alt="{{ artistprofile.artist_name}}" style="width: 200px"> {% endcomment %}
   {% else %}
-
   {% endif %}
     <h1 class="bd-title">{{artistprofile.artist_name}}</h1>
     <p class= "bd-lead">{{artistprofile.city}},{{artistprofile.state}}</p>
     <p class= "bd-lead">{{artistprofile.genre}}</p>
-    {% comment %} {% if artist.twitter %} {% endcomment %}
+    {% if artistprofile.twitter %}
       <p>Twitter: <a href= "https:twitter.com/{{artistprofile.twitter}}">@{{artistprofile.twitter}}</a></p>
-    {% comment %} {% endif %} {% endcomment %}
-    {% comment %} {% if artist.instagram %} {% endcomment %}
+    {% endif %}
+    {% if artistprofile.instagram %}
       <p>Instagram: <a href= "https:instagram.com/{{artistprofile.instagram}}">@{{artistprofile.instagram}}</a></p>
-    {% comment %} {% endif %} {% endcomment %}
-    {% if artist.facebook %}
+    {% endif %}
+    {% if artistprofile.facebook %}
       <p>Facebook: <a href= "https:facebook.com/{{artistprofile.twitter}}">{{artistprofile.facebook}}</a></p>
     {% endif %}
-    {% comment %} {% if artist.bandcamp %} {% endcomment %}
+    {% if artistprofile.bandcamp %}
      <p>bandcamp: <a href= "https:{{artistprofile.bandcamp}}.bandcamp.com/">{{artistprofile.bandcamp}}</a></p>
-    {% comment %} {% endif %} {% endcomment %}
+    {% endif %}
     <p>{{artistprofile.description}}</p>
       {% else %}
         <p>You are not logged in</p>
@@ -43,14 +41,14 @@
         <a href="{% url 'signup' %}">sign up</a>
       {% endif %}
   </div>
-   <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+   <div class=" col-4 bd-content">
     <h1 class="bd-title">Tours</h1>
   {% if tours %}
     {% for tour in tours%}
     <p><a href= "{% url 'tours:tours_detail' tour.id%}" >{{tour.tour_name}}</a> Starting: {{tour.date_start}}</p>
     {% endfor %}
      {%endif%}
-  <a type="button" class="btn btn-secondary" href="{% url 'tours:tours_new'  %}">Create Tour</></a>
+  <a type="button" class="btn btn-secondary" href="{% url 'tours:tours_new'  %}">Create Tour</a>
  
   </div>
 </div>

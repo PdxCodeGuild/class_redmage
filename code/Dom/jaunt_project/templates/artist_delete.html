@@ -11,9 +11,10 @@
     <form method="post">
       {% csrf_token %}
       {{ form|crispy }}
+      <h2>{{artistprofile.artist_name}}</h2>
       <p> Are You sure you want to delete this profile? </p>
       <button type="submit" class="btn btn-success">Delete</button>
-      <button href=" "type="button" class="btn btn-success">Cancel</button>
+      <a href="{% url 'artist_profile:artist_detail' artistprofile.pk %}" class="btn btn-success">Cancel</a>
 
     </form> 
   </div>

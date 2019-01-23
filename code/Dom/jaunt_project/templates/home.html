@@ -5,10 +5,10 @@
 
 {% block content %}
 {% if user.is_authenticated %}
- <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+ <div class=" col-12 bd-content">
+  <h1> Artists </h1>
   {% for artist in artistprofile_list %}
-    <div class="card" style="width: 18rem;">
-      {% comment %} <img src="" class="card-img-top" alt="{{ artist.artist_name}}"> {% endcomment %}
+    <div class="card" style="width: auto;">
       <div class="card-body">
         <h5 class="card-title">{{artist.artist_name}}</h5>
         <p class="card-text">{{artist.genre}}</p>
@@ -21,16 +21,23 @@
 {% else %}
 
 <div class= container >
-  <img src ="{% static 'jaunt/images/Crowd_image.jpeg' %}" alt= "jaunt crowd" >
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome to Jaunt</h1>
-    <p class="lead">This is an app to help independent musicians plan and book successful tours.</p>
-    <hr class="my-4">
-    <p>Try is yourself</p>
-    <a class="btn btn-secondary btn-lg" href="{% url 'login' %}" role="button">Login</a>
-    <a class="btn btn-secondary btn-lg" href="{% url 'signup' %}" role="button">Sign Up</a>
+  <div class= "row">
+    <div class= "col-6">
+      <img src ="{% static 'images/jauntimg.jpg' %}" alt= "jaunt crowd" >
+    </div>
   </div>
-</div>
+  <div class= "row">
+    <div class= "col-11">
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to Jaunt</h1>
+        <p class="lead">This is an app to help independent musicians plan and book successful tours.</p>
+        <hr class="my-4">
+        <p>Try for yourself</p>
+        <a class="btn btn-secondary btn-lg" href="{% url 'login' %}" role="button">Login</a>
+        <a class="btn btn-secondary btn-lg" href="{% url 'signup' %}" role="button">Sign Up</a>
+      </div>
+    </div>
+  </div>
 {% endif %}
 </div>
 {% endblock %}
