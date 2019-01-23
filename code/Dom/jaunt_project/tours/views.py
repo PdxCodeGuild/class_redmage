@@ -5,7 +5,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy, reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.files.storage import FileSystemStorage
-from .forms import CreateTour
+from .forms import CreateTour, CreateTourModelform
 from artist_profile.models import ArtistProfile, ArtistImage
 from artist_profile.forms import ImageForm
 from .models import Tour, Venue, City
@@ -64,7 +64,7 @@ def tour_proposal(request):
     form = CreateTour(request.user)
   return render(request, "tour_create.html", {'form': form} )
 
- 
+#  function view for making to update the form
 def edit(request, pk):
   tour = get_object_or_404(Tour, pk=pk)
   if request.method == "POST":
@@ -119,7 +119,15 @@ class TourView(LoginRequiredMixin, DetailView):
     context = super().get_context_data(**kwargs)
     cities = ast.literal_eval(self.object.city_list)
     context["cities"] = [City.objects.get(city= city[0]) for city in cities]
-    print(context["cities"][2].venue_set.all())
     return context
 
+# class CreateTour(LoginRequiredMixin, CreateView):
+#   model = Tour
+#   form_class = CreateTourModelform
+#   template_name = "tour_create.html"
+
+# class UpdateTour(LoginRequiredMixin, UpdateView):
+#   model = Tour
+#   form_class = CreateTourModelform
+#   template_name = "tour_edit.html"
     

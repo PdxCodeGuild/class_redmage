@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
@@ -18,7 +19,9 @@
   <p><a href= "{% url 'artist_profile:artist_create' %}">create artist profile</a></p>
 
 {% else %}
-<div class= container>
+
+<div class= container >
+  <img src ="{% static 'jaunt/images/Crowd_image.jpeg' %}" alt= "jaunt crowd" >
   <div class="jumbotron">
     <h1 class="display-4">Welcome to Jaunt</h1>
     <p class="lead">This is an app to help independent musicians plan and book successful tours.</p>

@@ -6,7 +6,7 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+  <div class="col-2 bd-sidebar">
     <div class="btn-group-vertical bd-sidebar btn-group-lg" role="group" >
       <h2>Menu</h2>
       {% comment % <a href="{% url 'tour:image_choice' tour.id %}" type="button" class="btn btn-secondary">Change Image</a> {% endcomment %}
@@ -14,14 +14,7 @@
       <a type="button" class="btn btn-secondary" href="{% url 'tours:tour_delete' tour.id %}">Delete</a>
     </div>
   </div>
-  <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
-    {% if profile_pic %}
-    <img src="{{ profile_pic.image.url}}" alt="{{ artistimage.artist_name}}" style="width: 400px">
-     {% comment %} {% if artistprofile.profile_pic %}
-    <img src="{{ artistprofile.profile_pic.image.url}}" alt="{{ artistprofile.artist_name}}" style="width: 200px"> {% endcomment %}
-  {% else %}
-
-  {% endif %}
+  <div class=" col-5 bd-content">
     <h1 class="bd-title">Tour Detail</h1>
     <h2 class="bd-title">{{tour.tour_name}}</h2>
     <p class= "bd-lead">Performers: {{tour.performers}}</p>
@@ -29,14 +22,14 @@
     <p class= "bd-lead">Region: {{tour.region}} </p>
     <p class= "bd-lead">Asking Price: {{tour.guarantee}} </p>
     <p class= "bd-lead">Venue Size: {{tour.venue_size}} </p>
-
+  </div>
       {% else %}
         <p>You are not logged in</p>
         <a href="{% url 'login' %}">login</a> |
         <a href="{% url 'signup' %}">sign up</a>
       {% endif %}
-  </div>
-  <div class=" col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+  
+  <div class=" col-5 bd-content">
     <ul>
   {% for city in cities %}
     <li> {{city.city}}, {{city.state}} </li>

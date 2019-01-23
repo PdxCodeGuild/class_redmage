@@ -1,8 +1,9 @@
 from django import forms
-from django.forms import widgets
+from django.forms import widgets, ModelForm
 from . import models
 from artist_profile.models import ArtistProfile
 from users.models import CustomUser
+from django.utils.translation import gettext_lazy as _
 
 VENUE_SIZE_CHOICES = [
   ( "50- 150", "SM (50- 150)"),
@@ -47,3 +48,30 @@ class CreateTour(forms.Form):
   def __init__(self, user, *args, **kwargs):
     super(CreateTour, self).__init__(*args, **kwargs)
     self.fields['artist'].queryset = ArtistProfile.objects.filter(user=user)
+
+
+class CreateTourModelform(ModelForm):
+   class Meta:
+    model= models.Tour
+    fields= ('artist','tour_name', 'performers', "guarantee", "door_split", "hotel_needed", 'venue_size', 'date_start', 'date_end', 'region', )
+    labels = {
+      'tour_name': _('Tour Name'),
+      'guarantee': _('Guarantee $'),
+      'date_start': _('Start Date'),
+      'date_end': _('End Date'),
+    }
+    widgets = {
+      "venue_size" : forms.Select( 
+        choices=VENUE_SIZE_CHOICES),
+      "start_date" : widgets.SelectDateWidget,
+      "end_date" : widgets.SelectDateWidget,
+      "region" : forms.SelectMultiple(
+        choices=REGION_CHOICES),
+    }
+    queryset = {
+      'artist' : ArtistProfile.objects.all(),
+    }
+
+    def __init__(self, user, *args, **kwargs):
+      super(CreateTour, self).__init__(*args, **kwargs)
+      self.fields['artist'].queryset = ArtistProfile.objects.filter(user=user)

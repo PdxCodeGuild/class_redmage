@@ -18,7 +18,7 @@ class Tour(models.Model):
   date_start = models.DateField()
   date_end = models.DateField()
   # will be represented in drop down with different regions  ie (NW, Cal, SW, South, MidWest, NE)
-  region = models.CharField(max_length= 10) 
+  region = models.CharField(max_length= 20) 
   #ability to add a tour poster to the proposal 
   tour_pic= models.IntegerField(null=True, blank=True)
   #string of suggested cities to route through
