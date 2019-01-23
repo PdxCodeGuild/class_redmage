@@ -1,3 +1,79 @@
+var blueIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-blue.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var redIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-red.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var greenIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-green.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var orangeIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-orange.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var yellowIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-yellow.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var violetIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-violet.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var greyIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-grey.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var blackIcon = new L.Icon({
+	iconUrl: 'static/img/marker-icon-2x-black.png',
+	shadowUrl: 'static/img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+let iconList = [blueIcon,blackIcon,greyIcon,violetIcon,yellowIcon,orangeIcon,greenIcon,redIcon];
+
+let iconChoice = iconList[Math.floor(Math.random() * iconList.length)];
+
 let truth = true;
 
 let
@@ -17,10 +93,12 @@ let
   private_btn,
   sync_btn,
   universal_btn,
+  otherSavedMarkers,
   unsavedMarkers;
 
 unsavedMarkers = [];
 savedMarkers = [];
+otherSavedMarkers = [];
 
 let test = false;
 
@@ -36,8 +114,19 @@ function addToMap(locationArray){
   //iterates through the array object called from the server
   [].forEach.call(locationArray, function(location){
 
-      savedMarkers[location.id] = L.marker([location.latitude, location.longitude]).addTo(map)}
+      savedMarkers[location.id] = L.marker([location.latitude, location.longitude], {icon: blueIcon}).addTo(map)}
       )
+    };
+
+// this function will add all of the pre-existing markers to the map
+function addToMapOthers(locationArray){
+
+  //iterates through the array object called from the server
+  [].forEach.call(locationArray, function(location){
+
+      otherSavedMarkers[location.id] = L.marker([location.latitude, location.longitude],{icon: iconChoice}).addTo(map)}
+      )
+      console.log(otherSavedMarkers);
     };
 
 // button defs
@@ -46,8 +135,14 @@ sync_btn = document.getElementById('sync_btn');
 universal_btn = document.getElementById('universal_btn');
 
 universal_btn.addEventListener('click', function(){
-  addToMap(saved_other_user_markers_data);
+  addToMapOthers(saved_other_user_markers_data);
+  console.log(saved_other_user_markers_data);
 })
+
+private_btn.addEventListener('click', function(){
+  map.remove();
+  initialize();
+});
 
 function initialize(){
   map = L.map('map').setView([45.527453, -122.668923], 10)
@@ -292,7 +387,7 @@ function updatSPL(){
       // savedPoint.id =
       savedPoint.style.display = "flex";
       savedPoint.style.justifyContent = "space-evenly";
-      savedPoint.style.flexDirection = "column";
+      savedPoint.style.flexDirection = "row";
       savedPoint.style.width = "100%";
       savedPoint.style.marginTop = "5px";
       savedPoint.innerHTML += pointSet;
@@ -328,9 +423,19 @@ initialize();
     console.log(error);
   });
   }
+let interval;
+
+function reload(){
+  document.getElementById('reload').click();
+}
 
 sync_btn.addEventListener('click', function(){
-  for (i=0; i<unsavedMarkers.length;i++){
-    postMarker(unsavedMarkers[i]);
+  if (unsavedMarkers.length >0){
+    for (i=0; i<unsavedMarkers.length;i++){
+      postMarker(unsavedMarkers[i]);
+      interval = setTimeout(reload,5);
+    }
+  } else {
+    interval = setTimeout(reload,5);
   }
 })

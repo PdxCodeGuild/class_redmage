@@ -4,7 +4,7 @@
   <head>
     <title>jomei</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    <link href="https://fonts.googleapis.com/css?family=Lato|Satisfy" rel="stylesheet">
     {% block head %}
     {% endblock head %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -23,10 +23,10 @@
       {% endif %}
     </div>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Nav</span>
+    <span class="lato" style="font-size:23px;cursor:pointer" onclick="openNav()">&#9776; Nav</span>
     <header>
       <div>
-        <h1 style='text-align:center'><a href="/">jomei</a></h1>
+        <h1 style='text-align:center' class="title-font"><a href="/">jomei</a></h1>
       </div>
       {% block layers %}
       {% endblock layers %}

@@ -17,22 +17,26 @@
   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
   crossorigin=""></script>
 
+
 {% endblock head %}
 
 {% comment %} LAYER BUTTONS BLOCK {% endcomment %}
 {% block layers %}
   {% if user.is_authenticated %}
   <div id="layers_div">
+
     <button class='material-icons' id = 'private_btn' name='private_btn'>person</button>
     <button class='material-icons' id = 'sync_btn' name='edit_btn'>sync</button>
     <button class='material-icons' id = 'universal_btn' name='universal_btn'>public</button>
   </div>
+
 {% endif %}
 
 {% endblock layers %}
 
 {% comment %} MAIN PAGE CONTENT {% endcomment %}
 {% block content %}
+<a id = "reload" href="{% url 'home' %}" hidden></a>
 
   {% if user.is_authenticated %}
 
@@ -53,6 +57,7 @@
   {% else %}
     <p class="item-a">You are not an authenticated yet user, please login for the secrets.</p>
   {% endif %}
+
 
 {% endblock content %}
 

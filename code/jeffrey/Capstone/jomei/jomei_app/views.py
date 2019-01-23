@@ -46,7 +46,7 @@ def newMarker(request):
     Point.objects.create(
         owner = request.user,
         name=coordinates['name'],
-        tag="test",
+        tag=coordinates['tag'],
         latitude=coordinates['lat'],
         longitude=coordinates['lng'],
         distance_away=coordinates['distance_away'],
