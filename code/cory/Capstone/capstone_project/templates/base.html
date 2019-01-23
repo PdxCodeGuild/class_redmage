@@ -9,61 +9,81 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/hamburgers.css' %}" rel="stylesheet">
-    <title>Easy Fitness</title>
+    <title>Threshold</title>
 </head>
 <body>
-    <header>
-        <h1><a href="{% url 'home' %}">Easy Fitness</a></h1>
-        <p>Guide yourself to a better you!</p>
-        <button id="hamburger" class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>        
-    </header>
-
-    <div id="menu">
-        <a href="{% url 'home' %}"><p>Home</p></a>
-        <div class="faux-divider"></div>
-        
-        <a href=""><p>About</p></a>
-        <div class="faux-divider"></div>
-
-        <a href="{%url 'all-exercise-muscles' %}"><p>Exercises</p></a>
-        <div class="faux-divider"></div>
-        
-        {% if user.is_authenticated %}
-            <a href="{% url 'user-workout' request.user %}"><p>Account</p></a>
-            <div class="faux-divider"></div>
-
-            <a href="{% url 'logout' %}"><p>Logout</p></a>
-            <div class="faux-divider"></div>
-        {% else %}
-            <a href="{% url 'login' %}"><p>Login</p></a>
-            <div class="faux-divider"></div>
-
-            <a href="{% url 'create-new-user' %}"><p>Register</p></a>
-            <div class="faux-divider"></div>
-        {% endif %}
-    </div>  
-
-    <div id="block-content">
-        {% if user.is_authenticated %}
-            <p class="text-center">Welcome back, {{ user.username }}!</p>
-        {% endif %}
-
-        {% block content %}
-        {% endblock %}
-
-        {% if request.get_full_path != "/" %}
-            <div id="back-button">
-                <button onClick="javascript:history.go(-1);">&lt; Back</button></a>
-            </div>
-        {% endif %}
+    <div id="header-wrapper">
+        <header>
+            <h1 class="hvr-skew-forward"><a href="{% url 'home' %}">Threshold</a></h1>
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>  
+            <div id="menu">
+                    <a href="{% url 'home' %}"><p class="menu-option">Home</p></a>
+                    <div class="faux-divider"></div>
+                    
+                    <a href="{% url 'about' %}"><p class="menu-option">About</p></a>
+                    <div class="faux-divider"></div>
+            
+                    <a href="{%url 'all-exercise-muscles' %}"><p class="menu-option">All Exercises</p></a>
+                    <div class="faux-divider"></div>
+                    
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'user-workout' request.user %}"><p class="menu-option">{{ request.user|title }}'s Workouts</p></a>
+                        <div class="faux-divider"></div>
+            
+                        <a href="{% url 'logout' %}"><p class="menu-option">Logout</p></a>
+                        <div class="faux-divider"></div>
+                    {% else %}
+                        <a href="{% url 'login' %}"><p class="menu-option">Login</p></a>
+                        <div class="faux-divider"></div>
+            
+                        <a href="{% url 'create-new-user' %}"><p class="menu-option">Register</p></a>
+                        <div class="faux-divider"></div>
+                    {% endif %}
+                </div>        
+        </header>
     </div>
 
-    <script src="{% static 'javascript/base.js' %}"></script>
+    
 
+    <div id="block-content-wrapper" class="center">
+        <div id="block-content" class="center">
+            {% if user.is_authenticated %}
+                <p class="text-center">Welcome back, <b>{{ user.username }}</b>!</p>
+                {% if request.get_full_path == "/" %}
+                    <a href="{% url 'user-workout' request.user %}">
+                        <button class="center">New Workout</button>
+                    </a>
+                {% endif %}
+            {% endif %}
+
+            {% block content %}
+            {% endblock %}
+
+            <div id="block-footer" class="">
+                {% if request.get_full_path != "/" %}
+                
+                <a href="javascript:history.go(-1);" >
+                    <div id="exercise-card-outer" class="div-button back-button text-center" >
+                        <div id="exercise-card-inner">
+                            <p class="center">Back</p>
+                        </div>
+                    </div>
+                </a>
+                    
+
+                {% endif %}
+                
+                {% block footer %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'javascript/base.js' %}"></script>
+    
 </body>
 
 

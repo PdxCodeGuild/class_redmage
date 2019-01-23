@@ -2,10 +2,11 @@
 
 {% block content %}
 
-<form method="POST">
+<form id="user-workout-creation" method="POST">
     {% csrf_token %}
+    <p><b>Enter Workout Name</b></p>
     {{ form.as_p }}
-    <input type="submit" value="Submit">
+    <input class="center" type="submit" value="Submit">
 </form>
 
 {% endblock %}
