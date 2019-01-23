@@ -16,6 +16,7 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="{% url 'about' %}">About</a>
       <a href="{% url 'home' %}">Map</a>
+      <a href="{% url 'examples' %}">Examples</a>
       {% if user.is_authenticated %}
         <a href="{% url 'logout' %}">Logout</a>
       {% else %}
@@ -25,8 +26,9 @@
 
     <span class="lato" style="font-size:23px;cursor:pointer" onclick="openNav()">&#9776; Nav</span>
     <header>
-      <div>
+      <div class='header'>
         <h1 style='text-align:center' class="title-font"><a href="/">jomei</a></h1>
+        {% comment %} <span><input type="text" id='search-bar' placeholder='search here'></span> {% endcomment %}
       </div>
       {% block layers %}
       {% endblock layers %}

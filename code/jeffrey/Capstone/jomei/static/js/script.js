@@ -72,7 +72,8 @@ var blackIcon = new L.Icon({
 
 let iconList = [blueIcon,blackIcon,greyIcon,violetIcon,yellowIcon,orangeIcon,greenIcon,redIcon];
 
-let iconChoice = iconList[Math.floor(Math.random() * iconList.length)];
+let iconChoiceOthers = iconList[Math.floor(Math.random() * iconList.length)];
+let iconChoiceUser = iconList[Math.floor(Math.random() * iconList.length)];
 
 let truth = true;
 
@@ -114,7 +115,7 @@ function addToMap(locationArray){
   //iterates through the array object called from the server
   [].forEach.call(locationArray, function(location){
 
-      savedMarkers[location.id] = L.marker([location.latitude, location.longitude], {icon: blueIcon}).addTo(map)}
+      savedMarkers[location.id] = L.marker([location.latitude, location.longitude], {icon: iconChoiceUser}).addTo(map)}
       )
     };
 
@@ -124,7 +125,7 @@ function addToMapOthers(locationArray){
   //iterates through the array object called from the server
   [].forEach.call(locationArray, function(location){
 
-      otherSavedMarkers[location.id] = L.marker([location.latitude, location.longitude],{icon: iconChoice}).addTo(map)}
+      otherSavedMarkers[location.id] = L.marker([location.latitude, location.longitude],{icon: iconChoiceOthers}).addTo(map)}
       )
       console.log(otherSavedMarkers);
     };
@@ -439,3 +440,24 @@ sync_btn.addEventListener('click', function(){
     interval = setTimeout(reload,5);
   }
 })
+
+
+
+// let searchBar = document.getElementById('search-bar');
+// searchBar.addEventListener('change', searchTags);
+
+// let x;
+
+// function searchTags(x){
+//   x = searchBar.value;
+//   console.log(x);
+//   map.remove();
+//   for (i=0; i<savedMarkers.length; i++){
+//     if (savedMarkers[i]['tag'].includes(x)){
+//       addToMap(savedMarkers[i]);
+//     }
+//   }
+//   if (x.length<1){
+//     initialize();
+//   }
+// }

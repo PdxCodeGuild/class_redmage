@@ -20,6 +20,9 @@ from .forms import MarkerPopUpForm
 class AboutView(TemplateView):
     template_name = "about.html"
 
+class ExamplesView(TemplateView):
+    template_name = "examples.html"
+
 def index(request):
     template = loader.get_template("home.html")
 
