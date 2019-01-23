@@ -7,14 +7,25 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-<div class= "row">
+{% comment %} <div class= "row">
   <div class="col-2 bd-sidebar">
     <div class="btn-group-vertical bd-sidebar btn-group-lg" role="group" >
       <h1 class="mt-2">Menu</h1>
       {% comment % <a href="{% url 'tour:image_choice' tour.id %}" type="button" class="btn btn-secondary">Change Image</a> {% endcomment %}
-      <a type="button" class="btn btn-secondary"href="{% url 'tours:tour_edit' tour.id %}">Edit Tour Details</a>
+      {% comment %} <a type="button" class="btn btn-secondary"href="{% url 'tours:tour_edit' tour.id %}">Edit Tour Details</a>
       <a type="button" class="btn btn-secondary" href="{% url 'tours:tour_delete' tour.id %}">Delete Tour</a>
-    </div>
+    </div> {% endcomment %} 
+<div class = "row">
+  <div class="col-2 bd-sidebar">
+    <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Tour Menu
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="{% url 'tours:tour_edit' tour.id %}">Edit Tour</a>
+    <a class="dropdown-item" href="{% url 'tours:tour_delete' tour.id %}">Delete Profile</a>
+  </div>
+</div>
   </div>
   <div class=" col-5 bd-content">
     <img src ="{% static 'images/street_map.jpg' %}" alt= "street map">

@@ -7,11 +7,15 @@
 {% if user.is_authenticated %}
 <div class = "row">
   <div class="col-2 bd-sidebar">
-    <div class="btn-group-vertical bd-sidebar btn-group-lg" role="group" >
-      <h1 class="mt-2">Menu</h1>
-      <a href="{% url 'artist_profile:image_choice' artistprofile.id %}" type="button" class="btn btn-secondary">Change Image</a>
-      <a type="button" class="btn btn-secondary"href="{% url 'artist_profile:artist_edit' artistprofile.id %}">Edit Profile</a>
-      <a type="button" class="btn btn-secondary" href="{% url 'artist_profile:artist_delete' artistprofile.id %}">Delete Profile</></a>
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Profile Menu
+       </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="{% url 'artist_profile:image_choice' artistprofile.id %}">Change Image</a>
+        <a class="dropdown-item" href="{% url 'artist_profile:artist_edit' artistprofile.id %}">Edit Profile</a>
+        <a class="dropdown-item" href="{% url 'artist_profile:artist_delete' artistprofile.id %}">Delete Profile</a>
+      </div>
     </div>
   </div>
   <div class="col-6 bd-content">
@@ -23,16 +27,16 @@
     <p class= "bd-lead">{{artistprofile.city}},{{artistprofile.state}}</p>
     <p class= "bd-lead">{{artistprofile.genre}}</p>
     {% if artistprofile.twitter %}
-      <p>Twitter: <a href= "https:twitter.com/{{artistprofile.twitter}}">@{{artistprofile.twitter}}</a></p>
+      <p>Twitter: <i class="fab fa-twitter"></i><a href= "https:twitter.com/{{artistprofile.twitter}}">@{{artistprofile.twitter}}</a></p>
     {% endif %}
     {% if artistprofile.instagram %}
-      <p>Instagram: <a href= "https:instagram.com/{{artistprofile.instagram}}">@{{artistprofile.instagram}}</a></p>
+      <p>Instagram: <i class="fab fa-instagram"></i> <a href= "https:instagram.com/{{artistprofile.instagram}}">@{{artistprofile.instagram}}</a></p>
     {% endif %}
     {% if artistprofile.facebook %}
-      <p>Facebook: <a href= "https:facebook.com/{{artistprofile.twitter}}">{{artistprofile.facebook}}</a></p>
+      <p>Facebook: <i class="fab fa-facebook"></i><a href= "https:facebook.com/{{artistprofile.twitter}}">{{artistprofile.facebook}}</a></p>
     {% endif %}
     {% if artistprofile.bandcamp %}
-     <p>bandcamp: <a href= "https:{{artistprofile.bandcamp}}.bandcamp.com/">{{artistprofile.bandcamp}}</a></p>
+     <p>bandcamp: <i class="fab fa-bandcamp"></i> <a href= "https:{{artistprofile.bandcamp}}.bandcamp.com/">{{artistprofile.bandcamp}}</a></p>
     {% endif %}
     <p>{{artistprofile.description}}</p>
       {% else %}

@@ -18,7 +18,15 @@
           {{ form.genre| as_crispy_field }}
         </div>
       </div>
-       <div class = "row">
+      <div class = "row">
+        <div class= "col-4">
+          {{ form.city| as_crispy_field }}
+        </div>
+        <div class= "col-4">
+          {{ form.state| as_crispy_field }}
+        </div>
+      </div>
+      <div class = "row">
         <div class= "col-4">
           {{ form.contact_first_name| as_crispy_field }}
         </div>
