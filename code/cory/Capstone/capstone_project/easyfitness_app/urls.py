@@ -12,7 +12,7 @@ urlpatterns = [
 
     path('all-exercises/details/<int:pk>/<str:slug>', views.AllExerciseDetail, name="all-exercise-details"),
 
-    # path('all-exercises/details/<int:pk>/<str:slug>', views.AllExerciseDetail.as_view(), name="all-exercise-details"),
+    path('about/', views.aboutView, name="about"),
 
     # --------------------------------------------------------------------------
     
@@ -29,11 +29,11 @@ urlpatterns = [
 
     path('user/<str:user>/remove-from-workout/<int:pk>/', views.removeFromWorkout, name="user-remove-from-workout"),
 
+    path('user/<str:user>/remove-workout/', views.removeWorkout, name="user-remove-workout"),
+
     # --------------------------------------------------------------------------
 
     # CARDIO
-    path('default/cardio/init', views.defaultCardioInitView, name="default-cardio-init"),
-
     path('default/cardio/', views.defaultCardioView, 
     name="default-cardio"),
 
@@ -48,8 +48,6 @@ urlpatterns = [
     # --------------------------------------------------------------------------
     
     # STRENGTH
-    path('default/strength/init', views.defaultStrengthInitView, name="default-strength-init"),
-
     path('default/strength/', views.defaultStrengthView, 
     name="default-strength"),
 
@@ -64,8 +62,6 @@ urlpatterns = [
     # --------------------------------------------------------------------------
 
     # STRETCH
-    path('default/stretch/init', views.defaultStretchInitView, name="default-stretch-init"),
-
     path('default/stretch/', views.defaultStretchView, 
     name="default-stretch"),
 

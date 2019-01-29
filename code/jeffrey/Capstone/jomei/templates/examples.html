@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="container">
+<div class='item-b'>
+<div class='centered-image'>
+<img class = 'example-img' src = '{% static "img\pasted image 0.png" %}' alt="my image">
+<br>
+<img class = 'example-img' src = '{% static "img\unnamed (1).png" %}' alt="my image">
+<br>
+<img class = 'example-img' src = '{% static "img\unnamed (2).png" %}' alt="my image">
+<br>
+<img class = 'example-img' src = '{% static "img\unnamed (3).png" %}' alt="my image">
+<br>
+<img class = 'example-img' src = '{% static "img\unnamed.png" %}' alt="my image">
+</div>
+</div>
+</div>
+{% endblock content %}
+

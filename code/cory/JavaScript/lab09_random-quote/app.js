@@ -39,14 +39,29 @@ submitButton.addEventListener("click", function(e) {
 
     });
 
+    // req.addEventListener("load", function(e) {        
+    //     let response = JSON.parse(req.responseText);
+        
+    //     for (let i=0; i < numberOfResults.value; i++) {
+
+    //         let randomNum = Math.floor(Math.random() * 25)
+            
+    //         let resultHTML = ` <p>${response.quotes[randomNum].body}</p> <p><i><a href="${response.quotes[randomNum].url}">${response.quotes[randomNum].author}</a></i></p> `;
+
+    //         textTarget.innerHTML += resultHTML;
+    //     };
+
+    //     // filterInput.value = "";
+    // });
+
     req.addEventListener("load", function(e) {        
         let response = JSON.parse(req.responseText);
         
-        for (let i=0; i < numberOfResults.value; i++) {
+        for (let i=0; i < 25; i++) {
 
-            let randomNum = Math.floor(Math.random() * 25)
+            // let randomNum = Math.floor(Math.random() * 25)
             
-            let resultHTML = ` <p>${response.quotes[randomNum].body}</p> <p><i><a href="${response.quotes[randomNum].url}">${response.quotes[randomNum].author}</a></i></p> `;
+            let resultHTML = ` <p>${i + 1}.) ${response.quotes[i].body}</p> <p><i><a href="${response.quotes[i].url}">${response.quotes[i].author}</a></i></p> `;
 
             textTarget.innerHTML += resultHTML;
         };
@@ -54,7 +69,7 @@ submitButton.addEventListener("click", function(e) {
         // filterInput.value = "";
     });
 
-    req.open("GET", `https://favqs.com/api/quotes?page=${pageNum.value}&filter=${filterInput.value}`);
+    req.open("GET", `https://favqs.com/api/quotes?page=1&filter=workout`);
 
     req.setRequestHeader("Authorization", `Token token=${apiKey}`);
 

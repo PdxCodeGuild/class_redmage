@@ -11,9 +11,10 @@ from .models import Exercise, Workout
 from django.contrib.auth.models import User
 from .forms import WorkoutForm
 from django.forms import modelformset_factory
-
-
+from django.contrib.auth.decorators import login_required
+from static.quote_list import quote_list
 import itertools
+import random
 
 from django.views.generic import(
     ListView, 
@@ -24,9 +25,14 @@ from django.views.generic import(
 )
 
 def indexView(request):
-    return render(request, "home.html")
+    random_num = random.randint(0,16)
+    quote = quote_list[random_num]
+    return render(request, "home.html", {'quote': quote })
 
-class AllExerciseView(ListView):
+def aboutView(request):
+    return render(request, "about.html")
+    
+class AllExerciseView(LoginRequiredMixin, ListView):
     model = Exercise
     template_name = "all_exercise_muscles.html"
 
@@ -40,7 +46,7 @@ class AllExerciseView(ListView):
 
         return out_list
 
-class AllExerciseListView(ListView):
+class AllExerciseListView(LoginRequiredMixin, ListView):
     model = Exercise
     template_name = "all_exercise_muscles_list.html"
 
@@ -48,6 +54,7 @@ class AllExerciseListView(ListView):
         out_list = Exercise.objects.filter(workout_muscle=self.kwargs['muscle'])
         return out_list
 
+@login_required
 def AllExerciseDetail(request, pk, slug):
 
     exercise = Exercise.objects.get(pk=pk)
@@ -58,12 +65,10 @@ def AllExerciseDetail(request, pk, slug):
     return render(request, 'all_exercise_details.html', context)
 
 
-
 # ------------------------------------------------------------------------------
 
 
-#  USER VIEWS
-
+# USER VIEWS
 # Lists Workouts
 class WorkoutUserView(LoginRequiredMixin, ListView): 
     model = Workout
@@ -105,34 +110,47 @@ class WorkoutUserCreateView(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         return reverse_lazy('user-workout', kwargs = {'user': self.request.user})
 
+@login_required
 def addToWorkout(request, pk, user):
 
     if request.method == 'POST': # If the form has been submitted...
         request.user.workout_set.get(pk=request.POST['workout']).exercises.add(Exercise.objects.get(pk=pk))
 
         return HttpResponseRedirect(
-            reverse('user-workout', kwargs = {'user': request.user }))
+            reverse('user-workout-exercises', kwargs = {
+                'user': request.user,
+                'pk': request.POST['workout'],
+            }))
     else:
         return render(request, 'home')
-    
+
+@login_required
 def removeFromWorkout(request, pk, user):
 
     if request.method == 'POST': 
         request.user.workout_set.get(pk=pk).exercises.remove(Exercise.objects.get(pk=request.POST['exercise']))
 
         return HttpResponseRedirect(
-            reverse('user-workout', kwargs = {'user': request.user }))
+            reverse('user-workout-exercises', kwargs = {
+                'user': request.user,
+                'pk': pk,
+            }))
     else:
         return render(request, 'home')
 
+@login_required
+def removeWorkout(request, user):
+
+    if request.method == 'POST':
+        request.user.workout_set.get(pk=request.POST['workout']).delete()
+
+    return HttpResponseRedirect(
+        reverse('user-workout', kwargs = {'user': request.user }))
 
 # ------------------------------------------------------------------------------
 
 
 # DEFAULT CARDIO VIEWS
-def defaultCardioInitView(request):
-    return render(request, "default_cardio_init.html" )
-
 def defaultCardioView(request):
     return render(request, "default_cardio.html")
 
@@ -173,9 +191,6 @@ class DefaultCardioDetail(DetailView):
 
 
 # DEFAULT STRENGTH VIEWS
-def defaultStrengthInitView(request):
-    return render(request, "default_strength_init.html" )
-
 def defaultStrengthView(request):
     return render(request, "default_strength.html")
 
@@ -233,9 +248,6 @@ class DefaultStrengthDetail(DetailView):
 
 
 # DEFAULT STRETCH VIEWS
-def defaultStretchInitView(request):
-    return render(request, "default_stretch_init.html" )
-
 def defaultStretchView(request):
     return render(request, "default_stretch.html")
 

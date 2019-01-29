@@ -5,10 +5,27 @@ html {
   box-sizing: inherit;
 }
 
+.centered-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
 #container {
   display: grid;
-  grid-template-columns: 1px auto auto 1px;
+  grid-template-columns: 23px auto auto 23px;
   grid-template-rows: 35px 400px auto;
+}
+.example-img {
+  height: 500px;
+  width: 500px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-div {
@@ -17,14 +34,39 @@ html {
   justify-content: center;
 }
 
+#search-bar{
+  align-self: right;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .title-font {
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Satisfy', cursive;
   font-size: 35px;
   text-align: center;
 }
 
+.lato{
+  font-family: 'Lato', sans-serif;
+}
+
+
+li{
+  font-family: 'Lato', sans-serif;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
 h4 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Satisfy', cursive;
+}
+
+a{
+  font-family: 'Satisfy', cursive;
 }
 
 #map {
@@ -44,7 +86,6 @@ h4 {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color:grey;
   border-radius: 5px;
 }
 
@@ -53,7 +94,6 @@ h4 {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: aqua;
 }
 
 .item-d {
@@ -61,7 +101,6 @@ h4 {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: peachpuff;
 }
 
 .item-e {
@@ -69,7 +108,6 @@ h4 {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-color: blueviolet;
 }
 
 a:link {
@@ -88,9 +126,6 @@ a:active {
   color: black;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-}
 .sidenav {
   height: 100%;
   width: 0;

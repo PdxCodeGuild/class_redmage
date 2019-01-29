@@ -8,6 +8,9 @@
             {{ form|crispy }}
             <input id="login-submit" class="center" type="submit" value="Login">
         </form>
+        <a href="{% url 'create-new-user' %}">
+            <input type="submit" class="center" id="register" value="Register">
+        </a>
     </div>  
 
 {% endblock %}

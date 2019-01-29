@@ -2,6 +2,18 @@
 
 {% block content %}
 
+{% if object_list %}
+<form class="form-request" id="remove-workout" action="{% url 'user-remove-workout' request.user %}" method="post">
+    {% csrf_token %}
+    <select name="workout">
+        {% for workout in object_list %}
+            <option value="{{ workout.pk }}">{{ workout }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Remove">
+</form>
+{% endif %}
+
     {% for workout in object_list %}
         <a href="{% url 'user-workout-exercises' workout.user workout.pk %}">
             <div id="exercise-card-outer">
@@ -13,6 +25,16 @@
         </a><br>
     {% endfor %}
 
-    <a href="{% url 'user-workout-creation' request.user %}"><button>Create New Workout</button></a>
+{% endblock %}
+
+{% block footer %}
+
+    <a  href="{% url 'user-workout-creation' request.user %}">
+        <div class="div-button create-button text-center" id="exercise-card-outer">
+            <div id="exercise-card-inner" >
+                <p>New Workout</p>
+            </div>
+        </div>
+    </a>
 
 {% endblock %}

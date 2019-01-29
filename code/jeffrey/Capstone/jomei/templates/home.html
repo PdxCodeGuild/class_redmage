@@ -17,39 +17,47 @@
   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
   crossorigin=""></script>
 
+
 {% endblock head %}
 
 {% comment %} LAYER BUTTONS BLOCK {% endcomment %}
 {% block layers %}
   {% if user.is_authenticated %}
   <div id="layers_div">
+
     <button class='material-icons' id = 'private_btn' name='private_btn'>person</button>
-    <button class='material-icons' id = 'edit_btn' name='edit_btn'>edit</button>
+    <button class='material-icons' id = 'sync_btn' name='edit_btn'>sync</button>
     <button class='material-icons' id = 'universal_btn' name='universal_btn'>public</button>
   </div>
+
 {% endif %}
 
 {% endblock layers %}
 
 {% comment %} MAIN PAGE CONTENT {% endcomment %}
 {% block content %}
+<a id = "reload" href="{% url 'home' %}" hidden></a>
 
   {% if user.is_authenticated %}
 
-  {{ data|json_script:"marker_data" }}
+  {{ data_user|json_script:"user_marker_data" }}
+  {{ data_others|json_script:"others_marker_data" }}
 
   <div class="map_location item-b" id="map"></div>
-  <div class="item-c" id="pointTarget">
-    <h4>Saved Points</h4>
+  <div class="item-c" id="Saved_Target">
+    <h4>Saved Points List</h4>
+    <h5>These points were saved previously and pulled from Database.</h5>
   </div>
-  <div class="item-d" id="distanceTarget">
-    <h4>Distance Away</h4>
+  <div class="item-d" id="Created_Target">
+    <h4>Recently Added to map</h4>
+    <h5>Must use 'update' button to get points onto saved points list.</h5>
   </div>
   <div class="item-e"></div>
 
   {% else %}
     <p class="item-a">You are not an authenticated yet user, please login for the secrets.</p>
   {% endif %}
+
 
 {% endblock content %}
 
