@@ -36,7 +36,8 @@
         <div class="div-submitted">
             <h4>Submitted</h4>
                         {% for i in items %}
-                            <div>{{ i.id }} {{ i.date_time_form_filled }}</div>
+                            <div><a href="{% url "tenant_from_edit" i.id %}">edit</a></td> ID# {{ i.id }} Date {{ i.date_time_form_filled }}</div>
+
                         {% endfor %}
         </div>
      {% endblock sidebar%}

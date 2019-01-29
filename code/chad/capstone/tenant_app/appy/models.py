@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 
@@ -64,6 +65,12 @@ class AppyModel(models.Model):
     add_question_judgements_explain = models.CharField(max_length=500)
     add_question_collections = models.BooleanField()
     add_question_collections_explain = models.CharField(max_length=500)
+
+    # def __str__(self):
+    #     return self.first_name
+    #
+    # def get_absolute_url(self):
+    #     return reverse('tenant_from_edit', kwargs={'pk': self.pk})
 
 
 class MaintyModel(models.Model):

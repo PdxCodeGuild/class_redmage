@@ -1,4 +1,4 @@
-"""tenant_app URL Configuration
+"""test_from_reyed URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -15,13 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from . import views
 
 urlpatterns = [
-    path('', views.HomeTemplateView.as_view(), name='home'),
-    path('fill_appy', views.tenant_create_form_view, name='fill_appy'),
-    path('signup/', views.SignUp.as_view(), name='signup'),
-    path('tenant_app/', views.tenant_create_form_view, name='tenant_app'),
-    path('maint_request/', views.mainty_form_view, name='maint_request'),
-    path('edit/<int:pk>', views.tenant_form_update, name='tenant_from_edit'),
+    path('admin/', admin.site.urls),
+    path('', include('books.urls')),
 ]

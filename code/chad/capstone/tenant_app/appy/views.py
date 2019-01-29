@@ -1,14 +1,15 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import TenantForm, MaintForm
 from .models import AppyModel, MaintyModel
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.views.generic import ListView
 from django.template.loader import get_template
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 
 
@@ -56,6 +57,21 @@ def mainty_form_view(request):
         'items': items,
     }
     return render(request, 'maint_request.html', context)
+
+
+@login_required
+def tenant_form_update(request, pk):
+    app = get_object_or_404(AppyModel, pk=pk)
+    if request.method == "POST":
+        form = TenantForm(request.user, request.POST)
+        if form.is_valid():
+            app.first_name = form.cleaned_data['first_name']
+            app.save()
+            return HttpResponseRedirect(reverse('home.html', args=(app.id,)))
+    else:
+        form = AppyModel(request.user)
+        return redirect('home')
+
 
 #reserved for a paged for apps created by user
 @login_required

@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72edaaa-5fe2-4318-9ec8-a2b3ce48e543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tenant_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tenant_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appy/templates/tenant_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/test_from_reyed.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/books/Templates/books/book_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/books/Templates/books/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/books/Templates/books/book_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/books/Templates/books/book_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/books/books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django/test_from_reyed/books/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/polls-tutorial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../merritt/polls-tutorial/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/static/appy/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/appy/static/appy/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appy/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appy/templates/fill_appy.html" beforeDir="false" afterPath="$PROJECT_DIR$/appy/templates/fill_appy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appy/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -81,17 +99,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/appy/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="51" />
+            <state relative-caret-position="540">
+              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://d05b6c98-c572-471d-8620-33bf82cdc85a/schema/main/table/appy_appymodel">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/appy/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appy/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -106,22 +136,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appy/views.py">
+        <entry file="file://$PROJECT_DIR$/appy/apps.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appy/templates/tenant_update.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tenant_app/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appy/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="68" selection-start-line="68" selection-end-line="73" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appy/templates/fill_appy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <entry file="das://d05b6c98-c572-471d-8620-33bf82cdc85a/schema/main/table/appy_maintymodel">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://d05b6c98-c572-471d-8620-33bf82cdc85a/schema/main/table/appy_appymodel">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -200,10 +262,8 @@
         <option value="$PROJECT_DIR$/tenant_app/urls.py" />
         <option value="$PROJECT_DIR$/appy/templates/tenant_app.html" />
         <option value="$PROJECT_DIR$/appy/templates/home.html" />
-        <option value="$PROJECT_DIR$/appy/urls.py" />
         <option value="$PROJECT_DIR$/Pipfile" />
         <option value="$PROJECT_DIR$/tenant_app/settings.py" />
-        <option value="$PROJECT_DIR$/appy/models.py" />
         <option value="$PROJECT_DIR$/appy/templates/maint_request.html" />
         <option value="$PROJECT_DIR$/../appy/static/appy/css/style.css" />
         <option value="$PROJECT_DIR$/../appy/urls.py" />
@@ -213,17 +273,19 @@
         <option value="$PROJECT_DIR$/../appy/templates/fill_appy.html" />
         <option value="$PROJECT_DIR$/../appy/templates/base.html" />
         <option value="$PROJECT_DIR$/appy/templates/fill_appy.html" />
-        <option value="$PROJECT_DIR$/appy/views.py" />
         <option value="$PROJECT_DIR$/appy/static/appy/css/style.css" />
+        <option value="$PROJECT_DIR$/appy/templates/tenant_update_form.html" />
+        <option value="$PROJECT_DIR$/appy/models.py" />
+        <option value="$PROJECT_DIR$/appy/urls.py" />
+        <option value="$PROJECT_DIR$/appy/views.py" />
         <option value="$PROJECT_DIR$/appy/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="133" />
     <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1347" />
+    <option name="height" value="1344" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -233,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,7 +344,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,18 +446,18 @@
       <workItem from="1547747131365" duration="11656000" />
       <workItem from="1547761675597" duration="20594000" />
       <workItem from="1548179150304" duration="4385000" />
-      <workItem from="1548186226573" duration="1957000" />
+      <workItem from="1548186226573" duration="11149000" />
+      <workItem from="1548552752215" duration="684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99383000" />
+    <option name="totallyTimeSpent" value="109281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="133" y="23" width="2560" height="1347" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="2560" height="1344" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876544" visible="true" weight="0.23510723" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49876544" visible="true" weight="0.2366958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5012346" side_tool="true" weight="0.25333333" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,17 +471,17 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26454183" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26517573" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32979852" />
-      <window_info anchor="right" id="R Graphics" />
-      <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
-      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.22160445" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.22160445" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,10 +505,37 @@
     <entry file="file://$PROJECT_DIR$/../appy/views.py" />
     <entry file="file://$PROJECT_DIR$/../appy/templates/fill_appy.html" />
     <entry file="file://$PROJECT_DIR$/../appy/templates/base.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d05b6c98-c572-471d-8620-33bf82cdc85a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/appy/templates/fill_appy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appy/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appy/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -457,16 +546,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d05b6c98-c572-471d-8620-33bf82cdc85a/console.sql">
+    <entry file="file://$PROJECT_DIR$/appy/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/appy/views.py">
+    <entry file="file://$PROJECT_DIR$/appy/templates/tenant_update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tenant_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appy/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="68" selection-start-line="68" selection-end-line="73" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d05b6c98-c572-471d-8620-33bf82cdc85a/schema/main/table/appy_maintymodel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -474,13 +584,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appy/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
         </state>
       </provider>
     </entry>
