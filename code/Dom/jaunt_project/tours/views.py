@@ -85,8 +85,8 @@ def edit(request, pk):
       days = days.days
       print(days)
       city_list = []
-      for city in cities:
-        while days > len(city_list):
+      while days > len(city_list):
+        for city in cities:
           if city.priority == 1:
             if days > 0:
               city_list.append((city.city, city.state))
