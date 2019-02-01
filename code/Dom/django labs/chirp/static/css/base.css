@@ -1,0 +1,11 @@
+
+
+body{
+  background-color: darkslategrey;
+  color: black;
+}
+
+.footer{
+  position: fixed;
+  text-align: center
+}
