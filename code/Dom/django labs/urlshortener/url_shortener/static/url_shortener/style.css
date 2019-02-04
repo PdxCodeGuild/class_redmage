@@ -1,0 +1,38 @@
+
+
+body {
+  background-color: rgb(93,127,121);
+  color: rgb(186, 255, 242);
+  font-family: 'Oswald', sans-serif;
+} 
+
+h1 {
+  font-family: 'Anton', sans-serif;  
+}
+
+
+#ogUrl {
+  color:rgb(93,127,121);
+  max-width: 70%; 
+  word-wrap:break-word; 
+  background-color:rgb(149,204,194); 
+  text-align:center;
+}
+
+#ogUrl a{
+  color: darkblue
+}
+
+#newUrl a{
+  color: darkblue
+}
+
+#input {
+  color: black;
+}
+
+#submit-btn {
+  background-color: rgb(35,127,110); 
+  color: rgb(149,204,194);
+  border: 1px solid rgb(149,204,194);
+}
