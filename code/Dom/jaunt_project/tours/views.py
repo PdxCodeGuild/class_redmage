@@ -10,8 +10,8 @@ from artist_profile.models import ArtistProfile, ArtistImage
 from artist_profile.forms import ImageForm
 from .models import Tour, Venue, City
 import ast
-
-
+from geopy.geocoders import GeoNames
+# create tour proposal and then compile list of cities to book
 def tour_proposal(request): 
   if request.method == "POST":
     form = CreateTour(request.user, request.POST)
@@ -102,8 +102,19 @@ def edit(request, pk):
       tour.city_list = city_list
       tour.save()
       return HttpResponseRedirect(reverse('tours:tours_detail', args=(tour.id,) ))
-  else:
-    form = CreateTour(request.user)
+  elif request.method == "GET":
+    form = CreateTour(request.user, 
+    initial={
+    "artist" : tour.artist, 
+    "tour_name" : tour.tour_name, 
+    "performers": tour.performers, 
+    "guarantee": tour.guarantee,
+    "door_split": tour.door_split,
+    "venue_size" : tour.venue_size,
+    "date_start" : tour.date_start,
+    "date_end" : tour.date_end,
+    "region" : tour.region,
+     })
   return render(request, "tour_edit.html", {'form': form} )
 
 class DeleteTour(LoginRequiredMixin, DeleteView):
