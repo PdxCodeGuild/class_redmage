@@ -14,7 +14,7 @@ let balls = [];
 // ctx.fillStyle = 'green';
 // ctx.fill()
 let friction = .999;
-let gravity = 2;
+let gravity = 1;
 function main_loop() {
     let ctx = cnv.getContext("2d");
     ctx.fillStyle = "rgba(0, 0, 0, 0.1)";

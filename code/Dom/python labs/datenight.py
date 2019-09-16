@@ -28,7 +28,7 @@ def find_restaurant(r_list,day):
     return random.choice(restaurants)
 
 def find_movie(coordinates):
-    term = "movie+theater"
+    term = "cinema"
     longitude = coordinates["longitude"]
     latitude = coordinates["latitude"]
     radius = 8000
